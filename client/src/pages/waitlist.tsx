@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useMutation } from "@tanstack/react-query";
 import { z } from "zod";
-import { Brain, Shield, Link, Users, CheckCircle, Crown, Lock, Sparkles, Lightbulb, Code, MessageCircle, Database, Zap, User } from "lucide-react";
+import { Brain, Shield, Link, Users, CheckCircle, Crown, Lock, Sparkles, Lightbulb, Code, MessageCircle, Database, Zap, User, Twitter } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -375,6 +375,86 @@ export default function Waitlist() {
                     First 1,000 signups get <span className="text-[#5151FF] font-semibold">30% off Pro or Premium for life</span> and an exclusive Founders badge.
                   </p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Social Media Section */}
+        <section className="py-16 px-6">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-2xl lg:text-3xl font-semibold text-white mb-4">Follow Our Journey</h2>
+              <p className="text-xl text-gray-300">
+                Get behind-the-scenes updates, feature previews, and connect with the Javlin community
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-2 gap-8">
+              <a 
+                href="https://x.com/JavlinAI" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-white/5 hover:bg-white/10 rounded-2xl p-8 border border-white/10 transition-all duration-200 group"
+              >
+                <div className="flex items-center space-x-4 mb-4">
+                  <div className="w-12 h-12 bg-[#1DA1F2]/20 rounded-xl flex items-center justify-center">
+                    <Twitter className="w-6 h-6 text-[#1DA1F2]" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-white">@JavlinAI</h3>
+                    <p className="text-gray-400">Main Account</p>
+                  </div>
+                </div>
+                <p className="text-gray-300 leading-relaxed">
+                  Product updates, announcements, and community highlights. Follow for major releases and company news.
+                </p>
+              </a>
+              
+              <a 
+                href="https://x.com/JavlinDev" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-white/5 hover:bg-white/10 rounded-2xl p-8 border border-white/10 transition-all duration-200 group"
+              >
+                <div className="flex items-center space-x-4 mb-4">
+                  <div className="w-12 h-12 bg-[#1DA1F2]/20 rounded-xl flex items-center justify-center">
+                    <Twitter className="w-6 h-6 text-[#1DA1F2]" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-white">@JavlinDev</h3>
+                    <p className="text-gray-400">Developer Account</p>
+                  </div>
+                </div>
+                <p className="text-gray-300 leading-relaxed">
+                  Technical deep-dives, development progress, and engineering insights. Perfect for developers and tech enthusiasts.
+                </p>
+              </a>
+            </div>
+            
+            <div className="text-center mt-12">
+              <p className="text-lg text-gray-300 mb-6">
+                Join the conversation and help shape the future of AI-powered development
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a 
+                  href="https://x.com/JavlinAI" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-[#1DA1F2] hover:bg-[#1a91da] text-white font-semibold px-6 py-3 rounded-xl transition-all duration-200 inline-flex items-center justify-center space-x-2"
+                >
+                  <Twitter className="w-5 h-5" />
+                  <span>Follow @JavlinAI</span>
+                </a>
+                <a 
+                  href="https://x.com/JavlinDev" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-white/10 hover:bg-white/15 text-white font-semibold px-6 py-3 rounded-xl border border-white/20 transition-all duration-200 inline-flex items-center justify-center space-x-2"
+                >
+                  <Twitter className="w-5 h-5" />
+                  <span>Follow @JavlinDev</span>
+                </a>
               </div>
             </div>
           </div>

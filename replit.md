@@ -111,6 +111,8 @@ This is a full-stack web application for Javlin.ai's waitlist landing page. The 
   - Added Founders' Special badge offering 30% off for first 1,000 signups
   - Applied generous spacing (py-24/py-32) and privacy-first footer
   - Integrated PostgreSQL database with full CRUD operations for persistent waitlist storage
+  - Added comprehensive problem-solution section highlighting superiority over Bolt, Replit, ChatGPT, Claude
+  - Included social media section with Twitter accounts (@JavlinAI and @JavlinDev) and follow CTAs
 
 ## Changelog
 - June 24, 2025. Initial setup

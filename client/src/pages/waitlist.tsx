@@ -178,70 +178,175 @@ export default function Waitlist() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* MemoryOS */}
-            <div className="text-center">
-              <div className="w-20 h-20 bg-blue-500/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <Brain className="w-10 h-10 text-blue-400" />
-              </div>
-              <h3 className="text-xl font-bold text-white mb-3">MemoryOS</h3>
-              <p className="text-gray-400 text-sm">
-                Active memory brain that learns from your decisions and proactively surfaces relevant context
-              </p>
-            </div>
-
+          <div className="grid lg:grid-cols-2 gap-12 mb-16">
             {/* Creative Mode */}
-            <div className="text-center">
-              <div className="w-20 h-20 bg-pink-500/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <Lightbulb className="w-10 h-10 text-pink-400" />
+            <div className="group bg-gradient-to-br from-pink-500/10 to-purple-500/10 rounded-3xl p-10 border border-pink-500/20 hover:border-pink-500/40 transition-all duration-300 hover:shadow-2xl hover:shadow-pink-500/20">
+              <div className="w-24 h-24 bg-gradient-to-br from-pink-500/20 to-purple-500/20 group-hover:from-pink-500/30 group-hover:to-purple-500/30 rounded-full flex items-center justify-center mb-8 transition-all duration-300 shadow-lg shadow-pink-500/20">
+                <Lightbulb className="w-12 h-12 text-pink-400" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">Creative Mode</h3>
-              <p className="text-gray-400 text-sm">
-                Moodboards, idea capture, and assisted workspace building with memory-powered suggestions
-              </p>
+              <h3 className="text-3xl font-bold text-white mb-6 group-hover:text-pink-400 transition-colors">Creative Mode</h3>
+              
+              <div className="bg-pink-500/5 rounded-2xl p-6 mb-6 border border-pink-500/10">
+                <p className="text-lg text-gray-300 leading-relaxed mb-4">
+                  <strong className="text-pink-400">Real scenario:</strong> You're designing a landing page but can't decide on colors. 
+                  Instead of scrolling through Pinterest for hours, Jav says: "You used this blue-purple gradient in your SaaS project last month—users clicked 40% more. Want to try a variation?"
+                </p>
+                <p className="text-sm text-gray-400">
+                  Jav remembers what worked, what flopped, and why—so you're not starting from scratch every time.
+                </p>
+              </div>
+              
+              <div className="space-y-3">
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-gray-300"><span className="text-white font-medium">Creative block?</span> Jav suggests ideas based on your past breakthroughs</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-gray-300"><span className="text-white font-medium">Design decisions?</span> See what worked in similar projects instantly</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-gray-300"><span className="text-white font-medium">Scattered ideas?</span> Jav connects dots across your creative sessions</p>
+                </div>
+              </div>
             </div>
 
             {/* Dev Mode */}
-            <div className="text-center">
-              <div className="w-20 h-20 bg-blue-500/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <Code className="w-10 h-10 text-blue-400" />
+            <div className="group bg-gradient-to-br from-blue-500/10 to-purple-600/10 rounded-3xl p-10 border border-blue-500/20 hover:border-blue-500/40 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/20">
+              <div className="w-24 h-24 bg-gradient-to-br from-blue-500/20 to-purple-600/20 group-hover:from-blue-500/30 group-hover:to-purple-600/30 rounded-full flex items-center justify-center mb-8 transition-all duration-300 shadow-lg shadow-blue-500/20">
+                <Code className="w-12 h-12 text-blue-400" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">Dev Mode</h3>
-              <p className="text-gray-400 text-sm">
-                Context-aware code help, debugging, warnings, and proactive recall of past solutions
-              </p>
+              <h3 className="text-3xl font-bold text-white mb-6 group-hover:text-blue-400 transition-colors">Dev Mode</h3>
+              
+              <div className="bg-blue-500/5 rounded-2xl p-6 mb-6 border border-blue-500/10">
+                <p className="text-lg text-gray-300 leading-relaxed mb-4">
+                  <strong className="text-blue-400">Real scenario:</strong> You're adding user authentication but forgot how you handled JWT tokens. 
+                  Jav interrupts: "Hold up—last time you used this approach it caused refresh token issues. Here's the pattern that actually worked."
+                </p>
+                <p className="text-sm text-gray-400">
+                  Jav prevents you from repeating the same debugging session you already survived three months ago.
+                </p>
+              </div>
+              
+              <div className="space-y-3">
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-gray-300"><span className="text-white font-medium">Same bug again?</span> Jav warns you before you waste hours debugging</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-gray-300"><span className="text-white font-medium">Architecture decisions?</span> See what scales and what doesn't from your history</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-gray-300"><span className="text-white font-medium">Code amnesia?</span> Jav remembers your clever solutions when you don't</p>
+                </div>
+              </div>
             </div>
+          </div>
 
-            {/* Assistant */}
-            <div className="text-center">
+          {/* Assistant & MemoryOS Overview */}
+          <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 rounded-3xl p-10 border border-purple-500/20 mb-12">
+            <div className="text-center mb-8">
               <div className="w-20 h-20 bg-purple-500/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <MessageCircle className="w-10 h-10 text-purple-400" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">Jav Assistant</h3>
-              <p className="text-gray-400 text-sm">
-                Chat, context Q&A, and memory-powered suggestions that adapt to your working style
+              <h3 className="text-3xl font-bold text-white mb-4">Jav: Your Memory Powered Assistant</h3>
+              <p className="text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
+                Meet Jav, your AI co-founder that adapts its tone and intervention level to your needs. Get strategic guidance, 
+                accountability, and context-aware assistance that evolves with your working style.
               </p>
             </div>
+
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-white/5 rounded-2xl p-6 border border-white/10">
+                <h4 className="text-xl font-bold text-white mb-4">Seamless Mode Switching</h4>
+                <p className="text-gray-300 leading-relaxed">
+                  Switch between Creative and Dev modes without losing context. Your design decisions inform your code architecture, 
+                  and technical constraints shape your creative choices—all preserved in MemoryOS.
+                </p>
+              </div>
+              <div className="bg-white/5 rounded-2xl p-6 border border-white/10">
+                <h4 className="text-xl font-bold text-white mb-4">Adaptive Intervention</h4>
+                <p className="text-gray-300 leading-relaxed">
+                  Jav learns when you want deep focus and when you need guidance. It might stay quiet during flow states, 
+                  then proactively surface warnings when you're about to repeat a costly mistake.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* MemoryOS Technical Detail */}
+          <div className="text-center">
+            <div className="w-20 h-20 bg-blue-500/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
+              <Brain className="w-10 h-10 text-blue-400" />
+            </div>
+            <h3 className="text-2xl font-bold text-white mb-4">Powered by MemoryOS</h3>
+            <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
+              The active memory brain that learns from your decisions, code, and creative choices. 
+              It doesn't just store—it connects patterns, warns about pitfalls, and surfaces solutions 
+              when you need them most.
+            </p>
           </div>
         </div>
       </section>
 
       {/* Magic Moment */}
       <section className="py-20 px-6">
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-3xl p-12 border border-blue-500/20 text-center">
-            <div className="mb-8">
+        <div className="max-w-5xl mx-auto">
+          <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-3xl p-12 border border-blue-500/20">
+            <div className="text-center mb-12">
               <Star className="w-12 h-12 text-yellow-400 mx-auto mb-4" />
-              <h3 className="text-3xl font-bold text-white mb-6">Magic Moment</h3>
+              <h3 className="text-3xl font-bold text-white mb-6">When Memory Becomes Wisdom</h3>
             </div>
             
-            <blockquote className="text-2xl text-gray-300 leading-relaxed italic mb-8">
-              "Javlin surfaced my OAuth bug fix from months ago—saved my launch."
-            </blockquote>
-            
-            <p className="text-lg text-gray-400">
-              This is what proactive memory looks like in action
-            </p>
+            <div className="max-w-4xl mx-auto">
+              <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-2xl p-8 border border-blue-500/20 mb-8">
+                <div className="space-y-6">
+                  <p className="text-xl text-gray-300 leading-relaxed italic">
+                    "Six months ago, I was burned out, switching between 12 browser tabs, losing my creative flow every time I had to code. I was building my third startup attempt, convinced this was my last shot."
+                  </p>
+                  
+                  <p className="text-xl text-gray-300 leading-relaxed italic">
+                    "Today, I opened Javlin and it gently reminded me: 'Remember when you felt overwhelmed in Project Phoenix? You took that 2-day creative retreat and came back with the breakthrough insight. Your current stress pattern matches that moment—maybe it's time for another reset?'"
+                  </p>
+                  
+                  <p className="text-xl text-gray-300 leading-relaxed italic">
+                    "It wasn't just remembering code. It remembered my journey, my emotions, the moments when I almost quit, and the breakthroughs that kept me going. It remembered me."
+                  </p>
+                </div>
+              </div>
+              
+              <div className="text-center mb-8">
+                <p className="text-lg text-gray-400">This is an AI co-founder that understands the human side of building</p>
+              </div>
+              
+              {/* Memory Categories */}
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="bg-white/5 rounded-xl p-6 border border-white/10 text-center">
+                  <div className="w-12 h-12 bg-pink-500/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <Lightbulb className="w-6 h-6 text-pink-400" />
+                  </div>
+                  <h4 className="text-white font-semibold mb-2">Creative Patterns</h4>
+                  <p className="text-gray-400 text-sm">Remembers when your best ideas come, your preferred creative environments, and breakthrough moments</p>
+                </div>
+                <div className="bg-white/5 rounded-xl p-6 border border-white/10 text-center">
+                  <div className="w-12 h-12 bg-red-400/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <Shield className="w-6 h-6 text-red-400" />
+                  </div>
+                  <h4 className="text-white font-semibold mb-2">Emotional Journey</h4>
+                  <p className="text-gray-400 text-sm">Tracks stress patterns, burnout signals, and the decisions that led to your biggest regrets or victories</p>
+                </div>
+                <div className="bg-white/5 rounded-xl p-6 border border-white/10 text-center">
+                  <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <Brain className="w-6 h-6 text-blue-400" />
+                  </div>
+                  <h4 className="text-white font-semibold mb-2">Life Lessons</h4>
+                  <p className="text-gray-400 text-sm">Captures hard-won wisdom about team dynamics, product decisions, and personal growth through building</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -317,12 +422,12 @@ export default function Waitlist() {
                     render={({ field }) => (
                       <FormItem>
                         <FormLabel className="text-white text-lg font-medium">
-                          What would you want your AI cofounder to remember for you?
+                          What patterns, lessons, or moments would you want your AI co-founder to remember?
                           <span className="text-gray-400 font-normal ml-2">(optional)</span>
                         </FormLabel>
                         <FormControl>
                           <Textarea
-                            placeholder="e.g., My past solutions, mistakes to avoid, creative patterns, successful strategies..."
+                            placeholder="e.g., When I'm most creative, my burnout warning signs, breakthrough moments, team dynamics that worked, hard-learned lessons from failures..."
                             className="bg-white/10 border-white/20 hover:border-white/30 text-white placeholder:text-gray-400 rounded-2xl px-6 py-4 text-lg min-h-[120px] resize-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-300"
                             {...field}
                           />
@@ -369,14 +474,81 @@ export default function Waitlist() {
         </div>
       </section>
 
-      {/* Comparison */}
+      {/* Why Builders Choose Jav */}
       <section className="py-20 px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-white mb-8">Why not Notion/Mastra/NotebookLM?</h2>
-          <p className="text-xl text-gray-300 leading-relaxed">
-            Most competitors offer "AI storage/search"—Javlin offers <span className="text-blue-400 font-semibold">proactive recall</span> with 
-            <span className="text-purple-400 font-semibold"> real user control</span> across all your projects.
-          </p>
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">Why Builders Choose Jav</h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+              Real problems solved by memory that actually works.
+            </p>
+          </div>
+
+          <div className="space-y-12 mb-16">
+            {/* Pain Point 1 */}
+            <div className="bg-white/5 rounded-2xl p-8 border border-white/10">
+              <div className="grid lg:grid-cols-2 gap-8 items-center">
+                <div>
+                  <h3 className="text-2xl font-bold text-white mb-4">Stop Solving the Same Problem Twice</h3>
+                  <p className="text-gray-300 leading-relaxed mb-4">
+                    You've built user authentication 5 times, but you can't remember which approach actually worked. 
+                    Jav does—and warns you about the JWT refresh token bug before you hit it again.
+                  </p>
+                  <div className="flex items-center space-x-2 text-blue-400">
+                    <Shield className="w-5 h-5" />
+                    <span className="font-medium">Cross-project pattern recognition</span>
+                  </div>
+                </div>
+                <div className="bg-blue-500/10 rounded-xl p-6 border border-blue-500/20">
+                  <div className="text-sm text-gray-400 mb-2">Jav remembers:</div>
+                  <ul className="space-y-2 text-sm text-gray-300">
+                    <li>• Which OAuth flow actually worked</li>
+                    <li>• Database migrations that broke production</li>
+                    <li>• API rate limits that caused issues</li>
+                    <li>• CSS tricks that saved you hours</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Pain Point 2 */}
+            <div className="bg-white/5 rounded-2xl p-8 border border-white/10">
+              <div className="grid lg:grid-cols-2 gap-8 items-center">
+                <div className="order-2 lg:order-1">
+                  <div className="bg-pink-500/10 rounded-xl p-6 border border-pink-500/20">
+                    <div className="text-sm text-gray-400 mb-2">Jav suggests:</div>
+                    <ul className="space-y-2 text-sm text-gray-300">
+                      <li>• Color palettes that converted well</li>
+                      <li>• Copy that resonated with your audience</li>
+                      <li>• Layouts that users actually clicked</li>
+                      <li>• Ideas from your best creative sessions</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="order-1 lg:order-2">
+                  <h3 className="text-2xl font-bold text-white mb-4">Creative Block? Not Anymore.</h3>
+                  <p className="text-gray-300 leading-relaxed mb-4">
+                    Staring at a blank canvas while your best ideas are buried in old Figma files? 
+                    Jav surfaces your creative patterns and successful approaches when inspiration strikes.
+                  </p>
+                  <div className="flex items-center space-x-2 text-pink-400">
+                    <Lightbulb className="w-5 h-5" />
+                    <span className="font-medium">Pattern-driven creativity</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Comparison */}
+          <div className="text-center">
+            <h3 className="text-2xl font-bold text-white mb-6">Why not Notion/Mastra/NotebookLM?</h3>
+            <p className="text-lg text-gray-300 leading-relaxed max-w-3xl mx-auto">
+              Most competitors offer "AI storage/search"—Javlin offers <span className="text-blue-400 font-semibold">proactive recall</span> with 
+              <span className="text-purple-400 font-semibold"> real user control</span> across all your projects. 
+              No more digging through notes—your AI co-founder brings solutions to you.
+            </p>
+          </div>
         </div>
       </section>
 

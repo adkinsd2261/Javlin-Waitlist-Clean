@@ -475,18 +475,52 @@ export default function Waitlist() {
                   <Sparkles className="w-4 h-4 text-yellow-400 mr-2" />
                   <span className="text-sm font-medium text-yellow-400">Magic Moment</span>
                 </div>
-                <h3 className="text-2xl lg:text-3xl font-bold text-white mb-4">The "I Forgot I Even Solved That!" Experience</h3>
+                <h3 className="text-2xl lg:text-3xl font-bold text-white mb-4">When Memory Becomes Wisdom</h3>
               </div>
               
-              <div className="max-w-4xl mx-auto">
-                <div className="bg-gradient-to-r from-[#5151FF]/10 to-[#6a5cff]/10 rounded-2xl p-6 lg:p-8 border border-[#5151FF]/20">
-                  <p className="text-lg text-gray-300 leading-relaxed italic">
-                    "You're building Project Beta, hit an OAuth bug, and suddenly Javlin surfaces: 'Remember how you solved token expiry in Project Alpha? Here's what worked last time.' 
-                    You review, update, and apply the solution—saving hours of debugging you'd already done months ago."
-                  </p>
+              <div className="max-w-5xl mx-auto">
+                <div className="bg-gradient-to-r from-[#5151FF]/10 to-[#6a5cff]/10 rounded-2xl p-8 lg:p-10 border border-[#5151FF]/20">
+                  <div className="space-y-6">
+                    <p className="text-xl text-gray-300 leading-relaxed italic">
+                      "Six months ago, I was burned out, switching between 12 browser tabs, losing my creative flow every time I had to code. I was building my third startup attempt, convinced this was my last shot."
+                    </p>
+                    
+                    <p className="text-xl text-gray-300 leading-relaxed italic">
+                      "Today, I opened Javlin and it gently reminded me: 'Remember when you felt overwhelmed in Project Phoenix? You took that 2-day creative retreat and came back with the breakthrough insight. Your current stress pattern matches that moment—maybe it's time for another reset?'"
+                    </p>
+                    
+                    <p className="text-xl text-gray-300 leading-relaxed italic">
+                      "It wasn't just remembering code. It remembered my journey, my emotions, the moments when I almost quit, and the breakthroughs that kept me going. It remembered me."
+                    </p>
+                  </div>
                 </div>
                 <div className="text-center mt-8">
                   <p className="text-lg text-gray-400">This is an AI co-founder that understands the human side of building</p>
+                </div>
+                
+                {/* Memory Timeline */}
+                <div className="mt-12 grid md:grid-cols-3 gap-6">
+                  <div className="bg-white/5 rounded-xl p-6 border border-white/10 text-center">
+                    <div className="w-12 h-12 bg-pink-500/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+                      <Lightbulb className="w-6 h-6 text-pink-400" />
+                    </div>
+                    <h4 className="text-white font-semibold mb-2">Creative Patterns</h4>
+                    <p className="text-gray-400 text-sm">Remembers when your best ideas come, your preferred creative environments, and breakthrough moments</p>
+                  </div>
+                  <div className="bg-white/5 rounded-xl p-6 border border-white/10 text-center">
+                    <div className="w-12 h-12 bg-red-400/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+                      <Shield className="w-6 h-6 text-red-400" />
+                    </div>
+                    <h4 className="text-white font-semibold mb-2">Emotional Journey</h4>
+                    <p className="text-gray-400 text-sm">Tracks stress patterns, burnout signals, and the decisions that led to your biggest regrets or victories</p>
+                  </div>
+                  <div className="bg-white/5 rounded-xl p-6 border border-white/10 text-center">
+                    <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+                      <Brain className="w-6 h-6 text-blue-400" />
+                    </div>
+                    <h4 className="text-white font-semibold mb-2">Life Lessons</h4>
+                    <p className="text-gray-400 text-sm">Captures hard-won wisdom about team dynamics, product decisions, and personal growth through building</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -583,12 +617,12 @@ export default function Waitlist() {
                         render={({ field }) => (
                           <FormItem className="space-y-4">
                             <FormLabel className="text-white font-semibold text-lg">
-                              What would you want your AI cofounder to remember for you?
+                              What patterns, lessons, or moments would you want your AI co-founder to remember?
                               <span className="text-gray-400 font-normal ml-2">(optional)</span>
                             </FormLabel>
                             <FormControl>
                               <Textarea
-                                placeholder="e.g., My coding patterns, past project mistakes, successful strategies, team preferences..."
+                                placeholder="e.g., When I'm most creative, my burnout warning signs, breakthrough moments, team dynamics that worked, hard-learned lessons from failures..."
                                 className="bg-white/10 border-white/20 hover:border-white/30 text-white placeholder:text-gray-400 rounded-2xl px-6 py-5 text-lg min-h-[140px] resize-none focus:ring-2 focus:ring-[#5151FF] focus:border-[#5151FF] focus:bg-white/15 transition-all duration-300 backdrop-blur-sm"
                                 {...field}
                               />

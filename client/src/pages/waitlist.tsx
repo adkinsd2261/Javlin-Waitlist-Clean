@@ -109,8 +109,8 @@ export default function Waitlist() {
             </h1>
             
             <p className="text-2xl lg:text-3xl text-gray-300 max-w-5xl mx-auto font-light leading-relaxed">
-              The first AI co-founder that remembers your best solutions, warns you about past mistakes, 
-              and grows smarter with every project — so you never repeat yourself again.
+              An AI co-founder designed for deep work and creative flow. Seamlessly switch between Creative Mode and Dev Mode 
+              while your Memory Engine remembers everything — eliminating context loss and mental overhead forever.
             </p>
             
             <div className="pt-8 flex justify-center">
@@ -294,90 +294,146 @@ export default function Waitlist() {
               <div className="inline-flex items-center bg-[#5151FF]/10 border border-[#5151FF]/20 rounded-full px-4 py-2 backdrop-blur-sm mb-6">
                 <span className="text-sm font-medium text-[#5151FF]">Memory Engine Powered</span>
               </div>
-              <h2 className="text-4xl lg:text-5xl font-bold text-white mb-8">3 Memory-Engine Backed Tools</h2>
+              <h2 className="text-4xl lg:text-5xl font-bold text-white mb-8">The Javlin Assistant: Built for Flow States</h2>
               <p className="text-2xl text-gray-300 max-w-5xl mx-auto leading-relaxed font-light">
-                Experience no-code building like never before with the full power of AI and zero context loss. 
-                Each tool remembers everything, learns from your patterns, and evolves with every project.
+                Our core SaaS platform eliminates distractions and reduces cognitive load. Switch seamlessly between Creative Mode and Dev Mode 
+                while maintaining perfect context — designed specifically for deep work and creative flow.
               </p>
             </div>
 
-            {/* Three Core Tools */}
-            <div className="grid lg:grid-cols-3 gap-8 mb-20">
-              {/* Jav Studio */}
-              <div className="group bg-gradient-to-br from-[#5151FF]/10 to-[#6a5cff]/10 rounded-3xl p-8 border border-[#5151FF]/20 hover:border-[#5151FF]/40 transition-all duration-300 hover:shadow-2xl hover:shadow-[#5151FF]/20 hover:scale-[1.02] transform">
-                <div className="w-20 h-20 bg-[#5151FF]/20 group-hover:bg-[#5151FF]/30 rounded-2xl flex items-center justify-center mb-6 transition-all duration-300">
-                  <Code className="w-10 h-10 text-[#5151FF]" />
-                </div>
-                <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-[#5151FF] transition-colors">Jav Studio</h3>
-                <p className="text-gray-300 leading-relaxed mb-6">
-                  The integrated development environment where code, docs, and planning unite in one place. 
-                  Every line of code, every decision, every breakthrough is remembered and connected.
-                </p>
-                <div className="space-y-3 text-sm text-gray-400">
-                  <div className="flex items-center space-x-2">
-                    <div className="w-1.5 h-1.5 bg-[#5151FF] rounded-full"></div>
-                    <span>Context-aware code generation and debugging</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <div className="w-1.5 h-1.5 bg-[#5151FF] rounded-full"></div>
-                    <span>Proactive warnings based on past failures</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <div className="w-1.5 h-1.5 bg-[#5151FF] rounded-full"></div>
-                    <span>Seamless creative-to-development workflow</span>
-                  </div>
-                </div>
-              </div>
-
+            {/* Core SaaS Platform */}
+            <div className="grid lg:grid-cols-2 gap-12 mb-20">
               {/* Creative Mode */}
-              <div className="group bg-gradient-to-br from-green-500/10 to-emerald-500/10 rounded-3xl p-8 border border-green-500/20 hover:border-green-500/40 transition-all duration-300 hover:shadow-2xl hover:shadow-green-500/20 hover:scale-[1.02] transform">
-                <div className="w-20 h-20 bg-green-500/20 group-hover:bg-green-500/30 rounded-2xl flex items-center justify-center mb-6 transition-all duration-300">
-                  <Lightbulb className="w-10 h-10 text-green-400" />
+              <div className="group bg-gradient-to-br from-green-500/10 to-emerald-500/10 rounded-3xl p-10 border border-green-500/20 hover:border-green-500/40 transition-all duration-300 hover:shadow-2xl hover:shadow-green-500/20 hover:scale-[1.02] transform">
+                <div className="w-24 h-24 bg-green-500/20 group-hover:bg-green-500/30 rounded-3xl flex items-center justify-center mb-8 transition-all duration-300">
+                  <Lightbulb className="w-12 h-12 text-green-400" />
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-green-400 transition-colors">Creative Mode</h3>
-                <p className="text-gray-300 leading-relaxed mb-6">
-                  Transform ideas into structured projects with AI that remembers your creative patterns, design preferences, 
-                  and successful approaches from past projects.
+                <h3 className="text-3xl font-bold text-white mb-6 group-hover:text-green-400 transition-colors">Creative Mode</h3>
+                <p className="text-xl text-gray-300 leading-relaxed mb-8">
+                  Designed for deep creative work. Capture ideas, build moodboards, and plan projects without context switching. 
+                  Your Memory Engine tracks creative patterns and suggests design directions based on your past successes.
                 </p>
-                <div className="space-y-3 text-sm text-gray-400">
-                  <div className="flex items-center space-x-2">
-                    <div className="w-1.5 h-1.5 bg-green-400 rounded-full"></div>
-                    <span>Intelligent moodboard and idea capture</span>
+                
+                <div className="space-y-4 mb-8">
+                  <div className="flex items-start space-x-3">
+                    <div className="w-6 h-6 bg-green-400/20 rounded-lg flex items-center justify-center mt-1 flex-shrink-0">
+                      <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                    </div>
+                    <div>
+                      <h4 className="text-white font-semibold mb-1">Flow State Optimization</h4>
+                      <p className="text-gray-400 text-sm">Eliminate distractions with distraction-free interface and deep work timers</p>
+                    </div>
                   </div>
-                  <div className="flex items-center space-x-2">
-                    <div className="w-1.5 h-1.5 bg-green-400 rounded-full"></div>
-                    <span>Memory-powered design suggestions</span>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-6 h-6 bg-green-400/20 rounded-lg flex items-center justify-center mt-1 flex-shrink-0">
+                      <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                    </div>
+                    <div>
+                      <h4 className="text-white font-semibold mb-1">Intelligent Ideation</h4>
+                      <p className="text-gray-400 text-sm">Memory-powered suggestions based on your creative patterns and preferences</p>
+                    </div>
                   </div>
-                  <div className="flex items-center space-x-2">
-                    <div className="w-1.5 h-1.5 bg-green-400 rounded-full"></div>
-                    <span>Assisted workspace building and planning</span>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-6 h-6 bg-green-400/20 rounded-lg flex items-center justify-center mt-1 flex-shrink-0">
+                      <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                    </div>
+                    <div>
+                      <h4 className="text-white font-semibold mb-1">Seamless Transition</h4>
+                      <p className="text-gray-400 text-sm">Switch to Dev Mode instantly while preserving all creative context</p>
+                    </div>
                   </div>
+                </div>
+
+                <div className="bg-green-500/10 rounded-2xl p-6 border border-green-500/20">
+                  <p className="text-green-300 font-medium italic">
+                    "Finally, a creative environment that remembers my design decisions and helps me stay in flow."
+                  </p>
                 </div>
               </div>
 
-              {/* JavChat */}
-              <div className="group bg-gradient-to-br from-purple-500/10 to-pink-500/10 rounded-3xl p-8 border border-purple-500/20 hover:border-purple-500/40 transition-all duration-300 hover:shadow-2xl hover:shadow-purple-500/20 hover:scale-[1.02] transform">
-                <div className="w-20 h-20 bg-purple-500/20 group-hover:bg-purple-500/30 rounded-2xl flex items-center justify-center mb-6 transition-all duration-300">
+              {/* Dev Mode */}
+              <div className="group bg-gradient-to-br from-[#5151FF]/10 to-[#6a5cff]/10 rounded-3xl p-10 border border-[#5151FF]/20 hover:border-[#5151FF]/40 transition-all duration-300 hover:shadow-2xl hover:shadow-[#5151FF]/20 hover:scale-[1.02] transform">
+                <div className="w-24 h-24 bg-[#5151FF]/20 group-hover:bg-[#5151FF]/30 rounded-3xl flex items-center justify-center mb-8 transition-all duration-300">
+                  <Code className="w-12 h-12 text-[#5151FF]" />
+                </div>
+                <h3 className="text-3xl font-bold text-white mb-6 group-hover:text-[#5151FF] transition-colors">Dev Mode</h3>
+                <p className="text-xl text-gray-300 leading-relaxed mb-8">
+                  AI-supercharged development that maintains creative context. Code with confidence knowing your Memory Engine 
+                  prevents repeated mistakes and surfaces relevant solutions from your project history.
+                </p>
+                
+                <div className="space-y-4 mb-8">
+                  <div className="flex items-start space-x-3">
+                    <div className="w-6 h-6 bg-[#5151FF]/20 rounded-lg flex items-center justify-center mt-1 flex-shrink-0">
+                      <div className="w-2 h-2 bg-[#5151FF] rounded-full"></div>
+                    </div>
+                    <div>
+                      <h4 className="text-white font-semibold mb-1">Context-Aware Coding</h4>
+                      <p className="text-gray-400 text-sm">Code generation and debugging that understands your creative vision</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-6 h-6 bg-[#5151FF]/20 rounded-lg flex items-center justify-center mt-1 flex-shrink-0">
+                      <div className="w-2 h-2 bg-[#5151FF] rounded-full"></div>
+                    </div>
+                    <div>
+                      <h4 className="text-white font-semibold mb-1">Proactive Warnings</h4>
+                      <p className="text-gray-400 text-sm">Prevent repeated mistakes with real-time alerts based on past failures</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-6 h-6 bg-[#5151FF]/20 rounded-lg flex items-center justify-center mt-1 flex-shrink-0">
+                      <div className="w-2 h-2 bg-[#5151FF] rounded-full"></div>
+                    </div>
+                    <div>
+                      <h4 className="text-white font-semibold mb-1">Cognitive Load Reduction</h4>
+                      <p className="text-gray-400 text-sm">Focus on building while Memory Engine handles the mental overhead</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-[#5151FF]/10 rounded-2xl p-6 border border-[#5151FF]/20">
+                  <p className="text-[#5151FF] font-medium italic">
+                    "Development without the mental fatigue. It's like having a co-founder who never forgets."
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Javlin Assistant Overview */}
+            <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 rounded-3xl p-12 border border-purple-500/20 mb-20">
+              <div className="text-center mb-12">
+                <div className="w-20 h-20 bg-purple-500/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
                   <MessageCircle className="w-10 h-10 text-purple-400" />
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-purple-400 transition-colors">JavChat</h3>
-                <p className="text-gray-300 leading-relaxed mb-6">
-                  AI-powered journaling and decision tracking that connects every choice to your project history. 
-                  Review patterns, document lessons, and build your personal playbook.
+                <h3 className="text-3xl font-bold text-white mb-4">The Javlin Assistant</h3>
+                <p className="text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
+                  Your AI co-founder that adapts its tone and intervention level to your needs. Get strategic guidance, 
+                  accountability, and context-aware assistance that evolves with your working style.
                 </p>
-                <div className="space-y-3 text-sm text-gray-400">
-                  <div className="flex items-center space-x-2">
-                    <div className="w-1.5 h-1.5 bg-purple-400 rounded-full"></div>
-                    <span>Context-linked decision logs and insights</span>
+              </div>
+
+              <div className="grid md:grid-cols-3 gap-8">
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-purple-400/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <Brain className="w-6 h-6 text-purple-400" />
                   </div>
-                  <div className="flex items-center space-x-2">
-                    <div className="w-1.5 h-1.5 bg-purple-400 rounded-full"></div>
-                    <span>Memory review and curation tools</span>
+                  <h4 className="text-lg font-semibold text-white mb-2">Adaptive Persona</h4>
+                  <p className="text-gray-400 text-sm">Changes communication style based on your project mode and preferences</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-purple-400/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <Users className="w-6 h-6 text-purple-400" />
                   </div>
-                  <div className="flex items-center space-x-2">
-                    <div className="w-1.5 h-1.5 bg-purple-400 rounded-full"></div>
-                    <span>Automated personal playbook generation</span>
+                  <h4 className="text-lg font-semibold text-white mb-2">Strategic Partnership</h4>
+                  <p className="text-gray-400 text-sm">Guidance and accountability, not just task execution</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-purple-400/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <Zap className="w-6 h-6 text-purple-400" />
                   </div>
+                  <h4 className="text-lg font-semibold text-white mb-2">Flow Preservation</h4>
+                  <p className="text-gray-400 text-sm">Intervenes only when helpful, maintaining your creative momentum</p>
                 </div>
               </div>
             </div>
@@ -389,24 +445,24 @@ export default function Waitlist() {
                 <div className="w-24 h-24 bg-[#5151FF]/20 rounded-full flex items-center justify-center mx-auto mb-8">
                   <Brain className="w-12 h-12 text-[#5151FF]" />
                 </div>
-                <h3 className="text-3xl lg:text-4xl font-bold text-white mb-6">Powered by Javlin's Memory Engine</h3>
+                <h3 className="text-3xl lg:text-4xl font-bold text-white mb-6">Deep Work & Flow State Technology</h3>
                 <p className="text-xl text-gray-300 leading-relaxed max-w-4xl mx-auto mb-8">
-                  Every tool is backed by Javlin's proprietary Memory Engine that captures, learns, and recalls context 
-                  across all your projects. Experience true AI assistance that gets smarter with every interaction.
+                  Javlin's Memory Engine eliminates context switching and reduces cognitive load, enabling sustained focus 
+                  and creative flow states. Every interaction strengthens your personal knowledge base.
                 </p>
                 
                 <div className="grid md:grid-cols-3 gap-8 mt-12">
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-[#5151FF] mb-2">Proactive Recall</div>
-                    <p className="text-gray-400">"Remember when you solved this in Project Alpha?"</p>
+                    <div className="text-3xl font-bold text-[#5151FF] mb-2">Distraction-Free</div>
+                    <p className="text-gray-400">Minimize cognitive load for sustained deep work</p>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-[#5151FF] mb-2">Smart Warnings</div>
-                    <p className="text-gray-400">"Careful, this schema failed at scale before"</p>
+                    <div className="text-3xl font-bold text-[#5151FF] mb-2">Flow Timers</div>
+                    <p className="text-gray-400">Built-in tools to maintain creative momentum</p>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-[#5151FF] mb-2">Zero Context Loss</div>
-                    <p className="text-gray-400">Never repeat the same mistake twice</p>
+                    <div className="text-3xl font-bold text-[#5151FF] mb-2">Context Continuity</div>
+                    <p className="text-gray-400">Seamless transitions between creative and development work</p>
                   </div>
                 </div>
               </div>
@@ -430,7 +486,7 @@ export default function Waitlist() {
                   </p>
                 </div>
                 <div className="text-center mt-6">
-                  <p className="text-gray-400">This is the power of true memory-driven AI assistance</p>
+                  <p className="text-gray-400">This is deep work without the mental overhead</p>
                 </div>
               </div>
             </div>
@@ -441,7 +497,7 @@ export default function Waitlist() {
                 onClick={() => document.getElementById('waitlist-form')?.scrollIntoView({ behavior: 'smooth' })}
                 className="bg-gradient-to-r from-[#5151FF] to-[#6a5cff] hover:from-[#4141EF] hover:to-[#5a4cef] text-white font-bold text-xl px-12 py-6 rounded-2xl shadow-2xl shadow-[#5151FF]/30 transition-all duration-300 transform hover:scale-[1.02]"
               >
-                Experience the Future of AI Building
+                Experience Deep Work Without Limits
                 <span className="ml-2">→</span>
               </Button>
             </div>

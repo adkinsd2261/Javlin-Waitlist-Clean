@@ -108,7 +108,7 @@ export default function Waitlist() {
             <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">Meet Jav: Your AI Co-founder</h2>
             <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
               Unlike traditional AI tools that lose context and make you repeat yourself, Jav remembers everything. 
-              It's designed for the complete builder journey—from creative ideation to shipping code.
+              Powered by Memory Engine, it's designed for the complete builder journey—from creative ideation to shipping code.
             </p>
           </div>
 
@@ -310,7 +310,7 @@ export default function Waitlist() {
                     </div>
                     <div>
                       <h5 className="text-white font-semibold mb-2">Memory-Powered Suggestions</h5>
-                      <p className="text-gray-300 text-sm">Proactive suggestions based on your project history and MemoryOS intelligence</p>
+                      <p className="text-gray-300 text-sm">Proactive suggestions based on your project history and Memory Engine intelligence</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
@@ -391,7 +391,7 @@ export default function Waitlist() {
                   </div>
                   <p className="text-gray-300 leading-relaxed mb-4">
                     Start a new project and Jav immediately begins learning. Every decision, every line of code, 
-                    every creative choice gets captured in your personal MemoryOS.
+                    every creative choice gets captured in your personal Memory Engine.
                   </p>
                   <p className="text-sm text-gray-400">
                     "Building my portfolio site - want to try that card hover effect from my last project"
@@ -505,11 +505,11 @@ export default function Waitlist() {
                   </p>
                   
                   <p className="text-xl text-gray-300 leading-relaxed italic">
-                    "Today, I opened Javlin and it gently reminded me: 'Remember when you felt overwhelmed in Project Phoenix? You took that 2-day creative retreat and came back with the breakthrough insight. Your current stress pattern matches that moment—maybe it's time for another reset?'"
+                    "Today, I opened Javlin and Memory Engine gently reminded me: 'Remember when you felt overwhelmed in Project Phoenix? You took that 2-day creative retreat and came back with the breakthrough insight. Your current stress pattern matches that moment—maybe it's time for another reset?'"
                   </p>
                   
                   <p className="text-xl text-gray-300 leading-relaxed italic">
-                    "It wasn't just remembering code. It remembered my journey, my emotions, the moments when I almost quit, and the breakthroughs that kept me going. It remembered me."
+                    "It wasn't just remembering code. Memory Engine remembered my journey, my emotions, the moments when I almost quit, and the breakthroughs that kept me going. It remembered me."
                   </p>
                 </div>
               </div>

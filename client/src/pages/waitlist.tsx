@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useMutation } from "@tanstack/react-query";
 import { z } from "zod";
-import { Brain, Shield, Link, Users, CheckCircle, Crown, Lock, Sparkles, Lightbulb, Code, MessageCircle, Database, Zap, User, Twitter, ChevronDown, ChevronUp, Key, DollarSign, Settings, Star, Download } from "lucide-react";
+import { Brain, Shield, Link, Users, CheckCircle, Crown, Lock, Sparkles, Lightbulb, Code, MessageCircle, Database, Zap, User, Twitter, Key, DollarSign, Settings, Star, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -23,19 +23,7 @@ type WaitlistFormData = z.infer<typeof waitlistSchema>;
 
 export default function Waitlist() {
   const [isSuccess, setIsSuccess] = useState(false);
-  const [expandedSections, setExpandedSections] = useState<{ [key: string]: boolean }>({
-    features: false,
-    platform: false,
-    api: false
-  });
   const { toast } = useToast();
-
-  const toggleSection = (section: string) => {
-    setExpandedSections(prev => ({
-      ...prev,
-      [section]: !prev[section]
-    }));
-  };
 
   const form = useForm<WaitlistFormData>({
     resolver: zodResolver(waitlistSchema),
@@ -223,237 +211,77 @@ export default function Waitlist() {
           </div>
         </section>
 
-        {/* Core Capabilities Section */}
+        {/* Streamlined Features Section */}
         <section className="py-16 px-6">
-          <div className="max-w-6xl mx-auto space-y-4">
-            {/* Features Overview */}
-            <div 
-              className="bg-white/5 rounded-3xl p-8 border border-white/10 cursor-pointer hover:bg-white/10 transition-all duration-300 hover:shadow-lg hover:shadow-[#5151FF]/10 hover:scale-[1.02] transform"
-              onClick={() => toggleSection('features')}
-            >
-              <div className="flex items-center justify-between">
-                <div>
-                  <h2 className="text-2xl lg:text-3xl font-bold text-white mb-2">Core Platform Features</h2>
-                  <p className="text-lg text-gray-300">
-                    Explore the complete AI co-founder platform that learns and evolves with you
-                  </p>
-                </div>
-                <div className="w-12 h-12 bg-[#5151FF]/20 rounded-xl flex items-center justify-center">
-                  {expandedSections.features ? <ChevronUp className="w-6 h-6 text-white" /> : <ChevronDown className="w-6 h-6 text-white" />}
-                </div>
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center bg-[#5151FF]/10 border border-[#5151FF]/20 rounded-full px-4 py-2 backdrop-blur-sm mb-6">
+                <span className="text-sm font-medium text-[#5151FF]">Core Features</span>
               </div>
-              
-              {expandedSections.features && (
-                <div className="mt-8 space-y-8 animate-in slide-in-from-top-5 duration-300">
-                  {/* Primary Features Grid */}
-                  <div className="grid lg:grid-cols-2 gap-8">
-                    <div className="bg-gradient-to-br from-[#5151FF]/10 to-[#6a5cff]/10 rounded-2xl p-6 border border-[#5151FF]/20">
-                      <div className="flex items-start space-x-4">
-                        <div className="w-16 h-16 bg-[#5151FF]/20 rounded-xl flex items-center justify-center flex-shrink-0">
-                          <Brain className="w-8 h-8 text-white" />
-                        </div>
-                        <div className="space-y-3">
-                          <h3 className="text-xl font-bold text-white">MemoryOS: Your Intelligent Brain</h3>
-                          <p className="text-gray-300 leading-relaxed">
-                            Active memory that learns from your decisions, code, and workflows, then proactively surfaces relevant context when you need it most.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="bg-white/5 rounded-2xl p-6 border border-white/10">
-                      <div className="flex items-start space-x-4">
-                        <div className="w-16 h-16 bg-white/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                          <Users className="w-8 h-8 text-white" />
-                        </div>
-                        <div className="space-y-3">
-                          <h3 className="text-xl font-bold text-white">Jav Assistant: Your AI Co-founder</h3>
-                          <p className="text-gray-300 leading-relaxed">
-                            More than a chatbot—provides guidance, accountability, and evolves with your working style.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Development Environment */}
-                  <div className="grid md:grid-cols-3 gap-6">
-                    <div className="bg-white/5 rounded-xl p-6 border border-white/10">
-                      <div className="w-10 h-10 bg-green-500/20 rounded-lg flex items-center justify-center mb-4">
-                        <Lightbulb className="w-5 h-5 text-green-400" />
-                      </div>
-                      <h4 className="text-lg font-semibold text-white mb-2">Creative Mode</h4>
-                      <p className="text-gray-300 text-sm">Capture ideas, build moodboards, seamless creative-to-dev workflow</p>
-                    </div>
-
-                    <div className="bg-white/5 rounded-xl p-6 border border-white/10">
-                      <div className="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center mb-4">
-                        <Code className="w-5 h-5 text-blue-400" />
-                      </div>
-                      <h4 className="text-lg font-semibold text-white mb-2">Dev Mode</h4>
-                      <p className="text-gray-300 text-sm">AI-supercharged development with context-aware code help and debugging</p>
-                    </div>
-
-                    <div className="bg-white/5 rounded-xl p-6 border border-white/10">
-                      <div className="w-10 h-10 bg-purple-500/20 rounded-lg flex items-center justify-center mb-4">
-                        <MessageCircle className="w-5 h-5 text-purple-400" />
-                      </div>
-                      <h4 className="text-lg font-semibold text-white mb-2">JavChat</h4>
-                      <p className="text-gray-300 text-sm">Memory-assisted journaling for decision logs and project insights</p>
-                    </div>
-                  </div>
-                </div>
-              )}
+              <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">Built for Builders Who Want More</h2>
+              <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed font-light">
+                Advanced features that scale with your ambitions, from solo projects to team collaboration.
+              </p>
             </div>
 
-            {/* Memory Engine API Section */}
-            <div 
-              className="bg-white/5 rounded-3xl p-8 border border-white/10 cursor-pointer hover:bg-white/10 transition-all duration-300 hover:shadow-lg hover:shadow-[#5151FF]/10 hover:scale-[1.02] transform"
-              onClick={() => toggleSection('api')}
-            >
-              <div className="flex items-center justify-between">
-                <div>
-                  <h2 className="text-2xl lg:text-3xl font-bold text-white mb-2">Memory Engine API</h2>
-                  <p className="text-lg text-gray-300">
-                    Integrate MemoryOS into your existing workflow with our powerful API
-                  </p>
-                </div>
-                <div className="w-12 h-12 bg-[#5151FF]/20 rounded-xl flex items-center justify-center">
-                  {expandedSections.api ? <ChevronUp className="w-6 h-6 text-white" /> : <ChevronDown className="w-6 h-6 text-white" />}
+            <div className="grid lg:grid-cols-2 gap-8 mb-12">
+              <div className="bg-gradient-to-br from-[#5151FF]/10 to-[#6a5cff]/10 rounded-3xl p-8 border border-[#5151FF]/20 hover:border-[#5151FF]/40 transition-all duration-300 hover:shadow-2xl hover:shadow-[#5151FF]/20">
+                <div className="flex items-start space-x-6">
+                  <div className="w-16 h-16 bg-[#5151FF]/20 rounded-2xl flex items-center justify-center flex-shrink-0">
+                    <Link className="w-8 h-8 text-[#5151FF]" />
+                  </div>
+                  <div className="space-y-4">
+                    <h3 className="text-2xl font-bold text-white">Cross-Project Intelligence</h3>
+                    <p className="text-gray-300 leading-relaxed">
+                      "Remember when you solved this in Project Alpha?" Javlin connects insights across all your work, 
+                      building institutional knowledge that compounds over time.
+                    </p>
+                  </div>
                 </div>
               </div>
-              
-              {expandedSections.api && (
-                <div className="mt-8 space-y-8 animate-in slide-in-from-top-5 duration-300">
-                  <div className="grid lg:grid-cols-2 gap-8">
-                    <div>
-                      <h3 className="text-xl font-semibold text-white mb-4">API Features</h3>
-                      <div className="space-y-4">
-                        <div className="flex items-start space-x-3">
-                          <div className="w-6 h-6 bg-[#5151FF]/20 rounded-lg flex items-center justify-center mt-0.5">
-                            <Key className="w-3 h-3 text-[#5151FF]" />
-                          </div>
-                          <div>
-                            <h4 className="text-white font-medium">Memory CRUD Operations</h4>
-                            <p className="text-gray-400 text-sm">Read, write, update, and delete memories programmatically</p>
-                          </div>
-                        </div>
-                        <div className="flex items-start space-x-3">
-                          <div className="w-6 h-6 bg-[#5151FF]/20 rounded-lg flex items-center justify-center mt-0.5">
-                            <Database className="w-3 h-3 text-[#5151FF]" />
-                          </div>
-                          <div>
-                            <h4 className="text-white font-medium">Context Search & Retrieval</h4>
-                            <p className="text-gray-400 text-sm">Find relevant memories based on current context</p>
-                          </div>
-                        </div>
-                        <div className="flex items-start space-x-3">
-                          <div className="w-6 h-6 bg-[#5151FF]/20 rounded-lg flex items-center justify-center mt-0.5">
-                            <Settings className="w-3 h-3 text-[#5151FF]" />
-                          </div>
-                          <div>
-                            <h4 className="text-white font-medium">Playbook Export</h4>
-                            <p className="text-gray-400 text-sm">Export your personal knowledge as structured playbooks</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
 
-                    <div>
-                      <h3 className="text-xl font-semibold text-white mb-4">API Credits System</h3>
-                      <div className="bg-[#5151FF]/10 rounded-xl p-6 border border-[#5151FF]/20">
-                        <div className="space-y-4">
-                          <div className="flex items-center justify-between">
-                            <span className="text-gray-300">Free Plan</span>
-                            <span className="text-white font-semibold">100 credits/month</span>
-                          </div>
-                          <div className="flex items-center justify-between">
-                            <span className="text-gray-300">Pro Plan</span>
-                            <span className="text-white font-semibold">10,000 credits/month</span>
-                          </div>
-                          <div className="flex items-center justify-between">
-                            <span className="text-gray-300">Premium Plan</span>
-                            <span className="text-white font-semibold">100,000 credits/month</span>
-                          </div>
-                          <div className="pt-3 border-t border-white/10">
-                            <p className="text-gray-400 text-sm">
-                              Real-time usage tracking • Instant top-ups • Rollover up to 2x monthly limit
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+              <div className="bg-gradient-to-br from-red-500/10 to-orange-500/10 rounded-3xl p-8 border border-red-500/20 hover:border-red-500/40 transition-all duration-300 hover:shadow-2xl hover:shadow-red-500/20">
+                <div className="flex items-start space-x-6">
+                  <div className="w-16 h-16 bg-red-500/20 rounded-2xl flex items-center justify-center flex-shrink-0">
+                    <Shield className="w-8 h-8 text-red-400" />
                   </div>
-
-                  <div className="bg-gradient-to-r from-[#5151FF]/10 to-[#6a5cff]/10 rounded-xl p-6 border border-[#5151FF]/20">
-                    <h3 className="text-lg font-semibold text-white mb-3">Security & Key Management</h3>
-                    <div className="grid md:grid-cols-2 gap-6">
-                      <div className="space-y-2">
-                        <h4 className="text-white font-medium">Generate & Manage Keys</h4>
-                        <p className="text-gray-400 text-sm">Name, revoke, and regenerate API keys from your dashboard</p>
-                      </div>
-                      <div className="space-y-2">
-                        <h4 className="text-white font-medium">Usage Analytics</h4>
-                        <p className="text-gray-400 text-sm">Track when keys were created, last used, and credit consumption</p>
-                      </div>
-                    </div>
+                  <div className="space-y-4">
+                    <h3 className="text-2xl font-bold text-white">Proactive Warnings</h3>
+                    <p className="text-gray-300 leading-relaxed">
+                      "Careful, this schema failed at scale before." Get real-time alerts based on past experiences 
+                      to prevent repeated mistakes before they happen.
+                    </p>
                   </div>
-                </div>
-              )}
-            </div>
-
-            {/* Advanced Features Section */}
-            <div 
-              className="bg-white/5 rounded-3xl p-8 border border-white/10 cursor-pointer hover:bg-white/10 transition-all duration-300 hover:shadow-lg hover:shadow-[#5151FF]/10 hover:scale-[1.02] transform"
-              onClick={() => toggleSection('platform')}
-            >
-              <div className="flex items-center justify-between">
-                <div>
-                  <h2 className="text-2xl lg:text-3xl font-bold text-white mb-2">Advanced Intelligence</h2>
-                  <p className="text-lg text-gray-300">
-                    Cross-project learning, proactive warnings, and automated insights
-                  </p>
-                </div>
-                <div className="w-12 h-12 bg-[#5151FF]/20 rounded-xl flex items-center justify-center">
-                  {expandedSections.platform ? <ChevronUp className="w-6 h-6 text-white" /> : <ChevronDown className="w-6 h-6 text-white" />}
                 </div>
               </div>
-              
-              {expandedSections.platform && (
-                <div className="mt-8 space-y-6 animate-in slide-in-from-top-5 duration-300">
-                  <div className="grid lg:grid-cols-2 gap-6">
-                    <div className="bg-white/5 rounded-xl p-6 border border-white/10">
-                      <div className="flex items-start space-x-4">
-                        <div className="w-12 h-12 bg-yellow-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                          <Link className="w-6 h-6 text-yellow-400" />
-                        </div>
-                        <div className="space-y-2">
-                          <h4 className="text-lg font-bold text-white">Cross-Project Intelligence</h4>
-                          <p className="text-gray-300 text-sm leading-relaxed">
-                            "Remember when you solved this in Project Alpha?" - contextual suggestions across all your work
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="bg-white/5 rounded-xl p-6 border border-white/10">
-                      <div className="flex items-start space-x-4">
-                        <div className="w-12 h-12 bg-red-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                          <Shield className="w-6 h-6 text-red-400" />
-                        </div>
-                        <div className="space-y-2">
-                          <h4 className="text-lg font-bold text-white">Proactive Warnings</h4>
-                          <p className="text-gray-300 text-sm leading-relaxed">
-                            "Careful, this schema failed at scale in Gamma!" - prevent repeated mistakes
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              )}
             </div>
-            
+
+            <div className="bg-white/5 rounded-3xl p-8 border border-white/10">
+              <h3 className="text-2xl font-bold text-white mb-6 text-center">Memory Engine API</h3>
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-[#5151FF]/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <Key className="w-6 h-6 text-[#5151FF]" />
+                  </div>
+                  <h4 className="text-lg font-semibold text-white mb-2">Memory CRUD</h4>
+                  <p className="text-gray-400 text-sm">Read, write, update, and delete memories programmatically</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-[#5151FF]/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <Database className="w-6 h-6 text-[#5151FF]" />
+                  </div>
+                  <h4 className="text-lg font-semibold text-white mb-2">Context Search</h4>
+                  <p className="text-gray-400 text-sm">Find relevant memories based on current context</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-[#5151FF]/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <Settings className="w-6 h-6 text-[#5151FF]" />
+                  </div>
+                  <h4 className="text-lg font-semibold text-white mb-2">Playbook Export</h4>
+                  <p className="text-gray-400 text-sm">Export your knowledge as structured playbooks</p>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -461,52 +289,97 @@ export default function Waitlist() {
 
         {/* How Javlin Works Section */}
         <section id="how-it-works" className="py-16 px-6">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-12">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-16">
               <div className="inline-flex items-center bg-[#5151FF]/10 border border-[#5151FF]/20 rounded-full px-4 py-2 backdrop-blur-sm mb-6">
-                <span className="text-sm font-medium text-[#5151FF]">Platform Overview</span>
+                <span className="text-sm font-medium text-[#5151FF]">MemoryOS Powered</span>
               </div>
-              <h2 className="text-4xl lg:text-5xl font-bold text-white mb-8">How Javlin Works</h2>
-              <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-                Four integrated modes that share memory and context, creating a seamless creative-to-development workflow.
+              <h2 className="text-4xl lg:text-5xl font-bold text-white mb-8">3 Memory-Engine Backed Tools</h2>
+              <p className="text-2xl text-gray-300 max-w-5xl mx-auto leading-relaxed font-light">
+                Experience no-code building like never before with the full power of AI and zero context loss. 
+                Each tool remembers everything, learns from your patterns, and evolves with every project.
               </p>
             </div>
-            
-            <div className="grid md:grid-cols-2 gap-8 lg:gap-12 mb-20">
-              {[
-                {
-                  icon: <Brain className="w-8 h-8 text-white" />,
-                  title: "MemoryOS",
-                  description: "Active memory brain that moves beyond storage—proactively suggests solutions, surfaces reminders, and prevents repeated mistakes before they happen."
-                },
-                {
-                  icon: <Lightbulb className="w-8 h-8 text-white" />,
-                  title: "Creative Mode",
-                  description: "Integrated ideation environment—capture ideas, build moodboards, start projects. Seamless creative-to-dev workflow with shared memory and context."
-                },
-                {
-                  icon: <Code className="w-8 h-8 text-white" />,
-                  title: "Dev Mode",
-                  description: "AI-supercharged development environment—context-aware code help, real-time debugging, proactive warnings, all powered by your project memory."
-                },
-                {
-                  icon: <MessageCircle className="w-8 h-8 text-white" />,
-                  title: "Jav Assistant",
-                  description: "Your true AI co-founder—provides guidance, accountability, and context-aware assistance. Adapts its tone and intervention level to your needs."
-                }
-              ].map((item, index) => (
-                <div key={index} className="group bg-white/5 hover:bg-white/10 rounded-3xl p-8 border border-white/10 hover:border-white/20 transition-all duration-300 hover:shadow-2xl hover:shadow-[#5151FF]/10">
-                  <div className="flex items-start space-x-6">
-                    <div className="w-20 h-20 bg-[#5151FF]/20 group-hover:bg-[#5151FF]/30 rounded-3xl flex items-center justify-center flex-shrink-0 transition-all duration-300">
-                      {item.icon}
-                    </div>
-                    <div className="space-y-4">
-                      <h3 className="text-2xl font-bold text-white group-hover:text-[#5151FF] transition-colors duration-300">{item.title}</h3>
-                      <p className="text-gray-300 leading-relaxed text-lg">{item.description}</p>
-                    </div>
+
+            {/* Three Core Tools */}
+            <div className="grid lg:grid-cols-3 gap-8 mb-20">
+              {/* Jav Studio */}
+              <div className="group bg-gradient-to-br from-[#5151FF]/10 to-[#6a5cff]/10 rounded-3xl p-8 border border-[#5151FF]/20 hover:border-[#5151FF]/40 transition-all duration-300 hover:shadow-2xl hover:shadow-[#5151FF]/20 hover:scale-[1.02] transform">
+                <div className="w-20 h-20 bg-[#5151FF]/20 group-hover:bg-[#5151FF]/30 rounded-2xl flex items-center justify-center mb-6 transition-all duration-300">
+                  <Code className="w-10 h-10 text-[#5151FF]" />
+                </div>
+                <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-[#5151FF] transition-colors">Jav Studio</h3>
+                <p className="text-gray-300 leading-relaxed mb-6">
+                  The integrated development environment where code, docs, and planning unite in one place. 
+                  Every line of code, every decision, every breakthrough is remembered and connected.
+                </p>
+                <div className="space-y-3 text-sm text-gray-400">
+                  <div className="flex items-center space-x-2">
+                    <div className="w-1.5 h-1.5 bg-[#5151FF] rounded-full"></div>
+                    <span>Context-aware code generation and debugging</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <div className="w-1.5 h-1.5 bg-[#5151FF] rounded-full"></div>
+                    <span>Proactive warnings based on past failures</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <div className="w-1.5 h-1.5 bg-[#5151FF] rounded-full"></div>
+                    <span>Seamless creative-to-development workflow</span>
                   </div>
                 </div>
-              ))}
+              </div>
+
+              {/* Creative Mode */}
+              <div className="group bg-gradient-to-br from-green-500/10 to-emerald-500/10 rounded-3xl p-8 border border-green-500/20 hover:border-green-500/40 transition-all duration-300 hover:shadow-2xl hover:shadow-green-500/20 hover:scale-[1.02] transform">
+                <div className="w-20 h-20 bg-green-500/20 group-hover:bg-green-500/30 rounded-2xl flex items-center justify-center mb-6 transition-all duration-300">
+                  <Lightbulb className="w-10 h-10 text-green-400" />
+                </div>
+                <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-green-400 transition-colors">Creative Mode</h3>
+                <p className="text-gray-300 leading-relaxed mb-6">
+                  Transform ideas into structured projects with AI that remembers your creative patterns, design preferences, 
+                  and successful approaches from past projects.
+                </p>
+                <div className="space-y-3 text-sm text-gray-400">
+                  <div className="flex items-center space-x-2">
+                    <div className="w-1.5 h-1.5 bg-green-400 rounded-full"></div>
+                    <span>Intelligent moodboard and idea capture</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <div className="w-1.5 h-1.5 bg-green-400 rounded-full"></div>
+                    <span>Memory-powered design suggestions</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <div className="w-1.5 h-1.5 bg-green-400 rounded-full"></div>
+                    <span>Assisted workspace building and planning</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* JavChat */}
+              <div className="group bg-gradient-to-br from-purple-500/10 to-pink-500/10 rounded-3xl p-8 border border-purple-500/20 hover:border-purple-500/40 transition-all duration-300 hover:shadow-2xl hover:shadow-purple-500/20 hover:scale-[1.02] transform">
+                <div className="w-20 h-20 bg-purple-500/20 group-hover:bg-purple-500/30 rounded-2xl flex items-center justify-center mb-6 transition-all duration-300">
+                  <MessageCircle className="w-10 h-10 text-purple-400" />
+                </div>
+                <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-purple-400 transition-colors">JavChat</h3>
+                <p className="text-gray-300 leading-relaxed mb-6">
+                  AI-powered journaling and decision tracking that connects every choice to your project history. 
+                  Review patterns, document lessons, and build your personal playbook.
+                </p>
+                <div className="space-y-3 text-sm text-gray-400">
+                  <div className="flex items-center space-x-2">
+                    <div className="w-1.5 h-1.5 bg-purple-400 rounded-full"></div>
+                    <span>Context-linked decision logs and insights</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <div className="w-1.5 h-1.5 bg-purple-400 rounded-full"></div>
+                    <span>Memory review and curation tools</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <div className="w-1.5 h-1.5 bg-purple-400 rounded-full"></div>
+                    <span>Automated personal playbook generation</span>
+                  </div>
+                </div>
+              </div>
             </div>
 
             {/* Memory Engine Power */}
@@ -590,7 +463,7 @@ export default function Waitlist() {
                     the future of AI-powered development.
                   </p>
                   <div className="pt-4">
-                    <p className="text-lg text-green-400 font-medium">Position: #847 • Estimated access: 4-6 weeks</p>
+                    <p className="text-lg text-green-400 font-medium">You're in! We'll notify you when ready for early access.</p>
                   </div>
                 </div>
               </div>

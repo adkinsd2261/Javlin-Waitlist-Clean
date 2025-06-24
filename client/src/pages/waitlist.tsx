@@ -521,151 +521,171 @@ export default function Waitlist() {
             </p>
           </div>
 
-          {/* Journey Steps with Magic Moments */}
-          <div className="space-y-16">
+          {/* Journey Timeline */}
+          <div className="relative">
+            {/* Timeline Line */}
+            <div className="absolute left-1/2 transform -translate-x-0.5 h-full w-0.5 bg-gradient-to-b from-blue-400 via-purple-400 via-green-400 to-orange-400 opacity-30 hidden lg:block"></div>
             
-            {/* Step 1: First Project */}
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <div className="flex items-center mb-6">
-                  <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center mr-4">
-                    <span className="text-2xl font-bold text-blue-400">1</span>
+            <div className="space-y-24">
+              {/* Step 1: First Project */}
+              <div className="relative">
+                <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+                  <div className="lg:text-right lg:pr-8">
+                    <div className="inline-flex items-center mb-6 lg:flex-row-reverse">
+                      <div className="w-16 h-16 bg-blue-500/20 rounded-2xl flex items-center justify-center border-2 border-blue-500/30 lg:ml-4">
+                        <span className="text-2xl font-bold text-blue-400">1</span>
+                      </div>
+                      <h3 className="text-2xl lg:text-3xl font-bold text-white lg:mr-4">Your First Project</h3>
+                    </div>
+                    <p className="text-lg text-gray-300 leading-relaxed mb-6">
+                      You're building "Project Alpha" and struggling with an OAuth integration. After hours of debugging, 
+                      you finally solve the token expiry issue. Jav captures this solution in Memory Engine.
+                    </p>
+                    <div className="bg-blue-500/10 rounded-2xl p-6 border border-blue-500/20">
+                      <p className="text-blue-300 font-medium mb-3">Jav learns:</p>
+                      <ul className="text-gray-300 space-y-2 text-sm">
+                        <li>• Your debugging approach and preferred solutions</li>
+                        <li>• The specific OAuth configuration that works</li>
+                        <li>• Context about your application architecture</li>
+                        <li>• Your coding patterns and preferences</li>
+                      </ul>
+                    </div>
                   </div>
-                  <h3 className="text-3xl font-bold text-white">Your First Project</h3>
-                </div>
-                <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                  You're building "Project Alpha" and struggling with an OAuth integration. After hours of debugging, 
-                  you finally solve the token expiry issue. Jav captures this solution in Memory Engine.
-                </p>
-                <div className="bg-blue-500/10 rounded-2xl p-6 border border-blue-500/20">
-                  <p className="text-blue-300 font-medium mb-2">Jav learns:</p>
-                  <ul className="text-gray-300 space-y-2 text-sm">
-                    <li>• Your debugging approach and preferred solutions</li>
-                    <li>• The specific OAuth configuration that works</li>
-                    <li>• Context about your application architecture</li>
-                    <li>• Your coding patterns and preferences</li>
-                  </ul>
+                  <div className="mt-8 lg:mt-0 lg:pl-8">
+                    <div className="bg-gradient-to-r from-blue-500/20 to-blue-600/20 rounded-3xl p-8 border border-blue-500/30 backdrop-blur-sm">
+                      <div className="text-center">
+                        <div className="w-20 h-20 bg-blue-500/30 rounded-2xl flex items-center justify-center mx-auto mb-6 border border-blue-400/50">
+                          <Zap className="w-10 h-10 text-blue-300" />
+                        </div>
+                        <h4 className="text-xl font-bold text-white mb-4">Memory Captured</h4>
+                        <p className="text-gray-200 italic text-lg">
+                          "OAuth token refresh solution saved - I'll remember this approach for future integrations."
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-3xl p-8 border border-blue-500/20">
-                <div className="text-center mb-4">
-                  <div className="w-16 h-16 bg-blue-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                    <Zap className="w-8 h-8 text-blue-400" />
-                  </div>
-                  <h4 className="text-xl font-bold text-white mb-3">Memory Captured</h4>
-                </div>
-                <p className="text-gray-300 italic text-center">
-                  "OAuth token refresh solution saved - I'll remember this approach for future integrations."
-                </p>
-              </div>
-            </div>
 
-            {/* Step 2: The Magic Moment */}
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div className="lg:order-2">
-                <div className="flex items-center mb-6">
-                  <div className="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center mr-4">
-                    <span className="text-2xl font-bold text-purple-400">2</span>
+              {/* Step 2: The Magic Moment */}
+              <div className="relative">
+                <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+                  <div className="lg:order-2 lg:pl-8">
+                    <div className="inline-flex items-center mb-6">
+                      <div className="w-16 h-16 bg-purple-500/20 rounded-2xl flex items-center justify-center border-2 border-purple-500/30 mr-4">
+                        <span className="text-2xl font-bold text-purple-400">2</span>
+                      </div>
+                      <h3 className="text-2xl lg:text-3xl font-bold text-white">The Magic Moment</h3>
+                    </div>
+                    <p className="text-lg text-gray-300 leading-relaxed mb-6">
+                      Two months later, you're working on "Project Beta" and hit a similar OAuth issue. 
+                      Just as frustration sets in, Jav proactively surfaces the solution.
+                    </p>
+                    <div className="bg-purple-500/10 rounded-2xl p-6 border border-purple-500/20">
+                      <p className="text-purple-300 font-medium mb-3">Jav intervenes:</p>
+                      <blockquote className="text-white italic text-lg leading-relaxed">
+                        "Remember how you solved token expiry in Project Alpha? Here's what worked last time."
+                      </blockquote>
+                      <p className="text-gray-300 text-sm mt-4">
+                        You review, update, and apply the solution—saving hours of debugging.
+                      </p>
+                    </div>
                   </div>
-                  <h3 className="text-3xl font-bold text-white">The Magic Moment</h3>
-                </div>
-                <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                  Two months later, you're working on "Project Beta" and hit a similar OAuth issue. 
-                  Just as frustration sets in, Jav proactively surfaces the solution.
-                </p>
-                <div className="bg-purple-500/10 rounded-2xl p-6 border border-purple-500/20">
-                  <p className="text-purple-300 font-medium mb-3">Jav intervenes:</p>
-                  <blockquote className="text-white italic text-lg leading-relaxed">
-                    "Remember how you solved token expiry in Project Alpha? Here's what worked last time."
-                  </blockquote>
-                  <p className="text-gray-300 text-sm mt-4">
-                    You review, update, and apply the solution—saving hours of debugging.
-                  </p>
+                  <div className="mt-8 lg:mt-0 lg:order-1 lg:pr-8">
+                    <div className="bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-3xl p-8 border border-purple-500/30 backdrop-blur-sm">
+                      <div className="text-center">
+                        <div className="w-20 h-20 bg-purple-500/30 rounded-2xl flex items-center justify-center mx-auto mb-6 border border-purple-400/50">
+                          <Brain className="w-10 h-10 text-purple-300" />
+                        </div>
+                        <h4 className="text-xl font-bold text-white mb-4">Proactive Recall</h4>
+                        <p className="text-gray-200 italic text-lg">
+                          "I forgot I even solved that! This just saved me 3 hours of debugging."
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div className="lg:order-1 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-3xl p-8 border border-purple-500/20">
-                <div className="text-center mb-4">
-                  <div className="w-16 h-16 bg-purple-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                    <Brain className="w-8 h-8 text-purple-400" />
-                  </div>
-                  <h4 className="text-xl font-bold text-white mb-3">Proactive Recall</h4>
-                </div>
-                <p className="text-gray-300 italic text-center">
-                  "I forgot I even solved that! This just saved me 3 hours of debugging."
-                </p>
-              </div>
-            </div>
 
-            {/* Step 3: Cross-Project Intelligence */}
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <div className="flex items-center mb-6">
-                  <div className="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center mr-4">
-                    <span className="text-2xl font-bold text-green-400">3</span>
+              {/* Step 3: Cross-Project Intelligence */}
+              <div className="relative">
+                <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+                  <div className="lg:text-right lg:pr-8">
+                    <div className="inline-flex items-center mb-6 lg:flex-row-reverse">
+                      <div className="w-16 h-16 bg-green-500/20 rounded-2xl flex items-center justify-center border-2 border-green-500/30 lg:ml-4">
+                        <span className="text-2xl font-bold text-green-400">3</span>
+                      </div>
+                      <h3 className="text-2xl lg:text-3xl font-bold text-white lg:mr-4">Growing Intelligence</h3>
+                    </div>
+                    <p className="text-lg text-gray-300 leading-relaxed mb-6">
+                      As you build more projects, Memory Engine connects patterns across your entire journey. 
+                      It starts offering insights like architectural warnings, performance optimizations, and creative inspirations.
+                    </p>
+                    <div className="bg-green-500/10 rounded-2xl p-6 border border-green-500/20">
+                      <p className="text-green-300 font-medium mb-3">Advanced insights:</p>
+                      <ul className="text-gray-300 space-y-2 text-sm">
+                        <li>• "Careful, this schema pattern failed at scale in Project Gamma"</li>
+                        <li>• "This color palette worked beautifully in your last design"</li>
+                        <li>• "You tend to get stuck here—maybe try the API-first approach?"</li>
+                        <li>• "Remember your breakthrough moment in Project Delta?"</li>
+                      </ul>
+                    </div>
                   </div>
-                  <h3 className="text-3xl font-bold text-white">Growing Intelligence</h3>
-                </div>
-                <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                  As you build more projects, Memory Engine connects patterns across your entire journey. 
-                  It starts offering insights like architectural warnings, performance optimizations, and creative inspirations.
-                </p>
-                <div className="bg-green-500/10 rounded-2xl p-6 border border-green-500/20">
-                  <p className="text-green-300 font-medium mb-3">Advanced insights:</p>
-                  <ul className="text-gray-300 space-y-2 text-sm">
-                    <li>• "Careful, this schema pattern failed at scale in Project Gamma"</li>
-                    <li>• "This color palette worked beautifully in your last design"</li>
-                    <li>• "You tend to get stuck here—maybe try the API-first approach?"</li>
-                    <li>• "Remember your breakthrough moment in Project Delta?"</li>
-                  </ul>
+                  <div className="mt-8 lg:mt-0 lg:pl-8">
+                    <div className="bg-gradient-to-r from-green-500/20 to-emerald-500/20 rounded-3xl p-8 border border-green-500/30 backdrop-blur-sm">
+                      <div className="text-center">
+                        <div className="w-20 h-20 bg-green-500/30 rounded-2xl flex items-center justify-center mx-auto mb-6 border border-green-400/50">
+                          <Users className="w-10 h-10 text-green-300" />
+                        </div>
+                        <h4 className="text-xl font-bold text-white mb-4">Personal Playbook</h4>
+                        <p className="text-gray-200 italic text-lg">
+                          "It's like having a co-founder who's been with me through every project, remembering what I forget."
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div className="bg-gradient-to-r from-green-500/10 to-blue-500/10 rounded-3xl p-8 border border-green-500/20">
-                <div className="text-center mb-4">
-                  <div className="w-16 h-16 bg-green-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                    <Users className="w-8 h-8 text-green-400" />
-                  </div>
-                  <h4 className="text-xl font-bold text-white mb-3">Personal Playbook</h4>
-                </div>
-                <p className="text-gray-300 italic text-center">
-                  "It's like having a co-founder who's been with me through every project, remembering what I forget."
-                </p>
-              </div>
-            </div>
 
-            {/* Step 4: Ultimate Workflow */}
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div className="lg:order-2">
-                <div className="flex items-center mb-6">
-                  <div className="w-12 h-12 bg-orange-500/20 rounded-xl flex items-center justify-center mr-4">
-                    <span className="text-2xl font-bold text-orange-400">4</span>
+              {/* Step 4: Ultimate Workflow */}
+              <div className="relative">
+                <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+                  <div className="lg:order-2 lg:pl-8">
+                    <div className="inline-flex items-center mb-6">
+                      <div className="w-16 h-16 bg-orange-500/20 rounded-2xl flex items-center justify-center border-2 border-orange-500/30 mr-4">
+                        <span className="text-2xl font-bold text-orange-400">4</span>
+                      </div>
+                      <h3 className="text-2xl lg:text-3xl font-bold text-white">Your Ultimate Workflow</h3>
+                    </div>
+                    <p className="text-lg text-gray-300 leading-relaxed mb-6">
+                      You've built your personal "institutional knowledge." New projects start with accumulated wisdom. 
+                      You integrate Javlin's API into your workflow. Your dashboard shows memory insights and credits usage.
+                    </p>
+                    <div className="bg-orange-500/10 rounded-2xl p-6 border border-orange-500/20">
+                      <p className="text-orange-300 font-medium mb-3">Complete integration:</p>
+                      <ul className="text-gray-300 space-y-2 text-sm">
+                        <li>• Memory-powered suggestions in real-time</li>
+                        <li>• Seamless Creative ↔ Dev mode transitions</li>
+                        <li>• JavChat for decision logs and reflection</li>
+                        <li>• API integration with your existing tools</li>
+                        <li>• Personal playbook of wins and lessons</li>
+                      </ul>
+                    </div>
                   </div>
-                  <h3 className="text-3xl font-bold text-white">Your Ultimate Workflow</h3>
-                </div>
-                <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                  You've built your personal "institutional knowledge." New projects start with accumulated wisdom. 
-                  You integrate Javlin's API into your workflow. Your dashboard shows memory insights and credits usage.
-                </p>
-                <div className="bg-orange-500/10 rounded-2xl p-6 border border-orange-500/20">
-                  <p className="text-orange-300 font-medium mb-3">Complete integration:</p>
-                  <ul className="text-gray-300 space-y-2 text-sm">
-                    <li>• Memory-powered suggestions in real-time</li>
-                    <li>• Seamless Creative ↔ Dev mode transitions</li>
-                    <li>• JavChat for decision logs and reflection</li>
-                    <li>• API integration with your existing tools</li>
-                    <li>• Personal playbook of wins and lessons</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="lg:order-1 bg-gradient-to-r from-orange-500/10 to-red-500/10 rounded-3xl p-8 border border-orange-500/20">
-                <div className="text-center mb-4">
-                  <div className="w-16 h-16 bg-orange-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                    <Rocket className="w-8 h-8 text-orange-400" />
+                  <div className="mt-8 lg:mt-0 lg:order-1 lg:pr-8">
+                    <div className="bg-gradient-to-r from-orange-500/20 to-red-500/20 rounded-3xl p-8 border border-orange-500/30 backdrop-blur-sm">
+                      <div className="text-center">
+                        <div className="w-20 h-20 bg-orange-500/30 rounded-2xl flex items-center justify-center mx-auto mb-6 border border-orange-400/50">
+                          <Rocket className="w-10 h-10 text-orange-300" />
+                        </div>
+                        <h4 className="text-xl font-bold text-white mb-4">Competitive Advantage</h4>
+                        <p className="text-gray-200 italic text-lg">
+                          "I ship faster, make fewer mistakes, and build on everything I've learned. It's unfair how much better I've become."
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                  <h4 className="text-xl font-bold text-white mb-3">Competitive Advantage</h4>
                 </div>
-                <p className="text-gray-300 italic text-center">
-                  "I ship faster, make fewer mistakes, and build on everything I've learned. It's unfair how much better I've become."
-                </p>
               </div>
             </div>
           </div>

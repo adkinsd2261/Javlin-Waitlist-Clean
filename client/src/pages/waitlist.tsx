@@ -105,8 +105,8 @@ export default function Waitlist() {
 
       <div className="pt-20 relative z-10">
         {/* Hero Section */}
-        <section className="text-center py-32 lg:py-40 px-6">
-          <div className="max-w-6xl mx-auto space-y-12">
+        <section className="text-center py-20 lg:py-24 px-6">
+          <div className="max-w-6xl mx-auto space-y-10">
             {/* Badge */}
             <div className="inline-flex items-center bg-white/5 border border-white/10 rounded-full px-6 py-3 backdrop-blur-sm">
               <Sparkles className="w-4 h-4 text-[#5151FF] mr-2" />
@@ -156,9 +156,9 @@ export default function Waitlist() {
         </section>
 
         {/* Problem-Solution Section */}
-        <section id="features" className="py-32 px-6">
+        <section id="features" className="py-16 px-6">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-20">
+            <div className="text-center mb-12">
               <div className="inline-flex items-center bg-red-500/10 border border-red-500/20 rounded-full px-4 py-2 backdrop-blur-sm mb-6">
                 <span className="text-sm font-medium text-red-400">The Problem</span>
               </div>
@@ -169,7 +169,7 @@ export default function Waitlist() {
               </p>
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-12 mb-16">
+            <div className="grid lg:grid-cols-2 gap-8 mb-12">
               <div className="space-y-6">
                 <h3 className="text-2xl font-semibold text-red-400 mb-6">❌ What's Broken Today</h3>
                 <div className="space-y-4">
@@ -207,14 +207,14 @@ export default function Waitlist() {
               </div>
             </div>
 
-            <div className="text-center bg-gradient-to-r from-[#5151FF]/10 to-[#6a5cff]/10 rounded-3xl p-12 lg:p-16 border border-[#5151FF]/20 backdrop-blur-sm relative overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-r from-[#5151FF]/5 to-[#6a5cff]/5 rounded-3xl"></div>
+            <div className="text-center bg-gradient-to-r from-[#5151FF]/10 to-[#6a5cff]/10 rounded-3xl p-8 lg:p-12 border border-[#5151FF]/20 backdrop-blur-sm relative overflow-hidden glow-card">
+              <div className="absolute inset-0 bg-gradient-to-r from-[#5151FF]/5 to-[#6a5cff]/5 rounded-3xl animate-pulse-subtle"></div>
               <div className="relative z-10">
-                <div className="inline-flex items-center bg-[#5151FF]/20 border border-[#5151FF]/30 rounded-full px-4 py-2 backdrop-blur-sm mb-6">
+                <div className="inline-flex items-center bg-[#5151FF]/20 border border-[#5151FF]/30 rounded-full px-4 py-2 backdrop-blur-sm mb-4">
                   <span className="text-sm font-medium text-[#5151FF]">The Solution</span>
                 </div>
-                <h3 className="text-3xl lg:text-4xl font-bold text-white mb-6">Why Javlin is Superior</h3>
-                <p className="text-2xl text-gray-300 leading-relaxed max-w-4xl mx-auto font-light">
+                <h3 className="text-2xl lg:text-3xl font-bold text-white mb-4">Why Javlin is Superior</h3>
+                <p className="text-lg text-gray-300 leading-relaxed max-w-4xl mx-auto font-light">
                   While Bolt, Replit, and other tools treat each session as a blank slate, Javlin builds institutional knowledge. 
                   You're not just getting an AI assistant—you're getting a co-founder that truly learns and evolves with you.
                 </p>
@@ -224,11 +224,11 @@ export default function Waitlist() {
         </section>
 
         {/* Core Capabilities Section */}
-        <section id="features" className="py-20 px-6">
-          <div className="max-w-6xl mx-auto space-y-6">
+        <section className="py-16 px-6">
+          <div className="max-w-6xl mx-auto space-y-4">
             {/* Features Overview */}
             <div 
-              className="bg-white/5 rounded-3xl p-8 border border-white/10 cursor-pointer hover:bg-white/10 transition-all duration-300"
+              className="bg-white/5 rounded-3xl p-8 border border-white/10 cursor-pointer hover:bg-white/10 transition-all duration-300 hover:shadow-lg hover:shadow-[#5151FF]/10 hover:scale-[1.02] transform"
               onClick={() => toggleSection('features')}
             >
               <div className="flex items-center justify-between">
@@ -308,7 +308,7 @@ export default function Waitlist() {
 
             {/* Memory Engine API Section */}
             <div 
-              className="bg-white/5 rounded-3xl p-8 border border-white/10 cursor-pointer hover:bg-white/10 transition-all duration-300"
+              className="bg-white/5 rounded-3xl p-8 border border-white/10 cursor-pointer hover:bg-white/10 transition-all duration-300 hover:shadow-lg hover:shadow-[#5151FF]/10 hover:scale-[1.02] transform"
               onClick={() => toggleSection('api')}
             >
               <div className="flex items-center justify-between">
@@ -404,7 +404,7 @@ export default function Waitlist() {
 
             {/* Advanced Features Section */}
             <div 
-              className="bg-white/5 rounded-3xl p-8 border border-white/10 cursor-pointer hover:bg-white/10 transition-all duration-300"
+              className="bg-white/5 rounded-3xl p-8 border border-white/10 cursor-pointer hover:bg-white/10 transition-all duration-300 hover:shadow-lg hover:shadow-[#5151FF]/10 hover:scale-[1.02] transform"
               onClick={() => toggleSection('platform')}
             >
               <div className="flex items-center justify-between">
@@ -458,9 +458,9 @@ export default function Waitlist() {
         </section>
 
         {/* Pricing Section */}
-        <section id="pricing" className="py-20 px-6">
+        <section id="pricing" className="py-16 px-6">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16">
+            <div className="text-center mb-12">
               <div className="inline-flex items-center bg-[#5151FF]/10 border border-[#5151FF]/20 rounded-full px-4 py-2 backdrop-blur-sm mb-6">
                 <span className="text-sm font-medium text-[#5151FF]">Simple Pricing</span>
               </div>
@@ -470,9 +470,9 @@ export default function Waitlist() {
               </p>
             </div>
 
-            <div className="grid lg:grid-cols-3 gap-8 mb-16">
+            <div className="grid lg:grid-cols-3 gap-6 mb-12">
               {/* Free Plan */}
-              <div className="bg-white/5 rounded-3xl p-8 border border-white/10 relative">
+              <div className="bg-white/5 rounded-3xl p-8 border border-white/10 relative hover:bg-white/8 transition-all duration-300 hover:shadow-lg hover:shadow-white/5 hover:scale-[1.02] transform group">
                 <div className="text-center mb-8">
                   <h3 className="text-2xl font-bold text-white mb-2">Free</h3>
                   <div className="text-4xl font-bold text-white mb-1">$0</div>
@@ -512,7 +512,7 @@ export default function Waitlist() {
               </div>
 
               {/* Pro Plan */}
-              <div className="bg-gradient-to-br from-[#5151FF]/20 to-[#6a5cff]/20 rounded-3xl p-8 border border-[#5151FF]/30 relative">
+              <div className="bg-gradient-to-br from-[#5151FF]/20 to-[#6a5cff]/20 rounded-3xl p-8 border border-[#5151FF]/30 relative hover:from-[#5151FF]/25 hover:to-[#6a5cff]/25 transition-all duration-300 hover:shadow-xl hover:shadow-[#5151FF]/20 hover:scale-[1.05] transform group glow-card-pro">
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                   <div className="bg-[#5151FF] text-white px-4 py-2 rounded-full text-sm font-semibold">
                     Most Popular
@@ -572,7 +572,7 @@ export default function Waitlist() {
               </div>
 
               {/* Premium Plan */}
-              <div className="bg-white/5 rounded-3xl p-8 border border-white/10 relative">
+              <div className="bg-white/5 rounded-3xl p-8 border border-white/10 relative hover:bg-white/8 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/10 hover:scale-[1.02] transform group">
                 <div className="text-center mb-8">
                   <h3 className="text-2xl font-bold text-white mb-2">Premium</h3>
                   <div className="flex items-center justify-center space-x-2 mb-1">
@@ -662,9 +662,9 @@ export default function Waitlist() {
         </section>
 
         {/* How Javlin Works Section */}
-        <section id="how-it-works" className="py-32 px-6">
+        <section id="how-it-works" className="py-16 px-6">
           <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-20">
+            <div className="text-center mb-12">
               <div className="inline-flex items-center bg-[#5151FF]/10 border border-[#5151FF]/20 rounded-full px-4 py-2 backdrop-blur-sm mb-6">
                 <span className="text-sm font-medium text-[#5151FF]">Platform Overview</span>
               </div>

@@ -101,6 +101,104 @@ export default function Waitlist() {
         </div>
       </section>
 
+      {/* Why Builders Choose Jav */}
+      <section className="py-20 px-6">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">Why Builders Choose Jav</h2>
+            <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+              Stop losing your best ideas and repeating solved problems. Jav transforms how you create and build.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 mb-16">
+            {/* Creative Builders */}
+            <div className="bg-gradient-to-br from-pink-500/10 to-purple-500/10 rounded-3xl p-10 border border-pink-500/20">
+              <div className="w-20 h-20 bg-pink-500/20 rounded-2xl flex items-center justify-center mb-8">
+                <Lightbulb className="w-10 h-10 text-pink-400" />
+              </div>
+              <h3 className="text-3xl font-bold text-white mb-6">For Creative Builders</h3>
+              
+              <div className="bg-pink-500/5 rounded-2xl p-6 mb-6 border border-pink-500/10">
+                <p className="text-lg text-gray-300 leading-relaxed mb-4">
+                  <strong className="text-pink-400">Real scenario:</strong> You're redesigning your portfolio but can't remember which color combinations actually converted visitors. 
+                  Jav surfaces: "That blue-purple gradient from Project Alpha increased engagement by 40%. Here's the exact hex codes."
+                </p>
+                <p className="text-sm text-gray-400">
+                  Jav remembers what worked, what flopped, and why—so you're not starting from scratch every time.
+                </p>
+              </div>
+              
+              <div className="space-y-4">
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-gray-300"><span className="text-white font-medium">Creative block?</span> Jav suggests ideas based on your past breakthroughs</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-gray-300"><span className="text-white font-medium">Design decisions?</span> See what worked in similar projects instantly</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-gray-300"><span className="text-white font-medium">Scattered ideas?</span> Jav connects dots across your creative sessions</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Technical Builders */}
+            <div className="bg-gradient-to-br from-blue-500/10 to-purple-600/10 rounded-3xl p-10 border border-blue-500/20">
+              <div className="w-20 h-20 bg-blue-500/20 rounded-2xl flex items-center justify-center mb-8">
+                <Code className="w-10 h-10 text-blue-400" />
+              </div>
+              <h3 className="text-3xl font-bold text-white mb-6">For Technical Builders</h3>
+              
+              <div className="bg-blue-500/5 rounded-2xl p-6 mb-6 border border-blue-500/10">
+                <p className="text-lg text-gray-300 leading-relaxed mb-4">
+                  <strong className="text-blue-400">Real scenario:</strong> You're adding user authentication but forgot how you handled JWT tokens. 
+                  Jav interrupts: "Hold up—last time you used this approach it caused refresh token issues. Here's the pattern that actually worked."
+                </p>
+                <p className="text-sm text-gray-400">
+                  Jav prevents you from repeating the same debugging session you already survived three months ago.
+                </p>
+              </div>
+              
+              <div className="space-y-4">
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-gray-300"><span className="text-white font-medium">Same bug again?</span> Jav warns you before you waste hours debugging</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-gray-300"><span className="text-white font-medium">Architecture decisions?</span> See what scales and what doesn't from your history</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-gray-300"><span className="text-white font-medium">Code amnesia?</span> Jav remembers your clever solutions when you don't</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Bottom CTA */}
+          <div className="text-center">
+            <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-3xl p-12 border border-blue-500/20">
+              <h3 className="text-3xl font-bold text-white mb-4">Stop Rebuilding What You've Already Built</h3>
+              <p className="text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto mb-8">
+                Every creative breakthrough and technical solution becomes part of your personal advantage. 
+                Build faster, create smarter, and never lose your best ideas again.
+              </p>
+              <Button 
+                onClick={() => document.getElementById('waitlist-form')?.scrollIntoView({ behavior: 'smooth' })}
+                className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg shadow-blue-500/25 transition-all duration-300 transform hover:scale-105"
+              >
+                Get Early Access
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Product Overview */}
       <section className="py-20 px-6">
         <div className="max-w-6xl mx-auto">

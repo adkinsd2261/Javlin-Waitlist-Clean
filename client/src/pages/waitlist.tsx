@@ -636,8 +636,8 @@ export default function Waitlist() {
                       <h3 className="text-2xl lg:text-3xl font-bold text-white lg:mr-4">Your First Project</h3>
                     </div>
                     <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                      You're building "Project Alpha" and struggling with an OAuth integration. After hours of debugging, 
-                      you finally solve the token expiry issue. Jav captures this solution in Memory Engine.
+                      You're deep in "Project Alpha," wrestling with OAuth integration. After 6 hours of debugging hell, 
+                      you finally crack the token expiry puzzle. Just as victory feels sweet, Jav quietly captures the solution in Memory Engine.
                     </p>
                     <div className="bg-blue-500/10 rounded-2xl p-6 border border-blue-500/20">
                       <p className="text-blue-300 font-medium mb-3">Jav learns:</p>
@@ -676,8 +676,8 @@ export default function Waitlist() {
                       <h3 className="text-2xl lg:text-3xl font-bold text-white">The Magic Moment</h3>
                     </div>
                     <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                      Two months later, you're working on "Project Beta" and hit a similar OAuth issue. 
-                      Just as frustration sets in, Jav proactively surfaces the solution.
+                      Two months later in "Project Beta," you hit the same OAuth wall. Your heart sinks—not this again. 
+                      But before despair takes hold, Jav emerges like a time-traveling guardian angel.
                     </p>
                     <div className="bg-purple-500/10 rounded-2xl p-6 border border-purple-500/20">
                       <p className="text-purple-300 font-medium mb-3">Jav intervenes:</p>

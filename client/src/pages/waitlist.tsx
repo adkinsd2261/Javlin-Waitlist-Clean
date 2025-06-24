@@ -90,8 +90,8 @@ export default function Waitlist() {
             </h1>
             
             <p className="text-xl lg:text-2xl text-gray-300 max-w-4xl mx-auto font-normal leading-relaxed">
-              The first platform that remembers your best solutions, warns you about past mistakes, 
-              and grows smarter with every project.
+              The first AI co-founder that remembers your best solutions, warns you about past mistakes, 
+              and grows smarter with every project — so you never repeat yourself again.
             </p>
             
             <div className="pt-6">
@@ -113,22 +113,22 @@ export default function Waitlist() {
                 {
                   icon: <Brain className="w-8 h-8 text-white" />,
                   title: "MemoryOS",
-                  description: "Proactive, intelligent memory brain for your work."
+                  description: "Not just storage—an active, intelligent brain that learns from your actions and proactively surfaces relevant context."
                 },
                 {
                   icon: <Link className="w-8 h-8 text-white" />,
                   title: "Cross-Project Intelligence", 
-                  description: "Learns from all your projects, not just one."
+                  description: "Aggregates lessons, patterns, and pitfalls from all projects to build your personal institutional knowledge."
                 },
                 {
                   icon: <Users className="w-8 h-8 text-white" />,
                   title: "Personal Co-founder",
-                  description: "Context-aware, adaptive support—beyond chatbots."
+                  description: "Real guidance and accountability—not replacement. Adaptive persona that evolves with your needs and working style."
                 },
                 {
                   icon: <Shield className="w-8 h-8 text-white" />,
                   title: "Control & Privacy",
-                  description: "Your data, always yours—export/edit anytime."
+                  description: "All memory is user-visible, auditable, and controllable. Export everything, edit memories, maintain full control."
                 }
               ].map((feature, index) => (
                 <div key={index} className="text-center space-y-4">
@@ -155,22 +155,22 @@ export default function Waitlist() {
                 {
                   icon: <Brain className="w-8 h-8 text-white" />,
                   title: "MemoryOS",
-                  description: "The brain of Javlin—remembers your real work, connects the dots, and surfaces the right lesson at the right time."
+                  description: "Active memory brain that moves beyond storage—proactively suggests solutions, surfaces reminders, and prevents repeated mistakes before they happen."
                 },
                 {
                   icon: <Lightbulb className="w-8 h-8 text-white" />,
                   title: "Creative Mode",
-                  description: "Start new projects, capture ideas, and build moodboards—Javlin keeps your creative flow alive and every insight is remembered."
+                  description: "Integrated ideation environment—capture ideas, build moodboards, start projects. Seamless creative-to-dev workflow with shared memory and context."
                 },
                 {
                   icon: <Code className="w-8 h-8 text-white" />,
                   title: "Dev Mode",
-                  description: "From code to docs, Dev Mode delivers context-aware help, debugging tips, and warnings—powered by your own project memory."
+                  description: "AI-supercharged development environment—context-aware code help, real-time debugging, proactive warnings, all powered by your project memory."
                 },
                 {
                   icon: <MessageCircle className="w-8 h-8 text-white" />,
                   title: "Jav Assistant",
-                  description: "More than a chatbot—your adaptive AI cofounder. It guides, reminds, and evolves with you in every workspace."
+                  description: "Your true AI co-founder—provides guidance, accountability, and context-aware assistance. Adapts its tone and intervention level to your needs."
                 }
               ].map((item, index) => (
                 <div key={index} className="bg-white/5 rounded-2xl p-8 border border-white/10">
@@ -186,8 +186,6 @@ export default function Waitlist() {
                 </div>
               ))}
             </div>
-
-            
 
             {/* Secondary CTA */}
             <div className="text-center">
@@ -222,7 +220,7 @@ export default function Waitlist() {
                   <div className="text-center space-y-4">
                     <h2 className="text-3xl lg:text-4xl font-semibold text-white">Join the Waitlist</h2>
                     <p className="text-xl text-gray-300">
-                      Be among the first to experience the future of AI-powered development.
+                      Be among the first to experience an AI co-founder that truly remembers and evolves with you.
                     </p>
                   </div>
                   

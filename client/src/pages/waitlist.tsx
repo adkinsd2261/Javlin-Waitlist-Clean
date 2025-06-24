@@ -230,8 +230,8 @@ export default function Waitlist() {
         </section>
 
         {/* Core Capabilities Section */}
-        <section className="py-24 px-6">
-          <div className="max-w-6xl mx-auto space-y-8">
+        <section id="features" className="py-20 px-6">
+          <div className="max-w-6xl mx-auto space-y-6">
             {/* Features Overview */}
             <div 
               className="bg-white/5 rounded-3xl p-8 border border-white/10 cursor-pointer hover:bg-white/10 transition-all duration-300"
@@ -464,14 +464,14 @@ export default function Waitlist() {
         </section>
 
         {/* Pricing Section */}
-        <section id="pricing" className="py-32 px-6">
+        <section id="pricing" className="py-20 px-6">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-20">
+            <div className="text-center mb-16">
               <div className="inline-flex items-center bg-[#5151FF]/10 border border-[#5151FF]/20 rounded-full px-4 py-2 backdrop-blur-sm mb-6">
                 <span className="text-sm font-medium text-[#5151FF]">Simple Pricing</span>
               </div>
-              <h2 className="text-4xl lg:text-5xl font-bold text-white mb-8">Choose Your Plan</h2>
-              <p className="text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed font-light">
+              <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">Choose Your Plan</h2>
+              <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed font-light">
                 Start free and scale as your memory grows. All plans include data export and privacy controls.
               </p>
             </div>

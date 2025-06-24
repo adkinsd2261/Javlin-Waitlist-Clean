@@ -181,40 +181,209 @@ export default function Waitlist() {
             </div>
           </div>
 
-          {/* Jav Assistant Features */}
+          {/* Jav Assistant Deep Dive */}
           <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 rounded-3xl p-10 border border-purple-500/20">
-            <div className="text-center mb-8">
+            <div className="text-center mb-12">
               <div className="w-20 h-20 bg-purple-500/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <MessageCircle className="w-10 h-10 text-purple-400" />
               </div>
               <h3 className="text-3xl font-bold text-white mb-4">How Jav Assists You</h3>
-              <p className="text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
-                Jav adapts its personality and intervention level to your needs. Strategic guidance when you're stuck, 
-                proactive warnings before mistakes, and quiet focus when you're in flow.
+              <p className="text-xl text-gray-300 leading-relaxed max-w-4xl mx-auto">
+                Jav is your AI co-founder with deep mode-specific intelligence. It adapts its personality, 
+                intervention level, and assistance based on what you're doing and how you work best.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <div className="bg-white/5 rounded-2xl p-6 border border-white/10 text-center">
-                <Users className="w-8 h-8 text-green-400 mx-auto mb-4" />
-                <h4 className="text-white font-semibold mb-2">Adaptive Persona</h4>
-                <p className="text-gray-400 text-sm">Tone and intervention level adapt to your project mode and working style</p>
+            {/* Mode-Specific Assistance */}
+            <div className="grid lg:grid-cols-3 gap-8 mb-12">
+              {/* Creative Mode Assistance */}
+              <div className="bg-white/5 rounded-2xl p-8 border border-white/10">
+                <div className="w-16 h-16 bg-pink-500/20 rounded-2xl flex items-center justify-center mb-6">
+                  <Lightbulb className="w-8 h-8 text-pink-400" />
+                </div>
+                <h4 className="text-xl font-bold text-white mb-4">In Creative Mode</h4>
+                <div className="space-y-4">
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <div>
+                      <p className="text-white font-medium text-sm">Inspiration on Demand</p>
+                      <p className="text-gray-400 text-sm">Surfaces color schemes, layouts, and design patterns from your successful past projects</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <div>
+                      <p className="text-white font-medium text-sm">Creative Flow Protection</p>
+                      <p className="text-gray-400 text-sm">Stays quiet during deep creative work, only intervening with breakthrough insights</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <div>
+                      <p className="text-white font-medium text-sm">Idea Connections</p>
+                      <p className="text-gray-400 text-sm">Links scattered ideas across sessions, showing how concepts from different projects relate</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <div>
+                      <p className="text-white font-medium text-sm">User Testing Insights</p>
+                      <p className="text-gray-400 text-sm">Reminds you what design decisions actually converted vs. what just looked good</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className="bg-white/5 rounded-2xl p-6 border border-white/10 text-center">
-                <Zap className="w-8 h-8 text-yellow-400 mx-auto mb-4" />
-                <h4 className="text-white font-semibold mb-2">Cross-Project Intelligence</h4>
-                <p className="text-gray-400 text-sm">Connects lessons, patterns, and solutions across all your projects</p>
+
+              {/* Dev Mode Assistance */}
+              <div className="bg-white/5 rounded-2xl p-8 border border-white/10">
+                <div className="w-16 h-16 bg-blue-500/20 rounded-2xl flex items-center justify-center mb-6">
+                  <Code className="w-8 h-8 text-blue-400" />
+                </div>
+                <h4 className="text-xl font-bold text-white mb-4">In Dev Mode</h4>
+                <div className="space-y-4">
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <div>
+                      <p className="text-white font-medium text-sm">Proactive Debugging</p>
+                      <p className="text-gray-400 text-sm">Warns before you implement patterns that caused issues in previous projects</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <div>
+                      <p className="text-white font-medium text-sm">Architecture Guidance</p>
+                      <p className="text-gray-400 text-sm">Suggests proven patterns from your codebase and warns about scaling pitfalls</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <div>
+                      <p className="text-white font-medium text-sm">Context-Aware Code Gen</p>
+                      <p className="text-gray-400 text-sm">Generates code that fits your style and integrates with your existing architecture</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <div>
+                      <p className="text-white font-medium text-sm">Performance Optimization</p>
+                      <p className="text-gray-400 text-sm">Surfaces optimization techniques that worked in similar projects</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className="bg-white/5 rounded-2xl p-6 border border-white/10 text-center">
-                <Shield className="w-8 h-8 text-blue-400 mx-auto mb-4" />
-                <h4 className="text-white font-semibold mb-2">Proactive Warnings</h4>
-                <p className="text-gray-400 text-sm">Prevents repeated mistakes with real-time alerts based on past experiences</p>
+
+              {/* Journaling Mode */}
+              <div className="bg-white/5 rounded-2xl p-8 border border-white/10">
+                <div className="w-16 h-16 bg-green-500/20 rounded-2xl flex items-center justify-center mb-6">
+                  <MessageCircle className="w-8 h-8 text-green-400" />
+                </div>
+                <h4 className="text-xl font-bold text-white mb-4">In Journaling Mode</h4>
+                <div className="space-y-4">
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-green-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <div>
+                      <p className="text-white font-medium text-sm">Decision Tracking</p>
+                      <p className="text-gray-400 text-sm">Helps you log why you made certain choices and their outcomes for future reference</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-green-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <div>
+                      <p className="text-white font-medium text-sm">Pattern Recognition</p>
+                      <p className="text-gray-400 text-sm">Identifies recurring challenges and suggests strategies based on past successes</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-green-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <div>
+                      <p className="text-white font-medium text-sm">Emotional Intelligence</p>
+                      <p className="text-gray-400 text-sm">Tracks your energy patterns and suggests when to take breaks or switch modes</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-green-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <div>
+                      <p className="text-white font-medium text-sm">Breakthrough Moments</p>
+                      <p className="text-gray-400 text-sm">Captures and categorizes your "aha!" moments for future inspiration</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className="bg-white/5 rounded-2xl p-6 border border-white/10 text-center">
-                <Lock className="w-8 h-8 text-red-400 mx-auto mb-4" />
-                <h4 className="text-white font-semibold mb-2">Full Control</h4>
-                <p className="text-gray-400 text-sm">Review, edit, and delete memories. Privacy by default with transparent management</p>
+            </div>
+
+            {/* Behind the Scenes */}
+            <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-2xl p-8 border border-blue-500/20 mb-8">
+              <h4 className="text-2xl font-bold text-white mb-6 text-center">What Jav Does Behind the Scenes</h4>
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="space-y-4">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-8 h-8 bg-purple-500/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                      <Brain className="w-4 h-4 text-purple-400" />
+                    </div>
+                    <div>
+                      <h5 className="text-white font-semibold mb-2">Continuous Learning</h5>
+                      <p className="text-gray-300 text-sm">Every click, keystroke, and decision feeds into MemoryOS. Jav learns your preferences, patterns, and what works for your specific use cases.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-4">
+                    <div className="w-8 h-8 bg-purple-500/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                      <Zap className="w-4 h-4 text-yellow-400" />
+                    </div>
+                    <div>
+                      <h5 className="text-white font-semibold mb-2">Pattern Matching</h5>
+                      <p className="text-gray-300 text-sm">Analyzes your current context against thousands of past decisions to surface the most relevant insights at exactly the right moment.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-4">
+                    <div className="w-8 h-8 bg-purple-500/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                      <Users className="w-4 h-4 text-green-400" />
+                    </div>
+                    <div>
+                      <h5 className="text-white font-semibold mb-2">Adaptive Personality</h5>
+                      <p className="text-gray-300 text-sm">Adjusts communication style based on your mood, project phase, and stress levels. Cheerleader when you need motivation, strategic advisor when you're stuck.</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="space-y-4">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-8 h-8 bg-purple-500/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                      <Shield className="w-4 h-4 text-blue-400" />
+                    </div>
+                    <div>
+                      <h5 className="text-white font-semibold mb-2">Risk Assessment</h5>
+                      <p className="text-gray-300 text-sm">Continuously evaluates potential pitfalls based on your project history and warns you before you make costly mistakes.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-4">
+                    <div className="w-8 h-8 bg-purple-500/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                      <Lock className="w-4 h-4 text-red-400" />
+                    </div>
+                    <div>
+                      <h5 className="text-white font-semibold mb-2">Privacy Protection</h5>
+                      <p className="text-gray-300 text-sm">All memory processing happens with your explicit control. Review, edit, or delete any memory. Your data stays yours, always.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-4">
+                    <div className="w-8 h-8 bg-purple-500/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                      <ArrowRight className="w-4 h-4 text-purple-400" />
+                    </div>
+                    <div>
+                      <h5 className="text-white font-semibold mb-2">Seamless Transitions</h5>
+                      <p className="text-gray-300 text-sm">Maintains full context when you switch between modes. Your creative decisions inform technical choices and vice versa.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
+            </div>
+
+            {/* Adaptive Intelligence */}
+            <div className="text-center">
+              <h4 className="text-2xl font-bold text-white mb-4">The Result: Your Perfect Co-founder</h4>
+              <p className="text-lg text-gray-300 leading-relaxed max-w-4xl mx-auto">
+                Jav becomes more valuable with every project. It learns your creative patterns, coding style, decision-making process, 
+                and even your emotional rhythms. The longer you work together, the better it gets at being exactly the co-founder you need—
+                strategic when you're lost, tactical when you're building, and wise when you're about to repeat a mistake.
+              </p>
             </div>
           </div>
         </div>

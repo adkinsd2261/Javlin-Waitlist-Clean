@@ -101,83 +101,18 @@ export default function Waitlist() {
         </div>
       </section>
 
-      {/* Features Section */}
-      <section className="py-20 px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-8">
-            {/* MemoryOS */}
-            <div className="bg-white/5 rounded-3xl p-8 border border-white/10 hover:border-blue-500/30 transition-all duration-300">
-              <div className="flex items-start space-x-6">
-                <div className="w-16 h-16 bg-blue-500/20 rounded-2xl flex items-center justify-center flex-shrink-0">
-                  <Brain className="w-8 h-8 text-blue-400" />
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-white mb-3">MemoryOS</h3>
-                  <p className="text-gray-300 leading-relaxed">
-                    Not just storage, but an active, intelligent "brain" that learns from your actions and proactively surfaces relevant context.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Cross-Project Intelligence */}
-            <div className="bg-white/5 rounded-3xl p-8 border border-white/10 hover:border-purple-500/30 transition-all duration-300">
-              <div className="flex items-start space-x-6">
-                <div className="w-16 h-16 bg-purple-500/20 rounded-2xl flex items-center justify-center flex-shrink-0">
-                  <Zap className="w-8 h-8 text-purple-400" />
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-white mb-3">Cross-Project Intelligence</h3>
-                  <p className="text-gray-300 leading-relaxed">
-                    Aggregates lessons, patterns, and pitfalls from all projects to build your personal "institutional knowledge."
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Personal Co-founder */}
-            <div className="bg-white/5 rounded-3xl p-8 border border-white/10 hover:border-green-500/30 transition-all duration-300">
-              <div className="flex items-start space-x-6">
-                <div className="w-16 h-16 bg-green-500/20 rounded-2xl flex items-center justify-center flex-shrink-0">
-                  <Users className="w-8 h-8 text-green-400" />
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-white mb-3">Personal Co-founder Experience</h3>
-                  <p className="text-gray-300 leading-relaxed">
-                    Adaptive persona with guidance, not replacement—tone and intervention level adapt to your needs and project mode.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Control & Privacy */}
-            <div className="bg-white/5 rounded-3xl p-8 border border-white/10 hover:border-red-500/30 transition-all duration-300">
-              <div className="flex items-start space-x-6">
-                <div className="w-16 h-16 bg-red-500/20 rounded-2xl flex items-center justify-center flex-shrink-0">
-                  <Lock className="w-8 h-8 text-red-400" />
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-white mb-3">Control & Privacy</h3>
-                  <p className="text-gray-300 leading-relaxed">
-                    Users can review, edit, and delete memories. Privacy by default with transparent memory management.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* How Javlin Works */}
+      {/* Product Overview */}
       <section className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">How Javlin Works</h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Four integrated components that work together to be your AI co-founder
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">Meet Jav: Your AI Co-founder</h2>
+            <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+              Unlike traditional AI tools that lose context and make you repeat yourself, Jav remembers everything. 
+              It's designed for the complete builder journey—from creative ideation to shipping code.
             </p>
           </div>
 
+          {/* Creative & Dev Modes */}
           <div className="grid lg:grid-cols-2 gap-12 mb-16">
             {/* Creative Mode */}
             <div className="group bg-gradient-to-br from-pink-500/10 to-purple-500/10 rounded-3xl p-10 border border-pink-500/20 hover:border-pink-500/40 transition-all duration-300 hover:shadow-2xl hover:shadow-pink-500/20">
@@ -246,48 +181,161 @@ export default function Waitlist() {
             </div>
           </div>
 
-          {/* Assistant & MemoryOS Overview */}
-          <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 rounded-3xl p-10 border border-purple-500/20 mb-12">
+          {/* Jav Assistant Features */}
+          <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 rounded-3xl p-10 border border-purple-500/20">
             <div className="text-center mb-8">
               <div className="w-20 h-20 bg-purple-500/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <MessageCircle className="w-10 h-10 text-purple-400" />
               </div>
-              <h3 className="text-3xl font-bold text-white mb-4">Jav: Your Memory Powered Assistant</h3>
+              <h3 className="text-3xl font-bold text-white mb-4">How Jav Assists You</h3>
               <p className="text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
-                Meet Jav, your AI co-founder that adapts its tone and intervention level to your needs. Get strategic guidance, 
-                accountability, and context-aware assistance that evolves with your working style.
+                Jav adapts its personality and intervention level to your needs. Strategic guidance when you're stuck, 
+                proactive warnings before mistakes, and quiet focus when you're in flow.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-white/5 rounded-2xl p-6 border border-white/10">
-                <h4 className="text-xl font-bold text-white mb-4">Seamless Mode Switching</h4>
-                <p className="text-gray-300 leading-relaxed">
-                  Switch between Creative and Dev modes without losing context. Your design decisions inform your code architecture, 
-                  and technical constraints shape your creative choices—all preserved in MemoryOS.
-                </p>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="bg-white/5 rounded-2xl p-6 border border-white/10 text-center">
+                <Users className="w-8 h-8 text-green-400 mx-auto mb-4" />
+                <h4 className="text-white font-semibold mb-2">Adaptive Persona</h4>
+                <p className="text-gray-400 text-sm">Tone and intervention level adapt to your project mode and working style</p>
               </div>
-              <div className="bg-white/5 rounded-2xl p-6 border border-white/10">
-                <h4 className="text-xl font-bold text-white mb-4">Adaptive Intervention</h4>
-                <p className="text-gray-300 leading-relaxed">
-                  Jav learns when you want deep focus and when you need guidance. It might stay quiet during flow states, 
-                  then proactively surface warnings when you're about to repeat a costly mistake.
-                </p>
+              <div className="bg-white/5 rounded-2xl p-6 border border-white/10 text-center">
+                <Zap className="w-8 h-8 text-yellow-400 mx-auto mb-4" />
+                <h4 className="text-white font-semibold mb-2">Cross-Project Intelligence</h4>
+                <p className="text-gray-400 text-sm">Connects lessons, patterns, and solutions across all your projects</p>
+              </div>
+              <div className="bg-white/5 rounded-2xl p-6 border border-white/10 text-center">
+                <Shield className="w-8 h-8 text-blue-400 mx-auto mb-4" />
+                <h4 className="text-white font-semibold mb-2">Proactive Warnings</h4>
+                <p className="text-gray-400 text-sm">Prevents repeated mistakes with real-time alerts based on past experiences</p>
+              </div>
+              <div className="bg-white/5 rounded-2xl p-6 border border-white/10 text-center">
+                <Lock className="w-8 h-8 text-red-400 mx-auto mb-4" />
+                <h4 className="text-white font-semibold mb-2">Full Control</h4>
+                <p className="text-gray-400 text-sm">Review, edit, and delete memories. Privacy by default with transparent management</p>
               </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          {/* MemoryOS Technical Detail */}
-          <div className="text-center">
-            <div className="w-20 h-20 bg-blue-500/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
-              <Brain className="w-10 h-10 text-blue-400" />
-            </div>
-            <h3 className="text-2xl font-bold text-white mb-4">Powered by MemoryOS</h3>
-            <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              The active memory brain that learns from your decisions, code, and creative choices. 
-              It doesn't just store—it connects patterns, warns about pitfalls, and surfaces solutions 
-              when you need them most.
+      {/* User Journey */}
+      <section className="py-20 px-6">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">Your Journey with Javlin</h2>
+            <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+              From first workspace to shipped product—see how Jav becomes your indispensable co-founder.
             </p>
+          </div>
+
+          <div className="space-y-12">
+            {/* Step 1: Create Workspace */}
+            <div className="bg-white/5 rounded-2xl p-8 border border-white/10">
+              <div className="grid lg:grid-cols-2 gap-8 items-center">
+                <div>
+                  <div className="flex items-center space-x-4 mb-4">
+                    <div className="w-10 h-10 bg-blue-500/20 rounded-full flex items-center justify-center">
+                      <span className="text-blue-400 font-bold">1</span>
+                    </div>
+                    <h3 className="text-2xl font-bold text-white">Create Your Workspace</h3>
+                  </div>
+                  <p className="text-gray-300 leading-relaxed mb-4">
+                    Start a new project and Jav immediately begins learning. Every decision, every line of code, 
+                    every creative choice gets captured in your personal MemoryOS.
+                  </p>
+                  <p className="text-sm text-gray-400">
+                    "Building my portfolio site - want to try that card hover effect from my last project"
+                  </p>
+                </div>
+                <div className="bg-blue-500/10 rounded-xl p-6 border border-blue-500/20">
+                  <div className="text-sm text-gray-400 mb-2">Jav learns:</div>
+                  <ul className="space-y-2 text-sm text-gray-300">
+                    <li>• Your preferred tech stack</li>
+                    <li>• Design patterns you like</li>
+                    <li>• Development workflow</li>
+                    <li>• Creative process and timing</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Step 2: Creative Process */}
+            <div className="bg-white/5 rounded-2xl p-8 border border-white/10">
+              <div className="grid lg:grid-cols-2 gap-8 items-center">
+                <div className="order-2 lg:order-1">
+                  <div className="bg-pink-500/10 rounded-xl p-6 border border-pink-500/20">
+                    <div className="text-sm text-gray-400 mb-2">Creative Mode assists with:</div>
+                    <ul className="space-y-2 text-sm text-gray-300">
+                      <li>• Color palettes that converted well previously</li>
+                      <li>• Layout ideas from successful projects</li>
+                      <li>• Copy patterns that resonated with users</li>
+                      <li>• Design systems you've built before</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="order-1 lg:order-2">
+                  <div className="flex items-center space-x-4 mb-4">
+                    <div className="w-10 h-10 bg-pink-500/20 rounded-full flex items-center justify-center">
+                      <span className="text-pink-400 font-bold">2</span>
+                    </div>
+                    <h3 className="text-2xl font-bold text-white">Design & Ideate</h3>
+                  </div>
+                  <p className="text-gray-300 leading-relaxed mb-4">
+                    Switch to Creative Mode and Jav surfaces relevant inspiration from your past wins. 
+                    No more blank page syndrome—your creative history becomes your starting point.
+                  </p>
+                  <p className="text-sm text-gray-400">
+                    "That blue-purple gradient worked great for conversions on Project Alpha"
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Step 3: Development */}
+            <div className="bg-white/5 rounded-2xl p-8 border border-white/10">
+              <div className="grid lg:grid-cols-2 gap-8 items-center">
+                <div>
+                  <div className="flex items-center space-x-4 mb-4">
+                    <div className="w-10 h-10 bg-blue-500/20 rounded-full flex items-center justify-center">
+                      <span className="text-blue-400 font-bold">3</span>
+                    </div>
+                    <h3 className="text-2xl font-bold text-white">Build & Code</h3>
+                  </div>
+                  <p className="text-gray-300 leading-relaxed mb-4">
+                    Switch to Dev Mode with full creative context preserved. Jav warns about past pitfalls 
+                    and suggests proven patterns. No more reinventing solutions you've already perfected.
+                  </p>
+                  <p className="text-sm text-gray-400">
+                    "Wait—that JWT approach caused refresh token issues in Project Beta. Here's what actually worked."
+                  </p>
+                </div>
+                <div className="bg-blue-500/10 rounded-xl p-6 border border-blue-500/20">
+                  <div className="text-sm text-gray-400 mb-2">Dev Mode prevents:</div>
+                  <ul className="space-y-2 text-sm text-gray-300">
+                    <li>• Repeating the same bugs</li>
+                    <li>• Forgotten architecture decisions</li>
+                    <li>• Database migration mistakes</li>
+                    <li>• API integration pitfalls</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Step 4: Continuous Learning */}
+            <div className="bg-gradient-to-r from-purple-500/10 to-blue-500/10 rounded-2xl p-8 border border-purple-500/20 text-center">
+              <div className="flex items-center justify-center space-x-4 mb-6">
+                <div className="w-10 h-10 bg-purple-500/20 rounded-full flex items-center justify-center">
+                  <span className="text-purple-400 font-bold">4</span>
+                </div>
+                <h3 className="text-2xl font-bold text-white">Jav Grows Smarter</h3>
+              </div>
+              <p className="text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
+                Every project makes Jav better. Your personal institutional knowledge grows, 
+                connecting patterns across projects and becoming the ultimate competitive advantage.
+              </p>
+            </div>
           </div>
         </div>
       </section>

@@ -125,7 +125,7 @@ export default function Waitlist() {
               and grows smarter with every project — so you never repeat yourself again.
             </p>
             
-            <div className="pt-8 flex flex-col sm:flex-row gap-6 justify-center items-center">
+            <div className="pt-8 flex justify-center">
               <Button 
                 onClick={() => document.getElementById('waitlist-form')?.scrollIntoView({ behavior: 'smooth' })}
                 className="bg-gradient-to-r from-[#5151FF] to-[#6a5cff] hover:from-[#4141EF] hover:to-[#5a4cef] text-white font-semibold text-xl px-16 py-6 rounded-2xl shadow-2xl shadow-[#5151FF]/30 border-0 transition-all duration-300 transform hover:scale-105 hover:shadow-[#5151FF]/50"
@@ -133,12 +133,6 @@ export default function Waitlist() {
                 Join the Waitlist
                 <span className="ml-2">→</span>
               </Button>
-              <button className="text-gray-300 hover:text-white font-medium text-lg transition-colors duration-200 flex items-center space-x-2">
-                <span>Watch Demo</span>
-                <div className="w-8 h-8 border border-gray-400 rounded-full flex items-center justify-center">
-                  <div className="w-3 h-3 bg-gray-400 rounded-full"></div>
-                </div>
-              </button>
             </div>
 
             {/* Subtle stats or social proof */}

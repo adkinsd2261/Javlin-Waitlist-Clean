@@ -453,54 +453,7 @@ export default function Waitlist() {
             </div>
           </div>
 
-          {/* Technical Implementation */}
-          <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-3xl p-12 border border-blue-500/20 mb-16">
-            <h3 className="text-3xl font-bold text-white mb-8 text-center">Technical Implementation</h3>
-            <div className="grid md:grid-cols-2 gap-8">
-              <div>
-                <h4 className="text-xl font-bold text-white mb-4">MVP Architecture</h4>
-                <ul className="space-y-3 text-gray-300">
-                  <li className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
-                    <span>Stores memories as markdown files, indexed in memory.json</span>
-                  </li>
-                  <li className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
-                    <span>Uses embeddings + keywords for context matching</span>
-                  </li>
-                  <li className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
-                    <span>AI surfaces solutions with user accept/ignore options</span>
-                  </li>
-                  <li className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
-                    <span>All memory actions are auditable and reversible</span>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h4 className="text-xl font-bold text-white mb-4">Scaling Strategy</h4>
-                <ul className="space-y-3 text-gray-300">
-                  <li className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
-                    <span>Scalable vector/embedding search for expansion</span>
-                  </li>
-                  <li className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
-                    <span>Multi-project memory architecture</span>
-                  </li>
-                  <li className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
-                    <span>Memory grows with user, not just project</span>
-                  </li>
-                  <li className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
-                    <span>Efficient opt-in cross-project recall</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+
 
           {/* Competitive Advantage */}
           <div className="bg-gradient-to-r from-purple-500/10 to-blue-500/10 rounded-3xl p-12 border border-purple-500/20">

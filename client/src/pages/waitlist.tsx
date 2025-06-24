@@ -304,11 +304,11 @@ export default function Waitlist() {
             {/* Core SaaS Platform */}
             <div className="grid lg:grid-cols-2 gap-12 mb-20">
               {/* Creative Mode */}
-              <div className="group bg-gradient-to-br from-green-500/10 to-emerald-500/10 rounded-3xl p-10 border border-green-500/20 hover:border-green-500/40 transition-all duration-300 hover:shadow-2xl hover:shadow-green-500/20 hover:scale-[1.02] transform">
-                <div className="w-24 h-24 bg-green-500/20 group-hover:bg-green-500/30 rounded-3xl flex items-center justify-center mb-8 transition-all duration-300">
-                  <Lightbulb className="w-12 h-12 text-green-400" />
+              <div className="group bg-gradient-to-br from-pink-500/10 to-purple-500/10 rounded-3xl p-10 border border-pink-500/20 hover:border-pink-500/40 transition-all duration-300 hover:shadow-2xl hover:shadow-pink-500/20 hover:scale-[1.02] transform">
+                <div className="w-24 h-24 bg-gradient-to-br from-pink-500/20 to-purple-500/20 group-hover:from-pink-500/30 group-hover:to-purple-500/30 rounded-full flex items-center justify-center mb-8 transition-all duration-300 shadow-lg shadow-pink-500/20">
+                  <Lightbulb className="w-12 h-12 text-pink-400" />
                 </div>
-                <h3 className="text-3xl font-bold text-white mb-6 group-hover:text-green-400 transition-colors">Creative Mode</h3>
+                <h3 className="text-3xl font-bold text-white mb-6 group-hover:text-pink-400 transition-colors">Creative Mode</h3>
                 <p className="text-xl text-gray-300 leading-relaxed mb-8">
                   Designed for deep creative work. Capture ideas, build moodboards, and plan projects without context switching. 
                   Your Memory Engine tracks creative patterns and suggests design directions based on your past successes.
@@ -316,8 +316,8 @@ export default function Waitlist() {
                 
                 <div className="space-y-4 mb-8">
                   <div className="flex items-start space-x-3">
-                    <div className="w-6 h-6 bg-green-400/20 rounded-lg flex items-center justify-center mt-1 flex-shrink-0">
-                      <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                    <div className="w-6 h-6 bg-pink-400/20 rounded-lg flex items-center justify-center mt-1 flex-shrink-0">
+                      <div className="w-2 h-2 bg-pink-400 rounded-full"></div>
                     </div>
                     <div>
                       <h4 className="text-white font-semibold mb-1">Flow State Optimization</h4>
@@ -325,8 +325,8 @@ export default function Waitlist() {
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="w-6 h-6 bg-green-400/20 rounded-lg flex items-center justify-center mt-1 flex-shrink-0">
-                      <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                    <div className="w-6 h-6 bg-pink-400/20 rounded-lg flex items-center justify-center mt-1 flex-shrink-0">
+                      <div className="w-2 h-2 bg-pink-400 rounded-full"></div>
                     </div>
                     <div>
                       <h4 className="text-white font-semibold mb-1">Intelligent Ideation</h4>
@@ -334,8 +334,8 @@ export default function Waitlist() {
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="w-6 h-6 bg-green-400/20 rounded-lg flex items-center justify-center mt-1 flex-shrink-0">
-                      <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                    <div className="w-6 h-6 bg-pink-400/20 rounded-lg flex items-center justify-center mt-1 flex-shrink-0">
+                      <div className="w-2 h-2 bg-pink-400 rounded-full"></div>
                     </div>
                     <div>
                       <h4 className="text-white font-semibold mb-1">Seamless Transition</h4>
@@ -344,19 +344,19 @@ export default function Waitlist() {
                   </div>
                 </div>
 
-                <div className="bg-green-500/10 rounded-2xl p-6 border border-green-500/20">
-                  <p className="text-green-300 font-medium italic">
+                <div className="bg-gradient-to-r from-pink-500/10 to-purple-500/10 rounded-2xl p-6 border border-pink-500/20">
+                  <p className="text-pink-300 font-medium italic">
                     "Finally, a creative environment that remembers my design decisions and helps me stay in flow."
                   </p>
                 </div>
               </div>
 
               {/* Dev Mode */}
-              <div className="group bg-gradient-to-br from-[#5151FF]/10 to-[#6a5cff]/10 rounded-3xl p-10 border border-[#5151FF]/20 hover:border-[#5151FF]/40 transition-all duration-300 hover:shadow-2xl hover:shadow-[#5151FF]/20 hover:scale-[1.02] transform">
-                <div className="w-24 h-24 bg-[#5151FF]/20 group-hover:bg-[#5151FF]/30 rounded-3xl flex items-center justify-center mb-8 transition-all duration-300">
-                  <Code className="w-12 h-12 text-[#5151FF]" />
+              <div className="group bg-gradient-to-br from-blue-500/10 to-purple-600/10 rounded-3xl p-10 border border-blue-500/20 hover:border-blue-500/40 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/20 hover:scale-[1.02] transform">
+                <div className="w-24 h-24 bg-gradient-to-br from-blue-500/20 to-purple-600/20 group-hover:from-blue-500/30 group-hover:to-purple-600/30 rounded-full flex items-center justify-center mb-8 transition-all duration-300 shadow-lg shadow-blue-500/20">
+                  <Code className="w-12 h-12 text-blue-400" />
                 </div>
-                <h3 className="text-3xl font-bold text-white mb-6 group-hover:text-[#5151FF] transition-colors">Dev Mode</h3>
+                <h3 className="text-3xl font-bold text-white mb-6 group-hover:text-blue-400 transition-colors">Dev Mode</h3>
                 <p className="text-xl text-gray-300 leading-relaxed mb-8">
                   AI-supercharged development that maintains creative context. Code with confidence knowing your Memory Engine 
                   prevents repeated mistakes and surfaces relevant solutions from your project history.
@@ -364,8 +364,8 @@ export default function Waitlist() {
                 
                 <div className="space-y-4 mb-8">
                   <div className="flex items-start space-x-3">
-                    <div className="w-6 h-6 bg-[#5151FF]/20 rounded-lg flex items-center justify-center mt-1 flex-shrink-0">
-                      <div className="w-2 h-2 bg-[#5151FF] rounded-full"></div>
+                    <div className="w-6 h-6 bg-blue-400/20 rounded-lg flex items-center justify-center mt-1 flex-shrink-0">
+                      <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
                     </div>
                     <div>
                       <h4 className="text-white font-semibold mb-1">Context-Aware Coding</h4>
@@ -373,8 +373,8 @@ export default function Waitlist() {
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="w-6 h-6 bg-[#5151FF]/20 rounded-lg flex items-center justify-center mt-1 flex-shrink-0">
-                      <div className="w-2 h-2 bg-[#5151FF] rounded-full"></div>
+                    <div className="w-6 h-6 bg-blue-400/20 rounded-lg flex items-center justify-center mt-1 flex-shrink-0">
+                      <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
                     </div>
                     <div>
                       <h4 className="text-white font-semibold mb-1">Proactive Warnings</h4>
@@ -382,8 +382,8 @@ export default function Waitlist() {
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="w-6 h-6 bg-[#5151FF]/20 rounded-lg flex items-center justify-center mt-1 flex-shrink-0">
-                      <div className="w-2 h-2 bg-[#5151FF] rounded-full"></div>
+                    <div className="w-6 h-6 bg-blue-400/20 rounded-lg flex items-center justify-center mt-1 flex-shrink-0">
+                      <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
                     </div>
                     <div>
                       <h4 className="text-white font-semibold mb-1">Cognitive Load Reduction</h4>
@@ -392,8 +392,8 @@ export default function Waitlist() {
                   </div>
                 </div>
 
-                <div className="bg-[#5151FF]/10 rounded-2xl p-6 border border-[#5151FF]/20">
-                  <p className="text-[#5151FF] font-medium italic">
+                <div className="bg-gradient-to-r from-blue-500/10 to-purple-600/10 rounded-2xl p-6 border border-blue-500/20">
+                  <p className="text-blue-300 font-medium italic">
                     "Development without the mental fatigue. It's like having a co-founder who never forgets."
                   </p>
                 </div>
@@ -485,8 +485,8 @@ export default function Waitlist() {
                     You review, update, and apply the solution—saving hours of debugging you'd already done months ago."
                   </p>
                 </div>
-                <div className="text-center mt-6">
-                  <p className="text-gray-400">This is deep work without the mental overhead</p>
+                <div className="text-center mt-8">
+                  <p className="text-lg text-gray-400">This is an AI co-founder that understands the human side of building</p>
                 </div>
               </div>
             </div>

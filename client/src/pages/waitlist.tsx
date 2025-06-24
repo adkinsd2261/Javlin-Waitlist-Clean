@@ -98,7 +98,7 @@ export default function Waitlist() {
             {/* Badge */}
             <div className="inline-flex items-center bg-white/5 border border-white/10 rounded-full px-6 py-3 backdrop-blur-sm">
               <Sparkles className="w-4 h-4 text-[#5151FF] mr-2" />
-              <span className="text-sm font-medium text-white">Introducing the first AI with persistent memory</span>
+              <span className="text-sm font-medium text-white">Powered by Javlin's proprietary Memory Engine</span>
             </div>
             
             <h1 className="text-6xl lg:text-8xl font-bold text-white leading-[0.9] tracking-tight">
@@ -181,7 +181,7 @@ export default function Waitlist() {
                 <div className="space-y-4">
                   <div className="bg-[#5151FF]/10 border border-[#5151FF]/20 rounded-xl p-6">
                     <h4 className="text-lg font-semibold text-white mb-2">Persistent Memory Engine</h4>
-                    <p className="text-gray-300">MemoryOS remembers every solution, every decision, every lesson learned. Nothing is ever lost.</p>
+                    <p className="text-gray-300">Javlin's Memory Engine remembers every solution, every decision, every lesson learned. Nothing is ever lost.</p>
                   </div>
                   <div className="bg-[#5151FF]/10 border border-[#5151FF]/20 rounded-xl p-6">
                     <h4 className="text-lg font-semibold text-white mb-2">Proactive Context Recovery</h4>
@@ -233,7 +233,7 @@ export default function Waitlist() {
                   <div className="space-y-4">
                     <h3 className="text-2xl font-bold text-white">Cross-Project Intelligence</h3>
                     <p className="text-gray-300 leading-relaxed">
-                      "Remember when you solved this in Project Alpha?" Javlin connects insights across all your work, 
+                      "Remember when you solved this in Project Alpha?" Javlin's Memory Engine connects insights across all your work, 
                       building institutional knowledge that compounds over time.
                     </p>
                   </div>
@@ -292,7 +292,7 @@ export default function Waitlist() {
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
               <div className="inline-flex items-center bg-[#5151FF]/10 border border-[#5151FF]/20 rounded-full px-4 py-2 backdrop-blur-sm mb-6">
-                <span className="text-sm font-medium text-[#5151FF]">MemoryOS Powered</span>
+                <span className="text-sm font-medium text-[#5151FF]">Memory Engine Powered</span>
               </div>
               <h2 className="text-4xl lg:text-5xl font-bold text-white mb-8">3 Memory-Engine Backed Tools</h2>
               <p className="text-2xl text-gray-300 max-w-5xl mx-auto leading-relaxed font-light">
@@ -389,9 +389,9 @@ export default function Waitlist() {
                 <div className="w-24 h-24 bg-[#5151FF]/20 rounded-full flex items-center justify-center mx-auto mb-8">
                   <Brain className="w-12 h-12 text-[#5151FF]" />
                 </div>
-                <h3 className="text-3xl lg:text-4xl font-bold text-white mb-6">Powered by MemoryOS</h3>
+                <h3 className="text-3xl lg:text-4xl font-bold text-white mb-6">Powered by Javlin's Memory Engine</h3>
                 <p className="text-xl text-gray-300 leading-relaxed max-w-4xl mx-auto mb-8">
-                  Every tool is backed by our revolutionary memory engine that captures, learns, and recalls context 
+                  Every tool is backed by Javlin's proprietary Memory Engine that captures, learns, and recalls context 
                   across all your projects. Experience true AI assistance that gets smarter with every interaction.
                 </p>
                 

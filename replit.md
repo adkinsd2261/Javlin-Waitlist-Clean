@@ -1,7 +1,7 @@
 # Javlin.ai Waitlist Landing Page
 
 ## Overview
-This is a full-stack web application for Javlin.ai's waitlist landing page. The application features a premium, dark-themed design with a Next.js-style architecture using React, Express.js, and PostgreSQL for collecting waitlist signups for an AI co-founder platform.
+This is a full-stack web application for Javlin.ai's waitlist landing page. The application features a premium, dark-themed design with a Next.js-style architecture using React, Express.js, and PostgreSQL for collecting waitlist signups for an AI co-founder platform powered by Javlin's proprietary Memory Engine.
 
 ## System Architecture
 
@@ -103,7 +103,7 @@ This is a full-stack web application for Javlin.ai's waitlist landing page. The 
 - June 24, 2025: Completed comprehensive UI/UX audit and polish for premium client readiness
   - **User Journey Optimization**: Streamlined information hierarchy with clear problem → solution → tools → action flow
   - **Bloat Removal**: Eliminated expandable sections that created cognitive load; converted to clean, scannable layouts
-  - **Enhanced "How Javlin Works"**: Redesigned as 3 memory-engine backed tools (Jav Studio, Creative Mode, JavChat) with no-code building emphasis
+  - **Enhanced "How Javlin Works"**: Redesigned as 3 Memory Engine-backed tools (Jav Studio, Creative Mode, JavChat) with no-code building emphasis
   - **Visual Polish**: Added hover animations, glow effects, proper spacing, and premium color themes for each tool
   - **Magic Moment Story**: Included real user scenario showcasing proactive memory recall across projects
   - **Streamlined Features**: Consolidated advanced features into digestible sections with clear value propositions

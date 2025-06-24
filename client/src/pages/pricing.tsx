@@ -91,7 +91,7 @@ export default function Pricing() {
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-5 h-5 text-[#5151FF] mt-0.5 flex-shrink-0" />
-                  <span className="text-white">Advanced MemoryOS recall</span>
+                  <span className="text-white">Advanced Memory Engine recall</span>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-5 h-5 text-[#5151FF] mt-0.5 flex-shrink-0" />

@@ -368,6 +368,196 @@ export default function Waitlist() {
         </div>
       </section>
 
+      {/* Memory Engine Deep Dive */}
+      <section className="py-20 px-6">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <div className="w-24 h-24 bg-blue-500/20 rounded-2xl flex items-center justify-center mx-auto mb-8">
+              <Brain className="w-12 h-12 text-blue-400" />
+            </div>
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">The Memory Engine Advantage</h2>
+            <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+              What makes Javlin different isn't just AI—it's Memory Engine, the active brain that learns from every decision, 
+              connects patterns across projects, and proactively surfaces exactly what you need, when you need it.
+            </p>
+          </div>
+
+          {/* How Memory Engine Works */}
+          <div className="grid lg:grid-cols-2 gap-12 mb-16">
+            <div>
+              <h3 className="text-3xl font-bold text-white mb-8">How Memory Engine Works</h3>
+              <div className="space-y-6">
+                <div className="bg-white/5 rounded-2xl p-6 border border-white/10">
+                  <h4 className="text-xl font-bold text-white mb-3">Active Intelligence, Not Storage</h4>
+                  <p className="text-gray-300 leading-relaxed">
+                    Memory Engine isn't just storage—it's an active, intelligent "brain" that learns from your actions, decisions, 
+                    code, and docs. It proactively surfaces relevant context using embedding similarity and context relevance to match 
+                    new activity to past memories.
+                  </p>
+                </div>
+                <div className="bg-white/5 rounded-2xl p-6 border border-white/10">
+                  <h4 className="text-xl font-bold text-white mb-3">Proactive Recall System</h4>
+                  <p className="text-gray-300 leading-relaxed">
+                    Memory Engine moves beyond passive storage by suggesting solutions, surfacing reminders, and preventing repeated 
+                    mistakes before they happen. When you work, the system checks the memory index for similar context and surfaces 
+                    past solutions or warnings.
+                  </p>
+                </div>
+                <div className="bg-white/5 rounded-2xl p-6 border border-white/10">
+                  <h4 className="text-xl font-bold text-white mb-3">Complete User Control</h4>
+                  <p className="text-gray-300 leading-relaxed">
+                    Every memory is user-auditable. Review, edit, and delete memories to ensure relevance and trust. 
+                    All additions and updates require your validation—Memory Engine learns with you, not from you.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-3xl font-bold text-white mb-8">Cross-Project Intelligence</h3>
+              <div className="space-y-6">
+                <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-2xl p-6 border border-blue-500/20">
+                  <h4 className="text-lg font-bold text-white mb-3">Personal Institutional Knowledge</h4>
+                  <p className="text-gray-300 leading-relaxed mb-4">
+                    Beyond per-project context, Memory Engine aggregates lessons, patterns, and pitfalls from all projects 
+                    (with your opt-in) to build your personal "institutional knowledge."
+                  </p>
+                  <div className="space-y-2 text-sm text-gray-300">
+                    <div className="flex items-center space-x-2">
+                      <div className="w-1 h-1 bg-blue-400 rounded-full"></div>
+                      <span>Contextual auto-suggestions: "Remember when you solved this in Project Alpha?"</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <div className="w-1 h-1 bg-blue-400 rounded-full"></div>
+                      <span>Proactive warnings: "Careful, this schema failed at scale in Gamma!"</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <div className="w-1 h-1 bg-blue-400 rounded-full"></div>
+                      <span>"Did you know?" inspiring cross-project insights</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <div className="w-1 h-1 bg-blue-400 rounded-full"></div>
+                      <span>Automated "personal playbook" curation</span>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="bg-white/5 rounded-2xl p-6 border border-white/10">
+                  <h4 className="text-lg font-bold text-white mb-3">Privacy-First Architecture</h4>
+                  <p className="text-gray-300 leading-relaxed">
+                    All cross-project learning is opt-in and privacy-focused by default. Your data always belongs to you, 
+                    with transparent memory management and full export capabilities.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Technical Implementation */}
+          <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-3xl p-12 border border-blue-500/20 mb-16">
+            <h3 className="text-3xl font-bold text-white mb-8 text-center">Technical Implementation</h3>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h4 className="text-xl font-bold text-white mb-4">MVP Architecture</h4>
+                <ul className="space-y-3 text-gray-300">
+                  <li className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <span>Stores memories as markdown files, indexed in memory.json</span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <span>Uses embeddings + keywords for context matching</span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <span>AI surfaces solutions with user accept/ignore options</span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <span>All memory actions are auditable and reversible</span>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="text-xl font-bold text-white mb-4">Scaling Strategy</h4>
+                <ul className="space-y-3 text-gray-300">
+                  <li className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <span>Scalable vector/embedding search for expansion</span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <span>Multi-project memory architecture</span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <span>Memory grows with user, not just project</span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <span>Efficient opt-in cross-project recall</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Competitive Advantage */}
+          <div className="bg-gradient-to-r from-purple-500/10 to-blue-500/10 rounded-3xl p-12 border border-purple-500/20">
+            <div className="text-center mb-12">
+              <h3 className="text-3xl font-bold text-white mb-6">Why Memory Engine Beats The Competition</h3>
+              <p className="text-xl text-gray-300 max-w-4xl mx-auto">
+                While Replit, Bolt, and others offer AI assistance, only Javlin has Memory Engine—the difference between 
+                starting fresh every time and building on everything you've ever learned.
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-3 gap-8 mb-12">
+              <div className="text-center">
+                <h4 className="text-lg font-bold text-red-400 mb-4">Traditional AI Tools</h4>
+                <div className="space-y-3 text-gray-400 text-sm">
+                  <p>❌ Start from scratch every conversation</p>
+                  <p>❌ No memory of your preferences</p>
+                  <p>❌ Can't learn from past mistakes</p>
+                  <p>❌ No cross-project intelligence</p>
+                  <p>❌ Passive assistance only</p>
+                </div>
+              </div>
+              <div className="text-center">
+                <h4 className="text-lg font-bold text-yellow-400 mb-4">Note-Taking Apps</h4>
+                <div className="space-y-3 text-gray-400 text-sm">
+                  <p>⚠️ Passive storage systems</p>
+                  <p>⚠️ You must remember to search</p>
+                  <p>⚠️ No proactive suggestions</p>
+                  <p>⚠️ Limited context understanding</p>
+                  <p>⚠️ Manual organization required</p>
+                </div>
+              </div>
+              <div className="text-center">
+                <h4 className="text-lg font-bold text-blue-400 mb-4">Javlin's Memory Engine</h4>
+                <div className="space-y-3 text-gray-300 text-sm">
+                  <p>✅ Proactive recall at perfect moments</p>
+                  <p>✅ Learns your patterns and preferences</p>
+                  <p>✅ Prevents repeated mistakes</p>
+                  <p>✅ Cross-project pattern recognition</p>
+                  <p>✅ Active intelligence with user control</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-2xl p-8 border border-blue-500/20 text-center">
+              <h4 className="text-2xl font-bold text-white mb-4">The Game Changer</h4>
+              <p className="text-lg text-gray-300 leading-relaxed max-w-4xl mx-auto">
+                Memory Engine doesn't just remember—it thinks ahead. While competitors offer "AI storage/search," 
+                Javlin offers <span className="text-blue-400 font-semibold">proactive recall</span> with 
+                <span className="text-purple-400 font-semibold"> real user control</span> across all your projects. 
+                It's the difference between an AI that helps you and an AI co-founder that grows with you.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* User Journey */}
       <section className="py-20 px-6">
         <div className="max-w-6xl mx-auto">

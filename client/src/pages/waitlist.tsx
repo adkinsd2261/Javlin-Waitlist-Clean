@@ -509,13 +509,66 @@ export default function Waitlist() {
               ))}
             </div>
 
-            {/* Secondary CTA */}
-            <div className="text-center">
+            {/* Memory Engine Power */}
+            <div className="bg-gradient-to-r from-[#181B2B] to-[#232342] rounded-3xl p-12 lg:p-16 border border-[#5151FF]/30 relative overflow-hidden glow-card">
+              <div className="absolute inset-0 bg-gradient-to-r from-[#5151FF]/5 to-[#6a5cff]/5 rounded-3xl animate-pulse-subtle"></div>
+              <div className="relative z-10 text-center">
+                <div className="w-24 h-24 bg-[#5151FF]/20 rounded-full flex items-center justify-center mx-auto mb-8">
+                  <Brain className="w-12 h-12 text-[#5151FF]" />
+                </div>
+                <h3 className="text-3xl lg:text-4xl font-bold text-white mb-6">Powered by MemoryOS</h3>
+                <p className="text-xl text-gray-300 leading-relaxed max-w-4xl mx-auto mb-8">
+                  Every tool is backed by our revolutionary memory engine that captures, learns, and recalls context 
+                  across all your projects. Experience true AI assistance that gets smarter with every interaction.
+                </p>
+                
+                <div className="grid md:grid-cols-3 gap-8 mt-12">
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-[#5151FF] mb-2">Proactive Recall</div>
+                    <p className="text-gray-400">"Remember when you solved this in Project Alpha?"</p>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-[#5151FF] mb-2">Smart Warnings</div>
+                    <p className="text-gray-400">"Careful, this schema failed at scale before"</p>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-[#5151FF] mb-2">Zero Context Loss</div>
+                    <p className="text-gray-400">Never repeat the same mistake twice</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Magic Moment Example */}
+            <div className="mt-16 bg-white/5 rounded-3xl p-8 lg:p-12 border border-white/10">
+              <div className="text-center mb-8">
+                <div className="inline-flex items-center bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/30 rounded-full px-4 py-2 backdrop-blur-sm mb-4">
+                  <Sparkles className="w-4 h-4 text-yellow-400 mr-2" />
+                  <span className="text-sm font-medium text-yellow-400">Magic Moment</span>
+                </div>
+                <h3 className="text-2xl lg:text-3xl font-bold text-white mb-4">The "I Forgot I Even Solved That!" Experience</h3>
+              </div>
+              
+              <div className="max-w-4xl mx-auto">
+                <div className="bg-gradient-to-r from-[#5151FF]/10 to-[#6a5cff]/10 rounded-2xl p-6 lg:p-8 border border-[#5151FF]/20">
+                  <p className="text-lg text-gray-300 leading-relaxed italic">
+                    "You're building Project Beta, hit an OAuth bug, and suddenly Javlin surfaces: 'Remember how you solved token expiry in Project Alpha? Here's what worked last time.' 
+                    You review, update, and apply the solution—saving hours of debugging you'd already done months ago."
+                  </p>
+                </div>
+                <div className="text-center mt-6">
+                  <p className="text-gray-400">This is the power of true memory-driven AI assistance</p>
+                </div>
+              </div>
+            </div>
+
+            {/* CTA */}
+            <div className="text-center mt-16">
               <Button 
                 onClick={() => document.getElementById('waitlist-form')?.scrollIntoView({ behavior: 'smooth' })}
-                className="bg-white/10 hover:bg-white/20 text-white font-semibold text-xl px-12 py-6 rounded-2xl border border-white/20 hover:border-white/30 transition-all duration-300 backdrop-blur-sm shadow-lg"
+                className="bg-gradient-to-r from-[#5151FF] to-[#6a5cff] hover:from-[#4141EF] hover:to-[#5a4cef] text-white font-bold text-xl px-12 py-6 rounded-2xl shadow-2xl shadow-[#5151FF]/30 transition-all duration-300 transform hover:scale-[1.02]"
               >
-                Join for a full product tour before launch!
+                Experience the Future of AI Building
                 <span className="ml-2">→</span>
               </Button>
             </div>

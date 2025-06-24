@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useMutation } from "@tanstack/react-query";
 import { z } from "zod";
-import { Brain, Shield, Link, Users, CheckCircle, Crown, Lock, Sparkles, Lightbulb, Code, MessageCircle, Database, Zap, User, Twitter } from "lucide-react";
+import { Brain, Shield, Link, Users, CheckCircle, Crown, Lock, Sparkles, Lightbulb, Code, MessageCircle, Database, Zap, User, Twitter, ChevronDown, ChevronUp, Key, DollarSign, Settings } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -23,7 +23,19 @@ type WaitlistFormData = z.infer<typeof waitlistSchema>;
 
 export default function Waitlist() {
   const [isSuccess, setIsSuccess] = useState(false);
+  const [expandedSections, setExpandedSections] = useState<{ [key: string]: boolean }>({
+    features: false,
+    platform: false,
+    api: false
+  });
   const { toast } = useToast();
+
+  const toggleSection = (section: string) => {
+    setExpandedSections(prev => ({
+      ...prev,
+      [section]: !prev[section]
+    }));
+  };
 
   const form = useForm<WaitlistFormData>({
     resolver: zodResolver(waitlistSchema),
@@ -218,191 +230,235 @@ export default function Waitlist() {
 
         {/* Core Capabilities Section */}
         <section className="py-24 px-6">
-          <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-20">
-              <h2 className="text-3xl lg:text-4xl font-semibold text-white mb-6">Complete AI Co-founder Platform</h2>
-              <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-                Every tool you need for creative and technical work, unified by intelligent memory that learns and evolves with you.
-              </p>
+          <div className="max-w-6xl mx-auto space-y-8">
+            {/* Features Overview */}
+            <div 
+              className="bg-white/5 rounded-3xl p-8 border border-white/10 cursor-pointer hover:bg-white/10 transition-all duration-300"
+              onClick={() => toggleSection('features')}
+            >
+              <div className="flex items-center justify-between">
+                <div>
+                  <h2 className="text-2xl lg:text-3xl font-bold text-white mb-2">Core Platform Features</h2>
+                  <p className="text-lg text-gray-300">
+                    Explore the complete AI co-founder platform that learns and evolves with you
+                  </p>
+                </div>
+                <div className="w-12 h-12 bg-[#5151FF]/20 rounded-xl flex items-center justify-center">
+                  {expandedSections.features ? <ChevronUp className="w-6 h-6 text-white" /> : <ChevronDown className="w-6 h-6 text-white" />}
+                </div>
+              </div>
+              
+              {expandedSections.features && (
+                <div className="mt-8 space-y-8 animate-in slide-in-from-top-5 duration-300">
+                  {/* Primary Features Grid */}
+                  <div className="grid lg:grid-cols-2 gap-8">
+                    <div className="bg-gradient-to-br from-[#5151FF]/10 to-[#6a5cff]/10 rounded-2xl p-6 border border-[#5151FF]/20">
+                      <div className="flex items-start space-x-4">
+                        <div className="w-16 h-16 bg-[#5151FF]/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                          <Brain className="w-8 h-8 text-white" />
+                        </div>
+                        <div className="space-y-3">
+                          <h3 className="text-xl font-bold text-white">MemoryOS: Your Intelligent Brain</h3>
+                          <p className="text-gray-300 leading-relaxed">
+                            Active memory that learns from your decisions, code, and workflows, then proactively surfaces relevant context when you need it most.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="bg-white/5 rounded-2xl p-6 border border-white/10">
+                      <div className="flex items-start space-x-4">
+                        <div className="w-16 h-16 bg-white/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                          <Users className="w-8 h-8 text-white" />
+                        </div>
+                        <div className="space-y-3">
+                          <h3 className="text-xl font-bold text-white">Jav Assistant: Your AI Co-founder</h3>
+                          <p className="text-gray-300 leading-relaxed">
+                            More than a chatbot—provides guidance, accountability, and evolves with your working style.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Development Environment */}
+                  <div className="grid md:grid-cols-3 gap-6">
+                    <div className="bg-white/5 rounded-xl p-6 border border-white/10">
+                      <div className="w-10 h-10 bg-green-500/20 rounded-lg flex items-center justify-center mb-4">
+                        <Lightbulb className="w-5 h-5 text-green-400" />
+                      </div>
+                      <h4 className="text-lg font-semibold text-white mb-2">Creative Mode</h4>
+                      <p className="text-gray-300 text-sm">Capture ideas, build moodboards, seamless creative-to-dev workflow</p>
+                    </div>
+
+                    <div className="bg-white/5 rounded-xl p-6 border border-white/10">
+                      <div className="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center mb-4">
+                        <Code className="w-5 h-5 text-blue-400" />
+                      </div>
+                      <h4 className="text-lg font-semibold text-white mb-2">Dev Mode</h4>
+                      <p className="text-gray-300 text-sm">AI-supercharged development with context-aware code help and debugging</p>
+                    </div>
+
+                    <div className="bg-white/5 rounded-xl p-6 border border-white/10">
+                      <div className="w-10 h-10 bg-purple-500/20 rounded-lg flex items-center justify-center mb-4">
+                        <MessageCircle className="w-5 h-5 text-purple-400" />
+                      </div>
+                      <h4 className="text-lg font-semibold text-white mb-2">JavChat</h4>
+                      <p className="text-gray-300 text-sm">Memory-assisted journaling for decision logs and project insights</p>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Memory Engine API Section */}
+            <div 
+              className="bg-white/5 rounded-3xl p-8 border border-white/10 cursor-pointer hover:bg-white/10 transition-all duration-300"
+              onClick={() => toggleSection('api')}
+            >
+              <div className="flex items-center justify-between">
+                <div>
+                  <h2 className="text-2xl lg:text-3xl font-bold text-white mb-2">Memory Engine API</h2>
+                  <p className="text-lg text-gray-300">
+                    Integrate MemoryOS into your existing workflow with our powerful API
+                  </p>
+                </div>
+                <div className="w-12 h-12 bg-[#5151FF]/20 rounded-xl flex items-center justify-center">
+                  {expandedSections.api ? <ChevronUp className="w-6 h-6 text-white" /> : <ChevronDown className="w-6 h-6 text-white" />}
+                </div>
+              </div>
+              
+              {expandedSections.api && (
+                <div className="mt-8 space-y-8 animate-in slide-in-from-top-5 duration-300">
+                  <div className="grid lg:grid-cols-2 gap-8">
+                    <div>
+                      <h3 className="text-xl font-semibold text-white mb-4">API Features</h3>
+                      <div className="space-y-4">
+                        <div className="flex items-start space-x-3">
+                          <div className="w-6 h-6 bg-[#5151FF]/20 rounded-lg flex items-center justify-center mt-0.5">
+                            <Key className="w-3 h-3 text-[#5151FF]" />
+                          </div>
+                          <div>
+                            <h4 className="text-white font-medium">Memory CRUD Operations</h4>
+                            <p className="text-gray-400 text-sm">Read, write, update, and delete memories programmatically</p>
+                          </div>
+                        </div>
+                        <div className="flex items-start space-x-3">
+                          <div className="w-6 h-6 bg-[#5151FF]/20 rounded-lg flex items-center justify-center mt-0.5">
+                            <Database className="w-3 h-3 text-[#5151FF]" />
+                          </div>
+                          <div>
+                            <h4 className="text-white font-medium">Context Search & Retrieval</h4>
+                            <p className="text-gray-400 text-sm">Find relevant memories based on current context</p>
+                          </div>
+                        </div>
+                        <div className="flex items-start space-x-3">
+                          <div className="w-6 h-6 bg-[#5151FF]/20 rounded-lg flex items-center justify-center mt-0.5">
+                            <Settings className="w-3 h-3 text-[#5151FF]" />
+                          </div>
+                          <div>
+                            <h4 className="text-white font-medium">Playbook Export</h4>
+                            <p className="text-gray-400 text-sm">Export your personal knowledge as structured playbooks</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div>
+                      <h3 className="text-xl font-semibold text-white mb-4">API Credits System</h3>
+                      <div className="bg-[#5151FF]/10 rounded-xl p-6 border border-[#5151FF]/20">
+                        <div className="space-y-4">
+                          <div className="flex items-center justify-between">
+                            <span className="text-gray-300">Free Plan</span>
+                            <span className="text-white font-semibold">100 credits/month</span>
+                          </div>
+                          <div className="flex items-center justify-between">
+                            <span className="text-gray-300">Pro Plan</span>
+                            <span className="text-white font-semibold">10,000 credits/month</span>
+                          </div>
+                          <div className="flex items-center justify-between">
+                            <span className="text-gray-300">Premium Plan</span>
+                            <span className="text-white font-semibold">100,000 credits/month</span>
+                          </div>
+                          <div className="pt-3 border-t border-white/10">
+                            <p className="text-gray-400 text-sm">
+                              Real-time usage tracking • Instant top-ups • Rollover up to 2x monthly limit
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-gradient-to-r from-[#5151FF]/10 to-[#6a5cff]/10 rounded-xl p-6 border border-[#5151FF]/20">
+                    <h3 className="text-lg font-semibold text-white mb-3">Security & Key Management</h3>
+                    <div className="grid md:grid-cols-2 gap-6">
+                      <div className="space-y-2">
+                        <h4 className="text-white font-medium">Generate & Manage Keys</h4>
+                        <p className="text-gray-400 text-sm">Name, revoke, and regenerate API keys from your dashboard</p>
+                      </div>
+                      <div className="space-y-2">
+                        <h4 className="text-white font-medium">Usage Analytics</h4>
+                        <p className="text-gray-400 text-sm">Track when keys were created, last used, and credit consumption</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Advanced Features Section */}
+            <div 
+              className="bg-white/5 rounded-3xl p-8 border border-white/10 cursor-pointer hover:bg-white/10 transition-all duration-300"
+              onClick={() => toggleSection('platform')}
+            >
+              <div className="flex items-center justify-between">
+                <div>
+                  <h2 className="text-2xl lg:text-3xl font-bold text-white mb-2">Advanced Intelligence</h2>
+                  <p className="text-lg text-gray-300">
+                    Cross-project learning, proactive warnings, and automated insights
+                  </p>
+                </div>
+                <div className="w-12 h-12 bg-[#5151FF]/20 rounded-xl flex items-center justify-center">
+                  {expandedSections.platform ? <ChevronUp className="w-6 h-6 text-white" /> : <ChevronDown className="w-6 h-6 text-white" />}
+                </div>
+              </div>
+              
+              {expandedSections.platform && (
+                <div className="mt-8 space-y-6 animate-in slide-in-from-top-5 duration-300">
+                  <div className="grid lg:grid-cols-2 gap-6">
+                    <div className="bg-white/5 rounded-xl p-6 border border-white/10">
+                      <div className="flex items-start space-x-4">
+                        <div className="w-12 h-12 bg-yellow-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                          <Link className="w-6 h-6 text-yellow-400" />
+                        </div>
+                        <div className="space-y-2">
+                          <h4 className="text-lg font-bold text-white">Cross-Project Intelligence</h4>
+                          <p className="text-gray-300 text-sm leading-relaxed">
+                            "Remember when you solved this in Project Alpha?" - contextual suggestions across all your work
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="bg-white/5 rounded-xl p-6 border border-white/10">
+                      <div className="flex items-start space-x-4">
+                        <div className="w-12 h-12 bg-red-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                          <Shield className="w-6 h-6 text-red-400" />
+                        </div>
+                        <div className="space-y-2">
+                          <h4 className="text-lg font-bold text-white">Proactive Warnings</h4>
+                          <p className="text-gray-300 text-sm leading-relaxed">
+                            "Careful, this schema failed at scale in Gamma!" - prevent repeated mistakes
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
             
-            {/* Primary Features Grid */}
-            <div className="grid lg:grid-cols-2 gap-12 mb-20">
-              <div className="bg-gradient-to-br from-[#5151FF]/10 to-[#6a5cff]/10 rounded-3xl p-8 lg:p-10 border border-[#5151FF]/20">
-                <div className="flex items-start space-x-6">
-                  <div className="w-20 h-20 bg-[#5151FF]/20 rounded-2xl flex items-center justify-center flex-shrink-0">
-                    <Brain className="w-10 h-10 text-white" />
-                  </div>
-                  <div className="space-y-4">
-                    <h3 className="text-2xl font-semibold text-white">MemoryOS: Your Intelligent Brain</h3>
-                    <p className="text-gray-300 leading-relaxed text-lg">
-                      The core that makes everything else possible. MemoryOS actively learns from your decisions, code, and workflows, 
-                      then proactively surfaces relevant context when you need it most.
-                    </p>
-                    <div className="space-y-2">
-                      <div className="flex items-center space-x-3">
-                        <div className="w-2 h-2 bg-[#5151FF] rounded-full"></div>
-                        <span className="text-gray-300">Embedding-based similarity matching for instant recall</span>
-                      </div>
-                      <div className="flex items-center space-x-3">
-                        <div className="w-2 h-2 bg-[#5151FF] rounded-full"></div>
-                        <span className="text-gray-300">User-auditable memory with full edit/delete control</span>
-                      </div>
-                      <div className="flex items-center space-x-3">
-                        <div className="w-2 h-2 bg-[#5151FF] rounded-full"></div>
-                        <span className="text-gray-300">Contextual auto-suggestions and proactive warnings</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-gradient-to-br from-white/5 to-white/10 rounded-3xl p-8 lg:p-10 border border-white/10">
-                <div className="flex items-start space-x-6">
-                  <div className="w-20 h-20 bg-white/10 rounded-2xl flex items-center justify-center flex-shrink-0">
-                    <Users className="w-10 h-10 text-white" />
-                  </div>
-                  <div className="space-y-4">
-                    <h3 className="text-2xl font-semibold text-white">Jav Assistant: Your AI Co-founder</h3>
-                    <p className="text-gray-300 leading-relaxed text-lg">
-                      More than a chatbot—a true co-founder that provides guidance, accountability, and evolves with your working style. 
-                      Adapts its persona and intervention level to match your needs.
-                    </p>
-                    <div className="space-y-2">
-                      <div className="flex items-center space-x-3">
-                        <div className="w-2 h-2 bg-white rounded-full"></div>
-                        <span className="text-gray-300">Memory-powered context awareness in every conversation</span>
-                      </div>
-                      <div className="flex items-center space-x-3">
-                        <div className="w-2 h-2 bg-white rounded-full"></div>
-                        <span className="text-gray-300">Strategic guidance and decision-making support</span>
-                      </div>
-                      <div className="flex items-center space-x-3">
-                        <div className="w-2 h-2 bg-white rounded-full"></div>
-                        <span className="text-gray-300">Adaptive tone and communication style</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Integrated Environment Features */}
-            <div className="space-y-8">
-              <h3 className="text-2xl lg:text-3xl font-semibold text-white text-center mb-12">Integrated Development Environment</h3>
-              
-              <div className="grid md:grid-cols-3 gap-8">
-                <div className="bg-white/5 rounded-2xl p-6 border border-white/10">
-                  <div className="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center mb-4">
-                    <Lightbulb className="w-6 h-6 text-green-400" />
-                  </div>
-                  <h4 className="text-lg font-semibold text-white mb-3">Creative Mode</h4>
-                  <p className="text-gray-300 text-sm leading-relaxed mb-4">
-                    Capture ideas, build moodboards, and start projects. Seamless creative-to-dev workflow with shared memory and context.
-                  </p>
-                  <div className="text-xs text-gray-400 space-y-1">
-                    <div>• Idea capture and organization</div>
-                    <div>• Visual moodboard creation</div>
-                    <div>• Project ideation assistance</div>
-                  </div>
-                </div>
-
-                <div className="bg-white/5 rounded-2xl p-6 border border-white/10">
-                  <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center mb-4">
-                    <Code className="w-6 h-6 text-blue-400" />
-                  </div>
-                  <h4 className="text-lg font-semibold text-white mb-3">Dev Mode</h4>
-                  <p className="text-gray-300 text-sm leading-relaxed mb-4">
-                    AI-supercharged development with context-aware code help, real-time debugging, and proactive warnings.
-                  </p>
-                  <div className="text-xs text-gray-400 space-y-1">
-                    <div>• Context-aware code generation</div>
-                    <div>• Real-time debugging assistance</div>
-                    <div>• Memory-powered error prevention</div>
-                  </div>
-                </div>
-
-                <div className="bg-white/5 rounded-2xl p-6 border border-white/10">
-                  <div className="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center mb-4">
-                    <MessageCircle className="w-6 h-6 text-purple-400" />
-                  </div>
-                  <h4 className="text-lg font-semibold text-white mb-3">JavChat</h4>
-                  <p className="text-gray-300 text-sm leading-relaxed mb-4">
-                    Memory-assisted journaling for decision logs, project insights, and knowledge review.
-                  </p>
-                  <div className="text-xs text-gray-400 space-y-1">
-                    <div>• Context-linked decision logs</div>
-                    <div>• Memory review and curation</div>
-                    <div>• Project insight documentation</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Advanced Features */}
-            <div className="mt-20 space-y-8">
-              <h3 className="text-2xl lg:text-3xl font-semibold text-white text-center mb-12">Advanced Intelligence Features</h3>
-              
-              <div className="grid lg:grid-cols-2 gap-8">
-                <div className="bg-white/5 rounded-2xl p-8 border border-white/10">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-14 h-14 bg-yellow-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <Link className="w-7 h-7 text-yellow-400" />
-                    </div>
-                    <div className="space-y-3">
-                      <h4 className="text-xl font-semibold text-white">Cross-Project Intelligence</h4>
-                      <p className="text-gray-300 leading-relaxed">
-                        Aggregates lessons, patterns, and pitfalls from all your projects to build personal institutional knowledge. 
-                        Get contextual suggestions like "Remember when you solved this in Project Alpha?"
-                      </p>
-                      <div className="text-sm text-gray-400 space-y-1">
-                        <div>• Automated personal playbook curation</div>
-                        <div>• Cross-project pattern recognition</div>
-                        <div>• Searchable memory across all workspaces</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-white/5 rounded-2xl p-8 border border-white/10">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-14 h-14 bg-red-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <Shield className="w-7 h-7 text-red-400" />
-                    </div>
-                    <div className="space-y-3">
-                      <h4 className="text-xl font-semibold text-white">Proactive Warnings & Insights</h4>
-                      <p className="text-gray-300 leading-relaxed">
-                        Get real-time warnings like "Careful, this schema failed at scale in Gamma!" and "Did you know?" 
-                        insights that surface relevant past experiences.
-                      </p>
-                      <div className="text-sm text-gray-400 space-y-1">
-                        <div>• Real-time mistake prevention</div>
-                        <div>• Contextual learning suggestions</div>
-                        <div>• Memory-powered code reviews</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Workspace Management */}
-            <div className="mt-16 text-center bg-gradient-to-r from-white/5 to-white/10 rounded-3xl p-8 lg:p-12 border border-white/10">
-              <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <Database className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-2xl font-semibold text-white mb-4">Unified Workspace Management</h3>
-              <p className="text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto mb-6">
-                Simple, intuitive project creation and switching. Your dashboard shows workspace metadata, memory insights, 
-                and recent activity across all projects.
-              </p>
-              <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-400">
-                <span>• Unlimited workspaces (Pro+)</span>
-                <span>• Memory insights dashboard</span>
-                <span>• Project activity tracking</span>
-                <span>• Seamless context switching</span>
-              </div>
-            </div>
           </div>
         </section>
 

@@ -39,20 +39,24 @@
   inset: -2px;
   background: conic-gradient(
     from 0deg,
-    transparent 70%,
-    var(--creative-neon) 100%
+    transparent 20%,
+    var(--creative-gradient-start) 40%,
+    var(--creative-gradient-end) 60%,
+    transparent 80%
   );
   border-radius: inherit;
   animation: border-chase 6s linear infinite;
   z-index: -1;
+  opacity: 1;
 }
 
 .creative-mode-border:hover {
-  box-shadow: 0 0 20px var(--creative-shadow);
+  box-shadow: 0 0 30px var(--creative-shadow);
 }
 
 .creative-mode-border:hover::before {
   animation: border-chase 3s linear infinite;
+  opacity: 1;
 }
 
 /* Dev Mode Border */
@@ -69,23 +73,27 @@
   inset: -2px;
   background: conic-gradient(
     from 0deg,
-    transparent 70%,
-    var(--dev-neon) 100%
+    transparent 20%,
+    var(--dev-gradient-start) 40%,
+    var(--dev-gradient-end) 60%,
+    transparent 80%
   );
   border-radius: inherit;
   animation: border-chase 7s linear infinite;
   z-index: -1;
+  opacity: 1;
 }
 
 .dev-mode-border:hover {
-  box-shadow: 0 0 20px var(--dev-shadow);
+  box-shadow: 0 0 30px var(--dev-shadow);
 }
 
 .dev-mode-border:hover::before {
   animation: border-chase 3.5s linear infinite;
+  opacity: 1;
 }
 
-/* Jav Assistant Border */
+/* Memory Engine Border (replacing jav-border) */
 .jav-border {
   position: relative;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
@@ -99,20 +107,24 @@
   inset: -2px;
   background: conic-gradient(
     from 0deg,
-    transparent 70%,
-    var(--jav-neon) 100%
+    transparent 20%,
+    var(--memory-gradient-start) 40%,
+    var(--memory-gradient-end) 60%,
+    transparent 80%
   );
   border-radius: inherit;
   animation: border-chase 8s linear infinite;
   z-index: -1;
+  opacity: 1;
 }
 
 .jav-border:hover {
-  box-shadow: 0 0 20px var(--jav-shadow);
+  box-shadow: 0 0 30px var(--memory-shadow);
 }
 
 .jav-border:hover::before {
   animation: border-chase 4s linear infinite;
+  opacity: 1;
 }
 
 /* Memory Engine Border */
@@ -129,20 +141,24 @@
   inset: -2px;
   background: conic-gradient(
     from 0deg,
-    transparent 70%,
-    var(--memory-neon) 100%
+    transparent 20%,
+    var(--memory-gradient-start) 40%,
+    var(--memory-gradient-end) 60%,
+    transparent 80%
   );
   border-radius: inherit;
   animation: border-chase 9s linear infinite;
   z-index: -1;
+  opacity: 1;
 }
 
 .memory-border:hover {
-  box-shadow: 0 0 20px var(--memory-shadow);
+  box-shadow: 0 0 30px var(--memory-shadow);
 }
 
 .memory-border:hover::before {
   animation: border-chase 4.5s linear infinite;
+  opacity: 1;
 }
 
 :root {
@@ -174,17 +190,18 @@
   --card-bg: rgba(255, 255, 255, 0.03);
   --card-border: rgba(255, 255, 255, 0.08);
   
-  /* Neon border colors */
-  --creative-neon: hsl(320, 100%, 60%);
-  --dev-neon: hsl(220, 100%, 60%);
-  --jav-neon: hsl(160, 100%, 60%);
-  --memory-neon: hsl(280, 100%, 60%);
+  /* Javlin color scheme - only 3 colors */
+  --dev-gradient-start: hsl(240, 60%, 50%);
+  --dev-gradient-end: hsl(260, 80%, 60%);
+  --creative-gradient-start: hsl(320, 70%, 50%);
+  --creative-gradient-end: hsl(280, 80%, 60%);
+  --memory-gradient-start: hsl(280, 70%, 50%);
+  --memory-gradient-end: hsl(300, 80%, 60%);
   
-  /* Neon shadow colors for hover effects */
-  --creative-shadow: hsla(320, 100%, 60%, 0.3);
-  --dev-shadow: hsla(220, 100%, 60%, 0.3);
-  --jav-shadow: hsla(160, 100%, 60%, 0.3);
-  --memory-shadow: hsla(280, 100%, 60%, 0.3);
+  /* Shadow colors for hover effects */
+  --dev-shadow: hsla(250, 70%, 55%, 0.4);
+  --creative-shadow: hsla(300, 75%, 55%, 0.4);
+  --memory-shadow: hsla(290, 75%, 55%, 0.4);
 }
 
 .dark {

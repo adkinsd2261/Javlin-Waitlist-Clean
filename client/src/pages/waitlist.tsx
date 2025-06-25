@@ -261,26 +261,26 @@ export default function Waitlist() {
               {/* JavChat */}
               <div className="jav-border rounded-2xl p-8">
                 <div className="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center mb-6">
-                  <MessageCircle className="w-8 h-8 text-green-400" />
+                  <MessageCircle className="w-8 h-8 text-purple-400" />
                 </div>
                 <h4 className="text-xl font-bold text-white mb-4">JavChat</h4>
                 <div className="space-y-4">
                   <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-green-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
                     <div>
                       <p className="text-white font-medium text-sm">Memory-Assisted Journaling</p>
                       <p className="text-gray-400 text-sm">Context-linked journaling with AI assistance for reflection and planning</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-green-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
                     <div>
                       <p className="text-white font-medium text-sm">Decision Logs</p>
                       <p className="text-gray-400 text-sm">Track important decisions and their rationale for future reference</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-green-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
                     <div>
                       <p className="text-white font-medium text-sm">Memory Review</p>
                       <p className="text-gray-400 text-sm">Review, edit, and organize your memories for optimal relevance</p>
@@ -315,7 +315,7 @@ export default function Waitlist() {
                   </div>
                   <div className="flex items-start space-x-4">
                     <div className="w-8 h-8 bg-white/5 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                      <Users className="w-4 h-4 text-green-400" />
+                      <Users className="w-4 h-4 text-purple-400" />
                     </div>
                     <div>
                       <h5 className="text-white font-semibold mb-2">Adaptive Persona</h5>
@@ -326,7 +326,7 @@ export default function Waitlist() {
                 <div className="space-y-4">
                   <div className="flex items-start space-x-4">
                     <div className="w-8 h-8 bg-white/5 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                      <Zap className="w-4 h-4 text-yellow-400" />
+                      <Zap className="w-4 h-4 text-purple-400" />
                     </div>
                     <div>
                       <h5 className="text-white font-semibold mb-2">Cross-Project Intelligence</h5>
@@ -344,7 +344,7 @@ export default function Waitlist() {
                   </div>
                   <div className="flex items-start space-x-4">
                     <div className="w-8 h-8 bg-white/5 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                      <Lock className="w-4 h-4 text-red-400" />
+                      <Lock className="w-4 h-4 text-purple-400" />
                     </div>
                     <div>
                       <h5 className="text-white font-semibold mb-2">Full Memory Control</h5>

@@ -780,10 +780,76 @@ export default function Waitlist() {
         </div>
       </section>
 
-      {/* Contact Form */}
+      {/* Your Journey with Javlin */}
       <section className="py-20 px-6">
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <div className="group w-24 h-24 bg-white/5 rounded-2xl flex items-center justify-center mx-auto mb-8">
+              <ArrowRight className="w-12 h-12 text-blue-400 energy-icon dev" />
+            </div>
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">Your Journey with Javlin</h2>
+            <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+              From your first workspace creation to building institutional knowledge—here's how Javlin transforms your development process step by step.
+            </p>
+          </div>
+
           <div className="space-y-16">
+            {/* Step 1 */}
+            <div className="dev-mode-border ambient-glow dev rounded-3xl p-10">
+              <div className="flex flex-col lg:flex-row items-start gap-10">
+                <div className="flex-shrink-0">
+                  <div className="w-20 h-20 bg-white/5 border border-blue-400/30 rounded-2xl flex items-center justify-center relative">
+                    <span className="text-3xl font-bold text-blue-400">1</span>
+                    <div className="absolute -top-1 -right-1 w-4 h-4 bg-blue-400 rounded-full energy-icon dev"></div>
+                  </div>
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-3xl font-bold text-white mb-6">Create Your First Workspace</h3>
+                  <p className="text-gray-300 text-lg leading-relaxed mb-8">
+                    Start by setting up your first project workspace in Javlin. Whether you're building an app, designing a system, or solving complex problems, 
+                    Jav is ready to work alongside you from day one.
+                  </p>
+                  
+                  <div className="bg-white/5 rounded-xl p-8 mb-6">
+                    <h4 className="font-semibold text-blue-400 mb-6 flex items-center gap-2">
+                      <Code className="w-5 h-5 energy-icon dev" />
+                      What You Can Do Immediately
+                    </h4>
+                    <div className="grid md:grid-cols-2 gap-6 text-sm text-gray-300">
+                      <div className="space-y-3">
+                        <div className="flex items-center gap-2">
+                          <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
+                          <span>Code in any language with intelligent assistance</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
+                          <span>Design interfaces with creative feedback</span>
+                        </div>
+                      </div>
+                      <div className="space-y-3">
+                        <div className="flex items-center gap-2">
+                          <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
+                          <span>Plan features and architecture</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
+                          <span>Debug issues with contextual help</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 rounded-xl p-6 border border-blue-400/20">
+                    <h4 className="font-semibold text-white mb-3">First Session Example</h4>
+                    <p className="text-gray-300 text-sm italic">
+                      <span className="text-blue-400">"Let's build a React component for user authentication. I'll help you set up the form validation 
+                      and suggest best practices for secure token handling."</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             {/* Step 2 */}
             <div className="creative-border ambient-glow creative rounded-3xl p-10">
               <div className="flex flex-col lg:flex-row items-start gap-10">

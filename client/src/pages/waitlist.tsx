@@ -817,98 +817,6 @@ export default function Waitlist() {
         </div>
       </section>
 
-      {/* Keep tabs on what we're shipping section */}
-      <section className="py-16 px-6 bg-gradient-to-br from-[#181B2B] to-[#232342]">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-            Keep tabs on what we're shipping 🚀
-          </h2>
-          <p className="text-lg text-gray-300 mb-12 max-w-3xl mx-auto">
-            We're building in public. For real-time updates, feature drops, and behind-the-scenes progress, follow{' '}
-            <a 
-              href="https://x.com/JavlinDev" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-blue-400 hover:text-blue-300 hover:underline transition-colors"
-            >
-              @JavlinDev
-            </a>{' '}
-            or check out our{' '}
-            <a 
-              href="/roadmap" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-blue-400 hover:text-blue-300 hover:underline transition-colors"
-            >
-              public roadmap
-            </a>.
-          </p>
-
-          {/* Recent Updates */}
-          <div className="mb-12">
-            <h3 className="text-2xl font-bold text-white mb-8">Recent Updates</h3>
-            <div className="bg-white/5 rounded-2xl p-8 border border-white/10">
-              <div className="space-y-6 max-w-2xl mx-auto">
-                <div className="flex items-start gap-4 p-4 rounded-xl bg-white/5 hover:bg-white/10 transition-colors border border-white/5">
-                  <div className="text-green-400 text-xl">✅</div>
-                  <div className="flex-1 text-left">
-                    <p className="text-white font-medium">Memory Engine core architecture completed</p>
-                    <span className="text-gray-400 text-sm">December 2024</span>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4 p-4 rounded-xl bg-white/5 hover:bg-white/10 transition-colors border border-white/5">
-                  <div className="text-blue-400 text-xl">🚀</div>
-                  <div className="flex-1 text-left">
-                    <p className="text-white font-medium">Proactive recall system enters testing phase</p>
-                    <span className="text-gray-400 text-sm">November 2024</span>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4 p-4 rounded-xl bg-white/5 hover:bg-white/10 transition-colors border border-white/5">
-                  <div className="text-purple-400 text-xl">🧠</div>
-                  <div className="flex-1 text-left">
-                    <p className="text-white font-medium">Cross-project intelligence framework designed</p>
-                    <span className="text-gray-400 text-sm">October 2024</span>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4 p-4 rounded-xl bg-white/5 hover:bg-white/10 transition-colors border border-white/5">
-                  <div className="text-yellow-400 text-xl">⚡</div>
-                  <div className="flex-1 text-left">
-                    <p className="text-white font-medium">Creative and Dev mode foundations built</p>
-                    <span className="text-gray-400 text-sm">September 2024</span>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4 p-4 rounded-xl bg-white/5 hover:bg-white/10 transition-colors border border-white/5">
-                  <div className="text-pink-400 text-xl">🎯</div>
-                  <div className="flex-1 text-left">
-                    <p className="text-white font-medium">Javlin.ai concept and vision established</p>
-                    <span className="text-gray-400 text-sm">August 2024</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* CTA Button */}
-          <div>
-            <a 
-              href="/roadmap"
-              className="inline-flex items-center gap-3 bg-blue-600 hover:bg-blue-500 text-white font-bold px-8 py-4 rounded-2xl transition-all duration-300 hover:scale-105 text-lg"
-              style={{
-                boxShadow: '0 0 20px rgba(59, 130, 246, 0.3)',
-                filter: 'drop-shadow(0 0 5px rgba(59, 130, 246, 0.4))'
-              }}
-            >
-              See Our Roadmap
-              <ArrowRight className="w-5 h-5" />
-            </a>
-          </div>
-        </div>
-      </section>
-
       {/* Footer */}
       <footer className="py-12 px-6 border-t border-white/10">
         <div className="max-w-4xl mx-auto text-center">
@@ -916,7 +824,6 @@ export default function Waitlist() {
           <div className="flex flex-wrap justify-center gap-8 text-sm text-gray-400 mb-8">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-            <a href="/roadmap" className="hover:text-white transition-colors">Roadmap</a>
             <a href="#" className="hover:text-white transition-colors">Contact</a>
           </div>
           <p className="text-gray-500 text-sm">

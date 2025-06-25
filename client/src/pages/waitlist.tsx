@@ -185,7 +185,7 @@ export default function Waitlist() {
           <div className="jav-border rounded-3xl p-10">
             <div className="text-center mb-12">
               <div className="w-20 h-20 bg-white/5 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <MessageCircle className="w-10 h-10 text-purple-400" />
+                <MessageCircle className="w-10 h-10 text-purple-400 energy-icon memory" />
               </div>
               <h3 className="text-3xl font-bold text-white mb-4">How Jav Assists You</h3>
               <p className="text-xl text-gray-300 leading-relaxed max-w-4xl mx-auto">
@@ -199,7 +199,7 @@ export default function Waitlist() {
               {/* Creative Mode */}
               <div className="creative-mode-border rounded-2xl p-8">
                 <div className="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center mb-6">
-                  <Lightbulb className="w-8 h-8 text-pink-400" />
+                  <Lightbulb className="w-8 h-8 text-pink-400 energy-icon creative" />
                 </div>
                 <h4 className="text-xl font-bold text-white mb-4">Creative Mode</h4>
                 <div className="space-y-4">
@@ -230,7 +230,7 @@ export default function Waitlist() {
               {/* Dev Mode */}
               <div className="dev-mode-border rounded-2xl p-8">
                 <div className="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center mb-6">
-                  <Code className="w-8 h-8 text-blue-400" />
+                  <Code className="w-8 h-8 text-blue-400 energy-icon dev" />
                 </div>
                 <h4 className="text-xl font-bold text-white mb-4">Dev Mode</h4>
                 <div className="space-y-4">
@@ -384,7 +384,7 @@ export default function Waitlist() {
                       Jav does—and reminds you that warm earth tones built trust with your B2B audience.
                     </p>
                     <div className="flex items-center space-x-2 text-blue-400">
-                      <Shield className="w-5 h-5" />
+                      <Shield className="w-5 h-5 energy-icon memory" />
                       <span className="font-medium">Cross-project pattern recognition</span>
                     </div>
                   </div>
@@ -763,21 +763,21 @@ export default function Waitlist() {
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="bg-white/5 rounded-xl p-6 border border-white/10 text-center">
                   <div className="w-12 h-12 bg-pink-500/20 rounded-xl flex items-center justify-center mx-auto mb-4">
-                    <Lightbulb className="w-6 h-6 text-pink-400" />
+                    <Lightbulb className="w-6 h-6 text-pink-400 energy-icon creative" />
                   </div>
                   <h4 className="text-white font-semibold mb-2">Creative Patterns</h4>
                   <p className="text-gray-400 text-sm">Remembers when your best ideas come, your preferred creative environments, and breakthrough moments</p>
                 </div>
                 <div className="bg-white/5 rounded-xl p-6 border border-white/10 text-center">
                   <div className="w-12 h-12 bg-red-400/20 rounded-xl flex items-center justify-center mx-auto mb-4">
-                    <Shield className="w-6 h-6 text-red-400" />
+                    <Shield className="w-6 h-6 text-purple-400 energy-icon memory" />
                   </div>
                   <h4 className="text-white font-semibold mb-2">Emotional Journey</h4>
                   <p className="text-gray-400 text-sm">Tracks stress patterns, burnout signals, and the decisions that led to your biggest regrets or victories</p>
                 </div>
                 <div className="bg-white/5 rounded-xl p-6 border border-white/10 text-center">
                   <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center mx-auto mb-4">
-                    <Brain className="w-6 h-6 text-blue-400" />
+                    <Brain className="w-6 h-6 text-purple-400 energy-icon memory" />
                   </div>
                   <h4 className="text-white font-semibold mb-2">Life Lessons</h4>
                   <p className="text-gray-400 text-sm">Captures hard-won wisdom about team dynamics, product decisions, and personal growth through building</p>

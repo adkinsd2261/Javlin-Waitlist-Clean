@@ -356,13 +356,110 @@ export default function Waitlist() {
             </div>
 
             {/* The Co-founder Experience */}
-            <div className="text-center">
+            <div className="text-center mb-16">
               <h4 className="text-2xl font-bold text-white mb-4">Your Personal Co-founder Experience</h4>
               <p className="text-lg text-gray-300 leading-relaxed max-w-4xl mx-auto">
                 Jav provides guidance, not replacement—delivering insights, accountability, and context-aware tools. 
                 With an adaptive persona that evolves with your working style, Jav becomes the strategic partner and 
                 tour guide you need, not just another AI assistant.
               </p>
+            </div>
+
+            {/* Real Problems Solved */}
+            <div className="space-y-12">
+              <div className="text-center mb-12">
+                <h4 className="text-3xl font-bold text-white mb-4">Real Problems Solved</h4>
+                <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+                  See how Memory Engine eliminates the frustrations that slow down every builder
+                </p>
+              </div>
+
+              {/* Problem: Repeated Solutions */}
+              <div className="bg-white/5 rounded-2xl p-8 border border-white/10">
+                <div className="grid lg:grid-cols-2 gap-8 items-center">
+                  <div>
+                    <h5 className="text-2xl font-bold text-white mb-4">Stop Solving the Same Problem Twice</h5>
+                    <p className="text-gray-300 leading-relaxed mb-4">
+                      You've built user authentication 5 times, but you can't remember which approach actually worked. 
+                      Jav does—and warns you about the JWT refresh token bug before you hit it again.
+                    </p>
+                    <div className="flex items-center space-x-2 text-blue-400">
+                      <Shield className="w-5 h-5" />
+                      <span className="font-medium">Cross-project pattern recognition</span>
+                    </div>
+                  </div>
+                  <div className="bg-blue-500/10 rounded-xl p-6 border border-blue-500/20">
+                    <div className="text-sm text-gray-400 mb-2">Jav remembers:</div>
+                    <ul className="space-y-2 text-sm text-gray-300">
+                      <li>• Which OAuth flow actually worked</li>
+                      <li>• Database migrations that broke production</li>
+                      <li>• API rate limits that caused issues</li>
+                      <li>• CSS tricks that saved you hours</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              {/* Problem: Creative Block */}
+              <div className="bg-white/5 rounded-2xl p-8 border border-white/10">
+                <div className="grid lg:grid-cols-2 gap-8 items-center">
+                  <div className="order-2 lg:order-1">
+                    <div className="bg-pink-500/10 rounded-xl p-6 border border-pink-500/20">
+                      <div className="text-sm text-gray-400 mb-2">Creative Mode assists with:</div>
+                      <ul className="space-y-2 text-sm text-gray-300">
+                        <li>• Color palettes that converted well previously</li>
+                        <li>• Layout ideas from successful projects</li>
+                        <li>• Copy patterns that resonated with users</li>
+                        <li>• Design systems you've built before</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="order-1 lg:order-2">
+                    <h5 className="text-2xl font-bold text-white mb-4">Beat Creative Block</h5>
+                    <p className="text-gray-300 leading-relaxed mb-4">
+                      Switch to Creative Mode and Jav surfaces relevant inspiration from your past wins. 
+                      No more blank page syndrome—your creative history becomes your starting point.
+                    </p>
+                    <p className="text-sm text-gray-400 italic">
+                      "That blue-purple gradient worked great for conversions on Project Alpha"
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Problem: Context Loss */}
+              <div className="bg-white/5 rounded-2xl p-8 border border-white/10">
+                <div className="grid lg:grid-cols-2 gap-8 items-center">
+                  <div>
+                    <h5 className="text-2xl font-bold text-white mb-4">Preserve Context Across Modes</h5>
+                    <p className="text-gray-300 leading-relaxed mb-4">
+                      Switch to Dev Mode with full creative context preserved. Jav warns about past pitfalls 
+                      and suggests proven patterns. No more reinventing solutions you've already perfected.
+                    </p>
+                    <p className="text-sm text-gray-400 italic">
+                      "Wait—that JWT approach caused refresh token issues in Project Beta. Here's what actually worked."
+                    </p>
+                  </div>
+                  <div className="bg-blue-500/10 rounded-xl p-6 border border-blue-500/20">
+                    <div className="text-sm text-gray-400 mb-2">Dev Mode prevents:</div>
+                    <ul className="space-y-2 text-sm text-gray-300">
+                      <li>• Repeating the same bugs</li>
+                      <li>• Forgotten architecture decisions</li>
+                      <li>• Database migration mistakes</li>
+                      <li>• API integration pitfalls</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              {/* Continuous Growth */}
+              <div className="bg-gradient-to-r from-purple-500/10 to-blue-500/10 rounded-2xl p-8 border border-purple-500/20 text-center">
+                <h5 className="text-2xl font-bold text-white mb-4">Your Knowledge Compounds</h5>
+                <p className="text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
+                  Your personal institutional knowledge grows in Memory Engine, connecting patterns across projects 
+                  and becoming the ultimate competitive advantage. Every project makes you faster.
+                </p>
+              </div>
             </div>
           </div>
         </div>

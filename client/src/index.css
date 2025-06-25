@@ -467,29 +467,24 @@
 @keyframes text-color-flow {
   0%, 100% {
     background-position: 0% 50%;
-    filter: drop-shadow(0 0 3px hsla(260, 80%, 70%, 0.4));
   }
   25% {
     background-position: 25% 75%;
-    filter: drop-shadow(0 0 4px hsla(250, 80%, 70%, 0.5));
   }
   50% {
     background-position: 100% 50%;
-    filter: drop-shadow(0 0 5px hsla(270, 90%, 75%, 0.6));
   }
   75% {
     background-position: 75% 25%;
-    filter: drop-shadow(0 0 4px hsla(240, 85%, 80%, 0.5));
   }
 }
 
 @keyframes word-highlight {
   0%, 100% {
     color: inherit;
-    filter: none;
   }
   50% {
-    filter: drop-shadow(0 0 8px currentColor);
+    color: inherit;
   }
 }
 
@@ -498,68 +493,13 @@
   animation: hero-logo-glow 4s ease-in-out infinite;
 }
 
-/* Logo Energy Effects */
+/* Logo Energy Effects - Clean, No Glow */
 .logo-energy {
-  position: relative;
-  animation: logo-pulse 3s ease-in-out infinite;
   transition: all 0.3s ease;
 }
 
-.logo-energy::before {
-  content: '';
-  position: absolute;
-  inset: -8px;
-  background: radial-gradient(circle, 
-    transparent 45%, 
-    hsla(260, 80%, 70%, 0.3) 50%, 
-    hsla(250, 80%, 70%, 0.2) 70%, 
-    transparent 85%);
-  border-radius: 50%;
-  z-index: -1;
-  animation: logo-glow-outer 3s ease-in-out infinite;
-}
-
 .logo-energy:hover {
-  animation: logo-pulse 1.8s ease-in-out infinite;
   transform: scale(1.05);
-}
-
-.logo-energy:hover::before {
-  animation: logo-glow-outer 1.8s ease-in-out infinite;
-  inset: -12px;
-}
-
-@keyframes logo-pulse {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.02);
-  }
-}
-
-@keyframes logo-glow-outer {
-  0%, 100% {
-    background: radial-gradient(circle, 
-      transparent 45%, 
-      hsla(260, 80%, 70%, 0.3) 50%, 
-      hsla(250, 80%, 70%, 0.2) 70%, 
-      transparent 85%);
-  }
-  33% {
-    background: radial-gradient(circle, 
-      transparent 45%, 
-      hsla(250, 80%, 70%, 0.4) 50%, 
-      hsla(270, 90%, 75%, 0.25) 70%, 
-      transparent 85%);
-  }
-  66% {
-    background: radial-gradient(circle, 
-      transparent 45%, 
-      hsla(270, 90%, 75%, 0.35) 50%, 
-      hsla(240, 85%, 80%, 0.2) 70%, 
-      transparent 85%);
-  }
 }
 
 /* Animated Text Effects */

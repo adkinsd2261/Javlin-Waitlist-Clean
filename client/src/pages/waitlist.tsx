@@ -903,33 +903,7 @@ export default function Waitlist() {
             </div>
           </div>
 
-          <div className="text-center mt-20">
-            <div className="memory-border ambient-glow rounded-3xl p-12 inline-block max-w-4xl">
-              <div className="flex items-center justify-center gap-3 mb-6">
-                <Brain className="w-8 h-8 text-purple-400 energy-icon memory" />
-                <h3 className="text-3xl font-bold text-white">The Result</h3>
-                <Brain className="w-8 h-8 text-purple-400 energy-icon memory" />
-              </div>
-              <p className="text-xl text-gray-300 leading-relaxed mb-8">
-                You're not just using an AI tool—you're growing an AI co-founder that knows your business, 
-                understands your style, and helps you build faster than ever before.
-              </p>
-              <div className="grid md:grid-cols-3 gap-6 text-sm">
-                <div className="bg-white/5 rounded-xl p-4">
-                  <div className="text-2xl font-bold text-purple-400 mb-2">10x</div>
-                  <div className="text-gray-300">Faster Development</div>
-                </div>
-                <div className="bg-white/5 rounded-xl p-4">
-                  <div className="text-2xl font-bold text-purple-400 mb-2">90%</div>
-                  <div className="text-gray-300">Fewer Repeated Mistakes</div>
-                </div>
-                <div className="bg-white/5 rounded-xl p-4">
-                  <div className="text-2xl font-bold text-purple-400 mb-2">∞</div>
-                  <div className="text-gray-300">Growing Intelligence</div>
-                </div>
-              </div>
-            </div>
-          </div>
+
         </div>
       </section>
 

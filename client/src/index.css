@@ -12,13 +12,60 @@
   }
 }
 
-@keyframes icon-pulse {
+@keyframes creative-glow {
   0%, 100% {
-    color: currentColor;
-    filter: drop-shadow(0 0 4px currentColor);
+    filter: drop-shadow(0 0 6px hsl(320, 70%, 50%)) drop-shadow(0 0 2px hsl(280, 80%, 60%));
+    transform: scale(1);
+  }
+  25% {
+    filter: drop-shadow(2px 0 8px hsl(320, 70%, 50%)) drop-shadow(0 2px 4px hsl(280, 80%, 60%));
+    transform: scale(1.05);
   }
   50% {
-    filter: drop-shadow(0 0 8px currentColor) drop-shadow(0 0 12px currentColor);
+    filter: drop-shadow(0 0 12px hsl(320, 70%, 50%)) drop-shadow(0 0 6px hsl(280, 80%, 60%));
+    transform: scale(1.1);
+  }
+  75% {
+    filter: drop-shadow(-2px 0 8px hsl(320, 70%, 50%)) drop-shadow(0 -2px 4px hsl(280, 80%, 60%));
+    transform: scale(1.05);
+  }
+}
+
+@keyframes dev-glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 6px hsl(240, 60%, 50%)) drop-shadow(0 0 2px hsl(260, 80%, 60%));
+    transform: scale(1);
+  }
+  25% {
+    filter: drop-shadow(2px 0 8px hsl(240, 60%, 50%)) drop-shadow(0 2px 4px hsl(260, 80%, 60%));
+    transform: scale(1.05);
+  }
+  50% {
+    filter: drop-shadow(0 0 12px hsl(240, 60%, 50%)) drop-shadow(0 0 6px hsl(260, 80%, 60%));
+    transform: scale(1.1);
+  }
+  75% {
+    filter: drop-shadow(-2px 0 8px hsl(240, 60%, 50%)) drop-shadow(0 -2px 4px hsl(260, 80%, 60%));
+    transform: scale(1.05);
+  }
+}
+
+@keyframes memory-glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 6px hsl(280, 70%, 50%)) drop-shadow(0 0 2px hsl(300, 80%, 60%));
+    transform: scale(1);
+  }
+  25% {
+    filter: drop-shadow(2px 0 8px hsl(280, 70%, 50%)) drop-shadow(0 2px 4px hsl(300, 80%, 60%));
+    transform: scale(1.05);
+  }
+  50% {
+    filter: drop-shadow(0 0 12px hsl(280, 70%, 50%)) drop-shadow(0 0 6px hsl(300, 80%, 60%));
+    transform: scale(1.1);
+  }
+  75% {
+    filter: drop-shadow(-2px 0 8px hsl(280, 70%, 50%)) drop-shadow(0 -2px 4px hsl(300, 80%, 60%));
+    transform: scale(1.05);
   }
 }
 
@@ -218,23 +265,32 @@
 }
 
 /* Icon energy effects */
-.energy-icon {
-  animation: icon-pulse 3s ease-in-out infinite;
-}
-
 .energy-icon.creative {
-  animation: icon-pulse 3s ease-in-out infinite;
-  color: var(--creative-gradient-start);
+  animation: creative-glow 2.5s ease-in-out infinite;
+  color: hsl(320, 70%, 60%);
 }
 
 .energy-icon.dev {
-  animation: icon-pulse 3.5s ease-in-out infinite;
-  color: var(--dev-gradient-start);
+  animation: dev-glow 3s ease-in-out infinite;
+  color: hsl(240, 70%, 60%);
 }
 
 .energy-icon.memory {
-  animation: icon-pulse 4s ease-in-out infinite;
-  color: var(--memory-gradient-start);
+  animation: memory-glow 3.5s ease-in-out infinite;
+  color: hsl(280, 70%, 60%);
+}
+
+/* Enhance the glow on hover */
+.group:hover .energy-icon.creative {
+  animation: creative-glow 1.5s ease-in-out infinite;
+}
+
+.group:hover .energy-icon.dev {
+  animation: dev-glow 1.8s ease-in-out infinite;
+}
+
+.group:hover .energy-icon.memory {
+  animation: memory-glow 2s ease-in-out infinite;
 }
 
 .dark {

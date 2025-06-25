@@ -259,7 +259,7 @@ export default function Waitlist() {
               </div>
 
               {/* JavChat */}
-              <div className="jav-border rounded-2xl p-8">
+              <div className="group jav-border rounded-2xl p-8">
                 <div className="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center mb-6">
                   <MessageCircle className="w-8 h-8 text-purple-400 energy-icon memory" />
                 </div>
@@ -297,7 +297,7 @@ export default function Waitlist() {
                 <div className="space-y-4">
                   <div className="flex items-start space-x-4">
                     <div className="w-8 h-8 bg-white/5 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                      <MessageCircle className="w-4 h-4 text-purple-400" />
+                      <MessageCircle className="w-4 h-4 text-purple-400 energy-icon memory" />
                     </div>
                     <div>
                       <h5 className="text-white font-semibold mb-2">Chat & Context Q&A</h5>
@@ -306,7 +306,7 @@ export default function Waitlist() {
                   </div>
                   <div className="flex items-start space-x-4">
                     <div className="w-8 h-8 bg-white/5 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                      <Brain className="w-4 h-4 text-blue-400" />
+                      <Brain className="w-4 h-4 text-purple-400 energy-icon memory" />
                     </div>
                     <div>
                       <h5 className="text-white font-semibold mb-2">Memory-Powered Suggestions</h5>
@@ -335,7 +335,7 @@ export default function Waitlist() {
                   </div>
                   <div className="flex items-start space-x-4">
                     <div className="w-8 h-8 bg-white/5 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                      <Shield className="w-4 h-4 text-blue-400" />
+                      <Shield className="w-4 h-4 text-purple-400 energy-icon memory" />
                     </div>
                     <div>
                       <h5 className="text-white font-semibold mb-2">Proactive Warnings</h5>
@@ -453,7 +453,7 @@ export default function Waitlist() {
               </div>
 
               {/* Continuous Growth */}
-              <div className="memory-border rounded-2xl p-8 text-center">
+              <div className="group memory-border rounded-2xl p-8 text-center">
                 <h5 className="text-2xl font-bold text-white mb-4">Your Knowledge Compounds</h5>
                 <p className="text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
                   Your personal institutional knowledge grows in Memory Engine, connecting patterns across projects 
@@ -469,7 +469,7 @@ export default function Waitlist() {
       <section className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <div className="w-24 h-24 bg-white/5 rounded-2xl flex items-center justify-center mx-auto mb-8">
+            <div className="group w-24 h-24 bg-white/5 rounded-2xl flex items-center justify-center mx-auto mb-8">
               <Brain className="w-12 h-12 text-purple-400 energy-icon memory" />
             </div>
             <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">The Memory Engine Advantage</h2>

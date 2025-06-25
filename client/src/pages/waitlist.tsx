@@ -517,7 +517,8 @@ export default function Waitlist() {
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">Your Journey with Javlin</h2>
             <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-              From first workspace to shipped product—see how Jav becomes your indispensable co-founder.
+              From first workspace to shipped product—see how Jav becomes your indispensable co-founder through 
+              the complete builder journey.
             </p>
           </div>
 

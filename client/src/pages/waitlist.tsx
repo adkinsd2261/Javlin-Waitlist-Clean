@@ -695,6 +695,46 @@ export default function Waitlist() {
                     Early supporters get lifetime access to Javlin at 30% off our standard pricing.
                   </p>
                 </div>
+
+                {/* Twitter Follow Buttons */}
+                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                  <p className="text-gray-300 text-sm">Follow us for updates:</p>
+                  <div className="flex gap-4">
+                    <a 
+                      href="https://x.com/JavlinDev" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="group flex items-center gap-2 bg-white/5 hover:bg-white/10 border border-white/20 rounded-lg px-4 py-2 transition-all duration-300 hover:scale-105"
+                      style={{
+                        boxShadow: '0 0 10px rgba(29, 161, 242, 0.2)',
+                        filter: 'drop-shadow(0 0 3px rgba(29, 161, 242, 0.3))'
+                      }}
+                    >
+                      <svg className="w-4 h-4 text-blue-400 group-hover:text-blue-300" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                      </svg>
+                      <span className="text-white text-sm font-medium">@JavlinDev</span>
+                      <span className="text-xs text-gray-400">CTO</span>
+                    </a>
+                    
+                    <a 
+                      href="https://x.com/JavlinAI" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="group flex items-center gap-2 bg-white/5 hover:bg-white/10 border border-white/20 rounded-lg px-4 py-2 transition-all duration-300 hover:scale-105"
+                      style={{
+                        boxShadow: '0 0 10px rgba(29, 161, 242, 0.2)',
+                        filter: 'drop-shadow(0 0 3px rgba(29, 161, 242, 0.3))'
+                      }}
+                    >
+                      <svg className="w-4 h-4 text-blue-400 group-hover:text-blue-300" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                      </svg>
+                      <span className="text-white text-sm font-medium">@JavlinAI</span>
+                      <span className="text-xs text-gray-400">Official</span>
+                    </a>
+                  </div>
+                </div>
               </div>
 
               <Form {...form}>

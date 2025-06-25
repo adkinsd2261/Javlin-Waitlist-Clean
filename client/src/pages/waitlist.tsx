@@ -123,8 +123,8 @@ export default function Waitlist() {
               
               <div className="bg-pink-500/5 rounded-2xl p-6 mb-6 border border-pink-500/10">
                 <p className="text-lg text-gray-300 leading-relaxed mb-4">
-                  <strong className="text-pink-400">Real scenario:</strong> You're designing a landing page but can't decide on colors. 
-                  Instead of scrolling through Pinterest for hours, Jav says: "You used this blue-purple gradient in your SaaS project last month—users clicked 40% more. Want to try a variation?"
+                  <strong className="text-pink-400">Real scenario:</strong> You're staring at a blank canvas for your startup's brand identity. 
+                  Instead of starting from scratch, Jav reminds you: "Remember that mood board you loved from the coffee shop redesign? The earthy tones tested 40% better with your target audience. Want to explore a variation?"
                 </p>
                 <p className="text-sm text-gray-400">
                   Jav remembers what worked, what flopped, and why—so you're not starting from scratch every time.
@@ -134,15 +134,15 @@ export default function Waitlist() {
               <div className="space-y-3">
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-300"><span className="text-white font-medium">Creative block?</span> Jav suggests ideas based on your past breakthroughs</p>
+                  <p className="text-gray-300"><span className="text-white font-medium">Creative block?</span> Jav suggests inspiration from your past creative wins</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-300"><span className="text-white font-medium">Design decisions?</span> See what worked in similar projects instantly</p>
+                  <p className="text-gray-300"><span className="text-white font-medium">Design decisions?</span> See what feelings and styles resonated with your audience</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-300"><span className="text-white font-medium">Scattered ideas?</span> Jav connects dots across your creative sessions</p>
+                  <p className="text-gray-300"><span className="text-white font-medium">Scattered ideas?</span> Jav weaves your creative concepts into cohesive stories</p>
                 </div>
               </div>
             </div>
@@ -206,15 +206,15 @@ export default function Waitlist() {
                   <div className="flex items-start space-x-3">
                     <div className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></div>
                     <div>
-                      <p className="text-white font-medium text-sm">Moodboards & Idea Capture</p>
-                      <p className="text-gray-400 text-sm">Visual workspace for collecting and organizing creative concepts</p>
+                      <p className="text-white font-medium text-sm">Visual Inspiration Capture</p>
+                      <p className="text-gray-400 text-sm">Collect mood boards, color stories, and creative sparks in one visual space</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
                     <div className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></div>
                     <div>
-                      <p className="text-white font-medium text-sm">Assisted Workspace Building</p>
-                      <p className="text-gray-400 text-sm">Memory-aware environment setup for creative projects</p>
+                      <p className="text-white font-medium text-sm">Creative Flow Setup</p>
+                      <p className="text-gray-400 text-sm">Environment that adapts to your creative process and preferred workflows</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
@@ -378,10 +378,10 @@ export default function Waitlist() {
               <div className="bg-white/5 rounded-2xl p-8 border border-white/10">
                 <div className="grid lg:grid-cols-2 gap-8 items-center">
                   <div>
-                    <h5 className="text-2xl font-bold text-white mb-4">Stop Solving the Same Problem Twice</h5>
+                    <h5 className="text-2xl font-bold text-white mb-4">Stop Recreating What Already Works</h5>
                     <p className="text-gray-300 leading-relaxed mb-4">
-                      You've built user authentication 5 times, but you can't remember which approach actually worked. 
-                      Jav does—and warns you about the JWT refresh token bug before you hit it again.
+                      You've designed landing pages for 5 different projects, but you can't remember which color psychology actually converted. 
+                      Jav does—and reminds you that warm earth tones built trust with your B2B audience.
                     </p>
                     <div className="flex items-center space-x-2 text-blue-400">
                       <Shield className="w-5 h-5" />
@@ -391,10 +391,10 @@ export default function Waitlist() {
                   <div className="bg-blue-500/10 rounded-xl p-6 border border-blue-500/20">
                     <div className="text-sm text-gray-400 mb-2">Jav remembers:</div>
                     <ul className="space-y-2 text-sm text-gray-300">
-                      <li>• Which OAuth flow actually worked</li>
-                      <li>• Database migrations that broke production</li>
-                      <li>• API rate limits that caused issues</li>
-                      <li>• CSS tricks that saved you hours</li>
+                      <li>• Which color stories created emotional connection</li>
+                      <li>• Typography choices that enhanced readability</li>
+                      <li>• Layout flows that guided users naturally</li>
+                      <li>• Visual hierarchies that improved engagement</li>
                     </ul>
                   </div>
                 </div>
@@ -407,21 +407,21 @@ export default function Waitlist() {
                     <div className="bg-pink-500/10 rounded-xl p-6 border border-pink-500/20">
                       <div className="text-sm text-gray-400 mb-2">Creative Mode assists with:</div>
                       <ul className="space-y-2 text-sm text-gray-300">
-                        <li>• Color palettes that converted well previously</li>
-                        <li>• Layout ideas from successful projects</li>
-                        <li>• Copy patterns that resonated with users</li>
-                        <li>• Design systems you've built before</li>
+                        <li>• Color palettes that made customers feel trusting</li>
+                        <li>• Layout flows that guided users naturally</li>
+                        <li>• Messaging that sparked emotional connection</li>
+                        <li>• Visual styles that matched your brand vision</li>
                       </ul>
                     </div>
                   </div>
                   <div className="order-1 lg:order-2">
                     <h5 className="text-2xl font-bold text-white mb-4">Beat Creative Block</h5>
                     <p className="text-gray-300 leading-relaxed mb-4">
-                      Switch to Creative Mode and Jav surfaces relevant inspiration from your past wins. 
-                      No more blank page syndrome—your creative history becomes your starting point.
+                      Switch to Creative Mode and Jav surfaces inspiration from past creative breakthroughs. 
+                      No more staring at empty canvases—your creative journey becomes your foundation.
                     </p>
                     <p className="text-sm text-gray-400 italic">
-                      "That blue-purple gradient worked great for conversions on Project Alpha"
+                      "Remember that warm color story that made users feel welcomed? Let's explore that feeling for this project."
                     </p>
                   </div>
                 </div>
@@ -433,20 +433,20 @@ export default function Waitlist() {
                   <div>
                     <h5 className="text-2xl font-bold text-white mb-4">Preserve Context Across Modes</h5>
                     <p className="text-gray-300 leading-relaxed mb-4">
-                      Switch to Dev Mode with full creative context preserved. Jav warns about past pitfalls 
-                      and suggests proven patterns. No more reinventing solutions you've already perfected.
+                      Switch between creative and technical work with full context preserved. Jav remembers your design 
+                      decisions and suggests approaches that worked before. No more losing your creative thread.
                     </p>
                     <p className="text-sm text-gray-400 italic">
-                      "Wait—that JWT approach caused refresh token issues in Project Beta. Here's what actually worked."
+                      "That minimalist approach tested well with your target users. Want to apply similar principles here?"
                     </p>
                   </div>
                   <div className="bg-blue-500/10 rounded-xl p-6 border border-blue-500/20">
-                    <div className="text-sm text-gray-400 mb-2">Dev Mode prevents:</div>
+                    <div className="text-sm text-gray-400 mb-2">Context preservation helps with:</div>
                     <ul className="space-y-2 text-sm text-gray-300">
-                      <li>• Repeating the same bugs</li>
-                      <li>• Forgotten architecture decisions</li>
-                      <li>• Database migration mistakes</li>
-                      <li>• API integration pitfalls</li>
+                      <li>• Remembering design rationale</li>
+                      <li>• Maintaining brand consistency</li>
+                      <li>• Building on creative momentum</li>
+                      <li>• Connecting visual and functional decisions</li>
                     </ul>
                   </div>
                 </div>
@@ -522,19 +522,19 @@ export default function Waitlist() {
                   <div className="space-y-2 text-sm text-gray-300">
                     <div className="flex items-center space-x-2">
                       <div className="w-1 h-1 bg-blue-400 rounded-full"></div>
-                      <span>Contextual auto-suggestions: "Remember when you solved this in Project Alpha?"</span>
+                      <span>Creative suggestions: "That visual style worked beautifully in your wellness brand"</span>
                     </div>
                     <div className="flex items-center space-x-2">
                       <div className="w-1 h-1 bg-blue-400 rounded-full"></div>
-                      <span>Proactive warnings: "Careful, this schema failed at scale in Gamma!"</span>
+                      <span>Design warnings: "This layout caused user confusion in your last project"</span>
                     </div>
                     <div className="flex items-center space-x-2">
                       <div className="w-1 h-1 bg-blue-400 rounded-full"></div>
-                      <span>"Did you know?" inspiring cross-project insights</span>
+                      <span>"Did you know?" inspiring creative connections across projects</span>
                     </div>
                     <div className="flex items-center space-x-2">
                       <div className="w-1 h-1 bg-blue-400 rounded-full"></div>
-                      <span>Automated "personal playbook" curation</span>
+                      <span>Personal creative playbook that grows with you</span>
                     </div>
                   </div>
                 </div>

@@ -782,11 +782,37 @@ export default function Waitlist() {
                     disabled={mutation.isPending}
                     className="w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-bold text-xl py-6 rounded-2xl shadow-lg transition-all duration-300 transform hover:scale-[1.02]"
                   >
-                    {mutation.isPending ? "Joining..." : "Join the Waitlist"}
+                    {mutation.isPending ? "Joining..." : "Claim Your Founder Spot"}
                     <ArrowRight className="ml-3 w-6 h-6" />
                   </Button>
                 </form>
               </Form>
+
+              {/* Social Links */}
+              <div className="flex justify-center space-x-6 mt-8 pt-6 border-t border-white/10">
+                <a 
+                  href="https://twitter.com/javlin" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors duration-200"
+                >
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                  </svg>
+                  <span>@Javlin</span>
+                </a>
+                <a 
+                  href="https://twitter.com/javlindev" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors duration-200"
+                >
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                  </svg>
+                  <span>@JavlinDev</span>
+                </a>
+              </div>
             </div>
           )}
         </div>

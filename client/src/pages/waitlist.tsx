@@ -111,8 +111,8 @@ export default function Waitlist() {
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">Meet Jav: Your AI Co-founder</h2>
             <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-              Unlike traditional AI tools that lose context and make you repeat yourself, Jav remembers everything. 
-              Powered by Memory Engine, it's designed for the complete builder journey—from creative ideation to shipping code.
+              Unlike traditional AI that forgets everything, Jav Assistant powered by MemoryOS builds on your past solutions. 
+              From OAuth debugging to design breakthroughs—your knowledge becomes institutional memory.
             </p>
           </div>
 
@@ -559,10 +559,10 @@ export default function Waitlist() {
           {/* Competitive Advantage */}
           <div className="memory-border ambient-glow rounded-3xl p-12">
             <div className="text-center mb-12">
-              <h3 className="text-3xl font-bold text-white mb-6">Why Memory Engine Beats The Competition</h3>
+              <h3 className="text-3xl font-bold text-white mb-6">Why MemoryOS Beats The Competition</h3>
               <p className="text-xl text-gray-300 max-w-4xl mx-auto">
-                While Replit, Bolt, and others offer AI assistance, only Javlin has Memory Engine—the difference between 
-                starting fresh every time and building on everything you've ever learned.
+                While competitors offer "AI storage/search," only Javlin has MemoryOS—proactive recall with real user control. 
+                The difference between starting fresh every time and building on everything you've learned.
               </p>
             </div>
             
@@ -572,7 +572,7 @@ export default function Waitlist() {
                   <div className="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mx-auto mb-3">
                     <Code className="w-6 h-6 text-gray-400" />
                   </div>
-                  <h4 className="text-lg font-bold text-white mb-4">Traditional AI Tools</h4>
+                  <h4 className="text-lg font-bold text-white mb-4">Traditional AI</h4>
                 </div>
                 <div className="space-y-3 text-gray-400 text-sm">
                   <div className="flex items-start space-x-3">
@@ -603,7 +603,7 @@ export default function Waitlist() {
                   <div className="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mx-auto mb-3">
                     <Lightbulb className="w-6 h-6 text-gray-400" />
                   </div>
-                  <h4 className="text-lg font-bold text-white mb-4">Note-Taking Apps</h4>
+                  <h4 className="text-lg font-bold text-white mb-4">Storage Tools</h4>
                 </div>
                 <div className="space-y-3 text-gray-400 text-sm">
                   <div className="flex items-start space-x-3">
@@ -634,7 +634,7 @@ export default function Waitlist() {
                   <div className="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mx-auto mb-3">
                     <Brain className="w-6 h-6 text-purple-400 energy-icon memory" />
                   </div>
-                  <h4 className="text-lg font-bold text-white mb-4">Javlin's Memory Engine</h4>
+                  <h4 className="text-lg font-bold text-white mb-4">Javlin's MemoryOS</h4>
                 </div>
                 <div className="space-y-3 text-gray-300 text-sm">
                   <div className="flex items-start space-x-3">
@@ -680,8 +680,8 @@ export default function Waitlist() {
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">Your Journey with Javlin</h2>
             <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-              From first workspace to shipped product—see how Jav becomes your indispensable co-founder through 
-              the complete builder journey.
+              From first project to institutional knowledge—see how MemoryOS transforms 
+              from simple recall to your personal co-founder intelligence.
             </p>
           </div>
 
@@ -914,7 +914,8 @@ export default function Waitlist() {
             <div className="text-center mb-16">
               <h3 className="text-4xl font-bold text-white mb-6">When Memory Becomes Wisdom</h3>
               <p className="text-xl text-gray-300 max-w-4xl mx-auto">
-                Memory Engine doesn't just store information—it transforms your experiences into intelligence that grows stronger with every project.
+                MemoryOS doesn't just store information—it actively surfaces past solutions and prevents repeated mistakes, 
+                creating personal institutional knowledge that grows with every project.
               </p>
             </div>
             
@@ -1060,7 +1061,7 @@ export default function Waitlist() {
               <div className="space-y-4">
                 <h3 className="text-3xl font-bold text-white">You're on the list!</h3>
                 <p className="text-xl text-gray-300">
-                  We'll notify you as soon as Javlin.ai is ready for early access.
+                  You're secured for 30% off for life. We'll notify you when MemoryOS is ready.
                 </p>
               </div>
             </div>
@@ -1069,7 +1070,7 @@ export default function Waitlist() {
               <div className="text-center mb-12">
                 <h2 className="text-3xl font-bold text-white mb-4">Get Early Access</h2>
                 <p className="text-lg text-gray-300">
-                  Join the waitlist and be the first to experience your AI co-founder
+                  Join the waitlist and be among the first 1,000 founders to get 30% off for life
                 </p>
               </div>
 
@@ -1124,12 +1125,12 @@ export default function Waitlist() {
                     render={({ field }) => (
                       <FormItem>
                         <FormLabel className="text-white text-lg font-medium">
-                          What patterns, lessons, or moments would you want your AI co-founder to remember?
+                          What solutions, mistakes, or project lessons would you want MemoryOS to remember?
                           <span className="text-gray-400 font-normal ml-2">(optional)</span>
                         </FormLabel>
                         <FormControl>
                           <Textarea
-                            placeholder="e.g., When I'm most creative, my burnout warning signs, breakthrough moments, team dynamics that worked, hard-learned lessons from failures..."
+                            placeholder="e.g., OAuth debugging steps, design patterns that worked, deployment mistakes to avoid, breakthrough coding moments..."
                             className="bg-white/10 border-white/20 hover:border-white/30 text-white placeholder:text-gray-400 rounded-2xl px-6 py-4 text-lg min-h-[120px] resize-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-300"
                             onFocus={(e) => e.target.classList.add('input-awakening')}
                             onBlur={(e) => e.target.classList.remove('input-awakening')}
@@ -1150,7 +1151,7 @@ export default function Waitlist() {
                     {mutation.isPending ? (
                       <span className="founder-button-text">Joining...</span>
                     ) : (
-                      <span className="founder-button-text">Claim Your Founder Spot</span>
+                      <span className="founder-button-text">Get 30% Off for Life</span>
                     )}
                     <ArrowRight className="ml-3 w-6 h-6 text-white" />
                   </Button>

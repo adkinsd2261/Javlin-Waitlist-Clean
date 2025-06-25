@@ -100,24 +100,25 @@ This is a full-stack web application for Javlin.ai's waitlist landing page. The 
 - **Module Dependencies**: Node.js 20, Web, PostgreSQL 16
 
 ## Recent Changes
-- June 25, 2025: Updated Creative Mode and implemented animated neon borders
-  - **Creative Examples**: Replaced technical references (OAuth, JWT) with design and brand-focused scenarios
-  - **Magic Moments**: Changed to emphasize emotional connection, color psychology, and user experience
-  - **Cross-Project Intelligence**: Updated to highlight creative pattern recognition instead of technical solutions
-  - **Context Preservation**: Modified to maintain creative flow between design and development phases
-  - **Content Cleanup**: Removed duplicate "Why Builders Choose Jav" section from bottom of page
-  - **Animated Borders**: Implemented clockwise-chasing neon borders with conic gradients for "memory factory" feel
-  - **Interactive Effects**: Added hover acceleration and subtle glow effects for responsive, alive experience
-  - **Performance**: Used CSS-only animations with staggered timing across different section types
+- June 25, 2025: Final polish and masterdoc alignment completed
+  - **Terminology Consistency**: Updated all "Memory Engine" references to "MemoryOS" to match masterdoc
+  - **Claims Accuracy**: Aligned all product capabilities with actual MVP features (markdown storage, proactive recall, user control)
+  - **Visual Polish**: Enhanced input awakening effects, button styling, and ambient glow consistency
+  - **Content Refinement**: Updated examples to reflect realistic MemoryOS scenarios (OAuth debugging, design patterns)
+  - **CTA Optimization**: Emphasized "30% off for life" founder special throughout waitlist flow
+  - **Competition Section**: Improved visual design with themed borders and removed non-conforming colors
+  - **Journey Section**: Expanded with detailed step-by-step progression and realistic examples
+  - **Memory Deep Dive**: Transformed from testimonial to concrete value explanation with technical accuracy
+- June 25, 2025: Implemented animated neon borders and memory factory aesthetic
+  - **Animated Borders**: Clockwise-chasing neon borders with conic gradients for "memory factory" feel
+  - **Interactive Effects**: Mouse attraction effects and hover acceleration for responsive experience
+  - **Performance**: CSS-only animations with staggered timing across section types
+  - **Energy Icons**: Consistent pulsing effects on key UI elements
 - June 24, 2025: Restructured into cohesive user journey with consolidated sections
-  - **Product Overview**: Combined Jav Assistant explanation with Creative/Dev mode examples and real scenarios
-  - **User Journey**: Step-by-step workflow from workspace creation to continuous learning with Jav
-  - **Memory Engine Deep Dive**: Comprehensive explanation of MemoryOS, competitive advantage, and emotional intelligence story
-  - **Streamlined Navigation**: Reduced from 8+ sections to 4 major sections for clearer user journey
-  - **Enhanced Context**: Added specific use cases like JWT token warnings and color palette suggestions
-  - **Competitive Positioning**: Clear differentiation from Bolt, Replit, Notion with proactive vs passive comparison
-  - **Maintained Masterdoc**: Kept official brand gradient, headlines, and core messaging throughout
-  - **User Psychology**: Created compelling narrative that drives toward waitlist signup through progressive revelation
+  - **Product Overview**: Combined Jav Assistant explanation with Creative/Dev mode examples
+  - **User Journey**: Step-by-step workflow from workspace creation to institutional knowledge building
+  - **Competitive Positioning**: Clear differentiation from competitors with proactive vs passive comparison
+  - **Streamlined Navigation**: Reduced to 4 major sections for clearer user journey
 
 ## Changelog
 - June 24, 2025. Initial setup

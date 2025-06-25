@@ -93,10 +93,10 @@ export default function Waitlist() {
           {/* CTA Button */}
           <Button 
             onClick={() => document.getElementById('waitlist-form')?.scrollIntoView({ behavior: 'smooth' })}
-            className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-bold text-xl px-12 py-6 rounded-2xl shadow-2xl shadow-blue-500/30 transition-all duration-300 transform hover:scale-[1.05] hover:shadow-blue-500/50"
+            className="waitlist-button text-xl px-12 py-6 rounded-2xl transition-all duration-300"
           >
-            Join the Waitlist
-            <ArrowRight className="ml-3 w-6 h-6" />
+            <span className="waitlist-button-text">Join the Waitlist</span>
+            <ArrowRight className="ml-3 w-6 h-6 energy-icon memory" />
           </Button>
         </div>
       </section>

@@ -129,15 +129,15 @@ export default function WaitlistForm({
           <Button
             type="submit"
             disabled={waitlistMutation.isPending}
-            className="gradient-javlin px-6 py-3 font-semibold hover:opacity-90 transition-opacity whitespace-nowrap"
+            className="waitlist-button px-6 py-3 font-semibold whitespace-nowrap transition-all duration-300"
           >
             {waitlistMutation.isPending ? (
               <>
                 <Loader2 className="w-4 h-4 mr-2 animate-spin" />
-                Joining...
+                <span className="waitlist-button-text">Joining...</span>
               </>
             ) : (
-              buttonText
+              <span className="waitlist-button-text">{buttonText}</span>
             )}
           </Button>
         </form>

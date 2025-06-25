@@ -64,8 +64,8 @@ export default function Landing() {
               >
                 Pricing
               </button>
-              <Button className="gradient-javlin hover:opacity-90">
-                Join Waitlist
+              <Button className="waitlist-button">
+                <span className="waitlist-button-text">Join Waitlist</span>
               </Button>
             </div>
           </div>

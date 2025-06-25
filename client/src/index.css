@@ -451,30 +451,30 @@
   0%, 100% {
     background-position: 0% 50%;
     text-shadow: 
-      0 0 10px hsla(280, 70%, 60%, 0.8),
-      0 0 20px hsla(260, 80%, 65%, 0.6),
-      0 0 30px hsla(240, 70%, 60%, 0.4);
+      0 0 10px hsla(280, 70%, 60%, 0.44),
+      0 0 20px hsla(260, 80%, 65%, 0.33),
+      0 0 30px hsla(240, 70%, 60%, 0.22);
   }
   25% {
     background-position: 25% 50%;
     text-shadow: 
-      0 0 12px hsla(260, 80%, 65%, 0.9),
-      0 0 24px hsla(240, 70%, 60%, 0.7),
-      0 0 36px hsla(220, 80%, 65%, 0.5);
+      0 0 12px hsla(260, 80%, 65%, 0.50),
+      0 0 24px hsla(240, 70%, 60%, 0.39),
+      0 0 36px hsla(220, 80%, 65%, 0.28);
   }
   50% {
     background-position: 50% 50%;
     text-shadow: 
-      0 0 15px hsla(240, 70%, 60%, 1.0),
-      0 0 30px hsla(220, 80%, 65%, 0.8),
-      0 0 45px hsla(260, 80%, 65%, 0.6);
+      0 0 15px hsla(240, 70%, 60%, 0.55),
+      0 0 30px hsla(220, 80%, 65%, 0.44),
+      0 0 45px hsla(260, 80%, 65%, 0.33);
   }
   75% {
     background-position: 75% 50%;
     text-shadow: 
-      0 0 12px hsla(220, 80%, 65%, 0.9),
-      0 0 24px hsla(240, 70%, 60%, 0.7),
-      0 0 36px hsla(280, 70%, 60%, 0.5);
+      0 0 12px hsla(220, 80%, 65%, 0.50),
+      0 0 24px hsla(240, 70%, 60%, 0.39),
+      0 0 36px hsla(280, 70%, 60%, 0.28);
   }
 }
 
@@ -510,9 +510,9 @@
   -webkit-text-fill-color: transparent;
   animation: text-color-flow 6s ease-in-out infinite;
   text-shadow: 
-    0 0 10px hsla(240, 70%, 60%, 0.8),
-    0 0 20px hsla(260, 80%, 65%, 0.6),
-    0 0 30px hsla(280, 70%, 60%, 0.4);
+    0 0 10px hsla(240, 70%, 60%, 0.44),
+    0 0 20px hsla(260, 80%, 65%, 0.33),
+    0 0 30px hsla(280, 70%, 60%, 0.22);
   position: relative;
 }
 

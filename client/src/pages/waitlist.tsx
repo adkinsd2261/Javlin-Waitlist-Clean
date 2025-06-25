@@ -65,7 +65,7 @@ export default function Waitlist() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#181B2B] to-[#232342] text-white">
-      {/* Hero Section */}
+      {/* Header - Hero Section */}
       <section className="relative py-20 px-6 overflow-hidden">
         <div className="max-w-4xl mx-auto text-center">
           {/* Javlin Logo with Glow */}
@@ -105,7 +105,7 @@ export default function Waitlist() {
         </div>
       </section>
 
-      {/* Product Overview */}
+      {/* Meet Jav */}
       <section className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
@@ -119,662 +119,113 @@ export default function Waitlist() {
           {/* Creative & Dev Modes */}
           <div className="grid lg:grid-cols-2 gap-12 mb-16">
             {/* Creative Mode */}
-            <div className="group creative-mode-border ambient-glow creative rounded-3xl p-10 transition-all duration-300">
-              <div className="w-24 h-24 bg-white/5 rounded-full flex items-center justify-center mb-8 transition-all duration-300">
-                <Lightbulb className="w-12 h-12 text-pink-400 energy-icon creative" />
-              </div>
-              <h3 className="text-3xl font-bold text-white mb-6 group-hover:text-pink-400 transition-colors">Creative Mode</h3>
-              
-              <div className="bg-white/5 rounded-2xl p-6 mb-6 border border-white/10 ambient-glow">
-                <p className="text-lg text-gray-300 leading-relaxed mb-4">
-                  <strong className="text-pink-400 energy-icon creative">Real scenario:</strong> You're staring at a blank canvas for your startup's brand identity. 
-                  Instead of starting from scratch, Jav reminds you: <span className="text-pink-400 font-medium">"Remember that mood board you loved from the coffee shop redesign? The earthy tones tested 40% better with your target audience. Want to explore a variation?"</span>
-                </p>
-                <p className="text-sm text-gray-400">
-                  Jav remembers what worked, what flopped, and why—so you're not starting from scratch every time.
-                </p>
-              </div>
-              
-              <div className="space-y-3">
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-300"><span className="text-pink-400 font-medium">Creative block?</span> Jav suggests inspiration from your past creative wins</p>
+            <div className="creative-mode-border ambient-glow creative rounded-3xl p-10">
+              <div className="text-center mb-8">
+                <div className="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                  <Lightbulb className="w-8 h-8 text-pink-400 energy-icon creative" />
                 </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-300"><span className="text-pink-400 font-medium">Design decisions?</span> See what feelings and styles resonated with your audience</p>
+                <h3 className="text-3xl font-bold text-white mb-4">Creative Mode</h3>
+                <p className="text-gray-300 text-lg">For ideation, design, and strategic thinking</p>
+              </div>
+
+              <div className="space-y-6">
+                <div className="bg-white/5 rounded-xl p-6">
+                  <h4 className="text-xl font-semibold text-pink-400 mb-3">Design & UI/UX</h4>
+                  <p className="text-gray-300 text-sm leading-relaxed">
+                    Create wireframes, design systems, and user interfaces. Jav helps refine your visual concepts 
+                    and suggests improvements based on UX best practices.
+                  </p>
                 </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-300"><span className="text-pink-400 font-medium">Scattered ideas?</span> Jav weaves your creative concepts into cohesive stories</p>
+                <div className="bg-white/5 rounded-xl p-6">
+                  <h4 className="text-xl font-semibold text-pink-400 mb-3">Strategic Planning</h4>
+                  <p className="text-gray-300 text-sm leading-relaxed">
+                    Plan product roadmaps, feature prioritization, and business strategy. 
+                    Jav helps you think through complex decisions and their implications.
+                  </p>
+                </div>
+                <div className="bg-white/5 rounded-xl p-6">
+                  <h4 className="text-xl font-semibold text-pink-400 mb-3">Content & Copy</h4>
+                  <p className="text-gray-300 text-sm leading-relaxed">
+                    Write compelling copy, documentation, and marketing materials. 
+                    Jav adapts to your brand voice and messaging style.
+                  </p>
                 </div>
               </div>
             </div>
 
             {/* Dev Mode */}
-            <div className="group dev-mode-border ambient-glow dev rounded-3xl p-10 transition-all duration-300">
-              <div className="w-24 h-24 bg-white/5 rounded-full flex items-center justify-center mb-8 transition-all duration-300">
-                <Code className="w-12 h-12 text-blue-400 energy-icon dev" />
-              </div>
-              <h3 className="text-3xl font-bold text-white mb-6 group-hover:text-blue-400 transition-colors">Dev Mode</h3>
-              
-              <div className="bg-white/5 rounded-2xl p-6 mb-6 border border-white/10 ambient-glow">
-                <p className="text-lg text-gray-300 leading-relaxed mb-4">
-                  <strong className="text-blue-400 energy-icon dev">Real scenario:</strong> You're adding user authentication but forgot how you handled JWT tokens. 
-                  Jav interrupts: <span className="text-blue-400 font-medium">"Hold up—last time you used this approach it caused refresh token issues. Here's the pattern that actually worked."</span>
-                </p>
-                <p className="text-sm text-gray-400">
-                  Jav prevents you from repeating the same debugging session you already survived three months ago.
-                </p>
-              </div>
-              
-              <div className="space-y-3">
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-300"><span className="text-blue-400 font-medium">Same bug again?</span> Jav warns you before you waste hours debugging</p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-300"><span className="text-blue-400 font-medium">Architecture decisions?</span> See what scales and what doesn't from your history</p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-300"><span className="text-blue-400 font-medium">Code amnesia?</span> Jav remembers your clever solutions when you don't</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Jav Assistant Deep Dive */}
-          <div className="jav-border ambient-glow rounded-3xl p-10">
-            <div className="text-center mb-12">
-              <div className="w-20 h-20 bg-white/5 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <MessageCircle className="w-10 h-10 text-purple-400 energy-icon memory" />
-              </div>
-              <h3 className="text-3xl font-bold text-white mb-4">How Jav Assists You</h3>
-              <p className="text-xl text-gray-300 leading-relaxed max-w-4xl mx-auto">
-                Jav is your AI co-founder with deep mode-specific intelligence. It adapts its personality, 
-                intervention level, and assistance based on what you're doing and how you work best.
-              </p>
-            </div>
-
-            {/* Mode-Specific Assistance */}
-            <div className="grid lg:grid-cols-3 gap-8 mb-12">
-              {/* Creative Mode */}
-              <div className="creative-mode-border ambient-glow creative rounded-2xl p-8">
-                <div className="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center mb-6">
-                  <Lightbulb className="w-8 h-8 text-pink-400 energy-icon creative" />
-                </div>
-                <h4 className="text-xl font-bold text-white mb-4">Creative Mode</h4>
-                <div className="space-y-4">
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></div>
-                    <div>
-                      <p className="text-white font-medium text-sm">Visual Inspiration Capture</p>
-                      <p className="text-gray-400 text-sm">Collect mood boards, color stories, and creative sparks in one visual space</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></div>
-                    <div>
-                      <p className="text-white font-medium text-sm">Creative Flow Setup</p>
-                      <p className="text-gray-400 text-sm">Environment that adapts to your creative process and preferred workflows</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></div>
-                    <div>
-                      <p className="text-white font-medium text-sm">Seamless Creative-to-Dev</p>
-                      <p className="text-gray-400 text-sm">Frictionless switching between creative ideation and technical build</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Dev Mode */}
-              <div className="dev-mode-border ambient-glow dev rounded-2xl p-8">
-                <div className="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center mb-6">
+            <div className="dev-mode-border ambient-glow dev rounded-3xl p-10">
+              <div className="text-center mb-8">
+                <div className="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center mx-auto mb-6">
                   <Code className="w-8 h-8 text-blue-400 energy-icon dev" />
                 </div>
-                <h4 className="text-xl font-bold text-white mb-4">Dev Mode</h4>
-                <div className="space-y-4">
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
-                    <div>
-                      <p className="text-white font-medium text-sm">Context-Aware Code Help</p>
-                      <p className="text-gray-400 text-sm">AI-powered coding assistance that understands your project context</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
-                    <div>
-                      <p className="text-white font-medium text-sm">Debugging & Code Generation</p>
-                      <p className="text-gray-400 text-sm">Intelligent debugging support and context-aware code generation</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
-                    <div>
-                      <p className="text-white font-medium text-sm">Proactive Warnings</p>
-                      <p className="text-gray-400 text-sm">Prevents repeated mistakes with alerts based on your project history</p>
-                    </div>
-                  </div>
-                </div>
+                <h3 className="text-3xl font-bold text-white mb-4">Dev Mode</h3>
+                <p className="text-gray-300 text-lg">For coding, debugging, and technical implementation</p>
               </div>
 
-              {/* JavChat */}
-              <div className="group jav-border ambient-glow rounded-2xl p-8">
-                <div className="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center mb-6">
-                  <MessageCircle className="w-8 h-8 text-purple-400 energy-icon memory" />
+              <div className="space-y-6">
+                <div className="bg-white/5 rounded-xl p-6">
+                  <h4 className="text-xl font-semibold text-blue-400 mb-3">Full-Stack Development</h4>
+                  <p className="text-gray-300 text-sm leading-relaxed">
+                    Build complete applications from frontend to backend. Jav writes clean, maintainable code 
+                    in any language and follows your preferred patterns.
+                  </p>
                 </div>
-                <h4 className="text-xl font-bold text-white mb-4">JavChat</h4>
-                <div className="space-y-4">
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
-                    <div>
-                      <p className="text-white font-medium text-sm">Memory-Assisted Journaling</p>
-                      <p className="text-gray-400 text-sm">Context-linked journaling with AI assistance for reflection and planning</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
-                    <div>
-                      <p className="text-white font-medium text-sm">Decision Logs</p>
-                      <p className="text-gray-400 text-sm">Track important decisions and their rationale for future reference</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
-                    <div>
-                      <p className="text-white font-medium text-sm">Memory Review</p>
-                      <p className="text-gray-400 text-sm">Review, edit, and organize your memories for optimal relevance</p>
-                    </div>
-                  </div>
+                <div className="bg-white/5 rounded-xl p-6">
+                  <h4 className="text-xl font-semibold text-blue-400 mb-3">Debugging & Optimization</h4>
+                  <p className="text-gray-300 text-sm leading-relaxed">
+                    Identify and fix bugs, optimize performance, and improve code quality. 
+                    Jav analyzes your codebase and suggests targeted improvements.
+                  </p>
                 </div>
-              </div>
-            </div>
-
-            {/* Core Jav Assistant Features */}
-            <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-2xl p-8 border border-blue-500/20 mb-8 ambient-glow">
-              <h4 className="text-2xl font-bold text-white mb-6 text-center">Jav Assistant Core Features</h4>
-              <div className="grid md:grid-cols-2 gap-8">
-                <div className="space-y-4">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-8 h-8 bg-white/5 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                      <MessageCircle className="w-4 h-4 text-purple-400 energy-icon memory" />
-                    </div>
-                    <div>
-                      <h5 className="text-white font-semibold mb-2">Chat & Context Q&A</h5>
-                      <p className="text-gray-300 text-sm">Interactive chat interface with context-aware responses and memory-powered suggestions</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-4">
-                    <div className="w-8 h-8 bg-white/5 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                      <Brain className="w-4 h-4 text-purple-400 energy-icon memory" />
-                    </div>
-                    <div>
-                      <h5 className="text-white font-semibold mb-2">Memory-Powered Suggestions</h5>
-                      <p className="text-gray-300 text-sm">Proactive suggestions based on your project history and Memory Engine intelligence</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-4">
-                    <div className="w-8 h-8 bg-white/5 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                      <Users className="w-4 h-4 text-purple-400 energy-icon memory" />
-                    </div>
-                    <div>
-                      <h5 className="text-white font-semibold mb-2">Adaptive Persona</h5>
-                      <p className="text-gray-300 text-sm">Tone, style, and intervention level adapt to your needs, project mode, and task</p>
-                    </div>
-                  </div>
+                <div className="bg-white/5 rounded-xl p-6">
+                  <h4 className="text-xl font-semibold text-blue-400 mb-3">Architecture & Systems</h4>
+                  <p className="text-gray-300 text-sm leading-relaxed">
+                    Design scalable architectures, database schemas, and system integrations. 
+                    Jav helps you make informed technical decisions.
+                  </p>
                 </div>
-                <div className="space-y-4">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-8 h-8 bg-white/5 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                      <Zap className="w-4 h-4 text-purple-400 energy-icon memory" />
-                    </div>
-                    <div>
-                      <h5 className="text-white font-semibold mb-2">Cross-Project Intelligence</h5>
-                      <p className="text-gray-300 text-sm">Connects lessons, patterns, and solutions across all your projects with opt-in privacy</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-4">
-                    <div className="w-8 h-8 bg-white/5 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                      <Shield className="w-4 h-4 text-purple-400 energy-icon memory" />
-                    </div>
-                    <div>
-                      <h5 className="text-white font-semibold mb-2">Proactive Warnings</h5>
-                      <p className="text-gray-300 text-sm">Real-time alerts to prevent repeated mistakes based on your past experiences</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-4">
-                    <div className="w-8 h-8 bg-white/5 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                      <Lock className="w-4 h-4 text-purple-400 energy-icon memory" />
-                    </div>
-                    <div>
-                      <h5 className="text-white font-semibold mb-2">Full Memory Control</h5>
-                      <p className="text-gray-300 text-sm">Review, edit, and delete memories. All memory actions are visible, auditable, and reversible</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* The Co-founder Experience */}
-            <div className="text-center mb-16">
-              <h4 className="text-2xl font-bold text-white mb-4">Your Personal Co-founder Experience</h4>
-              <p className="text-lg text-gray-300 leading-relaxed max-w-4xl mx-auto">
-                Jav provides guidance, not replacement—delivering insights, accountability, and context-aware tools. 
-                With an adaptive persona that evolves with your working style, Jav becomes the strategic partner and 
-                tour guide you need, not just another AI assistant.
-              </p>
-            </div>
-
-            {/* Real Problems Solved */}
-            <div className="space-y-12">
-              <div className="text-center mb-12">
-                <h4 className="text-3xl font-bold text-white mb-4">Real Problems Solved</h4>
-                <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-                  See how <span className="text-purple-400 font-semibold">Memory Engine</span> eliminates the frustrations that slow down every builder
-                </p>
-              </div>
-
-              {/* Problem: Repeated Solutions */}
-              <div className="memory-border ambient-glow rounded-2xl p-8">
-                <div className="grid lg:grid-cols-2 gap-8 items-center">
-                  <div>
-                    <h5 className="text-2xl font-bold text-white mb-4">Stop Recreating What Already Works</h5>
-                    <p className="text-gray-300 leading-relaxed mb-4">
-                      You've designed landing pages for 5 different projects, but you can't remember which color psychology actually converted. 
-                      Jav does—and reminds you that warm earth tones built trust with your B2B audience.
-                    </p>
-                    <div className="flex items-center space-x-2 text-blue-400">
-                      <Shield className="w-5 h-5 energy-icon memory" />
-                      <span className="font-medium">Cross-project pattern recognition</span>
-                    </div>
-                  </div>
-                  <div className="memory-border ambient-glow rounded-xl p-6">
-                    <div className="text-sm text-gray-400 mb-2">Jav remembers:</div>
-                    <ul className="space-y-2 text-sm text-gray-300">
-                      <li>• Which color stories created emotional connection</li>
-                      <li>• Typography choices that enhanced readability</li>
-                      <li>• Layout flows that guided users naturally</li>
-                      <li>• Visual hierarchies that improved engagement</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              {/* Problem: Creative Block */}
-              <div className="creative-mode-border ambient-glow creative rounded-2xl p-8">
-                <div className="grid lg:grid-cols-2 gap-8 items-center">
-                  <div className="order-2 lg:order-1">
-                    <div className="creative-mode-border ambient-glow creative rounded-xl p-6">
-                      <div className="text-sm text-gray-400 mb-2">Creative Mode assists with:</div>
-                      <ul className="space-y-2 text-sm text-gray-300">
-                        <li>• Color palettes that made customers feel trusting</li>
-                        <li>• Layout flows that guided users naturally</li>
-                        <li>• Messaging that sparked emotional connection</li>
-                        <li>• Visual styles that matched your brand vision</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div className="order-1 lg:order-2">
-                    <h5 className="text-2xl font-bold text-white mb-4">Beat Creative Block</h5>
-                    <p className="text-gray-300 leading-relaxed mb-4">
-                      Switch to Creative Mode and Jav surfaces inspiration from past creative breakthroughs. 
-                      No more staring at empty canvases—your creative journey becomes your foundation.
-                    </p>
-                    <p className="text-sm text-gray-400 italic">
-                      <span className="text-pink-400">"Remember that warm color story that made users feel welcomed? Let's explore that feeling for this project."</span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Problem: Context Loss */}
-              <div className="memory-border ambient-glow rounded-2xl p-8">
-                <div className="grid lg:grid-cols-2 gap-8 items-center">
-                  <div>
-                    <h5 className="text-2xl font-bold text-white mb-4">Preserve Context Across Modes</h5>
-                    <p className="text-gray-300 leading-relaxed mb-4">
-                      Switch between creative and technical work with full context preserved. Jav remembers your design 
-                      decisions and suggests approaches that worked before. No more losing your creative thread.
-                    </p>
-                    <p className="text-sm text-gray-400 italic">
-                      "That minimalist approach tested well with your target users. Want to apply similar principles here?"
-                    </p>
-                  </div>
-                  <div className="dev-mode-border ambient-glow dev rounded-xl p-6">
-                    <div className="text-sm text-gray-400 mb-2">Context preservation helps with:</div>
-                    <ul className="space-y-2 text-sm text-gray-300">
-                      <li>• Remembering design rationale</li>
-                      <li>• Maintaining brand consistency</li>
-                      <li>• Building on creative momentum</li>
-                      <li>• Connecting visual and functional decisions</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              {/* Continuous Growth */}
-              <div className="group memory-border ambient-glow rounded-2xl p-8 text-center">
-                <h5 className="text-2xl font-bold text-white mb-4">Your Knowledge Compounds</h5>
-                <p className="text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
-                  Your personal institutional knowledge grows in <span className="text-purple-400 font-semibold">Memory Engine</span>, connecting patterns across projects 
-                  and becoming the ultimate competitive advantage. Every project makes you faster.
-                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-
-
-
-
-      {/* The Memory Engine Advantage */}
+      {/* How Jav Assists You */}
       <section className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <div className="group w-24 h-24 bg-white/5 rounded-2xl flex items-center justify-center mx-auto mb-8">
-              <Brain className="w-12 h-12 text-purple-400 energy-icon memory" />
+              <MessageCircle className="w-12 h-12 text-green-400 energy-icon dev" />
             </div>
-            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">The Memory Engine Advantage</h2>
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">How Jav Assists You</h2>
             <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-              While competitors offer "AI storage/search," only Javlin has Memory Engine—proactive recall with real user control. 
-              The difference between starting fresh every time and building on everything you've learned.
+              Jav works seamlessly across all aspects of your work, providing intelligent assistance 
+              that adapts to your style and learns from your preferences.
             </p>
           </div>
 
-          <div className="memory-border ambient-glow rounded-3xl p-12">
-            {/* How Memory Engine Works */}
-            <div className="grid lg:grid-cols-2 gap-12 mb-16">
-              <div>
-                <h3 className="text-3xl font-bold text-white mb-8">How Memory Engine Works</h3>
-                <div className="space-y-6">
-                  <div className="memory-border ambient-glow rounded-2xl p-6">
-                    <h4 className="text-xl font-bold text-white mb-3">Active Intelligence, Not Storage</h4>
-                    <p className="text-gray-300 leading-relaxed">
-                      Memory Engine isn't just storage—it's an active, intelligent "brain" that learns from your actions, decisions, 
-                      code, and docs. It proactively surfaces relevant context using embedding similarity and context relevance to match 
-                      new activity to past memories.
-                    </p>
-                  </div>
-                  <div className="memory-border ambient-glow rounded-2xl p-6">
-                    <h4 className="text-xl font-bold text-white mb-3">Proactive Recall System</h4>
-                    <p className="text-gray-300 leading-relaxed">
-                      Memory Engine moves beyond passive storage by suggesting solutions, surfacing reminders, and preventing repeated 
-                      mistakes before they happen. When you work, the system checks the memory index for similar context and surfaces 
-                      past solutions or warnings.
-                    </p>
-                  </div>
-                  <div className="memory-border ambient-glow rounded-2xl p-6">
-                    <h4 className="text-xl font-bold text-white mb-3">Complete User Control</h4>
-                    <p className="text-gray-300 leading-relaxed">
-                      Every memory is user-auditable. Review, edit, and delete memories stored as <span className="text-purple-400 font-medium">searchable markdown files</span>. 
-                      All additions and updates require your validation—Memory Engine learns with you, not from you.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <h3 className="text-3xl font-bold text-white mb-8">Cross-Project Intelligence</h3>
-                <div className="space-y-6">
-                  <div className="memory-border ambient-glow rounded-2xl p-6">
-                    <h4 className="text-xl font-bold text-white mb-3">Complete Context Preservation</h4>
-                    <p className="text-gray-300 leading-relaxed">
-                      Every creative decision, code solution, and breakthrough moment is captured in <span className="text-purple-400 font-medium">Memory Engine</span>. Switch between modes without losing your train of thought or valuable insights.
-                    </p>
-                  </div>
-                  <div className="memory-border ambient-glow rounded-2xl p-6">
-                    <h4 className="text-xl font-bold text-white mb-3">Personal Institutional Knowledge</h4>
-                    <p className="text-gray-300 leading-relaxed">
-                      Beyond per-project context, Memory Engine aggregates lessons, patterns, and pitfalls from all projects 
-                      (with your opt-in) to build your personal "institutional knowledge" that grows with every project.
-                    </p>
-                  </div>
-                  <div className="memory-border ambient-glow rounded-2xl p-6">
-                    <h4 className="text-xl font-bold text-white mb-3">Privacy-First Architecture</h4>
-                    <p className="text-gray-300 leading-relaxed">
-                      All cross-project learning is opt-in and privacy-focused by default. Your data always belongs to you, 
-                      with transparent memory management and full export capabilities.
-                    </p>
-                  </div>
-                </div>
-              </div>
+          <div className="grid md:grid-cols-3 gap-8 mb-16">
+            <div className="space-y-3 text-center">
+              <Shield className="w-8 h-8 text-purple-400 mx-auto energy-icon memory" />
+              <h5 className="text-lg font-semibold text-white">Context Preservation</h5>
+              <p className="text-gray-300 text-sm">
+                Switch between creative and technical work without losing context. Your insights inform all decisions.
+              </p>
             </div>
-            {/* Competition Comparison */}
-            <div className="grid md:grid-cols-3 gap-8 mb-16">
-              <div className="dev-mode-border ambient-glow dev rounded-2xl p-6">
-                <div className="text-center mb-4">
-                  <div className="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mx-auto mb-3">
-                    <Code className="w-6 h-6 text-gray-400" />
-                  </div>
-                  <h4 className="text-lg font-bold text-white mb-4">Traditional AI</h4>
-                </div>
-                <div className="space-y-3 text-gray-400 text-sm">
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-gray-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <p>Start from scratch every conversation</p>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-gray-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <p>No memory of your preferences</p>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-gray-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <p>Can't learn from past mistakes</p>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-gray-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <p>No cross-project intelligence</p>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-gray-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <p>Passive assistance only</p>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="creative-mode-border ambient-glow creative rounded-2xl p-6">
-                <div className="text-center mb-4">
-                  <div className="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mx-auto mb-3">
-                    <Lightbulb className="w-6 h-6 text-gray-400" />
-                  </div>
-                  <h4 className="text-lg font-bold text-white mb-4">Storage Tools</h4>
-                </div>
-                <div className="space-y-3 text-gray-400 text-sm">
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-gray-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <p>Passive storage systems</p>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-gray-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <p>You must remember to search</p>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-gray-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <p>No proactive suggestions</p>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-gray-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <p>Limited context understanding</p>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-gray-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <p>Manual organization required</p>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="memory-border ambient-glow rounded-2xl p-6 relative">
-                <div className="text-center mb-4">
-                  <div className="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mx-auto mb-3">
-                    <Brain className="w-6 h-6 text-purple-400 energy-icon memory" />
-                  </div>
-                  <h4 className="text-lg font-bold text-white mb-4">Javlin's Memory Engine</h4>
-                </div>
-                <div className="space-y-3 text-gray-300 text-sm">
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
-                    <p>Proactive recall at perfect moments</p>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
-                    <p>Learns your patterns and preferences</p>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
-                    <p>Prevents repeated mistakes</p>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
-                    <p>Cross-project pattern recognition</p>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
-                    <p>Active intelligence with user control</p>
-                  </div>
-                </div>
-              </div>
+            <div className="space-y-3 text-center">
+              <Zap className="w-8 h-8 text-blue-400 mx-auto energy-icon dev" />
+              <h5 className="text-lg font-semibold text-white">Seamless Workflow</h5>
+              <p className="text-gray-300 text-sm">
+                Move fluidly between ideation and implementation. No need to explain context when switching modes.
+              </p>
             </div>
-
-            {/* How Memory Engine Works */}
-            <div className="mb-16">
-              <div className="text-center mb-12">
-                <h4 className="text-2xl font-bold text-white mb-4">When Memory Becomes Wisdom</h4>
-                <p className="text-lg text-gray-300 max-w-3xl mx-auto">
-                  Memory Engine actively surfaces past solutions and prevents repeated mistakes, 
-                  creating personal institutional knowledge that grows with every project.
-                </p>
-              </div>
-              
-              <div className="grid md:grid-cols-3 gap-8 mb-12">
-                <div className="dev-mode-border ambient-glow dev rounded-2xl p-8 text-center">
-                  <h5 className="text-2xl font-bold text-blue-400 mb-4">Capture</h5>
-                  <h6 className="text-lg font-semibold text-white mb-6">Every Decision Matters</h6>
-                  <div className="space-y-3 text-gray-300 text-sm text-left">
-                    <div className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-                      <span>Code solutions and debugging steps</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-                      <span>Design decisions and creative choices</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-                      <span>Project lessons and breakthrough moments</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-                      <span>Mistakes and what actually worked</span>
-                    </div>
-                  </div>
-                </div>
-                
-                <div className="memory-border ambient-glow rounded-2xl p-8 text-center">
-                  <h5 className="text-2xl font-bold text-purple-400 mb-4">Memory Engine</h5>
-                  <h6 className="text-lg font-semibold text-white mb-6">Intelligence That Learns</h6>
-                  <div className="space-y-3 text-gray-300 text-sm text-left">
-                    <div className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
-                      <span>Stores memories as searchable markdown</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
-                      <span>Uses context matching to find relevance</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
-                      <span>User-controlled memory editing and deletion</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
-                      <span>Builds personal knowledge patterns</span>
-                    </div>
-                  </div>
-                </div>
-                
-                <div className="creative-mode-border ambient-glow creative rounded-2xl p-8 text-center">
-                  <h5 className="text-2xl font-bold text-pink-400 mb-4">Proactive Recall</h5>
-                  <h6 className="text-lg font-semibold text-white mb-6">Right Context, Right Time</h6>
-                  <div className="space-y-3 text-gray-300 text-sm text-left">
-                    <div className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-pink-400 rounded-full"></div>
-                      <span>Surfaces past solutions automatically</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-pink-400 rounded-full"></div>
-                      <span>Warns about repeated mistakes</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-pink-400 rounded-full"></div>
-                      <span>Suggests proven strategies</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-pink-400 rounded-full"></div>
-                      <span>Shows relevant project memories</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Real Memory Engine Examples */}
-              <div className="space-y-8">
-                <div className="dev-mode-border ambient-glow dev rounded-2xl p-8">
-                  <h5 className="text-xl font-bold text-white mb-4">Technical Memory in Action</h5>
-                  <div className="bg-white/5 rounded-xl p-6">
-                    <p className="text-gray-300 mb-4">
-                      You solved an OAuth token expiry bug in Project Alpha. Two months later in Project Beta, you hit a similar issue. 
-                      Memory Engine surfaces: <span className="text-blue-400 font-semibold">"Remember how you solved token expiry in Project Alpha? Here's what worked last time."</span>
-                    </p>
-                    <div className="text-xs text-blue-300 bg-blue-500/10 rounded px-3 py-1 inline-block">
-                      Context Match: OAuth debugging from Project Alpha memory
-                    </div>
-                  </div>
-                </div>
-
-                <div className="creative-mode-border ambient-glow creative rounded-2xl p-8">
-                  <h5 className="text-xl font-bold text-white mb-4">Creative Memory in Action</h5>
-                  <div className="bg-white/5 rounded-xl p-6">
-                    <p className="text-gray-300 mb-4">
-                      Memory Engine remembers that a specific blue-purple gradient worked great for conversions in your last project. 
-                      When you're designing again, it suggests: <span className="text-pink-400 font-semibold">"That gradient from Project Alpha converted 23% better than your baseline. Want to try a variation?"</span>
-                    </p>
-                    <div className="text-xs text-pink-300 bg-pink-500/10 rounded px-3 py-1 inline-block">
-                      Design Memory: Successful color palette from past project
-                    </div>
-                  </div>
-                </div>
-
-                <div className="memory-border ambient-glow rounded-2xl p-8">
-                  <h5 className="text-xl font-bold text-white mb-4">Project Memory in Action</h5>
-                  <div className="bg-white/5 rounded-xl p-6">
-                    <p className="text-gray-300 mb-4">
-                      You documented a hard lesson about feature scope creep in your project journal. 
-                      When planning a new feature, Memory Engine reminds: <span className="text-purple-400 font-semibold">"You noted in Project Beta: 'Adding features without user feedback led to 2 weeks of wasted work.' Consider validation first."</span>
-                    </p>
-                    <div className="text-xs text-purple-300 bg-purple-500/10 rounded px-3 py-1 inline-block">
-                      Lesson Memory: Project planning insights from your own notes
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* The Difference */}
-            <div className="text-center">
-              <div className="bg-gradient-to-r from-purple-500/10 to-blue-500/10 rounded-2xl p-8 border border-purple-400/30 ambient-glow">
-                <h4 className="text-2xl font-bold text-white mb-6">This Is What Makes Javlin Different</h4>
-                <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
-                  Other AI tools offer "AI storage/search." <span className="text-purple-400 font-semibold">Memory Engine</span> offers <span className="text-blue-400 font-semibold">proactive recall</span> with real user control. 
-                  Your memories are stored as <span className="text-purple-400 font-medium">editable markdown files</span>—you can review, edit, and delete anything. 
-                  It's the first <span className="text-purple-400 font-semibold">AI co-founder</span> that remembers your best solutions and warns you about past mistakes.
-                </p>
-              </div>
+            <div className="space-y-3 text-center">
+              <Brain className="w-8 h-8 text-pink-400 mx-auto energy-icon creative" />
+              <h5 className="text-lg font-semibold text-white">Holistic Understanding</h5>
+              <p className="text-gray-300 text-sm">
+                Jav understands both the creative vision and technical constraints, ensuring aligned solutions.
+              </p>
             </div>
           </div>
         </div>
@@ -1022,7 +473,189 @@ export default function Waitlist() {
         </div>
       </section>
 
+      {/* The Memory Engine Advantage */}
+      <section className="py-20 px-6">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <div className="group w-24 h-24 bg-white/5 rounded-2xl flex items-center justify-center mx-auto mb-8">
+              <Brain className="w-12 h-12 text-purple-400 energy-icon memory" />
+            </div>
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">The Memory Engine Advantage</h2>
+            <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+              While competitors offer "AI storage/search," only Javlin has Memory Engine—proactive recall with real user control. 
+              The difference between starting fresh every time and building on everything you've learned.
+            </p>
+          </div>
 
+          <div className="memory-border ambient-glow rounded-3xl p-12">
+            {/* How Memory Engine Works */}
+            <div className="grid lg:grid-cols-2 gap-12 mb-16">
+              <div>
+                <h3 className="text-3xl font-bold text-white mb-8">How Memory Engine Works</h3>
+                <div className="space-y-6">
+                  <div className="memory-border ambient-glow rounded-2xl p-6">
+                    <h4 className="text-xl font-bold text-white mb-3">Active Intelligence, Not Storage</h4>
+                    <p className="text-gray-300 leading-relaxed">
+                      Memory Engine isn't just storage—it's an active, intelligent "brain" that learns from your actions, decisions, 
+                      code, and docs. It proactively surfaces relevant context using embedding similarity and context relevance to match 
+                      new activity to past memories.
+                    </p>
+                  </div>
+                  <div className="memory-border ambient-glow rounded-2xl p-6">
+                    <h4 className="text-xl font-bold text-white mb-3">Proactive Recall System</h4>
+                    <p className="text-gray-300 leading-relaxed">
+                      Memory Engine moves beyond passive storage by suggesting solutions, surfacing reminders, and preventing repeated 
+                      mistakes before they happen. When you work, the system checks the memory index for similar context and surfaces 
+                      past solutions or warnings.
+                    </p>
+                  </div>
+                  <div className="memory-border ambient-glow rounded-2xl p-6">
+                    <h4 className="text-xl font-bold text-white mb-3">Complete User Control</h4>
+                    <p className="text-gray-300 leading-relaxed">
+                      Every memory is user-auditable. Review, edit, and delete memories stored as <span className="text-purple-400 font-medium">searchable markdown files</span>. 
+                      All additions and updates require your validation—Memory Engine learns with you, not from you.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h3 className="text-3xl font-bold text-white mb-8">Cross-Project Intelligence</h3>
+                <div className="space-y-6">
+                  <div className="memory-border ambient-glow rounded-2xl p-6">
+                    <h4 className="text-xl font-bold text-white mb-3">Complete Context Preservation</h4>
+                    <p className="text-gray-300 leading-relaxed">
+                      Every creative decision, code solution, and breakthrough moment is captured in <span className="text-purple-400 font-medium">Memory Engine</span>. Switch between modes without losing your train of thought or valuable insights.
+                    </p>
+                  </div>
+                  <div className="memory-border ambient-glow rounded-2xl p-6">
+                    <h4 className="text-xl font-bold text-white mb-3">Personal Institutional Knowledge</h4>
+                    <p className="text-gray-300 leading-relaxed">
+                      Beyond per-project context, Memory Engine aggregates lessons, patterns, and pitfalls from all projects 
+                      (with your opt-in) to build your personal "institutional knowledge" that grows with every project.
+                    </p>
+                  </div>
+                  <div className="memory-border ambient-glow rounded-2xl p-6">
+                    <h4 className="text-xl font-bold text-white mb-3">Privacy-First Architecture</h4>
+                    <p className="text-gray-300 leading-relaxed">
+                      All cross-project learning is opt-in and privacy-focused by default. Your data always belongs to you, 
+                      with transparent memory management and full export capabilities.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Competition Comparison */}
+            <div className="grid md:grid-cols-3 gap-8 mb-16">
+              <div className="dev-mode-border ambient-glow dev rounded-2xl p-6">
+                <div className="text-center mb-4">
+                  <div className="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mx-auto mb-3">
+                    <Code className="w-6 h-6 text-gray-400" />
+                  </div>
+                  <h4 className="text-lg font-bold text-white mb-4">Traditional AI</h4>
+                </div>
+                <div className="space-y-3 text-gray-400 text-sm">
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-gray-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <p>Start from scratch every conversation</p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-gray-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <p>No memory of your preferences</p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-gray-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <p>Can't learn from past mistakes</p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-gray-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <p>No cross-project intelligence</p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-gray-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <p>Passive assistance only</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="creative-mode-border ambient-glow creative rounded-2xl p-6">
+                <div className="text-center mb-4">
+                  <div className="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mx-auto mb-3">
+                    <Lightbulb className="w-6 h-6 text-gray-400" />
+                  </div>
+                  <h4 className="text-lg font-bold text-white mb-4">Storage Tools</h4>
+                </div>
+                <div className="space-y-3 text-gray-400 text-sm">
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-gray-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <p>Passive storage systems</p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-gray-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <p>You must remember to search</p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-gray-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <p>No proactive suggestions</p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-gray-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <p>Limited context understanding</p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-gray-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <p>No learning from patterns</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="memory-border ambient-glow rounded-2xl p-6">
+                <div className="text-center mb-4">
+                  <div className="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mx-auto mb-3">
+                    <Brain className="w-6 h-6 text-purple-400 energy-icon memory" />
+                  </div>
+                  <h4 className="text-lg font-bold text-white mb-4">Javlin Memory Engine</h4>
+                </div>
+                <div className="space-y-3 text-purple-300 text-sm">
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <p>Proactive recall of past solutions</p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <p>Learns your patterns and preferences</p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <p>Prevents repeated mistakes</p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <p>Cross-project intelligence</p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <p>User-controlled memory system</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* The Difference */}
+            <div className="text-center">
+              <div className="bg-gradient-to-r from-purple-500/10 to-blue-500/10 rounded-2xl p-8 border border-purple-400/30 ambient-glow">
+                <h4 className="text-2xl font-bold text-white mb-6">This Is What Makes Javlin Different</h4>
+                <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                  Other AI tools offer "AI storage/search." <span className="text-purple-400 font-semibold">Memory Engine</span> offers <span className="text-blue-400 font-semibold">proactive recall</span> with real user control. 
+                  Your memories are stored as <span className="text-purple-400 font-medium">editable markdown files</span>—you can review, edit, and delete anything. 
+                  It's the first <span className="text-purple-400 font-semibold">AI co-founder</span> that remembers your best solutions and warns you about past mistakes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Waitlist Form */}
       <section id="waitlist-form" className="py-20 px-6">
@@ -1035,56 +668,62 @@ export default function Waitlist() {
               <div className="space-y-4">
                 <h3 className="text-3xl font-bold text-white">You're on the list!</h3>
                 <p className="text-xl text-gray-300">
-                  You're secured for <span className="text-pink-400 font-semibold">30% off for life</span>. We'll notify you when <span className="text-purple-400 font-semibold">Memory Engine</span> is ready.
+                  Welcome to the future of AI co-founding. We'll notify you when Javlin is ready.
                 </p>
+                <div className="bg-gradient-to-r from-purple-500/10 to-blue-500/10 rounded-xl p-6 border border-purple-400/20">
+                  <p className="text-lg text-purple-300 font-semibold mb-2">Founder Special: 30% off for life</p>
+                  <p className="text-gray-300 text-sm">
+                    As an early supporter, you'll get lifetime access to Javlin at 30% off our standard pricing.
+                  </p>
+                </div>
               </div>
             </div>
           ) : (
-            <div className="bg-white/5 rounded-3xl p-12 border border-white/10 ambient-glow">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl font-bold text-white mb-4">Get Early Access</h2>
-                <p className="text-lg text-gray-300">
-                  Join the waitlist and be among the first 1,000 founders to get <span className="text-pink-400 font-semibold">30% off for life</span>
+            <div className="text-center space-y-8">
+              <div className="space-y-6">
+                <h3 className="text-4xl font-bold text-white">Join the Waitlist</h3>
+                <p className="text-xl text-gray-300">
+                  Be among the first to experience the AI co-founder that never forgets your best solutions.
                 </p>
+                <div className="bg-gradient-to-r from-purple-500/10 to-blue-500/10 rounded-xl p-6 border border-purple-400/20">
+                  <p className="text-lg text-purple-300 font-semibold mb-2">Founder Special: 30% off for life</p>
+                  <p className="text-gray-300 text-sm">
+                    Early supporters get lifetime access to Javlin at 30% off our standard pricing.
+                  </p>
+                </div>
               </div>
 
               <Form {...form}>
-                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-6">
                     <FormField
                       control={form.control}
                       name="name"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel className="text-white text-lg font-medium">Name *</FormLabel>
+                          <FormLabel className="text-white">Name</FormLabel>
                           <FormControl>
-                            <Input
-                              placeholder="Your full name"
-                              className="bg-white/10 border-white/20 hover:border-white/30 text-white placeholder:text-gray-400 rounded-2xl px-6 py-4 text-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-300"
-                              onFocus={(e) => e.target.classList.add('input-awakening')}
-                              onBlur={(e) => e.target.classList.remove('input-awakening')}
-                              {...field}
+                            <Input 
+                              placeholder="Your name" 
+                              className="bg-white/5 border-white/20 text-white placeholder:text-gray-400"
+                              {...field} 
                             />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
                       )}
                     />
-                    
                     <FormField
                       control={form.control}
                       name="email"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel className="text-white text-lg font-medium">Email *</FormLabel>
+                          <FormLabel className="text-white">Email</FormLabel>
                           <FormControl>
-                            <Input
-                              type="email"
-                              placeholder="your@email.com"
-                              className="bg-white/10 border-white/20 hover:border-white/30 text-white placeholder:text-gray-400 rounded-2xl px-6 py-4 text-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-300"
-                              onFocus={(e) => e.target.classList.add('input-awakening')}
-                              onBlur={(e) => e.target.classList.remove('input-awakening')}
-                              {...field}
+                            <Input 
+                              placeholder="you@company.com" 
+                              className="bg-white/5 border-white/20 text-white placeholder:text-gray-400"
+                              {...field} 
                             />
                           </FormControl>
                           <FormMessage />
@@ -1092,86 +731,45 @@ export default function Waitlist() {
                       )}
                     />
                   </div>
-                  
                   <FormField
                     control={form.control}
                     name="message"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="text-white text-lg font-medium">
-                          What solutions, mistakes, or project lessons would you want <span className="text-purple-400 font-medium">Memory Engine</span> to remember?
-                          <span className="text-gray-400 font-normal ml-2">(optional)</span>
-                        </FormLabel>
+                        <FormLabel className="text-white">What are you building? (Optional)</FormLabel>
                         <FormControl>
-                          <Textarea
-                            placeholder="e.g., OAuth debugging steps, design patterns that worked, deployment mistakes to avoid, breakthrough coding moments..."
-                            className="bg-white/10 border-white/20 hover:border-white/30 text-white placeholder:text-gray-400 rounded-2xl px-6 py-4 text-lg min-h-[120px] resize-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-300"
-                            onFocus={(e) => e.target.classList.add('input-awakening')}
-                            onBlur={(e) => e.target.classList.remove('input-awakening')}
-                            {...field}
+                          <Textarea 
+                            placeholder="Tell us about your current project or what you're hoping to build with Javlin..."
+                            className="bg-white/5 border-white/20 text-white placeholder:text-gray-400 resize-none"
+                            rows={4}
+                            {...field} 
                           />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
                     )}
                   />
-
-                  <Button
+                  <Button 
                     ref={founderButtonRef}
-                    type="submit"
+                    type="submit" 
                     disabled={mutation.isPending}
-                    className="w-full founder-button mouse-attracted-button text-xl py-6 rounded-2xl transition-all duration-300"
+                    className="w-full waitlist-button mouse-attracted-button text-lg py-6 rounded-2xl transition-all duration-300"
                   >
                     {mutation.isPending ? (
-                      <span className="founder-button-text">Joining...</span>
+                      "Joining..."
                     ) : (
-                      <span className="founder-button-text">Get 30% Off for Life</span>
+                      <>
+                        <span className="waitlist-button-text">Reserve My Founder Spot</span>
+                        <ArrowRight className="ml-3 w-5 h-5" />
+                      </>
                     )}
-                    <ArrowRight className="ml-3 w-6 h-6 text-white" />
                   </Button>
                 </form>
               </Form>
-
-              {/* CTA Text Above Social Links */}
-              <div className="text-center mt-8 pt-6 border-t border-white/10">
-                <p className="text-lg text-gray-300 mb-4 font-medium">
-                  Follow our journey and get updates
-                </p>
-                
-                {/* Social Links */}
-                <div className="flex justify-center space-x-6">
-                  <a 
-                    href="https://x.com/JavlinAI" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors duration-200 bg-white/5 rounded-lg px-4 py-2 hover:bg-white/10"
-                  >
-                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-                    </svg>
-                    <span>@JavlinAI</span>
-                  </a>
-                  <a 
-                    href="https://x.com/JavlinDev" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors duration-200 bg-white/5 rounded-lg px-4 py-2 hover:bg-white/10"
-                  >
-                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-                    </svg>
-                    <span>@JavlinDev</span>
-                  </a>
-                </div>
-              </div>
             </div>
           )}
         </div>
       </section>
-
-
-
-
 
       {/* Footer */}
       <footer className="py-12 px-6 border-t border-white/10">

@@ -2,6 +2,129 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Neon border animations */
+@keyframes neon-dash {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes neon-glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 5px currentColor) drop-shadow(0 0 10px currentColor);
+  }
+  50% {
+    filter: drop-shadow(0 0 10px currentColor) drop-shadow(0 0 20px currentColor) drop-shadow(0 0 30px currentColor);
+  }
+}
+
+/* Creative Mode Border */
+.creative-mode-border {
+  position: relative;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+}
+
+.creative-mode-border::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  background: linear-gradient(45deg, 
+    var(--creative-neon), 
+    transparent, 
+    var(--creative-neon), 
+    transparent,
+    var(--creative-neon)
+  );
+  border-radius: inherit;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: xor;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  animation: neon-glow 3s ease-in-out infinite;
+}
+
+/* Dev Mode Border */
+.dev-mode-border {
+  position: relative;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+}
+
+.dev-mode-border::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  background: linear-gradient(45deg, 
+    var(--dev-neon), 
+    transparent, 
+    var(--dev-neon), 
+    transparent,
+    var(--dev-neon)
+  );
+  border-radius: inherit;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: xor;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  animation: neon-glow 3s ease-in-out infinite 0.5s;
+}
+
+/* Jav Assistant Border */
+.jav-border {
+  position: relative;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+}
+
+.jav-border::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  background: linear-gradient(45deg, 
+    var(--jav-neon), 
+    transparent, 
+    var(--jav-neon), 
+    transparent,
+    var(--jav-neon)
+  );
+  border-radius: inherit;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: xor;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  animation: neon-glow 3s ease-in-out infinite 1s;
+}
+
+/* Memory Engine Border */
+.memory-border {
+  position: relative;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+}
+
+.memory-border::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  background: linear-gradient(45deg, 
+    var(--memory-neon), 
+    transparent, 
+    var(--memory-neon), 
+    transparent,
+    var(--memory-neon)
+  );
+  border-radius: inherit;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: xor;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  animation: neon-glow 3s ease-in-out infinite 1.5s;
+}
+
 :root {
   --background: hsl(240, 10%, 3.9%);
   --foreground: hsl(0, 0%, 98%);
@@ -30,6 +153,12 @@
   --gradient-end: hsl(232, 27%, 20%);
   --card-bg: rgba(255, 255, 255, 0.03);
   --card-border: rgba(255, 255, 255, 0.08);
+  
+  /* Neon border colors */
+  --creative-neon: hsl(320, 100%, 60%);
+  --dev-neon: hsl(220, 100%, 60%);
+  --jav-neon: hsl(160, 100%, 60%);
+  --memory-neon: hsl(280, 100%, 60%);
 }
 
 .dark {

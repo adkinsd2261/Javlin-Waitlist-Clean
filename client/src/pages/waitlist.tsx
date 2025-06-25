@@ -115,13 +115,13 @@ export default function Waitlist() {
           {/* Creative & Dev Modes */}
           <div className="grid lg:grid-cols-2 gap-12 mb-16">
             {/* Creative Mode */}
-            <div className="group bg-gradient-to-br from-pink-500/10 to-purple-500/10 rounded-3xl p-10 border border-pink-500/20 hover:border-pink-500/40 transition-all duration-300 hover:shadow-2xl hover:shadow-pink-500/20">
-              <div className="w-24 h-24 bg-gradient-to-br from-pink-500/20 to-purple-500/20 group-hover:from-pink-500/30 group-hover:to-purple-500/30 rounded-full flex items-center justify-center mb-8 transition-all duration-300 shadow-lg shadow-pink-500/20">
+            <div className="group creative-mode-border rounded-3xl p-10 transition-all duration-300">
+              <div className="w-24 h-24 bg-white/5 rounded-full flex items-center justify-center mb-8 transition-all duration-300">
                 <Lightbulb className="w-12 h-12 text-pink-400" />
               </div>
               <h3 className="text-3xl font-bold text-white mb-6 group-hover:text-pink-400 transition-colors">Creative Mode</h3>
               
-              <div className="bg-pink-500/5 rounded-2xl p-6 mb-6 border border-pink-500/10">
+              <div className="bg-white/5 rounded-2xl p-6 mb-6 border border-white/10">
                 <p className="text-lg text-gray-300 leading-relaxed mb-4">
                   <strong className="text-pink-400">Real scenario:</strong> You're staring at a blank canvas for your startup's brand identity. 
                   Instead of starting from scratch, Jav reminds you: "Remember that mood board you loved from the coffee shop redesign? The earthy tones tested 40% better with your target audience. Want to explore a variation?"
@@ -148,13 +148,13 @@ export default function Waitlist() {
             </div>
 
             {/* Dev Mode */}
-            <div className="group bg-gradient-to-br from-blue-500/10 to-purple-600/10 rounded-3xl p-10 border border-blue-500/20 hover:border-blue-500/40 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/20">
-              <div className="w-24 h-24 bg-gradient-to-br from-blue-500/20 to-purple-600/20 group-hover:from-blue-500/30 group-hover:to-purple-600/30 rounded-full flex items-center justify-center mb-8 transition-all duration-300 shadow-lg shadow-blue-500/20">
+            <div className="group dev-mode-border rounded-3xl p-10 transition-all duration-300">
+              <div className="w-24 h-24 bg-white/5 rounded-full flex items-center justify-center mb-8 transition-all duration-300">
                 <Code className="w-12 h-12 text-blue-400" />
               </div>
               <h3 className="text-3xl font-bold text-white mb-6 group-hover:text-blue-400 transition-colors">Dev Mode</h3>
               
-              <div className="bg-blue-500/5 rounded-2xl p-6 mb-6 border border-blue-500/10">
+              <div className="bg-white/5 rounded-2xl p-6 mb-6 border border-white/10">
                 <p className="text-lg text-gray-300 leading-relaxed mb-4">
                   <strong className="text-blue-400">Real scenario:</strong> You're adding user authentication but forgot how you handled JWT tokens. 
                   Jav interrupts: "Hold up—last time you used this approach it caused refresh token issues. Here's the pattern that actually worked."
@@ -182,9 +182,9 @@ export default function Waitlist() {
           </div>
 
           {/* Jav Assistant Deep Dive */}
-          <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 rounded-3xl p-10 border border-purple-500/20">
+          <div className="jav-border rounded-3xl p-10">
             <div className="text-center mb-12">
-              <div className="w-20 h-20 bg-purple-500/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
+              <div className="w-20 h-20 bg-white/5 rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <MessageCircle className="w-10 h-10 text-purple-400" />
               </div>
               <h3 className="text-3xl font-bold text-white mb-4">How Jav Assists You</h3>
@@ -197,8 +197,8 @@ export default function Waitlist() {
             {/* Mode-Specific Assistance */}
             <div className="grid lg:grid-cols-3 gap-8 mb-12">
               {/* Creative Mode */}
-              <div className="bg-white/5 rounded-2xl p-8 border border-white/10">
-                <div className="w-16 h-16 bg-pink-500/20 rounded-2xl flex items-center justify-center mb-6">
+              <div className="creative-mode-border rounded-2xl p-8">
+                <div className="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center mb-6">
                   <Lightbulb className="w-8 h-8 text-pink-400" />
                 </div>
                 <h4 className="text-xl font-bold text-white mb-4">Creative Mode</h4>
@@ -228,8 +228,8 @@ export default function Waitlist() {
               </div>
 
               {/* Dev Mode */}
-              <div className="bg-white/5 rounded-2xl p-8 border border-white/10">
-                <div className="w-16 h-16 bg-blue-500/20 rounded-2xl flex items-center justify-center mb-6">
+              <div className="dev-mode-border rounded-2xl p-8">
+                <div className="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center mb-6">
                   <Code className="w-8 h-8 text-blue-400" />
                 </div>
                 <h4 className="text-xl font-bold text-white mb-4">Dev Mode</h4>
@@ -259,8 +259,8 @@ export default function Waitlist() {
               </div>
 
               {/* JavChat */}
-              <div className="bg-white/5 rounded-2xl p-8 border border-white/10">
-                <div className="w-16 h-16 bg-green-500/20 rounded-2xl flex items-center justify-center mb-6">
+              <div className="jav-border rounded-2xl p-8">
+                <div className="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center mb-6">
                   <MessageCircle className="w-8 h-8 text-green-400" />
                 </div>
                 <h4 className="text-xl font-bold text-white mb-4">JavChat</h4>
@@ -296,7 +296,7 @@ export default function Waitlist() {
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="space-y-4">
                   <div className="flex items-start space-x-4">
-                    <div className="w-8 h-8 bg-purple-500/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                    <div className="w-8 h-8 bg-white/5 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
                       <MessageCircle className="w-4 h-4 text-purple-400" />
                     </div>
                     <div>
@@ -305,7 +305,7 @@ export default function Waitlist() {
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
-                    <div className="w-8 h-8 bg-purple-500/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                    <div className="w-8 h-8 bg-white/5 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
                       <Brain className="w-4 h-4 text-blue-400" />
                     </div>
                     <div>
@@ -314,7 +314,7 @@ export default function Waitlist() {
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
-                    <div className="w-8 h-8 bg-purple-500/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                    <div className="w-8 h-8 bg-white/5 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
                       <Users className="w-4 h-4 text-green-400" />
                     </div>
                     <div>
@@ -325,7 +325,7 @@ export default function Waitlist() {
                 </div>
                 <div className="space-y-4">
                   <div className="flex items-start space-x-4">
-                    <div className="w-8 h-8 bg-purple-500/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                    <div className="w-8 h-8 bg-white/5 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
                       <Zap className="w-4 h-4 text-yellow-400" />
                     </div>
                     <div>
@@ -334,7 +334,7 @@ export default function Waitlist() {
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
-                    <div className="w-8 h-8 bg-purple-500/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                    <div className="w-8 h-8 bg-white/5 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
                       <Shield className="w-4 h-4 text-blue-400" />
                     </div>
                     <div>
@@ -343,7 +343,7 @@ export default function Waitlist() {
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
-                    <div className="w-8 h-8 bg-purple-500/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                    <div className="w-8 h-8 bg-white/5 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
                       <Lock className="w-4 h-4 text-red-400" />
                     </div>
                     <div>
@@ -375,7 +375,7 @@ export default function Waitlist() {
               </div>
 
               {/* Problem: Repeated Solutions */}
-              <div className="bg-white/5 rounded-2xl p-8 border border-white/10">
+              <div className="memory-border rounded-2xl p-8">
                 <div className="grid lg:grid-cols-2 gap-8 items-center">
                   <div>
                     <h5 className="text-2xl font-bold text-white mb-4">Stop Recreating What Already Works</h5>
@@ -388,7 +388,7 @@ export default function Waitlist() {
                       <span className="font-medium">Cross-project pattern recognition</span>
                     </div>
                   </div>
-                  <div className="bg-blue-500/10 rounded-xl p-6 border border-blue-500/20">
+                  <div className="memory-border rounded-xl p-6">
                     <div className="text-sm text-gray-400 mb-2">Jav remembers:</div>
                     <ul className="space-y-2 text-sm text-gray-300">
                       <li>• Which color stories created emotional connection</li>
@@ -401,10 +401,10 @@ export default function Waitlist() {
               </div>
 
               {/* Problem: Creative Block */}
-              <div className="bg-white/5 rounded-2xl p-8 border border-white/10">
+              <div className="creative-mode-border rounded-2xl p-8">
                 <div className="grid lg:grid-cols-2 gap-8 items-center">
                   <div className="order-2 lg:order-1">
-                    <div className="bg-pink-500/10 rounded-xl p-6 border border-pink-500/20">
+                    <div className="creative-mode-border rounded-xl p-6">
                       <div className="text-sm text-gray-400 mb-2">Creative Mode assists with:</div>
                       <ul className="space-y-2 text-sm text-gray-300">
                         <li>• Color palettes that made customers feel trusting</li>
@@ -428,7 +428,7 @@ export default function Waitlist() {
               </div>
 
               {/* Problem: Context Loss */}
-              <div className="bg-white/5 rounded-2xl p-8 border border-white/10">
+              <div className="memory-border rounded-2xl p-8">
                 <div className="grid lg:grid-cols-2 gap-8 items-center">
                   <div>
                     <h5 className="text-2xl font-bold text-white mb-4">Preserve Context Across Modes</h5>
@@ -440,7 +440,7 @@ export default function Waitlist() {
                       "That minimalist approach tested well with your target users. Want to apply similar principles here?"
                     </p>
                   </div>
-                  <div className="bg-blue-500/10 rounded-xl p-6 border border-blue-500/20">
+                  <div className="dev-mode-border rounded-xl p-6">
                     <div className="text-sm text-gray-400 mb-2">Context preservation helps with:</div>
                     <ul className="space-y-2 text-sm text-gray-300">
                       <li>• Remembering design rationale</li>
@@ -453,7 +453,7 @@ export default function Waitlist() {
               </div>
 
               {/* Continuous Growth */}
-              <div className="bg-gradient-to-r from-purple-500/10 to-blue-500/10 rounded-2xl p-8 border border-purple-500/20 text-center">
+              <div className="memory-border rounded-2xl p-8 text-center">
                 <h5 className="text-2xl font-bold text-white mb-4">Your Knowledge Compounds</h5>
                 <p className="text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
                   Your personal institutional knowledge grows in Memory Engine, connecting patterns across projects 
@@ -469,7 +469,7 @@ export default function Waitlist() {
       <section className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <div className="w-24 h-24 bg-blue-500/20 rounded-2xl flex items-center justify-center mx-auto mb-8">
+            <div className="w-24 h-24 bg-white/5 rounded-2xl flex items-center justify-center mx-auto mb-8">
               <Brain className="w-12 h-12 text-blue-400" />
             </div>
             <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">The Memory Engine Advantage</h2>
@@ -484,7 +484,7 @@ export default function Waitlist() {
             <div>
               <h3 className="text-3xl font-bold text-white mb-8">How Memory Engine Works</h3>
               <div className="space-y-6">
-                <div className="bg-white/5 rounded-2xl p-6 border border-white/10">
+                <div className="memory-border rounded-2xl p-6">
                   <h4 className="text-xl font-bold text-white mb-3">Active Intelligence, Not Storage</h4>
                   <p className="text-gray-300 leading-relaxed">
                     Memory Engine isn't just storage—it's an active, intelligent "brain" that learns from your actions, decisions, 
@@ -492,7 +492,7 @@ export default function Waitlist() {
                     new activity to past memories.
                   </p>
                 </div>
-                <div className="bg-white/5 rounded-2xl p-6 border border-white/10">
+                <div className="memory-border rounded-2xl p-6">
                   <h4 className="text-xl font-bold text-white mb-3">Proactive Recall System</h4>
                   <p className="text-gray-300 leading-relaxed">
                     Memory Engine moves beyond passive storage by suggesting solutions, surfacing reminders, and preventing repeated 
@@ -500,7 +500,7 @@ export default function Waitlist() {
                     past solutions or warnings.
                   </p>
                 </div>
-                <div className="bg-white/5 rounded-2xl p-6 border border-white/10">
+                <div className="memory-border rounded-2xl p-6">
                   <h4 className="text-xl font-bold text-white mb-3">Complete User Control</h4>
                   <p className="text-gray-300 leading-relaxed">
                     Every memory is user-auditable. Review, edit, and delete memories to ensure relevance and trust. 
@@ -513,7 +513,7 @@ export default function Waitlist() {
             <div>
               <h3 className="text-3xl font-bold text-white mb-8">Cross-Project Intelligence</h3>
               <div className="space-y-6">
-                <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-2xl p-6 border border-blue-500/20">
+                <div className="memory-border rounded-2xl p-6">
                   <h4 className="text-lg font-bold text-white mb-3">Personal Institutional Knowledge</h4>
                   <p className="text-gray-300 leading-relaxed mb-4">
                     Beyond per-project context, Memory Engine aggregates lessons, patterns, and pitfalls from all projects 
@@ -539,7 +539,7 @@ export default function Waitlist() {
                   </div>
                 </div>
                 
-                <div className="bg-white/5 rounded-2xl p-6 border border-white/10">
+                <div className="memory-border rounded-2xl p-6">
                   <h4 className="text-lg font-bold text-white mb-3">Privacy-First Architecture</h4>
                   <p className="text-gray-300 leading-relaxed">
                     All cross-project learning is opt-in and privacy-focused by default. Your data always belongs to you, 
@@ -553,7 +553,7 @@ export default function Waitlist() {
 
 
           {/* Competitive Advantage */}
-          <div className="bg-gradient-to-r from-purple-500/10 to-blue-500/10 rounded-3xl p-12 border border-purple-500/20">
+          <div className="memory-border rounded-3xl p-12">
             <div className="text-center mb-12">
               <h3 className="text-3xl font-bold text-white mb-6">Why Memory Engine Beats The Competition</h3>
               <p className="text-xl text-gray-300 max-w-4xl mx-auto">
@@ -595,7 +595,7 @@ export default function Waitlist() {
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-2xl p-8 border border-blue-500/20 text-center">
+            <div className="memory-border rounded-2xl p-8 text-center">
               <h4 className="text-2xl font-bold text-white mb-4">The Game Changer</h4>
               <p className="text-lg text-gray-300 leading-relaxed max-w-4xl mx-auto">
                 Memory Engine doesn't just remember—it thinks ahead. While competitors offer "AI storage/search," 
@@ -732,14 +732,14 @@ export default function Waitlist() {
       {/* Magic Moment */}
       <section className="py-20 px-6">
         <div className="max-w-5xl mx-auto">
-          <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-3xl p-12 border border-blue-500/20">
+          <div className="memory-border rounded-3xl p-12">
             <div className="text-center mb-12">
               <Star className="w-12 h-12 text-yellow-400 mx-auto mb-4" />
               <h3 className="text-3xl font-bold text-white mb-6">When Memory Becomes Wisdom</h3>
             </div>
             
             <div className="max-w-4xl mx-auto">
-              <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-2xl p-8 border border-blue-500/20 mb-8">
+              <div className="jav-border rounded-2xl p-8 mb-8">
                 <div className="space-y-6">
                   <p className="text-xl text-gray-300 leading-relaxed italic">
                     "Six months ago, I was burned out, switching between 12 browser tabs, losing my creative flow every time I had to code. I was building my third startup attempt, convinced this was my last shot."

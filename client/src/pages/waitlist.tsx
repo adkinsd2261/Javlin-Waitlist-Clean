@@ -89,8 +89,8 @@ export default function Waitlist() {
           </h1>
           
           <p className="text-xl lg:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed">
-            The first AI platform that <span className="highlight-word memory">remembers</span> your best solutions, <span className="highlight-word dev">warns</span> you about past mistakes, 
-            and <span className="highlight-word creative">grows smarter</span> with every project.
+            The first AI co-founder that <span className="text-purple-400 font-semibold">remembers</span> your best solutions, <span className="text-blue-400 font-semibold">warns</span> you about past mistakes, 
+            and <span className="text-pink-400 font-semibold">grows smarter</span> with every project—so you never repeat yourself again.
           </p>
 
           {/* CTA Button */}
@@ -127,8 +127,8 @@ export default function Waitlist() {
               
               <div className="bg-white/5 rounded-2xl p-6 mb-6 border border-white/10 ambient-glow">
                 <p className="text-lg text-gray-300 leading-relaxed mb-4">
-                  <strong className="text-pink-400">Real scenario:</strong> You're staring at a blank canvas for your startup's brand identity. 
-                  Instead of starting from scratch, Jav reminds you: "Remember that mood board you loved from the coffee shop redesign? The earthy tones tested 40% better with your target audience. Want to explore a variation?"
+                  <strong className="text-pink-400 energy-icon creative">Real scenario:</strong> You're staring at a blank canvas for your startup's brand identity. 
+                  Instead of starting from scratch, Jav reminds you: <span className="text-pink-400 font-medium">"Remember that mood board you loved from the coffee shop redesign? The earthy tones tested 40% better with your target audience. Want to explore a variation?"</span>
                 </p>
                 <p className="text-sm text-gray-400">
                   Jav remembers what worked, what flopped, and why—so you're not starting from scratch every time.
@@ -138,15 +138,15 @@ export default function Waitlist() {
               <div className="space-y-3">
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-300"><span className="text-white font-medium">Creative block?</span> Jav suggests inspiration from your past creative wins</p>
+                  <p className="text-gray-300"><span className="text-pink-400 font-medium">Creative block?</span> Jav suggests inspiration from your past creative wins</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-300"><span className="text-white font-medium">Design decisions?</span> See what feelings and styles resonated with your audience</p>
+                  <p className="text-gray-300"><span className="text-pink-400 font-medium">Design decisions?</span> See what feelings and styles resonated with your audience</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-300"><span className="text-white font-medium">Scattered ideas?</span> Jav weaves your creative concepts into cohesive stories</p>
+                  <p className="text-gray-300"><span className="text-pink-400 font-medium">Scattered ideas?</span> Jav weaves your creative concepts into cohesive stories</p>
                 </div>
               </div>
             </div>
@@ -160,8 +160,8 @@ export default function Waitlist() {
               
               <div className="bg-white/5 rounded-2xl p-6 mb-6 border border-white/10 ambient-glow">
                 <p className="text-lg text-gray-300 leading-relaxed mb-4">
-                  <strong className="text-blue-400">Real scenario:</strong> You're adding user authentication but forgot how you handled JWT tokens. 
-                  Jav interrupts: "Hold up—last time you used this approach it caused refresh token issues. Here's the pattern that actually worked."
+                  <strong className="text-blue-400 energy-icon dev">Real scenario:</strong> You're adding user authentication but forgot how you handled JWT tokens. 
+                  Jav interrupts: <span className="text-blue-400 font-medium">"Hold up—last time you used this approach it caused refresh token issues. Here's the pattern that actually worked."</span>
                 </p>
                 <p className="text-sm text-gray-400">
                   Jav prevents you from repeating the same debugging session you already survived three months ago.
@@ -171,15 +171,15 @@ export default function Waitlist() {
               <div className="space-y-3">
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-300"><span className="text-white font-medium">Same bug again?</span> Jav warns you before you waste hours debugging</p>
+                  <p className="text-gray-300"><span className="text-blue-400 font-medium">Same bug again?</span> Jav warns you before you waste hours debugging</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-300"><span className="text-white font-medium">Architecture decisions?</span> See what scales and what doesn't from your history</p>
+                  <p className="text-gray-300"><span className="text-blue-400 font-medium">Architecture decisions?</span> See what scales and what doesn't from your history</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-300"><span className="text-white font-medium">Code amnesia?</span> Jav remembers your clever solutions when you don't</p>
+                  <p className="text-gray-300"><span className="text-blue-400 font-medium">Code amnesia?</span> Jav remembers your clever solutions when you don't</p>
                 </div>
               </div>
             </div>
@@ -374,7 +374,7 @@ export default function Waitlist() {
               <div className="text-center mb-12">
                 <h4 className="text-3xl font-bold text-white mb-4">Real Problems Solved</h4>
                 <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-                  See how Memory Engine eliminates the frustrations that slow down every builder
+                  See how <span className="text-purple-400 font-semibold">MemoryOS</span> eliminates the frustrations that slow down every builder
                 </p>
               </div>
 
@@ -425,7 +425,7 @@ export default function Waitlist() {
                       No more staring at empty canvases—your creative journey becomes your foundation.
                     </p>
                     <p className="text-sm text-gray-400 italic">
-                      "Remember that warm color story that made users feel welcomed? Let's explore that feeling for this project."
+                      <span className="text-pink-400">"Remember that warm color story that made users feel welcomed? Let's explore that feeling for this project."</span>
                     </p>
                   </div>
                 </div>
@@ -460,7 +460,7 @@ export default function Waitlist() {
               <div className="group memory-border ambient-glow rounded-2xl p-8 text-center">
                 <h5 className="text-2xl font-bold text-white mb-4">Your Knowledge Compounds</h5>
                 <p className="text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
-                  Your personal institutional knowledge grows in Memory Engine, connecting patterns across projects 
+                  Your personal institutional knowledge grows in <span className="text-purple-400 font-semibold">MemoryOS</span>, connecting patterns across projects 
                   and becoming the ultimate competitive advantage. Every project makes you faster.
                 </p>
               </div>
@@ -787,12 +787,12 @@ export default function Waitlist() {
 
             {/* The Difference */}
             <div className="text-center">
-              <div className="bg-gradient-to-r from-purple-500/10 to-blue-500/10 rounded-2xl p-8 border border-purple-400/30">
+              <div className="bg-gradient-to-r from-purple-500/10 to-blue-500/10 rounded-2xl p-8 border border-purple-400/30 ambient-glow">
                 <h4 className="text-2xl font-bold text-white mb-6">This Is What Makes Javlin Different</h4>
                 <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
-                  Other AI tools offer "AI storage/search." MemoryOS offers <em>proactive recall</em> with real user control. 
-                  Your memories are stored as editable markdown files—you can review, edit, and delete anything. 
-                  It's the first AI co-founder that remembers your best solutions and warns you about past mistakes.
+                  Other AI tools offer "AI storage/search." <span className="text-purple-400 font-semibold">MemoryOS</span> offers <span className="text-blue-400 font-semibold">proactive recall</span> with real user control. 
+                  Your memories are stored as <span className="text-purple-400 font-medium">editable markdown files</span>—you can review, edit, and delete anything. 
+                  It's the first <span className="text-purple-400 font-semibold">AI co-founder</span> that remembers your best solutions and warns you about past mistakes.
                 </p>
               </div>
             </div>
@@ -825,7 +825,7 @@ export default function Waitlist() {
                   <h3 className="text-3xl font-bold text-white mb-6">Create Your Workspace</h3>
                   <p className="text-gray-300 text-lg leading-relaxed mb-8">
                     Start a new project and Jav immediately begins learning. Every decision, every line of code, 
-                    every creative choice gets captured in your personal Memory Engine.
+                    every creative choice gets captured in your personal <span className="text-purple-400 font-semibold">MemoryOS</span>.
                   </p>
                   
                   <div className="grid md:grid-cols-2 gap-6 mb-6">
@@ -871,8 +871,8 @@ export default function Waitlist() {
                 <div className="flex-1">
                   <h3 className="text-3xl font-bold text-white mb-6">Build Your Memory</h3>
                   <p className="text-gray-300 text-lg leading-relaxed mb-8">
-                    As you work, Jav remembers everything—your coding patterns, design preferences, business decisions, 
-                    and lessons learned. Every interaction adds to your growing intelligence foundation.
+                    As you work, <span className="text-purple-400 font-semibold">MemoryOS</span> remembers everything—your coding patterns, design preferences, business decisions, 
+                    and lessons learned. Every interaction adds to your growing <span className="text-purple-400 font-medium">institutional knowledge</span>.
                   </p>
                   
                   <div className="bg-white/5 rounded-xl p-8 mb-6">
@@ -917,8 +917,8 @@ export default function Waitlist() {
                   <div className="bg-gradient-to-r from-pink-500/10 to-purple-500/10 rounded-xl p-6 border border-pink-400/20">
                     <h4 className="font-semibold text-white mb-3">Real Learning Example</h4>
                     <p className="text-gray-300 text-sm italic">
-                      "I've noticed you prefer Tailwind over custom CSS, always use TypeScript for type safety, 
-                      and like to implement dark mode first. I'll suggest these patterns for new projects."
+                      <span className="text-pink-400">"I've noticed you prefer Tailwind over custom CSS, always use TypeScript for type safety, 
+                      and like to implement dark mode first. I'll suggest these patterns for new projects."</span>
                     </p>
                   </div>
                 </div>
@@ -938,7 +938,7 @@ export default function Waitlist() {
                   <h3 className="text-3xl font-bold text-white mb-6">Experience Proactive Intelligence</h3>
                   <p className="text-gray-300 text-lg leading-relaxed mb-8">
                     Now the magic happens. Jav starts anticipating your needs, offering relevant suggestions, 
-                    and preventing mistakes before they happen. It's like having a co-founder who never forgets.
+                    and preventing mistakes before they happen. It's like having a <span className="text-purple-400 font-semibold">co-founder who never forgets</span>.
                   </p>
                   
                   <div className="space-y-6">
@@ -986,7 +986,7 @@ export default function Waitlist() {
                 <div className="flex-1">
                   <h3 className="text-3xl font-bold text-white mb-6">Scale Across Projects</h3>
                   <p className="text-gray-300 text-lg leading-relaxed mb-8">
-                    Your Memory Engine becomes even more powerful as you start new projects. Jav applies lessons 
+                    Your <span className="text-purple-400 font-semibold">MemoryOS</span> becomes even more powerful as you start new projects. Jav applies lessons 
                     from previous builds, suggests patterns that worked before, and helps you avoid repeating mistakes.
                   </p>
                   
@@ -1046,7 +1046,7 @@ export default function Waitlist() {
               <div className="space-y-4">
                 <h3 className="text-3xl font-bold text-white">You're on the list!</h3>
                 <p className="text-xl text-gray-300">
-                  You're secured for 30% off for life. We'll notify you when MemoryOS is ready.
+                  You're secured for <span className="text-pink-400 font-semibold">30% off for life</span>. We'll notify you when <span className="text-purple-400 font-semibold">MemoryOS</span> is ready.
                 </p>
               </div>
             </div>
@@ -1055,7 +1055,7 @@ export default function Waitlist() {
               <div className="text-center mb-12">
                 <h2 className="text-3xl font-bold text-white mb-4">Get Early Access</h2>
                 <p className="text-lg text-gray-300">
-                  Join the waitlist and be among the first 1,000 founders to get 30% off for life
+                  Join the waitlist and be among the first 1,000 founders to get <span className="text-pink-400 font-semibold">30% off for life</span>
                 </p>
               </div>
 
@@ -1110,7 +1110,7 @@ export default function Waitlist() {
                     render={({ field }) => (
                       <FormItem>
                         <FormLabel className="text-white text-lg font-medium">
-                          What solutions, mistakes, or project lessons would you want MemoryOS to remember?
+                          What solutions, mistakes, or project lessons would you want <span className="text-purple-400 font-medium">MemoryOS</span> to remember?
                           <span className="text-gray-400 font-normal ml-2">(optional)</span>
                         </FormLabel>
                         <FormControl>

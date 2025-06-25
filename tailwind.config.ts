@@ -79,10 +79,15 @@ export default {
             height: "0",
           },
         },
+        javlinPulse: {
+          '0%, 100%': { filter: 'drop-shadow(0 0 60px #5151FF99)' },
+          '50%': { filter: 'drop-shadow(0 0 120px #6a5cffdd)' },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        'javlin-pulse': 'javlinPulse 2.5s infinite',
       },
     },
   },

@@ -328,7 +328,7 @@ export default function Landing() {
             </motion.div>
             
             <motion.div 
-              className="mt-8 p-4 bg-slate-900/50 rounded-lg border border-purple-500/20"
+              className="mt-8 p-4 bg-slate-900/50 rounded-lg border border-purple-500/20 ambient-glow"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
@@ -377,7 +377,7 @@ export default function Landing() {
                 }
               ].map((testimonial, index) => (
                 <motion.div key={index} variants={fadeInUp}>
-                  <Card className="bg-slate-800/50 border-slate-600">
+                  <Card className="bg-slate-800/50 border-slate-600 ambient-glow">
                     <CardContent className="p-6">
                       <img 
                         src={testimonial.image}

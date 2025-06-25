@@ -119,13 +119,13 @@ export default function Waitlist() {
           {/* Creative & Dev Modes */}
           <div className="grid lg:grid-cols-2 gap-12 mb-16">
             {/* Creative Mode */}
-            <div className="group creative-mode-border rounded-3xl p-10 transition-all duration-300">
+            <div className="group creative-mode-border ambient-glow creative rounded-3xl p-10 transition-all duration-300">
               <div className="w-24 h-24 bg-white/5 rounded-full flex items-center justify-center mb-8 transition-all duration-300">
                 <Lightbulb className="w-12 h-12 text-pink-400 energy-icon creative" />
               </div>
               <h3 className="text-3xl font-bold text-white mb-6 group-hover:text-pink-400 transition-colors">Creative Mode</h3>
               
-              <div className="bg-white/5 rounded-2xl p-6 mb-6 border border-white/10">
+              <div className="bg-white/5 rounded-2xl p-6 mb-6 border border-white/10 ambient-glow">
                 <p className="text-lg text-gray-300 leading-relaxed mb-4">
                   <strong className="text-pink-400">Real scenario:</strong> You're staring at a blank canvas for your startup's brand identity. 
                   Instead of starting from scratch, Jav reminds you: "Remember that mood board you loved from the coffee shop redesign? The earthy tones tested 40% better with your target audience. Want to explore a variation?"
@@ -152,13 +152,13 @@ export default function Waitlist() {
             </div>
 
             {/* Dev Mode */}
-            <div className="group dev-mode-border rounded-3xl p-10 transition-all duration-300">
+            <div className="group dev-mode-border ambient-glow dev rounded-3xl p-10 transition-all duration-300">
               <div className="w-24 h-24 bg-white/5 rounded-full flex items-center justify-center mb-8 transition-all duration-300">
                 <Code className="w-12 h-12 text-blue-400 energy-icon dev" />
               </div>
               <h3 className="text-3xl font-bold text-white mb-6 group-hover:text-blue-400 transition-colors">Dev Mode</h3>
               
-              <div className="bg-white/5 rounded-2xl p-6 mb-6 border border-white/10">
+              <div className="bg-white/5 rounded-2xl p-6 mb-6 border border-white/10 ambient-glow">
                 <p className="text-lg text-gray-300 leading-relaxed mb-4">
                   <strong className="text-blue-400">Real scenario:</strong> You're adding user authentication but forgot how you handled JWT tokens. 
                   Jav interrupts: "Hold up—last time you used this approach it caused refresh token issues. Here's the pattern that actually worked."
@@ -186,7 +186,7 @@ export default function Waitlist() {
           </div>
 
           {/* Jav Assistant Deep Dive */}
-          <div className="jav-border rounded-3xl p-10">
+          <div className="jav-border ambient-glow rounded-3xl p-10">
             <div className="text-center mb-12">
               <div className="w-20 h-20 bg-white/5 rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <MessageCircle className="w-10 h-10 text-purple-400 energy-icon memory" />
@@ -379,7 +379,7 @@ export default function Waitlist() {
               </div>
 
               {/* Problem: Repeated Solutions */}
-              <div className="memory-border rounded-2xl p-8">
+              <div className="memory-border ambient-glow rounded-2xl p-8">
                 <div className="grid lg:grid-cols-2 gap-8 items-center">
                   <div>
                     <h5 className="text-2xl font-bold text-white mb-4">Stop Recreating What Already Works</h5>
@@ -392,7 +392,7 @@ export default function Waitlist() {
                       <span className="font-medium">Cross-project pattern recognition</span>
                     </div>
                   </div>
-                  <div className="memory-border rounded-xl p-6">
+                  <div className="memory-border ambient-glow rounded-xl p-6">
                     <div className="text-sm text-gray-400 mb-2">Jav remembers:</div>
                     <ul className="space-y-2 text-sm text-gray-300">
                       <li>• Which color stories created emotional connection</li>
@@ -408,7 +408,7 @@ export default function Waitlist() {
               <div className="creative-mode-border ambient-glow creative rounded-2xl p-8">
                 <div className="grid lg:grid-cols-2 gap-8 items-center">
                   <div className="order-2 lg:order-1">
-                    <div className="creative-mode-border rounded-xl p-6">
+                    <div className="creative-mode-border ambient-glow creative rounded-xl p-6">
                       <div className="text-sm text-gray-400 mb-2">Creative Mode assists with:</div>
                       <ul className="space-y-2 text-sm text-gray-300">
                         <li>• Color palettes that made customers feel trusting</li>
@@ -444,7 +444,7 @@ export default function Waitlist() {
                       "That minimalist approach tested well with your target users. Want to apply similar principles here?"
                     </p>
                   </div>
-                  <div className="dev-mode-border rounded-xl p-6">
+                  <div className="dev-mode-border ambient-glow dev rounded-xl p-6">
                     <div className="text-sm text-gray-400 mb-2">Context preservation helps with:</div>
                     <ul className="space-y-2 text-sm text-gray-300">
                       <li>• Remembering design rationale</li>

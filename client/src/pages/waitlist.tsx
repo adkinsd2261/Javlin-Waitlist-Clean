@@ -239,7 +239,7 @@ export default function Waitlist() {
             <div className="group w-24 h-24 bg-white/5 rounded-2xl flex items-center justify-center mx-auto mb-8">
               <ArrowRight className="w-12 h-12 text-blue-400 energy-icon dev" />
             </div>
-            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">Your Journey with Jav</h2>
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">Your Journey with Javlin</h2>
             <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
               From your first workspace creation to building institutional knowledge—here's how Javlin transforms your development process step by step.
             </p>

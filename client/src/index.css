@@ -403,12 +403,19 @@
 /* Founder Spot Button */
 .founder-button {
   position: relative;
-  background: linear-gradient(45deg, hsl(300, 80%, 55%), hsl(320, 90%, 65%), hsl(280, 85%, 60%), hsl(340, 80%, 70%));
-  background-size: 500% 500%;
-  animation: button-border-flow 4s ease-in-out infinite;
+  background: linear-gradient(90deg, 
+    hsl(280, 70%, 60%), 
+    hsl(260, 80%, 65%), 
+    hsl(240, 70%, 60%), 
+    hsl(220, 80%, 65%),
+    hsl(240, 70%, 60%), 
+    hsl(260, 80%, 65%),
+    hsl(280, 70%, 60%)
+  );
+  background-size: 300% 300%;
+  animation: button-gradient-flow 6s ease-in-out infinite;
   border: 2px solid transparent;
   overflow: hidden;
-  box-shadow: 0 0 15px hsla(300, 80%, 55%, 0.3);
 }
 
 .founder-button::before {

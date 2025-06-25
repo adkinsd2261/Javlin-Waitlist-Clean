@@ -100,7 +100,7 @@ export default function Waitlist() {
             className="waitlist-button mouse-attracted-button text-xl px-12 py-6 rounded-2xl transition-all duration-300"
           >
             <span className="waitlist-button-text">Join the Waitlist</span>
-            <ArrowRight className="ml-3 w-6 h-6 energy-icon memory" />
+            <ArrowRight className="ml-3 w-6 h-6 text-white" />
           </Button>
         </div>
       </section>
@@ -895,7 +895,7 @@ export default function Waitlist() {
                     ) : (
                       <span className="founder-button-text">Claim Your Founder Spot</span>
                     )}
-                    <ArrowRight className="ml-3 w-6 h-6 energy-icon memory" />
+                    <ArrowRight className="ml-3 w-6 h-6 text-white" />
                   </Button>
                 </form>
               </Form>

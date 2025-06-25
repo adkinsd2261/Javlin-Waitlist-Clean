@@ -945,59 +945,89 @@ export default function Waitlist() {
             </div>
             
             <div className="max-w-5xl mx-auto">
-              {/* The Transformation Process */}
+              {/* How MemoryOS Works */}
               <div className="grid md:grid-cols-3 gap-8 mb-16">
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center mx-auto mb-6 border border-blue-400/30">
-                    <span className="text-2xl font-bold text-blue-400">Input</span>
-                  </div>
-                  <h4 className="text-xl font-bold text-white mb-4">Raw Experience</h4>
-                  <div className="space-y-3 text-gray-300 text-sm">
-                    <p>Every decision you make</p>
-                    <p>Every problem you solve</p>
-                    <p>Every mistake you overcome</p>
-                    <p>Every breakthrough moment</p>
-                  </div>
-                </div>
-                
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center mx-auto mb-6 border border-purple-400/30">
-                    <span className="text-2xl font-bold text-purple-400">Process</span>
-                  </div>
-                  <h4 className="text-xl font-bold text-white mb-4">Memory Engine</h4>
-                  <div className="space-y-3 text-gray-300 text-sm">
-                    <p>Identifies patterns across projects</p>
-                    <p>Connects emotional and technical insights</p>
-                    <p>Maps successful decision trees</p>
-                    <p>Builds predictive models of your workflow</p>
+                <div className="dev-mode-border ambient-glow dev rounded-2xl p-8 text-center">
+                  <h4 className="text-2xl font-bold text-blue-400 mb-4">Capture</h4>
+                  <h5 className="text-lg font-semibold text-white mb-6">Every Decision Matters</h5>
+                  <div className="space-y-3 text-gray-300 text-sm text-left">
+                    <div className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
+                      <span>Code solutions and debugging steps</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
+                      <span>Design decisions and creative choices</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
+                      <span>Project lessons and breakthrough moments</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
+                      <span>Mistakes and what actually worked</span>
+                    </div>
                   </div>
                 </div>
                 
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center mx-auto mb-6 border border-pink-400/30">
-                    <span className="text-2xl font-bold text-pink-400">Output</span>
+                <div className="memory-border ambient-glow rounded-2xl p-8 text-center">
+                  <h4 className="text-2xl font-bold text-purple-400 mb-4">MemoryOS</h4>
+                  <h5 className="text-lg font-semibold text-white mb-6">Intelligence That Learns</h5>
+                  <div className="space-y-3 text-gray-300 text-sm text-left">
+                    <div className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
+                      <span>Stores memories as searchable markdown</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
+                      <span>Uses context matching to find relevance</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
+                      <span>User-controlled memory editing and deletion</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
+                      <span>Builds personal knowledge patterns</span>
+                    </div>
                   </div>
-                  <h4 className="text-xl font-bold text-white mb-4">Proactive Wisdom</h4>
-                  <div className="space-y-3 text-gray-300 text-sm">
-                    <p>Prevents repeated mistakes</p>
-                    <p>Suggests optimal timing for decisions</p>
-                    <p>Recommends proven strategies</p>
-                    <p>Anticipates your needs before you ask</p>
+                </div>
+                
+                <div className="creative-mode-border ambient-glow creative rounded-2xl p-8 text-center">
+                  <h4 className="text-2xl font-bold text-pink-400 mb-4">Proactive Recall</h4>
+                  <h5 className="text-lg font-semibold text-white mb-6">Right Context, Right Time</h5>
+                  <div className="space-y-3 text-gray-300 text-sm text-left">
+                    <div className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-pink-400 rounded-full"></div>
+                      <span>Surfaces past solutions automatically</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-pink-400 rounded-full"></div>
+                      <span>Warns about repeated mistakes</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-pink-400 rounded-full"></div>
+                      <span>Suggests proven strategies</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-pink-400 rounded-full"></div>
+                      <span>Shows relevant project memories</span>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              {/* Real Memory Engine Examples */}
+              {/* Real MemoryOS Examples */}
               <div className="space-y-8">
                 <div className="dev-mode-border ambient-glow dev rounded-2xl p-8">
                   <h4 className="text-xl font-bold text-white mb-4">Technical Memory in Action</h4>
                   <div className="bg-white/5 rounded-xl p-6">
                     <p className="text-gray-300 mb-4">
-                      After three projects, Memory Engine notices you always struggle with database migrations around Day 15 of development. 
-                      It now proactively suggests: <span className="text-blue-400 font-semibold">"Based on your past projects, consider setting up migration rollback strategies now—this typically becomes critical in 3 days."</span>
+                      You solved an OAuth token expiry bug in Project Alpha. Two months later in Project Beta, you hit a similar issue. 
+                      MemoryOS surfaces: <span className="text-blue-400 font-semibold">"Remember how you solved token expiry in Project Alpha? Here's what worked last time."</span>
                     </p>
                     <div className="text-xs text-blue-300 bg-blue-500/10 rounded px-3 py-1 inline-block">
-                      Pattern Recognition: Database complexity timing across Project Alpha, Beta, and Gamma
+                      Context Match: OAuth debugging from Project Alpha memory
                     </div>
                   </div>
                 </div>
@@ -1006,24 +1036,24 @@ export default function Waitlist() {
                   <h4 className="text-xl font-bold text-white mb-4">Creative Memory in Action</h4>
                   <div className="bg-white/5 rounded-xl p-6">
                     <p className="text-gray-300 mb-4">
-                      Memory Engine remembers that your best design breakthroughs happen during afternoon walks after periods of frustration. 
-                      When it detects similar stress patterns, it suggests: <span className="text-pink-400 font-semibold">"Your creativity patterns suggest taking a break. Previous breakthroughs came after walking when you felt this stuck."</span>
+                      MemoryOS remembers that a specific blue-purple gradient worked great for conversions in your last project. 
+                      When you're designing again, it suggests: <span className="text-pink-400 font-semibold">"That gradient from Project Alpha converted 23% better than your baseline. Want to try a variation?"</span>
                     </p>
                     <div className="text-xs text-pink-300 bg-pink-500/10 rounded px-3 py-1 inline-block">
-                      Behavioral Intelligence: Creativity timing and environmental factors
+                      Design Memory: Successful color palette from past project
                     </div>
                   </div>
                 </div>
 
                 <div className="memory-border ambient-glow rounded-2xl p-8">
-                  <h4 className="text-xl font-bold text-white mb-4">Business Memory in Action</h4>
+                  <h4 className="text-xl font-bold text-white mb-4">Project Memory in Action</h4>
                   <div className="bg-white/5 rounded-xl p-6">
                     <p className="text-gray-300 mb-4">
-                      Across projects, Memory Engine learned that you make better strategic decisions in the morning and technical decisions in the evening. 
-                      It now schedules suggestions accordingly: <span className="text-purple-400 font-semibold">"This pricing decision mirrors the choice you made successfully in Project Beta. Your decision quality is highest between 9-11 AM."</span>
+                      You documented a hard lesson about feature scope creep in your project journal. 
+                      When planning a new feature, MemoryOS reminds: <span className="text-purple-400 font-semibold">"You noted in Project Beta: 'Adding features without user feedback led to 2 weeks of wasted work.' Consider validation first."</span>
                     </p>
                     <div className="text-xs text-purple-300 bg-purple-500/10 rounded px-3 py-1 inline-block">
-                      Strategic Intelligence: Decision timing and cognitive patterns
+                      Lesson Memory: Project planning insights from your own notes
                     </div>
                   </div>
                 </div>
@@ -1034,8 +1064,9 @@ export default function Waitlist() {
                 <div className="bg-gradient-to-r from-purple-500/10 to-blue-500/10 rounded-2xl p-8 border border-purple-400/30">
                   <h4 className="text-2xl font-bold text-white mb-6">This Is What Makes Javlin Different</h4>
                   <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
-                    Other AI tools help you in the moment. Memory Engine builds institutional knowledge about <em>you</em>—your patterns, 
-                    your timing, your breakthrough conditions. It becomes the only AI that truly understands how you work best.
+                    Other AI tools offer "AI storage/search." MemoryOS offers <em>proactive recall</em> with real user control. 
+                    Your memories are stored as editable markdown files—you can review, edit, and delete anything. 
+                    It's the first AI co-founder that remembers your best solutions and warns you about past mistakes.
                   </p>
                 </div>
               </div>

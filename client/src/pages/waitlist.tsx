@@ -469,7 +469,11 @@ export default function Waitlist() {
         </div>
       </section>
 
-      {/* Memory Engine Deep Dive */}
+
+
+
+
+      {/* The Memory Engine Advantage */}
       <section className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
@@ -478,94 +482,70 @@ export default function Waitlist() {
             </div>
             <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">The Memory Engine Advantage</h2>
             <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-              What makes Javlin different isn't just AI—it's Memory Engine, the active brain that learns from every decision, 
-              connects patterns across projects, and proactively surfaces exactly what you need, when you need it.
+              While competitors offer "AI storage/search," only Javlin has Memory Engine—proactive recall with real user control. 
+              The difference between starting fresh every time and building on everything you've learned.
             </p>
           </div>
 
-          {/* How Memory Engine Works */}
-          <div className="grid lg:grid-cols-2 gap-12 mb-16">
-            <div>
-              <h3 className="text-3xl font-bold text-white mb-8">How Memory Engine Works</h3>
-              <div className="space-y-6">
-                <div className="memory-border ambient-glow rounded-2xl p-6">
-                  <h4 className="text-xl font-bold text-white mb-3">Active Intelligence, Not Storage</h4>
-                  <p className="text-gray-300 leading-relaxed">
-                    Memory Engine isn't just storage—it's an active, intelligent "brain" that learns from your actions, decisions, 
-                    code, and docs. It proactively surfaces relevant context using embedding similarity and context relevance to match 
-                    new activity to past memories.
-                  </p>
-                </div>
-                <div className="memory-border ambient-glow rounded-2xl p-6">
-                  <h4 className="text-xl font-bold text-white mb-3">Proactive Recall System</h4>
-                  <p className="text-gray-300 leading-relaxed">
-                    Memory Engine moves beyond passive storage by suggesting solutions, surfacing reminders, and preventing repeated 
-                    mistakes before they happen. When you work, the system checks the memory index for similar context and surfaces 
-                    past solutions or warnings.
-                  </p>
-                </div>
-                <div className="memory-border ambient-glow rounded-2xl p-6">
-                  <h4 className="text-xl font-bold text-white mb-3">Complete User Control</h4>
-                  <p className="text-gray-300 leading-relaxed">
-                    Every memory is user-auditable. Review, edit, and delete memories to ensure relevance and trust. 
-                    All additions and updates require your validation—Memory Engine learns with you, not from you.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <h3 className="text-3xl font-bold text-white mb-8">Cross-Project Intelligence</h3>
-              <div className="space-y-6">
-                <div className="memory-border ambient-glow rounded-2xl p-6">
-                  <h4 className="text-lg font-bold text-white mb-3">Personal Institutional Knowledge</h4>
-                  <p className="text-gray-300 leading-relaxed mb-4">
-                    Beyond per-project context, Memory Engine aggregates lessons, patterns, and pitfalls from all projects 
-                    (with your opt-in) to build your personal "institutional knowledge."
-                  </p>
-                  <div className="space-y-2 text-sm text-gray-300">
-                    <div className="flex items-center space-x-2">
-                      <div className="w-1 h-1 bg-blue-400 rounded-full"></div>
-                      <span>Creative suggestions: "That visual style worked beautifully in your wellness brand"</span>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <div className="w-1 h-1 bg-blue-400 rounded-full"></div>
-                      <span>Design warnings: "This layout caused user confusion in your last project"</span>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <div className="w-1 h-1 bg-blue-400 rounded-full"></div>
-                      <span>"Did you know?" inspiring creative connections across projects</span>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <div className="w-1 h-1 bg-blue-400 rounded-full"></div>
-                      <span>Personal creative playbook that grows with you</span>
-                    </div>
+          <div className="memory-border ambient-glow rounded-3xl p-12">
+            {/* How Memory Engine Works */}
+            <div className="grid lg:grid-cols-2 gap-12 mb-16">
+              <div>
+                <h3 className="text-3xl font-bold text-white mb-8">How Memory Engine Works</h3>
+                <div className="space-y-6">
+                  <div className="memory-border ambient-glow rounded-2xl p-6">
+                    <h4 className="text-xl font-bold text-white mb-3">Active Intelligence, Not Storage</h4>
+                    <p className="text-gray-300 leading-relaxed">
+                      Memory Engine isn't just storage—it's an active, intelligent "brain" that learns from your actions, decisions, 
+                      code, and docs. It proactively surfaces relevant context using embedding similarity and context relevance to match 
+                      new activity to past memories.
+                    </p>
+                  </div>
+                  <div className="memory-border ambient-glow rounded-2xl p-6">
+                    <h4 className="text-xl font-bold text-white mb-3">Proactive Recall System</h4>
+                    <p className="text-gray-300 leading-relaxed">
+                      Memory Engine moves beyond passive storage by suggesting solutions, surfacing reminders, and preventing repeated 
+                      mistakes before they happen. When you work, the system checks the memory index for similar context and surfaces 
+                      past solutions or warnings.
+                    </p>
+                  </div>
+                  <div className="memory-border ambient-glow rounded-2xl p-6">
+                    <h4 className="text-xl font-bold text-white mb-3">Complete User Control</h4>
+                    <p className="text-gray-300 leading-relaxed">
+                      Every memory is user-auditable. Review, edit, and delete memories stored as <span className="text-purple-400 font-medium">searchable markdown files</span>. 
+                      All additions and updates require your validation—Memory Engine learns with you, not from you.
+                    </p>
                   </div>
                 </div>
-                
-                <div className="memory-border ambient-glow rounded-2xl p-6">
-                  <h4 className="text-lg font-bold text-white mb-3">Privacy-First Architecture</h4>
-                  <p className="text-gray-300 leading-relaxed">
-                    All cross-project learning is opt-in and privacy-focused by default. Your data always belongs to you, 
-                    with transparent memory management and full export capabilities.
-                  </p>
+              </div>
+
+              <div>
+                <h3 className="text-3xl font-bold text-white mb-8">Cross-Project Intelligence</h3>
+                <div className="space-y-6">
+                  <div className="memory-border ambient-glow rounded-2xl p-6">
+                    <h4 className="text-xl font-bold text-white mb-3">Complete Context Preservation</h4>
+                    <p className="text-gray-300 leading-relaxed">
+                      Every creative decision, code solution, and breakthrough moment is captured in <span className="text-purple-400 font-medium">Memory Engine</span>. Switch between modes without losing your train of thought or valuable insights.
+                    </p>
+                  </div>
+                  <div className="memory-border ambient-glow rounded-2xl p-6">
+                    <h4 className="text-xl font-bold text-white mb-3">Personal Institutional Knowledge</h4>
+                    <p className="text-gray-300 leading-relaxed">
+                      Beyond per-project context, Memory Engine aggregates lessons, patterns, and pitfalls from all projects 
+                      (with your opt-in) to build your personal "institutional knowledge" that grows with every project.
+                    </p>
+                  </div>
+                  <div className="memory-border ambient-glow rounded-2xl p-6">
+                    <h4 className="text-xl font-bold text-white mb-3">Privacy-First Architecture</h4>
+                    <p className="text-gray-300 leading-relaxed">
+                      All cross-project learning is opt-in and privacy-focused by default. Your data always belongs to you, 
+                      with transparent memory management and full export capabilities.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-
-
-
-          {/* The Memory Engine Advantage */}
-          <div className="memory-border ambient-glow rounded-3xl p-12">
-            <div className="text-center mb-16">
-              <h3 className="text-4xl font-bold text-white mb-6">The Memory Engine Advantage</h3>
-              <p className="text-xl text-gray-300 max-w-4xl mx-auto">
-                While competitors offer "AI storage/search," only Javlin has Memory Engine—proactive recall with real user control. 
-                The difference between starting fresh every time and building on everything you've learned.
-              </p>
-            </div>
-            
+            {/* Competition Comparison */}
             <div className="grid md:grid-cols-3 gap-8 mb-16">
               <div className="dev-mode-border ambient-glow dev rounded-2xl p-6">
                 <div className="text-center mb-4">

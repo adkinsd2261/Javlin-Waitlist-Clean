@@ -100,12 +100,15 @@ This is a full-stack web application for Javlin.ai's waitlist landing page. The 
 - **Module Dependencies**: Node.js 20, Web, PostgreSQL 16
 
 ## Recent Changes
-- June 25, 2025: Updated Creative Mode to focus on actual creative challenges
+- June 25, 2025: Updated Creative Mode and implemented animated neon borders
   - **Creative Examples**: Replaced technical references (OAuth, JWT) with design and brand-focused scenarios
   - **Magic Moments**: Changed to emphasize emotional connection, color psychology, and user experience
   - **Cross-Project Intelligence**: Updated to highlight creative pattern recognition instead of technical solutions
   - **Context Preservation**: Modified to maintain creative flow between design and development phases
   - **Content Cleanup**: Removed duplicate "Why Builders Choose Jav" section from bottom of page
+  - **Animated Borders**: Implemented clockwise-chasing neon borders with conic gradients for "memory factory" feel
+  - **Interactive Effects**: Added hover acceleration and subtle glow effects for responsive, alive experience
+  - **Performance**: Used CSS-only animations with staggered timing across different section types
 - June 24, 2025: Restructured into cohesive user journey with consolidated sections
   - **Product Overview**: Combined Jav Assistant explanation with Creative/Dev mode examples and real scenarios
   - **User Journey**: Step-by-step workflow from workspace creation to continuous learning with Jav

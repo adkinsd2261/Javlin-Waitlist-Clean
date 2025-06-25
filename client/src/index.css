@@ -3,21 +3,25 @@
 @tailwind utilities;
 
 /* Neon border animations */
-@keyframes neon-dash {
+@keyframes border-chase {
   0% {
-    stroke-dashoffset: 1000;
+    transform: rotate(0deg);
   }
   100% {
-    stroke-dashoffset: 0;
+    transform: rotate(360deg);
   }
 }
 
-@keyframes neon-glow {
+@keyframes hover-pulse {
   0%, 100% {
-    filter: drop-shadow(0 0 5px currentColor) drop-shadow(0 0 10px currentColor);
+    box-shadow: 
+      0 0 20px -5px currentColor,
+      inset 0 0 20px -10px currentColor;
   }
   50% {
-    filter: drop-shadow(0 0 10px currentColor) drop-shadow(0 0 20px currentColor) drop-shadow(0 0 30px currentColor);
+    box-shadow: 
+      0 0 30px -3px currentColor,
+      inset 0 0 30px -8px currentColor;
   }
 }
 
@@ -25,104 +29,204 @@
 .creative-mode-border {
   position: relative;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+  overflow: hidden;
 }
 
 .creative-mode-border::before {
   content: '';
   position: absolute;
-  inset: 0;
-  padding: 2px;
-  background: linear-gradient(45deg, 
-    var(--creative-neon), 
-    transparent, 
-    var(--creative-neon), 
+  inset: -2px;
+  background: conic-gradient(
+    from 0deg,
     transparent,
-    var(--creative-neon)
+    transparent,
+    transparent,
+    var(--creative-neon),
+    var(--creative-neon),
+    transparent,
+    transparent,
+    transparent
   );
   border-radius: inherit;
-  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  mask-composite: xor;
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  animation: neon-glow 3s ease-in-out infinite;
+  animation: border-chase 6s linear infinite;
+  transition: all 0.3s ease;
+}
+
+.creative-mode-border::after {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+  border-radius: calc(inherit - 2px);
+  z-index: 1;
+}
+
+.creative-mode-border:hover {
+  box-shadow: 
+    0 0 30px var(--creative-shadow),
+    inset 0 0 30px var(--creative-shadow);
+}
+
+.creative-mode-border:hover::before {
+  animation: border-chase 3s linear infinite;
+}
+
+.creative-mode-border > * {
+  position: relative;
+  z-index: 2;
 }
 
 /* Dev Mode Border */
 .dev-mode-border {
   position: relative;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+  overflow: hidden;
 }
 
 .dev-mode-border::before {
   content: '';
   position: absolute;
-  inset: 0;
-  padding: 2px;
-  background: linear-gradient(45deg, 
-    var(--dev-neon), 
-    transparent, 
-    var(--dev-neon), 
+  inset: -2px;
+  background: conic-gradient(
+    from 0deg,
     transparent,
-    var(--dev-neon)
+    transparent,
+    transparent,
+    var(--dev-neon),
+    var(--dev-neon),
+    transparent,
+    transparent,
+    transparent
   );
   border-radius: inherit;
-  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  mask-composite: xor;
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  animation: neon-glow 3s ease-in-out infinite 0.5s;
+  animation: border-chase 7s linear infinite;
+  transition: all 0.3s ease;
+}
+
+.dev-mode-border::after {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+  border-radius: calc(inherit - 2px);
+  z-index: 1;
+}
+
+.dev-mode-border:hover {
+  box-shadow: 
+    0 0 30px var(--dev-shadow),
+    inset 0 0 30px var(--dev-shadow);
+}
+
+.dev-mode-border:hover::before {
+  animation: border-chase 3.5s linear infinite;
+}
+
+.dev-mode-border > * {
+  position: relative;
+  z-index: 2;
 }
 
 /* Jav Assistant Border */
 .jav-border {
   position: relative;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+  overflow: hidden;
 }
 
 .jav-border::before {
   content: '';
   position: absolute;
-  inset: 0;
-  padding: 2px;
-  background: linear-gradient(45deg, 
-    var(--jav-neon), 
-    transparent, 
-    var(--jav-neon), 
+  inset: -2px;
+  background: conic-gradient(
+    from 0deg,
     transparent,
-    var(--jav-neon)
+    transparent,
+    transparent,
+    var(--jav-neon),
+    var(--jav-neon),
+    transparent,
+    transparent,
+    transparent
   );
   border-radius: inherit;
-  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  mask-composite: xor;
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  animation: neon-glow 3s ease-in-out infinite 1s;
+  animation: border-chase 8s linear infinite;
+  transition: all 0.3s ease;
+}
+
+.jav-border::after {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+  border-radius: calc(inherit - 2px);
+  z-index: 1;
+}
+
+.jav-border:hover {
+  box-shadow: 
+    0 0 30px var(--jav-shadow),
+    inset 0 0 30px var(--jav-shadow);
+}
+
+.jav-border:hover::before {
+  animation: border-chase 4s linear infinite;
+}
+
+.jav-border > * {
+  position: relative;
+  z-index: 2;
 }
 
 /* Memory Engine Border */
 .memory-border {
   position: relative;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+  overflow: hidden;
 }
 
 .memory-border::before {
   content: '';
   position: absolute;
-  inset: 0;
-  padding: 2px;
-  background: linear-gradient(45deg, 
-    var(--memory-neon), 
-    transparent, 
-    var(--memory-neon), 
+  inset: -2px;
+  background: conic-gradient(
+    from 0deg,
     transparent,
-    var(--memory-neon)
+    transparent,
+    transparent,
+    var(--memory-neon),
+    var(--memory-neon),
+    transparent,
+    transparent,
+    transparent
   );
   border-radius: inherit;
-  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  mask-composite: xor;
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  animation: neon-glow 3s ease-in-out infinite 1.5s;
+  animation: border-chase 9s linear infinite;
+  transition: all 0.3s ease;
+}
+
+.memory-border::after {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+  border-radius: calc(inherit - 2px);
+  z-index: 1;
+}
+
+.memory-border:hover {
+  box-shadow: 
+    0 0 30px var(--memory-shadow),
+    inset 0 0 30px var(--memory-shadow);
+}
+
+.memory-border:hover::before {
+  animation: border-chase 4.5s linear infinite;
+}
+
+.memory-border > * {
+  position: relative;
+  z-index: 2;
 }
 
 :root {
@@ -159,6 +263,12 @@
   --dev-neon: hsl(220, 100%, 60%);
   --jav-neon: hsl(160, 100%, 60%);
   --memory-neon: hsl(280, 100%, 60%);
+  
+  /* Neon shadow colors for hover effects */
+  --creative-shadow: hsla(320, 100%, 60%, 0.3);
+  --dev-shadow: hsla(220, 100%, 60%, 0.3);
+  --jav-shadow: hsla(160, 100%, 60%, 0.3);
+  --memory-shadow: hsla(280, 100%, 60%, 0.3);
 }
 
 .dark {

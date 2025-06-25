@@ -204,112 +204,76 @@ export default function Waitlist() {
         </div>
       </section>
 
-      {/* Meet Jav: Your AI Co-founder */}
-      <section className="py-20 px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">Meet Jav: Your AI Co-founder</h2>
-            <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-              Stop losing your best ideas and repeating solved problems. Unlike traditional AI tools that lose context, 
-              Jav remembers everything and transforms how you create and build.
-            </p>
-          </div>
-
-          {/* Magic Moments */}
+          {/* Creative & Dev Modes */}
           <div className="grid lg:grid-cols-2 gap-12 mb-16">
-            {/* Creative Magic */}
-            <div className="group bg-gradient-to-br from-pink-500/10 to-purple-500/10 rounded-3xl p-10 border border-pink-500/20 hover:border-pink-500/40 transition-all duration-500 hover:shadow-2xl hover:shadow-pink-500/20">
-              <div className="w-24 h-24 bg-gradient-to-br from-pink-500/20 to-purple-500/20 group-hover:from-pink-500/30 group-hover:to-purple-500/30 rounded-full flex items-center justify-center mb-8 transition-all duration-500 shadow-lg shadow-pink-500/20 group-hover:scale-110">
-                <Lightbulb className="w-12 h-12 text-pink-400 group-hover:animate-pulse" />
+            {/* Creative Mode */}
+            <div className="group bg-gradient-to-br from-pink-500/10 to-purple-500/10 rounded-3xl p-10 border border-pink-500/20 hover:border-pink-500/40 transition-all duration-300 hover:shadow-2xl hover:shadow-pink-500/20">
+              <div className="w-24 h-24 bg-gradient-to-br from-pink-500/20 to-purple-500/20 group-hover:from-pink-500/30 group-hover:to-purple-500/30 rounded-full flex items-center justify-center mb-8 transition-all duration-300 shadow-lg shadow-pink-500/20">
+                <Lightbulb className="w-12 h-12 text-pink-400" />
               </div>
-              <h3 className="text-3xl font-bold text-white mb-6 group-hover:text-pink-400 transition-colors">Creative Mode Magic</h3>
+              <h3 className="text-3xl font-bold text-white mb-6 group-hover:text-pink-400 transition-colors">Creative Mode</h3>
               
-              <div className="bg-pink-500/5 rounded-2xl p-6 mb-6 border border-pink-500/10 group-hover:bg-pink-500/10 transition-colors">
-                <p className="text-sm text-pink-400 font-medium mb-2">✨ MAGIC MOMENT</p>
+              <div className="bg-pink-500/5 rounded-2xl p-6 mb-6 border border-pink-500/10">
                 <p className="text-lg text-gray-300 leading-relaxed mb-4">
-                  It's 2 AM. You're redesigning your portfolio, staring at a blank canvas. Your mind is foggy, but suddenly Jav whispers:
+                  <strong className="text-pink-400">Real scenario:</strong> You're designing a landing page but can't decide on colors. 
+                  Instead of scrolling through Pinterest for hours, Jav says: "You used this blue-purple gradient in your SaaS project last month—users clicked 40% more. Want to try a variation?"
                 </p>
-                <blockquote className="text-white italic text-lg leading-relaxed border-l-4 border-pink-400 pl-4 mb-4">
-                  "Remember that midnight breakthrough on Project Alpha? The blue-purple gradient that made visitors stay 3x longer? Here's the exact hex codes... and the typography pairing that sealed the deal."
-                </blockquote>
                 <p className="text-sm text-gray-400">
-                  In seconds, your creative block dissolves. Jav didn't just remember your colors—it remembered the magic behind them.
+                  Jav remembers what worked, what flopped, and why—so you're not starting from scratch every time.
                 </p>
               </div>
               
-              <div className="space-y-4">
+              <div className="space-y-3">
                 <div className="flex items-start space-x-3">
-                  <Star className="w-5 h-5 text-pink-400 mt-1 flex-shrink-0" />
-                  <p className="text-gray-300"><span className="text-white font-medium">Creative resurrection:</span> Jav surfaces buried breakthroughs when inspiration strikes</p>
+                  <div className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-gray-300"><span className="text-white font-medium">Creative block?</span> Jav suggests ideas based on your past breakthroughs</p>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <Star className="w-5 h-5 text-pink-400 mt-1 flex-shrink-0" />
-                  <p className="text-gray-300"><span className="text-white font-medium">Decision confidence:</span> See exactly what converted, what flopped, and why</p>
+                  <div className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-gray-300"><span className="text-white font-medium">Design decisions?</span> See what worked in similar projects instantly</p>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <Star className="w-5 h-5 text-pink-400 mt-1 flex-shrink-0" />
-                  <p className="text-gray-300"><span className="text-white font-medium">Idea evolution:</span> Jav connects scattered concepts across all your creative sessions</p>
+                  <div className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-gray-300"><span className="text-white font-medium">Scattered ideas?</span> Jav connects dots across your creative sessions</p>
                 </div>
               </div>
             </div>
 
-            {/* Technical Magic */}
-            <div className="group bg-gradient-to-br from-blue-500/10 to-purple-600/10 rounded-3xl p-10 border border-blue-500/20 hover:border-blue-500/40 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20">
-              <div className="w-24 h-24 bg-gradient-to-br from-blue-500/20 to-purple-600/20 group-hover:from-blue-500/30 group-hover:to-purple-600/30 rounded-full flex items-center justify-center mb-8 transition-all duration-500 shadow-lg shadow-blue-500/20 group-hover:scale-110">
-                <Code className="w-12 h-12 text-blue-400 group-hover:animate-pulse" />
+            {/* Dev Mode */}
+            <div className="group bg-gradient-to-br from-blue-500/10 to-purple-600/10 rounded-3xl p-10 border border-blue-500/20 hover:border-blue-500/40 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/20">
+              <div className="w-24 h-24 bg-gradient-to-br from-blue-500/20 to-purple-600/20 group-hover:from-blue-500/30 group-hover:to-purple-600/30 rounded-full flex items-center justify-center mb-8 transition-all duration-300 shadow-lg shadow-blue-500/20">
+                <Code className="w-12 h-12 text-blue-400" />
               </div>
-              <h3 className="text-3xl font-bold text-white mb-6 group-hover:text-blue-400 transition-colors">Dev Mode Magic</h3>
+              <h3 className="text-3xl font-bold text-white mb-6 group-hover:text-blue-400 transition-colors">Dev Mode</h3>
               
-              <div className="bg-blue-500/5 rounded-2xl p-6 mb-6 border border-blue-500/10 group-hover:bg-blue-500/10 transition-colors">
-                <p className="text-sm text-blue-400 font-medium mb-2">⚡ MAGIC MOMENT</p>
+              <div className="bg-blue-500/5 rounded-2xl p-6 mb-6 border border-blue-500/10">
                 <p className="text-lg text-gray-300 leading-relaxed mb-4">
-                  You're implementing authentication. Your fingers hover over the keyboard, about to repeat the same JWT mistake from 3 months ago. Jav intervenes:
+                  <strong className="text-blue-400">Real scenario:</strong> You're adding user authentication but forgot how you handled JWT tokens. 
+                  Jav interrupts: "Hold up—last time you used this approach it caused refresh token issues. Here's the pattern that actually worked."
                 </p>
-                <blockquote className="text-white italic text-lg leading-relaxed border-l-4 border-blue-400 pl-4 mb-4">
-                  "Stop! Last time this pattern caused a 48-hour debugging nightmare. Remember the refresh token chaos in Project Beta? Here's the elegant solution you discovered at 4 AM after the all-nighter."
-                </blockquote>
                 <p className="text-sm text-gray-400">
-                  Crisis averted. Jav just saved you from reliving your worst debugging experience.
+                  Jav prevents you from repeating the same debugging session you already survived three months ago.
                 </p>
               </div>
               
-              <div className="space-y-4">
+              <div className="space-y-3">
                 <div className="flex items-start space-x-3">
-                  <Zap className="w-5 h-5 text-blue-400 mt-1 flex-shrink-0" />
-                  <p className="text-gray-300"><span className="text-white font-medium">Crisis prevention:</span> Jav interrupts before you repeat painful mistakes</p>
+                  <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-gray-300"><span className="text-white font-medium">Same bug again?</span> Jav warns you before you waste hours debugging</p>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <Zap className="w-5 h-5 text-blue-400 mt-1 flex-shrink-0" />
-                  <p className="text-gray-300"><span className="text-white font-medium">Architecture wisdom:</span> Patterns that scale vs patterns that break—all from your history</p>
+                  <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-gray-300"><span className="text-white font-medium">Architecture decisions?</span> See what scales and what doesn't from your history</p>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <Zap className="w-5 h-5 text-blue-400 mt-1 flex-shrink-0" />
-                  <p className="text-gray-300"><span className="text-white font-medium">Genius recall:</span> Jav resurrects your cleverest solutions when you've forgotten them</p>
+                  <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-gray-300"><span className="text-white font-medium">Code amnesia?</span> Jav remembers your clever solutions when you don't</p>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* The Promise */}
-          <div className="text-center">
-            <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-3xl p-12 border border-blue-500/20">
-              <h3 className="text-3xl font-bold text-white mb-6">Stop Rebuilding What You've Already Built</h3>
-              <p className="text-xl text-gray-300 leading-relaxed max-w-4xl mx-auto mb-8">
-                Every creative breakthrough and technical solution becomes part of your personal advantage. 
-                Powered by Memory Engine, Jav transforms your scattered wins into compounding wisdom.
-              </p>
-              <div className="inline-flex items-center space-x-2 text-lg text-blue-400 font-medium">
-                <Brain className="w-6 h-6" />
-                <span>Build faster, create smarter, never lose your best ideas again</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Jav Assistant Deep Dive */}
-      <section className="py-20 px-6">
-        <div className="max-w-6xl mx-auto">
+          {/* Jav Assistant Deep Dive */}
           <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 rounded-3xl p-10 border border-purple-500/20">
             <div className="text-center mb-12">
               <div className="w-20 h-20 bg-purple-500/20 rounded-2xl flex items-center justify-center mx-auto mb-6">

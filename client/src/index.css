@@ -300,15 +300,34 @@
   --mouse-y: 50%;
 }
 
-@keyframes button-border-flow {
-  0% {
+@keyframes button-gradient-flow {
+  0%, 100% {
     background-position: 0% 50%;
+    box-shadow: 
+      0 0 15px hsla(280, 70%, 60%, 0.4),
+      0 0 30px hsla(260, 80%, 65%, 0.3),
+      0 0 45px hsla(240, 70%, 60%, 0.2);
+  }
+  25% {
+    background-position: 25% 50%;
+    box-shadow: 
+      0 0 18px hsla(260, 80%, 65%, 0.45),
+      0 0 36px hsla(240, 70%, 60%, 0.35),
+      0 0 54px hsla(220, 80%, 65%, 0.25);
   }
   50% {
-    background-position: 100% 50%;
+    background-position: 50% 50%;
+    box-shadow: 
+      0 0 20px hsla(240, 70%, 60%, 0.5),
+      0 0 40px hsla(220, 80%, 65%, 0.4),
+      0 0 60px hsla(260, 80%, 65%, 0.3);
   }
-  100% {
-    background-position: 0% 50%;
+  75% {
+    background-position: 75% 50%;
+    box-shadow: 
+      0 0 18px hsla(220, 80%, 65%, 0.45),
+      0 0 36px hsla(240, 70%, 60%, 0.35),
+      0 0 54px hsla(280, 70%, 60%, 0.25);
   }
 }
 
@@ -334,9 +353,17 @@
 /* Waitlist Button Styles */
 .waitlist-button {
   position: relative;
-  background: linear-gradient(45deg, hsl(280, 70%, 50%), hsl(300, 80%, 60%), hsl(280, 70%, 50%), hsl(300, 80%, 60%));
-  background-size: 400% 400%;
-  animation: button-border-flow 4s ease-in-out infinite;
+  background: linear-gradient(90deg, 
+    hsl(280, 70%, 60%), 
+    hsl(260, 80%, 65%), 
+    hsl(240, 70%, 60%), 
+    hsl(220, 80%, 65%),
+    hsl(240, 70%, 60%), 
+    hsl(260, 80%, 65%),
+    hsl(280, 70%, 60%)
+  );
+  background-size: 300% 300%;
+  animation: button-gradient-flow 6s ease-in-out infinite;
   border: 2px solid transparent;
   overflow: hidden;
 }

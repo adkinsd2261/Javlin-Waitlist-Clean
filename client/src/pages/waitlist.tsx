@@ -546,35 +546,39 @@ export default function Waitlist() {
               </div>
             </div>
 
-            {/* Competition Comparison */}
+            {/* Why Memory Engine Beats Competitors */}
+            <div className="text-center mb-12">
+              <h3 className="text-3xl font-bold text-white mb-4">Why Memory Engine Beats Every Alternative</h3>
+              <p className="text-lg text-gray-300 max-w-3xl mx-auto">
+                Traditional AI and storage tools force you to start fresh every time. Javlin's Memory Engine remembers, learns, and proactively helps.
+              </p>
+            </div>
+
             <div className="grid md:grid-cols-3 gap-8 mb-16">
               <div className="dev-mode-border ambient-glow dev rounded-2xl p-6">
                 <div className="text-center mb-4">
                   <div className="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mx-auto mb-3">
                     <Code className="w-6 h-6 text-gray-400" />
                   </div>
-                  <h4 className="text-lg font-bold text-white mb-4">Traditional AI</h4>
+                  <h4 className="text-lg font-bold text-red-400 mb-2">❌ Traditional AI</h4>
+                  <p className="text-xs text-gray-500 mb-4">ChatGPT, Claude, etc.</p>
                 </div>
                 <div className="space-y-3 text-gray-400 text-sm">
                   <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-gray-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <p>Start from scratch every conversation</p>
+                    <div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <p><span className="text-red-400">Forgets everything</span> between conversations</p>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-gray-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <p>No memory of your preferences</p>
+                    <div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <p><span className="text-red-400">No learning</span> from your past work</p>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-gray-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <p>Can't learn from past mistakes</p>
+                    <div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <p><span className="text-red-400">Repeats mistakes</span> you've already solved</p>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-gray-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <p>No cross-project intelligence</p>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-gray-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <p>Passive assistance only</p>
+                    <div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <p><span className="text-red-400">Waits for you</span> to ask questions</p>
                   </div>
                 </div>
               </div>
@@ -584,59 +588,60 @@ export default function Waitlist() {
                   <div className="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mx-auto mb-3">
                     <Lightbulb className="w-6 h-6 text-gray-400" />
                   </div>
-                  <h4 className="text-lg font-bold text-white mb-4">Storage Tools</h4>
+                  <h4 className="text-lg font-bold text-yellow-400 mb-2">⚠️ Storage Tools</h4>
+                  <p className="text-xs text-gray-500 mb-4">Notion, Obsidian, etc.</p>
                 </div>
                 <div className="space-y-3 text-gray-400 text-sm">
                   <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-gray-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <p>Passive storage systems</p>
+                    <div className="w-2 h-2 bg-yellow-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <p><span className="text-yellow-400">Requires manual search</span> to find anything</p>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-gray-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <p>You must remember to search</p>
+                    <div className="w-2 h-2 bg-yellow-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <p><span className="text-yellow-400">Never suggests</span> relevant content</p>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-gray-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <p>No proactive suggestions</p>
+                    <div className="w-2 h-2 bg-yellow-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <p><span className="text-yellow-400">Can't understand context</span> of your work</p>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-gray-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <p>Limited context understanding</p>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-gray-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <p>No learning from patterns</p>
+                    <div className="w-2 h-2 bg-yellow-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <p><span className="text-yellow-400">Storage only</span>—no intelligence</p>
                   </div>
                 </div>
               </div>
 
-              <div className="memory-border ambient-glow rounded-2xl p-6">
+              <div className="memory-border ambient-glow rounded-2xl p-6 relative">
+                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                  <div className="bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full">WINNER</div>
+                </div>
                 <div className="text-center mb-4">
                   <div className="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mx-auto mb-3">
                     <Brain className="w-6 h-6 text-purple-400 energy-icon memory" />
                   </div>
-                  <h4 className="text-lg font-bold text-white mb-4">Javlin Memory Engine</h4>
+                  <h4 className="text-lg font-bold text-green-400 mb-2">✅ Javlin Memory Engine</h4>
+                  <p className="text-xs text-gray-300 mb-4">The AI co-founder that remembers</p>
                 </div>
                 <div className="space-y-3 text-gray-300 text-sm">
                   <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"></div>
-                    <p>Proactive recall of past solutions</p>
+                    <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <p><span className="text-green-400">Proactively suggests</span> past solutions automatically</p>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"></div>
-                    <p>Learns your patterns and preferences</p>
+                    <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <p><span className="text-green-400">Learns and remembers</span> your preferences forever</p>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"></div>
-                    <p>Prevents repeated mistakes</p>
+                    <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <p><span className="text-green-400">Prevents mistakes</span> before they happen</p>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"></div>
-                    <p>Cross-project intelligence</p>
+                    <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <p><span className="text-green-400">Cross-project intelligence</span> that grows with you</p>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"></div>
-                    <p>User-controlled memory system</p>
+                    <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <p><span className="text-green-400">Full user control</span> over every memory</p>
                   </div>
                 </div>
               </div>

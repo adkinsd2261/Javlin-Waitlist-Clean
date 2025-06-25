@@ -12,7 +12,6 @@ import { useMouseAttraction } from "@/hooks/use-mouse-position";
 import { CheckCircle, Brain, Lightbulb, Code, MessageCircle, Shield, Zap, Lock, Users, ArrowRight, Star, Sparkles } from "lucide-react";
 import { apiRequest } from "@/lib/queryClient";
 import javlinLogo from "@assets/image_1750806523035.png";
-import { motion } from "framer-motion";
 
 const waitlistSchema = z.object({
   name: z.string().min(1, "Name is required"),
@@ -67,21 +66,16 @@ export default function Waitlist() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#181B2B] to-[#232342] text-white">
       {/* Header - Hero Section */}
-      <motion.section 
-        className="relative py-20 px-6 overflow-hidden"
-        initial={{ opacity: 0, y: 24 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: 'easeOut' }}
-      >
+      <section className="relative py-20 px-6 overflow-hidden">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Javlin Logo with Enhanced Pulse Animation */}
+          {/* Javlin Logo with Glow */}
           <div className="mb-12">
             <div className="relative inline-block">
               <div className="absolute inset-0 bg-blue-500/30 rounded-full blur-3xl scale-150 animate-pulse"></div>
               <img 
                 src={javlinLogo} 
                 alt="Javlin.ai" 
-                className="relative w-32 h-32 mx-auto filter drop-shadow-[0_0_60px_#5151FF99] animate-javlin-pulse"
+                className="relative w-32 h-32 mx-auto filter drop-shadow-2xl"
               />
             </div>
           </div>
@@ -103,22 +97,16 @@ export default function Waitlist() {
           <Button 
             ref={heroButtonRef}
             onClick={() => document.getElementById('waitlist-form')?.scrollIntoView({ behavior: 'smooth' })}
-            className="mt-8 bg-[#5151FF] hover:bg-[#6a5cff] shadow-lg rounded-2xl text-white text-xl font-semibold px-12 py-6 transition-all duration-300 focus:ring-4 focus:ring-[#5151FF99] focus:ring-offset-2 hover:shadow-[0_0_36px_#5151FF88]"
+            className="waitlist-button mouse-attracted-button text-xl px-12 py-6 rounded-2xl transition-all duration-300"
           >
-            <span className="text-white">Join the Waitlist</span>
+            <span className="waitlist-button-text">Join the Waitlist</span>
             <ArrowRight className="ml-3 w-6 h-6 text-white" />
           </Button>
         </div>
-      </motion.section>
+      </section>
 
       {/* Meet Jav */}
-      <motion.section 
-        className="py-20 px-6"
-        initial={{ opacity: 0, y: 24 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, ease: 'easeOut' }}
-        viewport={{ once: true, amount: 0.3 }}
-      >
+      <section className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">Meet Jav: Your AI Co-founder</h2>
@@ -131,13 +119,7 @@ export default function Waitlist() {
           {/* Creative & Dev Modes */}
           <div className="grid lg:grid-cols-2 gap-12 mb-16">
             {/* Creative Mode */}
-            <motion.div 
-              className="creative-mode-border ambient-glow creative rounded-3xl p-10"
-              initial={{ opacity: 0, x: -24 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-              viewport={{ once: true, amount: 0.3 }}
-            >
+            <div className="creative-mode-border ambient-glow creative rounded-3xl p-10">
               <div className="text-center mb-8">
                 <div className="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center mx-auto mb-6">
                   <Lightbulb className="w-8 h-8 text-pink-400 energy-icon creative" />
@@ -169,16 +151,10 @@ export default function Waitlist() {
                   </p>
                 </div>
               </div>
-            </motion.div>
+            </div>
 
             {/* Dev Mode */}
-            <motion.div 
-              className="dev-mode-border ambient-glow dev rounded-3xl p-10"
-              initial={{ opacity: 0, x: 24 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-              viewport={{ once: true, amount: 0.3 }}
-            >
+            <div className="dev-mode-border ambient-glow dev rounded-3xl p-10">
               <div className="text-center mb-8">
                 <div className="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center mx-auto mb-6">
                   <Code className="w-8 h-8 text-blue-400 energy-icon dev" />
@@ -210,19 +186,13 @@ export default function Waitlist() {
                   </p>
                 </div>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
-      </motion.section>
+      </section>
 
       {/* How Jav Assists You */}
-      <motion.section 
-        className="py-20 px-6"
-        initial={{ opacity: 0, y: 24 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, ease: 'easeOut' }}
-        viewport={{ once: true, amount: 0.3 }}
-      >
+      <section className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <div className="group w-24 h-24 bg-white/5 rounded-2xl flex items-center justify-center mx-auto mb-8">
@@ -259,16 +229,10 @@ export default function Waitlist() {
             </div>
           </div>
         </div>
-      </motion.section>
+      </section>
 
       {/* Your Journey with Javlin */}
-      <motion.section 
-        className="py-20 px-6"
-        initial={{ opacity: 0, y: 24 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, ease: 'easeOut' }}
-        viewport={{ once: true, amount: 0.3 }}
-      >
+      <section className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <div className="group w-24 h-24 bg-white/5 rounded-2xl flex items-center justify-center mx-auto mb-8">
@@ -507,16 +471,10 @@ export default function Waitlist() {
             </div>
           </div>
         </div>
-      </motion.section>
+      </section>
 
       {/* The Memory Engine Advantage */}
-      <motion.section 
-        className="py-20 px-6"
-        initial={{ opacity: 0, y: 24 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, ease: 'easeOut' }}
-        viewport={{ once: true, amount: 0.3 }}
-      >
+      <section className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <div className="group w-24 h-24 bg-white/5 rounded-2xl flex items-center justify-center mx-auto mb-8">
@@ -701,17 +659,10 @@ export default function Waitlist() {
             </div>
           </div>
         </div>
-      </motion.section>
+      </section>
 
       {/* Waitlist Form */}
-      <motion.section 
-        id="waitlist-form" 
-        className="py-20 px-6"
-        initial={{ opacity: 0, y: 24 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, ease: 'easeOut' }}
-        viewport={{ once: true, amount: 0.3 }}
-      >
+      <section id="waitlist-form" className="py-20 px-6">
         <div className="max-w-2xl mx-auto">
           {isSuccess ? (
             <div className="text-center space-y-8 bg-gradient-to-br from-green-500/10 to-emerald-500/10 rounded-3xl p-16 border border-green-500/20">
@@ -806,7 +757,7 @@ export default function Waitlist() {
                     ref={founderButtonRef}
                     type="submit" 
                     disabled={mutation.isPending}
-                    className="w-full mt-8 bg-[#5151FF] hover:bg-[#6a5cff] shadow-lg rounded-2xl text-white text-lg font-semibold px-8 py-6 transition-all duration-300 focus:ring-4 focus:ring-[#5151FF99] focus:ring-offset-2 hover:shadow-[0_0_36px_#5151FF88]"
+                    className="w-full waitlist-button mouse-attracted-button text-lg py-6 rounded-2xl transition-all duration-300"
                   >
                     {mutation.isPending ? (
                       "Joining..."
@@ -822,7 +773,7 @@ export default function Waitlist() {
             </div>
           )}
         </div>
-      </motion.section>
+      </section>
 
       {/* Footer */}
       <footer className="py-12 px-6 border-t border-white/10">

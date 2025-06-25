@@ -80,12 +80,13 @@ export default function Waitlist() {
           </div>
 
           {/* Hero Headlines */}
-          <h1 className="text-5xl lg:text-7xl font-bold mb-8 leading-tight">
-            Javlin: The AI <span className="highlight-word creative">Co-founder</span> for{" "}
-            <br />
-            <span className="gradient-text-flow text-6xl lg:text-8xl block mt-4">
+          <h1 className="text-5xl lg:text-7xl font-bold mb-8 leading-tight text-center">
+            <div className="mb-2">
+              Javlin: The AI <span className="highlight-word creative">Co-founder</span> for
+            </div>
+            <div className="gradient-text-flow text-6xl lg:text-8xl">
               Next-Gen Founders
-            </span>
+            </div>
           </h1>
           
           <p className="text-xl lg:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed">

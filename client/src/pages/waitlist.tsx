@@ -60,7 +60,7 @@ export default function Waitlist() {
     },
   });
 
-  const res = const response = await fetch('/api/subscribe', {
+const response = await fetch('/api/subscribe', {
       
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },

@@ -445,24 +445,7 @@
 }
 
 /* Hero Section Animations */
-@keyframes hero-logo-glow {
-  0%, 100% {
-    filter: drop-shadow(0 0 10px hsl(280, 70%, 50%)) drop-shadow(0 0 5px hsl(300, 80%, 60%));
-    transform: scale(1);
-  }
-  25% {
-    filter: drop-shadow(2px 2px 15px hsl(280, 70%, 50%)) drop-shadow(-1px 1px 8px hsl(300, 80%, 60%));
-    transform: scale(1.02);
-  }
-  50% {
-    filter: drop-shadow(0 0 20px hsl(280, 70%, 50%)) drop-shadow(0 0 10px hsl(300, 80%, 60%));
-    transform: scale(1.05);
-  }
-  75% {
-    filter: drop-shadow(-2px 2px 15px hsl(280, 70%, 50%)) drop-shadow(1px -1px 8px hsl(300, 80%, 60%));
-    transform: scale(1.02);
-  }
-}
+/* Hero logo glow removed */
 
 @keyframes text-color-flow {
   0%, 100% {
@@ -479,13 +462,13 @@
     filter: none;
   }
   50% {
-    filter: drop-shadow(0 0 8px currentColor);
+    filter: none;
   }
 }
 
-/* Hero Logo */
+/* Hero Logo - removed glow */
 .hero-logo {
-  animation: hero-logo-glow 4s ease-in-out infinite;
+  /* animation removed */
 }
 
 /* Animated Text Effects */

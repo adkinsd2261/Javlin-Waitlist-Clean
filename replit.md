@@ -100,7 +100,6 @@ This is a full-stack web application for Javlin.ai's waitlist landing page. The 
 - **Module Dependencies**: Node.js 20, Web, PostgreSQL 16
 
 ## Recent Changes
-- June 25, 2025: Increased hero logo size by 50% for better visual prominence
 - June 25, 2025: Added "Keep tabs on what we're shipping 🚀" section
   - **Social Integration**: Added Twitter/X buttons for @JavlinDev and @JavlinAI accounts with subtle blue glow effects
   - **Public Building**: New section showcasing recent updates and development progress

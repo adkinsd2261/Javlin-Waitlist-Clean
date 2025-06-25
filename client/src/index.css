@@ -441,6 +441,84 @@
   box-shadow: 0 0 20px hsla(280, 70%, 50%, 0.8), 0 0 40px hsla(300, 80%, 60%, 0.4);
 }
 
+/* Hero Section Animations */
+@keyframes hero-logo-glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 10px hsl(280, 70%, 50%)) drop-shadow(0 0 5px hsl(300, 80%, 60%));
+    transform: scale(1);
+  }
+  25% {
+    filter: drop-shadow(2px 2px 15px hsl(280, 70%, 50%)) drop-shadow(-1px 1px 8px hsl(300, 80%, 60%));
+    transform: scale(1.02);
+  }
+  50% {
+    filter: drop-shadow(0 0 20px hsl(280, 70%, 50%)) drop-shadow(0 0 10px hsl(300, 80%, 60%));
+    transform: scale(1.05);
+  }
+  75% {
+    filter: drop-shadow(-2px 2px 15px hsl(280, 70%, 50%)) drop-shadow(1px -1px 8px hsl(300, 80%, 60%));
+    transform: scale(1.02);
+  }
+}
+
+@keyframes text-color-flow {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes word-highlight {
+  0%, 100% {
+    color: inherit;
+    filter: none;
+  }
+  50% {
+    filter: drop-shadow(0 0 8px currentColor);
+  }
+}
+
+/* Hero Logo */
+.hero-logo {
+  animation: hero-logo-glow 4s ease-in-out infinite;
+}
+
+/* Animated Text Effects */
+.gradient-text-flow {
+  background: linear-gradient(45deg, 
+    hsl(280, 70%, 60%), 
+    hsl(300, 80%, 70%), 
+    hsl(320, 70%, 60%), 
+    hsl(280, 70%, 60%)
+  );
+  background-size: 300% 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: text-color-flow 6s ease-in-out infinite;
+}
+
+.highlight-word {
+  animation: word-highlight 3s ease-in-out infinite;
+}
+
+.highlight-word.creative {
+  color: hsl(320, 70%, 60%);
+  animation-delay: 0s;
+}
+
+.highlight-word.dev {
+  color: hsl(240, 70%, 60%);
+  animation-delay: 1s;
+}
+
+.highlight-word.memory {
+  color: hsl(280, 70%, 60%);
+  animation-delay: 2s;
+}
+
 .dark {
   --background: hsl(240, 10%, 3.9%);
   --foreground: hsl(0, 0%, 98%);

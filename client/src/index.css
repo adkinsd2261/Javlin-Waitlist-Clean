@@ -14,58 +14,58 @@
 
 @keyframes creative-glow {
   0%, 100% {
-    filter: drop-shadow(0 0 6px hsl(320, 70%, 50%)) drop-shadow(0 0 2px hsl(280, 80%, 60%));
+    filter: drop-shadow(0 0 3.6px hsl(320, 70%, 50%)) drop-shadow(0 0 1.2px hsl(280, 80%, 60%));
     transform: scale(1);
   }
   25% {
-    filter: drop-shadow(2px 0 8px hsl(320, 70%, 50%)) drop-shadow(0 2px 4px hsl(280, 80%, 60%));
-    transform: scale(1.05);
+    filter: drop-shadow(1.2px 0 4.8px hsl(320, 70%, 50%)) drop-shadow(0 1.2px 2.4px hsl(280, 80%, 60%));
+    transform: scale(1.03);
   }
   50% {
-    filter: drop-shadow(0 0 12px hsl(320, 70%, 50%)) drop-shadow(0 0 6px hsl(280, 80%, 60%));
-    transform: scale(1.1);
+    filter: drop-shadow(0 0 7.2px hsl(320, 70%, 50%)) drop-shadow(0 0 3.6px hsl(280, 80%, 60%));
+    transform: scale(1.06);
   }
   75% {
-    filter: drop-shadow(-2px 0 8px hsl(320, 70%, 50%)) drop-shadow(0 -2px 4px hsl(280, 80%, 60%));
-    transform: scale(1.05);
+    filter: drop-shadow(-1.2px 0 4.8px hsl(320, 70%, 50%)) drop-shadow(0 -1.2px 2.4px hsl(280, 80%, 60%));
+    transform: scale(1.03);
   }
 }
 
 @keyframes dev-glow {
   0%, 100% {
-    filter: drop-shadow(0 0 6px hsl(240, 60%, 50%)) drop-shadow(0 0 2px hsl(260, 80%, 60%));
+    filter: drop-shadow(0 0 3.6px hsl(240, 60%, 50%)) drop-shadow(0 0 1.2px hsl(260, 80%, 60%));
     transform: scale(1);
   }
   25% {
-    filter: drop-shadow(2px 0 8px hsl(240, 60%, 50%)) drop-shadow(0 2px 4px hsl(260, 80%, 60%));
-    transform: scale(1.05);
+    filter: drop-shadow(1.2px 0 4.8px hsl(240, 60%, 50%)) drop-shadow(0 1.2px 2.4px hsl(260, 80%, 60%));
+    transform: scale(1.03);
   }
   50% {
-    filter: drop-shadow(0 0 12px hsl(240, 60%, 50%)) drop-shadow(0 0 6px hsl(260, 80%, 60%));
-    transform: scale(1.1);
+    filter: drop-shadow(0 0 7.2px hsl(240, 60%, 50%)) drop-shadow(0 0 3.6px hsl(260, 80%, 60%));
+    transform: scale(1.06);
   }
   75% {
-    filter: drop-shadow(-2px 0 8px hsl(240, 60%, 50%)) drop-shadow(0 -2px 4px hsl(260, 80%, 60%));
-    transform: scale(1.05);
+    filter: drop-shadow(-1.2px 0 4.8px hsl(240, 60%, 50%)) drop-shadow(0 -1.2px 2.4px hsl(260, 80%, 60%));
+    transform: scale(1.03);
   }
 }
 
 @keyframes memory-glow {
   0%, 100% {
-    filter: drop-shadow(0 0 6px hsl(280, 70%, 50%)) drop-shadow(0 0 2px hsl(300, 80%, 60%));
+    filter: drop-shadow(0 0 3.6px hsl(280, 70%, 50%)) drop-shadow(0 0 1.2px hsl(300, 80%, 60%));
     transform: scale(1);
   }
   25% {
-    filter: drop-shadow(2px 0 8px hsl(280, 70%, 50%)) drop-shadow(0 2px 4px hsl(300, 80%, 60%));
-    transform: scale(1.05);
+    filter: drop-shadow(1.2px 0 4.8px hsl(280, 70%, 50%)) drop-shadow(0 1.2px 2.4px hsl(300, 80%, 60%));
+    transform: scale(1.03);
   }
   50% {
-    filter: drop-shadow(0 0 12px hsl(280, 70%, 50%)) drop-shadow(0 0 6px hsl(300, 80%, 60%));
-    transform: scale(1.1);
+    filter: drop-shadow(0 0 7.2px hsl(280, 70%, 50%)) drop-shadow(0 0 3.6px hsl(300, 80%, 60%));
+    transform: scale(1.06);
   }
   75% {
-    filter: drop-shadow(-2px 0 8px hsl(280, 70%, 50%)) drop-shadow(0 -2px 4px hsl(300, 80%, 60%));
-    transform: scale(1.05);
+    filter: drop-shadow(-1.2px 0 4.8px hsl(280, 70%, 50%)) drop-shadow(0 -1.2px 2.4px hsl(300, 80%, 60%));
+    transform: scale(1.03);
   }
 }
 
@@ -110,7 +110,7 @@
 }
 
 .creative-mode-border:hover {
-  box-shadow: 0 0 30px var(--creative-shadow);
+  box-shadow: 0 0 18px var(--creative-shadow);
 }
 
 .creative-mode-border:hover::before {
@@ -144,7 +144,7 @@
 }
 
 .dev-mode-border:hover {
-  box-shadow: 0 0 30px var(--dev-shadow);
+  box-shadow: 0 0 18px var(--dev-shadow);
 }
 
 .dev-mode-border:hover::before {
@@ -178,7 +178,7 @@
 }
 
 .jav-border:hover {
-  box-shadow: 0 0 30px var(--memory-shadow);
+  box-shadow: 0 0 18px var(--memory-shadow);
 }
 
 .jav-border:hover::before {
@@ -212,7 +212,7 @@
 }
 
 .memory-border:hover {
-  box-shadow: 0 0 30px var(--memory-shadow);
+  box-shadow: 0 0 18px var(--memory-shadow);
 }
 
 .memory-border:hover::before {
@@ -258,9 +258,9 @@
   --memory-gradient-end: hsl(300, 80%, 60%);
   
   /* Shadow colors for hover effects */
-  --dev-shadow: hsla(250, 70%, 55%, 0.4);
-  --creative-shadow: hsla(300, 75%, 55%, 0.4);
-  --memory-shadow: hsla(290, 75%, 55%, 0.4);
+  --dev-shadow: hsla(250, 70%, 55%, 0.24);
+  --creative-shadow: hsla(300, 75%, 55%, 0.24);
+  --memory-shadow: hsla(290, 75%, 55%, 0.24);
 
 }
 
@@ -304,49 +304,49 @@
   0%, 100% {
     background-position: 0% 50%;
     box-shadow: 
-      0 0 15px hsla(280, 70%, 60%, 0.28),
-      0 0 30px hsla(260, 80%, 65%, 0.21),
-      0 0 45px hsla(240, 70%, 60%, 0.14);
+      0 0 9px hsla(280, 70%, 60%, 0.17),
+      0 0 18px hsla(260, 80%, 65%, 0.13),
+      0 0 27px hsla(240, 70%, 60%, 0.08);
   }
   25% {
     background-position: 25% 50%;
     box-shadow: 
-      0 0 18px hsla(260, 80%, 65%, 0.32),
-      0 0 36px hsla(240, 70%, 60%, 0.25),
-      0 0 54px hsla(220, 80%, 65%, 0.18);
+      0 0 11px hsla(260, 80%, 65%, 0.19),
+      0 0 22px hsla(240, 70%, 60%, 0.15),
+      0 0 32px hsla(220, 80%, 65%, 0.11);
   }
   50% {
     background-position: 50% 50%;
     box-shadow: 
-      0 0 20px hsla(240, 70%, 60%, 0.35),
-      0 0 40px hsla(220, 80%, 65%, 0.28),
-      0 0 60px hsla(260, 80%, 65%, 0.21);
+      0 0 12px hsla(240, 70%, 60%, 0.21),
+      0 0 24px hsla(220, 80%, 65%, 0.17),
+      0 0 36px hsla(260, 80%, 65%, 0.13);
   }
   75% {
     background-position: 75% 50%;
     box-shadow: 
-      0 0 18px hsla(220, 80%, 65%, 0.32),
-      0 0 36px hsla(240, 70%, 60%, 0.25),
-      0 0 54px hsla(280, 70%, 60%, 0.18);
+      0 0 11px hsla(220, 80%, 65%, 0.19),
+      0 0 22px hsla(240, 70%, 60%, 0.15),
+      0 0 32px hsla(280, 70%, 60%, 0.11);
   }
 }
 
 @keyframes button-intense-glow {
   0%, 100% {
-    filter: drop-shadow(0 0 8px hsl(280, 70%, 50%)) drop-shadow(0 0 4px hsl(300, 80%, 60%));
+    filter: drop-shadow(0 0 4.8px hsl(280, 70%, 50%)) drop-shadow(0 0 2.4px hsl(300, 80%, 60%));
     transform: scale(1);
   }
   25% {
-    filter: drop-shadow(3px 0 12px hsl(280, 70%, 50%)) drop-shadow(0 3px 8px hsl(300, 80%, 60%));
-    transform: scale(1.05);
+    filter: drop-shadow(1.8px 0 7.2px hsl(280, 70%, 50%)) drop-shadow(0 1.8px 4.8px hsl(300, 80%, 60%));
+    transform: scale(1.03);
   }
   50% {
-    filter: drop-shadow(0 0 16px hsl(280, 70%, 50%)) drop-shadow(0 0 12px hsl(300, 80%, 60%));
-    transform: scale(1.08);
+    filter: drop-shadow(0 0 9.6px hsl(280, 70%, 50%)) drop-shadow(0 0 7.2px hsl(300, 80%, 60%));
+    transform: scale(1.05);
   }
   75% {
-    filter: drop-shadow(-3px 0 12px hsl(280, 70%, 50%)) drop-shadow(0 -3px 8px hsl(300, 80%, 60%));
-    transform: scale(1.05);
+    filter: drop-shadow(-1.8px 0 7.2px hsl(280, 70%, 50%)) drop-shadow(0 -1.8px 4.8px hsl(300, 80%, 60%));
+    transform: scale(1.03);
   }
 }
 

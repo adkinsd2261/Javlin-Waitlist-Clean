@@ -201,7 +201,7 @@ export default function Waitlist() {
             {/* Mode-Specific Assistance */}
             <div className="grid lg:grid-cols-3 gap-8 mb-12">
               {/* Creative Mode */}
-              <div className="creative-mode-border rounded-2xl p-8">
+              <div className="creative-mode-border ambient-glow creative rounded-2xl p-8">
                 <div className="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center mb-6">
                   <Lightbulb className="w-8 h-8 text-pink-400 energy-icon creative" />
                 </div>
@@ -232,7 +232,7 @@ export default function Waitlist() {
               </div>
 
               {/* Dev Mode */}
-              <div className="dev-mode-border rounded-2xl p-8">
+              <div className="dev-mode-border ambient-glow dev rounded-2xl p-8">
                 <div className="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center mb-6">
                   <Code className="w-8 h-8 text-blue-400 energy-icon dev" />
                 </div>
@@ -263,7 +263,7 @@ export default function Waitlist() {
               </div>
 
               {/* JavChat */}
-              <div className="group jav-border rounded-2xl p-8">
+              <div className="group jav-border ambient-glow rounded-2xl p-8">
                 <div className="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center mb-6">
                   <MessageCircle className="w-8 h-8 text-purple-400 energy-icon memory" />
                 </div>
@@ -295,7 +295,7 @@ export default function Waitlist() {
             </div>
 
             {/* Core Jav Assistant Features */}
-            <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-2xl p-8 border border-blue-500/20 mb-8">
+            <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-2xl p-8 border border-blue-500/20 mb-8 ambient-glow">
               <h4 className="text-2xl font-bold text-white mb-6 text-center">Jav Assistant Core Features</h4>
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="space-y-4">
@@ -405,7 +405,7 @@ export default function Waitlist() {
               </div>
 
               {/* Problem: Creative Block */}
-              <div className="creative-mode-border rounded-2xl p-8">
+              <div className="creative-mode-border ambient-glow creative rounded-2xl p-8">
                 <div className="grid lg:grid-cols-2 gap-8 items-center">
                   <div className="order-2 lg:order-1">
                     <div className="creative-mode-border rounded-xl p-6">
@@ -432,7 +432,7 @@ export default function Waitlist() {
               </div>
 
               {/* Problem: Context Loss */}
-              <div className="memory-border rounded-2xl p-8">
+              <div className="memory-border ambient-glow rounded-2xl p-8">
                 <div className="grid lg:grid-cols-2 gap-8 items-center">
                   <div>
                     <h5 className="text-2xl font-bold text-white mb-4">Preserve Context Across Modes</h5>
@@ -457,7 +457,7 @@ export default function Waitlist() {
               </div>
 
               {/* Continuous Growth */}
-              <div className="group memory-border rounded-2xl p-8 text-center">
+              <div className="group memory-border ambient-glow rounded-2xl p-8 text-center">
                 <h5 className="text-2xl font-bold text-white mb-4">Your Knowledge Compounds</h5>
                 <p className="text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
                   Your personal institutional knowledge grows in Memory Engine, connecting patterns across projects 
@@ -488,7 +488,7 @@ export default function Waitlist() {
             <div>
               <h3 className="text-3xl font-bold text-white mb-8">How Memory Engine Works</h3>
               <div className="space-y-6">
-                <div className="memory-border rounded-2xl p-6">
+                <div className="memory-border ambient-glow rounded-2xl p-6">
                   <h4 className="text-xl font-bold text-white mb-3">Active Intelligence, Not Storage</h4>
                   <p className="text-gray-300 leading-relaxed">
                     Memory Engine isn't just storage—it's an active, intelligent "brain" that learns from your actions, decisions, 
@@ -496,7 +496,7 @@ export default function Waitlist() {
                     new activity to past memories.
                   </p>
                 </div>
-                <div className="memory-border rounded-2xl p-6">
+                <div className="memory-border ambient-glow rounded-2xl p-6">
                   <h4 className="text-xl font-bold text-white mb-3">Proactive Recall System</h4>
                   <p className="text-gray-300 leading-relaxed">
                     Memory Engine moves beyond passive storage by suggesting solutions, surfacing reminders, and preventing repeated 
@@ -504,7 +504,7 @@ export default function Waitlist() {
                     past solutions or warnings.
                   </p>
                 </div>
-                <div className="memory-border rounded-2xl p-6">
+                <div className="memory-border ambient-glow rounded-2xl p-6">
                   <h4 className="text-xl font-bold text-white mb-3">Complete User Control</h4>
                   <p className="text-gray-300 leading-relaxed">
                     Every memory is user-auditable. Review, edit, and delete memories to ensure relevance and trust. 
@@ -517,7 +517,7 @@ export default function Waitlist() {
             <div>
               <h3 className="text-3xl font-bold text-white mb-8">Cross-Project Intelligence</h3>
               <div className="space-y-6">
-                <div className="memory-border rounded-2xl p-6">
+                <div className="memory-border ambient-glow rounded-2xl p-6">
                   <h4 className="text-lg font-bold text-white mb-3">Personal Institutional Knowledge</h4>
                   <p className="text-gray-300 leading-relaxed mb-4">
                     Beyond per-project context, Memory Engine aggregates lessons, patterns, and pitfalls from all projects 
@@ -543,7 +543,7 @@ export default function Waitlist() {
                   </div>
                 </div>
                 
-                <div className="memory-border rounded-2xl p-6">
+                <div className="memory-border ambient-glow rounded-2xl p-6">
                   <h4 className="text-lg font-bold text-white mb-3">Privacy-First Architecture</h4>
                   <p className="text-gray-300 leading-relaxed">
                     All cross-project learning is opt-in and privacy-focused by default. Your data always belongs to you, 
@@ -557,7 +557,7 @@ export default function Waitlist() {
 
 
           {/* Competitive Advantage */}
-          <div className="memory-border rounded-3xl p-12">
+          <div className="memory-border ambient-glow rounded-3xl p-12">
             <div className="text-center mb-12">
               <h3 className="text-3xl font-bold text-white mb-6">Why Memory Engine Beats The Competition</h3>
               <p className="text-xl text-gray-300 max-w-4xl mx-auto">
@@ -808,7 +808,7 @@ export default function Waitlist() {
               </div>
             </div>
           ) : (
-            <div className="bg-white/5 rounded-3xl p-12 border border-white/10">
+            <div className="bg-white/5 rounded-3xl p-12 border border-white/10 ambient-glow">
               <div className="text-center mb-12">
                 <h2 className="text-3xl font-bold text-white mb-4">Get Early Access</h2>
                 <p className="text-lg text-gray-300">

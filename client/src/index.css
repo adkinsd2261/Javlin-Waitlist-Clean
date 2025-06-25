@@ -569,6 +569,50 @@
   }
 }
 
+/* Ambient Glow Effects for Section Boxes */
+.ambient-glow {
+  box-shadow: 
+    0 0 15px hsla(280, 70%, 50%, 0.1),
+    0 0 30px hsla(260, 80%, 60%, 0.05),
+    0 0 45px hsla(300, 80%, 60%, 0.03);
+  transition: box-shadow 0.3s ease;
+}
+
+.ambient-glow:hover {
+  box-shadow: 
+    0 0 20px hsla(280, 70%, 50%, 0.15),
+    0 0 40px hsla(260, 80%, 60%, 0.08),
+    0 0 60px hsla(300, 80%, 60%, 0.05);
+}
+
+.ambient-glow.creative {
+  box-shadow: 
+    0 0 15px hsla(320, 70%, 50%, 0.1),
+    0 0 30px hsla(300, 80%, 60%, 0.05),
+    0 0 45px hsla(280, 80%, 60%, 0.03);
+}
+
+.ambient-glow.creative:hover {
+  box-shadow: 
+    0 0 20px hsla(320, 70%, 50%, 0.15),
+    0 0 40px hsla(300, 80%, 60%, 0.08),
+    0 0 60px hsla(280, 80%, 60%, 0.05);
+}
+
+.ambient-glow.dev {
+  box-shadow: 
+    0 0 15px hsla(240, 60%, 50%, 0.1),
+    0 0 30px hsla(260, 80%, 60%, 0.05),
+    0 0 45px hsla(220, 80%, 65%, 0.03);
+}
+
+.ambient-glow.dev:hover {
+  box-shadow: 
+    0 0 20px hsla(240, 60%, 50%, 0.15),
+    0 0 40px hsla(260, 80%, 60%, 0.08),
+    0 0 60px hsla(220, 80%, 65%, 0.05);
+}
+
 @layer utilities {
   .gradient-bg {
     background: linear-gradient(135deg, #181B2B 0%, #232342 100%);

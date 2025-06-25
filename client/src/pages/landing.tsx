@@ -279,7 +279,7 @@ export default function Landing() {
 
           {/* Magic Moment Showcase */}
           <motion.div 
-            className="gradient-dark rounded-2xl p-8 lg:p-12 border border-slate-700"
+            className="gradient-dark rounded-2xl p-8 lg:p-12 border border-slate-700 ambient-glow"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -427,7 +427,7 @@ export default function Landing() {
           >
             {/* Free Plan */}
             <motion.div variants={fadeInUp}>
-              <Card className="bg-slate-800 border-slate-600 h-full">
+              <Card className="bg-slate-800 border-slate-600 h-full ambient-glow">
                 <CardContent className="p-6 h-full flex flex-col">
                   <div className="text-center mb-6">
                     <h3 className="text-xl font-bold mb-2">Free</h3>
@@ -459,7 +459,7 @@ export default function Landing() {
 
             {/* Pro Plan */}
             <motion.div variants={fadeInUp}>
-              <Card className="bg-gradient-to-br from-purple-500/10 to-blue-500/10 border-2 border-purple-500 h-full relative">
+              <Card className="bg-gradient-to-br from-purple-500/10 to-blue-500/10 border-2 border-purple-500 h-full relative ambient-glow">
                 <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 gradient-javlin">
                   Most Popular
                 </Badge>
@@ -497,7 +497,7 @@ export default function Landing() {
 
             {/* Premium Plan */}
             <motion.div variants={fadeInUp}>
-              <Card className="bg-slate-800 border-slate-600 h-full">
+              <Card className="bg-slate-800 border-slate-600 h-full ambient-glow">
                 <CardContent className="p-6 h-full flex flex-col">
                   <div className="text-center mb-6">
                     <h3 className="text-xl font-bold mb-2">Premium</h3>

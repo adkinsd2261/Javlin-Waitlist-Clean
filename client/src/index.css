@@ -29,7 +29,8 @@
 .creative-mode-border {
   position: relative;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
-  overflow: hidden;
+  border: 2px solid transparent;
+  background-clip: padding-box;
 }
 
 .creative-mode-border::before {
@@ -38,49 +39,28 @@
   inset: -2px;
   background: conic-gradient(
     from 0deg,
-    transparent,
-    transparent,
-    transparent,
-    var(--creative-neon),
-    var(--creative-neon),
-    transparent,
-    transparent,
-    transparent
+    transparent 70%,
+    var(--creative-neon) 100%
   );
   border-radius: inherit;
   animation: border-chase 6s linear infinite;
-  transition: all 0.3s ease;
-}
-
-.creative-mode-border::after {
-  content: '';
-  position: absolute;
-  inset: 2px;
-  background: linear-gradient(135deg, rgba(24, 27, 43, 0.95), rgba(35, 35, 66, 0.95));
-  border-radius: calc(inherit - 2px);
-  z-index: 1;
+  z-index: -1;
 }
 
 .creative-mode-border:hover {
-  box-shadow: 
-    0 0 30px var(--creative-shadow),
-    inset 0 0 30px var(--creative-shadow);
+  box-shadow: 0 0 20px var(--creative-shadow);
 }
 
 .creative-mode-border:hover::before {
   animation: border-chase 3s linear infinite;
 }
 
-.creative-mode-border > * {
-  position: relative;
-  z-index: 10;
-}
-
 /* Dev Mode Border */
 .dev-mode-border {
   position: relative;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
-  overflow: hidden;
+  border: 2px solid transparent;
+  background-clip: padding-box;
 }
 
 .dev-mode-border::before {
@@ -89,49 +69,28 @@
   inset: -2px;
   background: conic-gradient(
     from 0deg,
-    transparent,
-    transparent,
-    transparent,
-    var(--dev-neon),
-    var(--dev-neon),
-    transparent,
-    transparent,
-    transparent
+    transparent 70%,
+    var(--dev-neon) 100%
   );
   border-radius: inherit;
   animation: border-chase 7s linear infinite;
-  transition: all 0.3s ease;
-}
-
-.dev-mode-border::after {
-  content: '';
-  position: absolute;
-  inset: 2px;
-  background: linear-gradient(135deg, rgba(24, 27, 43, 0.95), rgba(35, 35, 66, 0.95));
-  border-radius: calc(inherit - 2px);
-  z-index: 1;
+  z-index: -1;
 }
 
 .dev-mode-border:hover {
-  box-shadow: 
-    0 0 30px var(--dev-shadow),
-    inset 0 0 30px var(--dev-shadow);
+  box-shadow: 0 0 20px var(--dev-shadow);
 }
 
 .dev-mode-border:hover::before {
   animation: border-chase 3.5s linear infinite;
 }
 
-.dev-mode-border > * {
-  position: relative;
-  z-index: 10;
-}
-
 /* Jav Assistant Border */
 .jav-border {
   position: relative;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
-  overflow: hidden;
+  border: 2px solid transparent;
+  background-clip: padding-box;
 }
 
 .jav-border::before {
@@ -140,49 +99,28 @@
   inset: -2px;
   background: conic-gradient(
     from 0deg,
-    transparent,
-    transparent,
-    transparent,
-    var(--jav-neon),
-    var(--jav-neon),
-    transparent,
-    transparent,
-    transparent
+    transparent 70%,
+    var(--jav-neon) 100%
   );
   border-radius: inherit;
   animation: border-chase 8s linear infinite;
-  transition: all 0.3s ease;
-}
-
-.jav-border::after {
-  content: '';
-  position: absolute;
-  inset: 2px;
-  background: linear-gradient(135deg, rgba(24, 27, 43, 0.95), rgba(35, 35, 66, 0.95));
-  border-radius: calc(inherit - 2px);
-  z-index: 1;
+  z-index: -1;
 }
 
 .jav-border:hover {
-  box-shadow: 
-    0 0 30px var(--jav-shadow),
-    inset 0 0 30px var(--jav-shadow);
+  box-shadow: 0 0 20px var(--jav-shadow);
 }
 
 .jav-border:hover::before {
   animation: border-chase 4s linear infinite;
 }
 
-.jav-border > * {
-  position: relative;
-  z-index: 10;
-}
-
 /* Memory Engine Border */
 .memory-border {
   position: relative;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
-  overflow: hidden;
+  border: 2px solid transparent;
+  background-clip: padding-box;
 }
 
 .memory-border::before {
@@ -191,42 +129,20 @@
   inset: -2px;
   background: conic-gradient(
     from 0deg,
-    transparent,
-    transparent,
-    transparent,
-    var(--memory-neon),
-    var(--memory-neon),
-    transparent,
-    transparent,
-    transparent
+    transparent 70%,
+    var(--memory-neon) 100%
   );
   border-radius: inherit;
   animation: border-chase 9s linear infinite;
-  transition: all 0.3s ease;
-}
-
-.memory-border::after {
-  content: '';
-  position: absolute;
-  inset: 2px;
-  background: linear-gradient(135deg, rgba(24, 27, 43, 0.95), rgba(35, 35, 66, 0.95));
-  border-radius: calc(inherit - 2px);
-  z-index: 1;
+  z-index: -1;
 }
 
 .memory-border:hover {
-  box-shadow: 
-    0 0 30px var(--memory-shadow),
-    inset 0 0 30px var(--memory-shadow);
+  box-shadow: 0 0 20px var(--memory-shadow);
 }
 
 .memory-border:hover::before {
   animation: border-chase 4.5s linear infinite;
-}
-
-.memory-border > * {
-  position: relative;
-  z-index: 10;
 }
 
 :root {

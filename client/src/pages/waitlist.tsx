@@ -783,6 +783,9 @@ export default function Waitlist() {
       {/* Contact Form */}
       <section className="py-20 px-6">
         <div className="max-w-2xl mx-auto">
+          <div className="space-y-16">
+            {/* Step 2 */}
+            <div className="creative-border ambient-glow creative rounded-3xl p-10">
               <div className="flex flex-col lg:flex-row items-start gap-10">
                 <div className="flex-shrink-0">
                   <div className="w-20 h-20 bg-white/5 border border-pink-400/30 rounded-2xl flex items-center justify-center relative">
@@ -950,8 +953,6 @@ export default function Waitlist() {
               </div>
             </div>
           </div>
-
-
         </div>
       </section>
 

@@ -648,7 +648,6 @@ export default function Waitlist() {
                 <h4 className="text-2xl font-bold text-white mb-6">This Is What Makes Javlin Different</h4>
                 <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
                   Other AI tools offer "AI storage/search." <span className="text-white font-semibold">Memory Engine</span> offers <span className="text-white font-semibold">proactive recall</span> with real user control. 
-                  Your memories are stored as <span className="text-white font-medium">editable markdown files</span>—you can review, edit, and delete anything. 
                   It's the first <span className="text-white font-semibold">AI co-founder</span> that remembers your best solutions and warns you about past mistakes.
                 </p>
               </div>

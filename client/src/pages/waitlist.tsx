@@ -788,57 +788,44 @@ export default function Waitlist() {
                 </form>
               </Form>
 
-              {/* Social Links */}
-              <div className="flex justify-center space-x-6 mt-8 pt-6 border-t border-white/10">
-                <a 
-                  href="https://x.com/JavlinAI" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors duration-200"
-                >
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-                  </svg>
-                  <span>@JavlinAI</span>
-                </a>
-                <a 
-                  href="https://x.com/JavlinDev" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors duration-200"
-                >
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-                  </svg>
-                  <span>@JavlinDev</span>
-                </a>
+              {/* CTA Text Above Social Links */}
+              <div className="text-center mt-8 pt-6 border-t border-white/10">
+                <p className="text-lg text-gray-300 mb-4 font-medium">
+                  Follow our journey and get updates
+                </p>
+                
+                {/* Social Links */}
+                <div className="flex justify-center space-x-6">
+                  <a 
+                    href="https://x.com/JavlinAI" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors duration-200 bg-white/5 rounded-lg px-4 py-2 hover:bg-white/10"
+                  >
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
+                    <span>@JavlinAI</span>
+                  </a>
+                  <a 
+                    href="https://x.com/JavlinDev" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors duration-200 bg-white/5 rounded-lg px-4 py-2 hover:bg-white/10"
+                  >
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
+                    <span>@JavlinDev</span>
+                  </a>
+                </div>
               </div>
             </div>
           )}
         </div>
       </section>
 
-      {/* Founders Badge */}
-      <section className="py-20 px-6">
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-3xl p-12 border-2 border-blue-500/30 text-center relative overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 animate-pulse"></div>
-            <div className="relative">
-              <div className="w-16 h-16 bg-yellow-400/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <Star className="w-8 h-8 text-yellow-400" />
-              </div>
-              <h3 className="text-3xl font-bold text-white mb-6">Founders Special</h3>
-              <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                First 1,000 signups get <span className="text-blue-400 font-bold">30% off Pro/Premium for life</span> and an exclusive Founders badge.
-              </p>
-              <div className="inline-flex items-center bg-blue-500/20 rounded-full px-6 py-3">
-                <Shield className="w-5 h-5 text-blue-400 mr-2" />
-                <span className="text-blue-400 font-medium">Early Access + Beta Features</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* Why Builders Choose Jav */}
       <section className="py-20 px-6">

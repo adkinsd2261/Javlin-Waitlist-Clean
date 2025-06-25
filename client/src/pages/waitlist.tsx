@@ -11,7 +11,7 @@ import { useToast } from "@/hooks/use-toast";
 import { useMouseAttraction } from "@/hooks/use-mouse-position";
 import { CheckCircle, Brain, Lightbulb, Code, MessageCircle, Shield, Zap, Lock, Users, ArrowRight, Star } from "lucide-react";
 import { apiRequest } from "@/lib/queryClient";
-import javlinLogo from "@assets/image_1750817188897.png";
+import javlinLogo from "@assets/image_1750806523035.png";
 
 const waitlistSchema = z.object({
   name: z.string().min(1, "Name is required"),
@@ -68,25 +68,24 @@ export default function Waitlist() {
       {/* Hero Section */}
       <section className="relative py-20 px-6 overflow-hidden">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Javlin Logo with Energy */}
+          {/* Javlin Logo with Glow */}
           <div className="mb-12">
-            <div className="relative inline-block logo-energy">
+            <div className="relative inline-block">
+              <div className="absolute inset-0 bg-blue-500/30 rounded-full blur-3xl scale-150 animate-pulse"></div>
               <img 
                 src={javlinLogo} 
                 alt="Javlin.ai" 
-                className="relative w-32 h-32 mx-auto"
+                className="relative w-32 h-32 mx-auto filter drop-shadow-2xl"
               />
             </div>
           </div>
 
           {/* Hero Headlines */}
-          <h1 className="text-5xl lg:text-7xl font-bold mb-8 leading-tight text-center">
-            <div className="mb-2">
-              Javlin: The AI <span className="highlight-word creative">Co-founder</span> for
-            </div>
-            <div className="gradient-text-flow text-6xl lg:text-8xl">
+          <h1 className="text-5xl lg:text-7xl font-bold mb-8 leading-tight">
+            Javlin: The AI <span className="highlight-word creative">Co-founder</span> for{" "}
+            <span className="gradient-text-flow">
               Next-Gen Founders
-            </div>
+            </span>
           </h1>
           
           <p className="text-xl lg:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed">

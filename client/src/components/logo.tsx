@@ -1,4 +1,4 @@
-import javlinLogo from "@assets/image_1750817188897.png";
+import javlinLogo from "@assets/image_1750799045620.png";
 
 interface LogoProps {
   size?: "sm" | "md" | "lg";
@@ -21,7 +21,7 @@ export default function Logo({ size = "md", showText = true, className = "" }: L
 
   return (
     <div className={`flex items-center space-x-2 ${className}`}>
-      <div className={`${sizeClasses[size]} rounded-lg overflow-hidden logo-energy`}>
+      <div className={`${sizeClasses[size]} rounded-lg overflow-hidden`}>
         <img 
           src={javlinLogo} 
           alt="Javlin.ai" 

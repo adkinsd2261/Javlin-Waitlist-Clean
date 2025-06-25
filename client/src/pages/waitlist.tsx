@@ -13,6 +13,7 @@ import { CheckCircle, Brain, Lightbulb, Code, MessageCircle, Shield, Zap, Lock, 
 import { apiRequest } from "@/lib/queryClient";
 import Logo from "@/components/logo";
 import javlinLogo from "@assets/image_1750806523035.png";
+import memoryEngineLogo from "@assets/A67047DE-794F-4E89-B780-98938FE54BF3_1750832991992.png";
 
 const waitlistSchema = z.object({
   name: z.string().min(1, "Name is required"),
@@ -222,7 +223,7 @@ export default function Waitlist() {
               </p>
             </div>
             <div className="space-y-3 text-center">
-              <Brain className="w-8 h-8 text-pink-400 mx-auto energy-icon creative" />
+              <img src={memoryEngineLogo} alt="Memory Engine" className="w-8 h-8 mx-auto opacity-80" />
               <h5 className="text-lg font-semibold text-white">Holistic Understanding</h5>
               <p className="text-gray-300 text-sm">
                 Jav understands both the creative vision and technical constraints, ensuring aligned solutions.
@@ -448,7 +449,7 @@ export default function Waitlist() {
                     </div>
                     <div className="bg-white/5 rounded-xl p-6 border-l-4 border-purple-400">
                       <div className="flex items-start gap-3 mb-3">
-                        <Brain className="w-5 h-5 text-purple-400 mt-1 energy-icon memory" />
+                        <img src={memoryEngineLogo} alt="Memory Engine" className="w-5 h-5 mt-1 opacity-80" />
                         <h4 className="font-semibold text-white">Continuous Learning</h4>
                       </div>
                       <p className="text-sm text-gray-300 mb-3">
@@ -479,7 +480,7 @@ export default function Waitlist() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <div className="group w-24 h-24 bg-white/5 rounded-2xl flex items-center justify-center mx-auto mb-8">
-              <Brain className="w-12 h-12 text-purple-400 energy-icon memory" />
+              <img src={memoryEngineLogo} alt="Memory Engine" className="w-12 h-12 opacity-80" />
             </div>
             <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">The Memory Engine Advantage</h2>
             <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
@@ -618,7 +619,7 @@ export default function Waitlist() {
                 </div>
                 <div className="text-center mb-4">
                   <div className="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mx-auto mb-3">
-                    <Brain className="w-6 h-6 text-purple-400 energy-icon memory" />
+                    <img src={memoryEngineLogo} alt="Memory Engine" className="w-6 h-6 opacity-80" />
                   </div>
                   <h4 className="text-lg font-bold text-green-400 mb-2">✅ Javlin Memory Engine</h4>
                   <p className="text-xs text-gray-300 mb-4">The AI co-founder that remembers</p>

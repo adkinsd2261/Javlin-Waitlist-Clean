@@ -556,17 +556,17 @@ export default function Waitlist() {
 
 
 
-          {/* Competitive Advantage */}
+          {/* The Memory Engine Advantage */}
           <div className="memory-border ambient-glow rounded-3xl p-12">
-            <div className="text-center mb-12">
-              <h3 className="text-3xl font-bold text-white mb-6">Why MemoryOS Beats The Competition</h3>
+            <div className="text-center mb-16">
+              <h3 className="text-4xl font-bold text-white mb-6">The MemoryOS Advantage</h3>
               <p className="text-xl text-gray-300 max-w-4xl mx-auto">
                 While competitors offer "AI storage/search," only Javlin has MemoryOS—proactive recall with real user control. 
                 The difference between starting fresh every time and building on everything you've learned.
               </p>
             </div>
             
-            <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <div className="grid md:grid-cols-3 gap-8 mb-16">
               <div className="dev-mode-border ambient-glow dev rounded-2xl p-6">
                 <div className="text-center mb-4">
                   <div className="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mx-auto mb-3">
@@ -661,14 +661,140 @@ export default function Waitlist() {
               </div>
             </div>
 
-            <div className="memory-border rounded-2xl p-8 text-center">
-              <h4 className="text-2xl font-bold text-white mb-4">The Game Changer</h4>
-              <p className="text-lg text-gray-300 leading-relaxed max-w-4xl mx-auto">
-                Memory Engine doesn't just remember—it thinks ahead. While competitors offer "AI storage/search," 
-                Javlin offers <span className="text-blue-400 font-semibold">proactive recall</span> with 
-                <span className="text-purple-400 font-semibold"> real user control</span> across all your projects. 
-                It's the difference between an AI that helps you and an AI co-founder that grows with you.
-              </p>
+            {/* How MemoryOS Works */}
+            <div className="mb-16">
+              <div className="text-center mb-12">
+                <h4 className="text-2xl font-bold text-white mb-4">When Memory Becomes Wisdom</h4>
+                <p className="text-lg text-gray-300 max-w-3xl mx-auto">
+                  MemoryOS actively surfaces past solutions and prevents repeated mistakes, 
+                  creating personal institutional knowledge that grows with every project.
+                </p>
+              </div>
+              
+              <div className="grid md:grid-cols-3 gap-8 mb-12">
+                <div className="dev-mode-border ambient-glow dev rounded-2xl p-8 text-center">
+                  <h5 className="text-2xl font-bold text-blue-400 mb-4">Capture</h5>
+                  <h6 className="text-lg font-semibold text-white mb-6">Every Decision Matters</h6>
+                  <div className="space-y-3 text-gray-300 text-sm text-left">
+                    <div className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
+                      <span>Code solutions and debugging steps</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
+                      <span>Design decisions and creative choices</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
+                      <span>Project lessons and breakthrough moments</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
+                      <span>Mistakes and what actually worked</span>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="memory-border ambient-glow rounded-2xl p-8 text-center">
+                  <h5 className="text-2xl font-bold text-purple-400 mb-4">MemoryOS</h5>
+                  <h6 className="text-lg font-semibold text-white mb-6">Intelligence That Learns</h6>
+                  <div className="space-y-3 text-gray-300 text-sm text-left">
+                    <div className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
+                      <span>Stores memories as searchable markdown</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
+                      <span>Uses context matching to find relevance</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
+                      <span>User-controlled memory editing and deletion</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
+                      <span>Builds personal knowledge patterns</span>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="creative-mode-border ambient-glow creative rounded-2xl p-8 text-center">
+                  <h5 className="text-2xl font-bold text-pink-400 mb-4">Proactive Recall</h5>
+                  <h6 className="text-lg font-semibold text-white mb-6">Right Context, Right Time</h6>
+                  <div className="space-y-3 text-gray-300 text-sm text-left">
+                    <div className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-pink-400 rounded-full"></div>
+                      <span>Surfaces past solutions automatically</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-pink-400 rounded-full"></div>
+                      <span>Warns about repeated mistakes</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-pink-400 rounded-full"></div>
+                      <span>Suggests proven strategies</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-pink-400 rounded-full"></div>
+                      <span>Shows relevant project memories</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Real MemoryOS Examples */}
+              <div className="space-y-8">
+                <div className="dev-mode-border ambient-glow dev rounded-2xl p-8">
+                  <h5 className="text-xl font-bold text-white mb-4">Technical Memory in Action</h5>
+                  <div className="bg-white/5 rounded-xl p-6">
+                    <p className="text-gray-300 mb-4">
+                      You solved an OAuth token expiry bug in Project Alpha. Two months later in Project Beta, you hit a similar issue. 
+                      MemoryOS surfaces: <span className="text-blue-400 font-semibold">"Remember how you solved token expiry in Project Alpha? Here's what worked last time."</span>
+                    </p>
+                    <div className="text-xs text-blue-300 bg-blue-500/10 rounded px-3 py-1 inline-block">
+                      Context Match: OAuth debugging from Project Alpha memory
+                    </div>
+                  </div>
+                </div>
+
+                <div className="creative-mode-border ambient-glow creative rounded-2xl p-8">
+                  <h5 className="text-xl font-bold text-white mb-4">Creative Memory in Action</h5>
+                  <div className="bg-white/5 rounded-xl p-6">
+                    <p className="text-gray-300 mb-4">
+                      MemoryOS remembers that a specific blue-purple gradient worked great for conversions in your last project. 
+                      When you're designing again, it suggests: <span className="text-pink-400 font-semibold">"That gradient from Project Alpha converted 23% better than your baseline. Want to try a variation?"</span>
+                    </p>
+                    <div className="text-xs text-pink-300 bg-pink-500/10 rounded px-3 py-1 inline-block">
+                      Design Memory: Successful color palette from past project
+                    </div>
+                  </div>
+                </div>
+
+                <div className="memory-border ambient-glow rounded-2xl p-8">
+                  <h5 className="text-xl font-bold text-white mb-4">Project Memory in Action</h5>
+                  <div className="bg-white/5 rounded-xl p-6">
+                    <p className="text-gray-300 mb-4">
+                      You documented a hard lesson about feature scope creep in your project journal. 
+                      When planning a new feature, MemoryOS reminds: <span className="text-purple-400 font-semibold">"You noted in Project Beta: 'Adding features without user feedback led to 2 weeks of wasted work.' Consider validation first."</span>
+                    </p>
+                    <div className="text-xs text-purple-300 bg-purple-500/10 rounded px-3 py-1 inline-block">
+                      Lesson Memory: Project planning insights from your own notes
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* The Difference */}
+            <div className="text-center">
+              <div className="bg-gradient-to-r from-purple-500/10 to-blue-500/10 rounded-2xl p-8 border border-purple-400/30">
+                <h4 className="text-2xl font-bold text-white mb-6">This Is What Makes Javlin Different</h4>
+                <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                  Other AI tools offer "AI storage/search." MemoryOS offers <em>proactive recall</em> with real user control. 
+                  Your memories are stored as editable markdown files—you can review, edit, and delete anything. 
+                  It's the first AI co-founder that remembers your best solutions and warns you about past mistakes.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -907,148 +1033,7 @@ export default function Waitlist() {
         </div>
       </section>
 
-      {/* Memory Engine Deep Dive */}
-      <section className="py-20 px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="memory-border ambient-glow rounded-3xl p-12">
-            <div className="text-center mb-16">
-              <h3 className="text-4xl font-bold text-white mb-6">When Memory Becomes Wisdom</h3>
-              <p className="text-xl text-gray-300 max-w-4xl mx-auto">
-                MemoryOS doesn't just store information—it actively surfaces past solutions and prevents repeated mistakes, 
-                creating personal institutional knowledge that grows with every project.
-              </p>
-            </div>
-            
-            <div className="max-w-5xl mx-auto">
-              {/* How MemoryOS Works */}
-              <div className="grid md:grid-cols-3 gap-8 mb-16">
-                <div className="dev-mode-border ambient-glow dev rounded-2xl p-8 text-center">
-                  <h4 className="text-2xl font-bold text-blue-400 mb-4">Capture</h4>
-                  <h5 className="text-lg font-semibold text-white mb-6">Every Decision Matters</h5>
-                  <div className="space-y-3 text-gray-300 text-sm text-left">
-                    <div className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-                      <span>Code solutions and debugging steps</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-                      <span>Design decisions and creative choices</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-                      <span>Project lessons and breakthrough moments</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-                      <span>Mistakes and what actually worked</span>
-                    </div>
-                  </div>
-                </div>
-                
-                <div className="memory-border ambient-glow rounded-2xl p-8 text-center">
-                  <h4 className="text-2xl font-bold text-purple-400 mb-4">MemoryOS</h4>
-                  <h5 className="text-lg font-semibold text-white mb-6">Intelligence That Learns</h5>
-                  <div className="space-y-3 text-gray-300 text-sm text-left">
-                    <div className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
-                      <span>Stores memories as searchable markdown</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
-                      <span>Uses context matching to find relevance</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
-                      <span>User-controlled memory editing and deletion</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
-                      <span>Builds personal knowledge patterns</span>
-                    </div>
-                  </div>
-                </div>
-                
-                <div className="creative-mode-border ambient-glow creative rounded-2xl p-8 text-center">
-                  <h4 className="text-2xl font-bold text-pink-400 mb-4">Proactive Recall</h4>
-                  <h5 className="text-lg font-semibold text-white mb-6">Right Context, Right Time</h5>
-                  <div className="space-y-3 text-gray-300 text-sm text-left">
-                    <div className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-pink-400 rounded-full"></div>
-                      <span>Surfaces past solutions automatically</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-pink-400 rounded-full"></div>
-                      <span>Warns about repeated mistakes</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-pink-400 rounded-full"></div>
-                      <span>Suggests proven strategies</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-pink-400 rounded-full"></div>
-                      <span>Shows relevant project memories</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
 
-              {/* Real MemoryOS Examples */}
-              <div className="space-y-8">
-                <div className="dev-mode-border ambient-glow dev rounded-2xl p-8">
-                  <h4 className="text-xl font-bold text-white mb-4">Technical Memory in Action</h4>
-                  <div className="bg-white/5 rounded-xl p-6">
-                    <p className="text-gray-300 mb-4">
-                      You solved an OAuth token expiry bug in Project Alpha. Two months later in Project Beta, you hit a similar issue. 
-                      MemoryOS surfaces: <span className="text-blue-400 font-semibold">"Remember how you solved token expiry in Project Alpha? Here's what worked last time."</span>
-                    </p>
-                    <div className="text-xs text-blue-300 bg-blue-500/10 rounded px-3 py-1 inline-block">
-                      Context Match: OAuth debugging from Project Alpha memory
-                    </div>
-                  </div>
-                </div>
-
-                <div className="creative-mode-border ambient-glow creative rounded-2xl p-8">
-                  <h4 className="text-xl font-bold text-white mb-4">Creative Memory in Action</h4>
-                  <div className="bg-white/5 rounded-xl p-6">
-                    <p className="text-gray-300 mb-4">
-                      MemoryOS remembers that a specific blue-purple gradient worked great for conversions in your last project. 
-                      When you're designing again, it suggests: <span className="text-pink-400 font-semibold">"That gradient from Project Alpha converted 23% better than your baseline. Want to try a variation?"</span>
-                    </p>
-                    <div className="text-xs text-pink-300 bg-pink-500/10 rounded px-3 py-1 inline-block">
-                      Design Memory: Successful color palette from past project
-                    </div>
-                  </div>
-                </div>
-
-                <div className="memory-border ambient-glow rounded-2xl p-8">
-                  <h4 className="text-xl font-bold text-white mb-4">Project Memory in Action</h4>
-                  <div className="bg-white/5 rounded-xl p-6">
-                    <p className="text-gray-300 mb-4">
-                      You documented a hard lesson about feature scope creep in your project journal. 
-                      When planning a new feature, MemoryOS reminds: <span className="text-purple-400 font-semibold">"You noted in Project Beta: 'Adding features without user feedback led to 2 weeks of wasted work.' Consider validation first."</span>
-                    </p>
-                    <div className="text-xs text-purple-300 bg-purple-500/10 rounded px-3 py-1 inline-block">
-                      Lesson Memory: Project planning insights from your own notes
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* The Difference */}
-              <div className="mt-16 text-center">
-                <div className="bg-gradient-to-r from-purple-500/10 to-blue-500/10 rounded-2xl p-8 border border-purple-400/30">
-                  <h4 className="text-2xl font-bold text-white mb-6">This Is What Makes Javlin Different</h4>
-                  <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
-                    Other AI tools offer "AI storage/search." MemoryOS offers <em>proactive recall</em> with real user control. 
-                    Your memories are stored as editable markdown files—you can review, edit, and delete anything. 
-                    It's the first AI co-founder that remembers your best solutions and warns you about past mistakes.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Waitlist Form */}
       <section id="waitlist-form" className="py-20 px-6">

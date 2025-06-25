@@ -8,6 +8,7 @@ import { Input } from "@/components/ui/input";
 import { Form, FormControl, FormField, FormItem, FormMessage } from "@/components/ui/form";
 import { useToast } from "@/hooks/use-toast";
 import { apiRequest, queryClient } from "@/lib/queryClient";
+import { useMouseAttraction } from "@/hooks/use-mouse-position";
 import { Loader2, CheckCircle, Users, Clock } from "lucide-react";
 
 const waitlistSchema = z.object({
@@ -32,6 +33,7 @@ export default function WaitlistForm({
 }: WaitlistFormProps) {
   const [isSuccess, setIsSuccess] = useState(false);
   const { toast } = useToast();
+  const buttonRef = useMouseAttraction();
 
   const form = useForm<WaitlistFormData>({
     resolver: zodResolver(waitlistSchema),
@@ -129,9 +131,10 @@ export default function WaitlistForm({
             )}
           />
           <Button
+            ref={buttonRef}
             type="submit"
             disabled={waitlistMutation.isPending}
-            className="waitlist-button px-6 py-3 font-semibold whitespace-nowrap transition-all duration-300"
+            className="waitlist-button mouse-attracted-button px-6 py-3 font-semibold whitespace-nowrap transition-all duration-300"
           >
             {waitlistMutation.isPending ? (
               <>

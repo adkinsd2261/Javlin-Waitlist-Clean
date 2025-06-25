@@ -8,6 +8,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { useToast } from "@/hooks/use-toast";
+import { useMouseAttraction } from "@/hooks/use-mouse-position";
 import { CheckCircle, Brain, Lightbulb, Code, MessageCircle, Shield, Zap, Lock, Users, ArrowRight, Star } from "lucide-react";
 import { apiRequest } from "@/lib/queryClient";
 import javlinLogo from "@assets/image_1750806523035.png";
@@ -24,6 +25,8 @@ export default function Waitlist() {
   const [isSuccess, setIsSuccess] = useState(false);
   const { toast } = useToast();
   const queryClient = useQueryClient();
+  const heroButtonRef = useMouseAttraction();
+  const founderButtonRef = useMouseAttraction();
 
   const form = useForm<WaitlistFormData>({
     resolver: zodResolver(waitlistSchema),
@@ -92,8 +95,9 @@ export default function Waitlist() {
 
           {/* CTA Button */}
           <Button 
+            ref={heroButtonRef}
             onClick={() => document.getElementById('waitlist-form')?.scrollIntoView({ behavior: 'smooth' })}
-            className="waitlist-button text-xl px-12 py-6 rounded-2xl transition-all duration-300"
+            className="waitlist-button mouse-attracted-button text-xl px-12 py-6 rounded-2xl transition-all duration-300"
           >
             <span className="waitlist-button-text">Join the Waitlist</span>
             <ArrowRight className="ml-3 w-6 h-6 energy-icon memory" />
@@ -881,9 +885,10 @@ export default function Waitlist() {
                   />
 
                   <Button
+                    ref={founderButtonRef}
                     type="submit"
                     disabled={mutation.isPending}
-                    className="w-full founder-button text-xl py-6 rounded-2xl transition-all duration-300"
+                    className="w-full founder-button mouse-attracted-button text-xl py-6 rounded-2xl transition-all duration-300"
                   >
                     {mutation.isPending ? (
                       <span className="founder-button-text">Joining...</span>

@@ -20,6 +20,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import WaitlistForm from "@/components/waitlist-form";
 import Logo from "@/components/logo";
+import { useMouseAttraction } from "@/hooks/use-mouse-position";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -39,6 +40,7 @@ export default function Landing() {
   const { data: stats } = useQuery({
     queryKey: ["/api/waitlist/stats"],
   });
+  const navButtonRef = useMouseAttraction();
 
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
@@ -64,7 +66,7 @@ export default function Landing() {
               >
                 Pricing
               </button>
-              <Button className="waitlist-button">
+              <Button ref={navButtonRef} className="waitlist-button mouse-attracted-button">
                 <span className="waitlist-button-text">Join Waitlist</span>
               </Button>
             </div>

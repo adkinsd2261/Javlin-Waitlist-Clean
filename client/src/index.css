@@ -12,16 +12,28 @@
   }
 }
 
-@keyframes hover-pulse {
+@keyframes icon-pulse {
   0%, 100% {
-    box-shadow: 
-      0 0 20px -5px currentColor,
-      inset 0 0 20px -10px currentColor;
+    color: currentColor;
+    filter: drop-shadow(0 0 4px currentColor);
   }
   50% {
-    box-shadow: 
-      0 0 30px -3px currentColor,
-      inset 0 0 30px -8px currentColor;
+    filter: drop-shadow(0 0 8px currentColor) drop-shadow(0 0 12px currentColor);
+  }
+}
+
+@keyframes energy-flow {
+  0% {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.02);
+  }
+  100% {
+    opacity: 0.7;
+    transform: scale(1);
   }
 }
 
@@ -45,9 +57,9 @@
     transparent 80%
   );
   border-radius: inherit;
-  animation: border-chase 6s linear infinite;
+  animation: border-chase 6s linear infinite, energy-flow 4s ease-in-out infinite;
   z-index: -1;
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .creative-mode-border:hover {
@@ -55,7 +67,7 @@
 }
 
 .creative-mode-border:hover::before {
-  animation: border-chase 3s linear infinite;
+  animation: border-chase 2s linear infinite, energy-flow 2s ease-in-out infinite;
   opacity: 1;
 }
 
@@ -79,9 +91,9 @@
     transparent 80%
   );
   border-radius: inherit;
-  animation: border-chase 7s linear infinite;
+  animation: border-chase 7s linear infinite, energy-flow 4.5s ease-in-out infinite;
   z-index: -1;
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .dev-mode-border:hover {
@@ -89,7 +101,7 @@
 }
 
 .dev-mode-border:hover::before {
-  animation: border-chase 3.5s linear infinite;
+  animation: border-chase 2.5s linear infinite, energy-flow 2s ease-in-out infinite;
   opacity: 1;
 }
 
@@ -113,9 +125,9 @@
     transparent 80%
   );
   border-radius: inherit;
-  animation: border-chase 8s linear infinite;
+  animation: border-chase 8s linear infinite, energy-flow 5s ease-in-out infinite;
   z-index: -1;
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .jav-border:hover {
@@ -123,7 +135,7 @@
 }
 
 .jav-border:hover::before {
-  animation: border-chase 4s linear infinite;
+  animation: border-chase 3s linear infinite, energy-flow 2s ease-in-out infinite;
   opacity: 1;
 }
 
@@ -147,9 +159,9 @@
     transparent 80%
   );
   border-radius: inherit;
-  animation: border-chase 9s linear infinite;
+  animation: border-chase 9s linear infinite, energy-flow 5.5s ease-in-out infinite;
   z-index: -1;
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .memory-border:hover {
@@ -157,7 +169,7 @@
 }
 
 .memory-border:hover::before {
-  animation: border-chase 4.5s linear infinite;
+  animation: border-chase 3.5s linear infinite, energy-flow 2s ease-in-out infinite;
   opacity: 1;
 }
 
@@ -202,6 +214,27 @@
   --dev-shadow: hsla(250, 70%, 55%, 0.4);
   --creative-shadow: hsla(300, 75%, 55%, 0.4);
   --memory-shadow: hsla(290, 75%, 55%, 0.4);
+
+}
+
+/* Icon energy effects */
+.energy-icon {
+  animation: icon-pulse 3s ease-in-out infinite;
+}
+
+.energy-icon.creative {
+  animation: icon-pulse 3s ease-in-out infinite;
+  color: var(--creative-gradient-start);
+}
+
+.energy-icon.dev {
+  animation: icon-pulse 3.5s ease-in-out infinite;
+  color: var(--dev-gradient-start);
+}
+
+.energy-icon.memory {
+  animation: icon-pulse 4s ease-in-out infinite;
+  color: var(--memory-gradient-start);
 }
 
 .dark {

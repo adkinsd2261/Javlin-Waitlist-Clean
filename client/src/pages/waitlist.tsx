@@ -117,7 +117,7 @@ export default function Waitlist() {
             {/* Creative Mode */}
             <div className="group creative-mode-border rounded-3xl p-10 transition-all duration-300">
               <div className="w-24 h-24 bg-white/5 rounded-full flex items-center justify-center mb-8 transition-all duration-300">
-                <Lightbulb className="w-12 h-12 text-pink-400" />
+                <Lightbulb className="w-12 h-12 text-pink-400 energy-icon creative" />
               </div>
               <h3 className="text-3xl font-bold text-white mb-6 group-hover:text-pink-400 transition-colors">Creative Mode</h3>
               
@@ -150,7 +150,7 @@ export default function Waitlist() {
             {/* Dev Mode */}
             <div className="group dev-mode-border rounded-3xl p-10 transition-all duration-300">
               <div className="w-24 h-24 bg-white/5 rounded-full flex items-center justify-center mb-8 transition-all duration-300">
-                <Code className="w-12 h-12 text-blue-400" />
+                <Code className="w-12 h-12 text-blue-400 energy-icon dev" />
               </div>
               <h3 className="text-3xl font-bold text-white mb-6 group-hover:text-blue-400 transition-colors">Dev Mode</h3>
               
@@ -261,7 +261,7 @@ export default function Waitlist() {
               {/* JavChat */}
               <div className="jav-border rounded-2xl p-8">
                 <div className="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center mb-6">
-                  <MessageCircle className="w-8 h-8 text-purple-400" />
+                  <MessageCircle className="w-8 h-8 text-purple-400 energy-icon memory" />
                 </div>
                 <h4 className="text-xl font-bold text-white mb-4">JavChat</h4>
                 <div className="space-y-4">
@@ -315,7 +315,7 @@ export default function Waitlist() {
                   </div>
                   <div className="flex items-start space-x-4">
                     <div className="w-8 h-8 bg-white/5 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                      <Users className="w-4 h-4 text-purple-400" />
+                      <Users className="w-4 h-4 text-purple-400 energy-icon memory" />
                     </div>
                     <div>
                       <h5 className="text-white font-semibold mb-2">Adaptive Persona</h5>
@@ -326,7 +326,7 @@ export default function Waitlist() {
                 <div className="space-y-4">
                   <div className="flex items-start space-x-4">
                     <div className="w-8 h-8 bg-white/5 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                      <Zap className="w-4 h-4 text-purple-400" />
+                      <Zap className="w-4 h-4 text-purple-400 energy-icon memory" />
                     </div>
                     <div>
                       <h5 className="text-white font-semibold mb-2">Cross-Project Intelligence</h5>
@@ -344,7 +344,7 @@ export default function Waitlist() {
                   </div>
                   <div className="flex items-start space-x-4">
                     <div className="w-8 h-8 bg-white/5 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                      <Lock className="w-4 h-4 text-purple-400" />
+                      <Lock className="w-4 h-4 text-purple-400 energy-icon memory" />
                     </div>
                     <div>
                       <h5 className="text-white font-semibold mb-2">Full Memory Control</h5>
@@ -470,7 +470,7 @@ export default function Waitlist() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <div className="w-24 h-24 bg-white/5 rounded-2xl flex items-center justify-center mx-auto mb-8">
-              <Brain className="w-12 h-12 text-blue-400" />
+              <Brain className="w-12 h-12 text-purple-400 energy-icon memory" />
             </div>
             <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">The Memory Engine Advantage</h2>
             <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">

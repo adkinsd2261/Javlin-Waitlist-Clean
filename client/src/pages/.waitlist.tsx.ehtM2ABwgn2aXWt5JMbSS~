@@ -825,8 +825,6 @@ export default function Waitlist() {
                             <Input
                               placeholder="Your full name"
                               className="bg-white/10 border-white/20 hover:border-white/30 text-white placeholder:text-gray-400 rounded-2xl px-6 py-4 text-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-300"
-                              onFocus={(e) => e.target.classList.add('input-awakening')}
-                              onBlur={(e) => e.target.classList.remove('input-awakening')}
                               {...field}
                             />
                           </FormControl>
@@ -883,14 +881,10 @@ export default function Waitlist() {
                   <Button
                     type="submit"
                     disabled={mutation.isPending}
-                    className="w-full founder-button text-xl py-6 rounded-2xl transition-all duration-300"
+                    className="w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-bold text-xl py-6 rounded-2xl shadow-lg transition-all duration-300 transform hover:scale-[1.02]"
                   >
-                    {mutation.isPending ? (
-                      <span className="founder-button-text">Joining...</span>
-                    ) : (
-                      <span className="founder-button-text">Claim Your Founder Spot</span>
-                    )}
-                    <ArrowRight className="ml-3 w-6 h-6 energy-icon memory" />
+                    {mutation.isPending ? "Joining..." : "Claim Your Founder Spot"}
+                    <ArrowRight className="ml-3 w-6 h-6" />
                   </Button>
                 </form>
               </Form>

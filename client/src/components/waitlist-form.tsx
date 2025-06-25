@@ -119,6 +119,8 @@ export default function WaitlistForm({
                     placeholder="Enter your email"
                     type="email"
                     className="px-4 py-3 bg-slate-800 border-slate-600 focus:border-purple-500 transition-colors"
+                    onFocus={(e) => e.target.classList.add('input-awakening')}
+                    onBlur={(e) => e.target.classList.remove('input-awakening')}
                     {...field}
                   />
                 </FormControl>

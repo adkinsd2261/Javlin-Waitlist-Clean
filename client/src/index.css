@@ -374,6 +374,73 @@
   animation: button-intense-glow 1.2s ease-in-out infinite;
 }
 
+/* Founder Spot Button - Even More Intense */
+.founder-button {
+  position: relative;
+  background: linear-gradient(45deg, hsl(300, 80%, 55%), hsl(320, 90%, 65%), hsl(280, 85%, 60%), hsl(340, 80%, 70%));
+  background-size: 500% 500%;
+  animation: button-border-flow 2.5s ease-in-out infinite, button-pulse 1.8s ease-in-out infinite;
+  border: 3px solid transparent;
+  overflow: hidden;
+  box-shadow: 0 0 25px hsla(300, 80%, 55%, 0.5), 0 0 50px hsla(320, 90%, 65%, 0.3);
+}
+
+.founder-button::before {
+  content: '';
+  position: absolute;
+  inset: 3px;
+  background: linear-gradient(135deg, hsl(240, 10%, 8%), hsl(240, 15%, 12%));
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.founder-button:hover {
+  animation: button-border-flow 1s ease-in-out infinite, button-pulse 0.8s ease-in-out infinite;
+  box-shadow: 0 0 50px hsla(300, 80%, 55%, 0.9), 0 0 100px hsla(320, 90%, 65%, 0.5);
+  transform: scale(1.08);
+}
+
+.founder-button-text {
+  animation: button-intense-glow 2s ease-in-out infinite;
+  font-weight: 800;
+  background: linear-gradient(45deg, hsl(300, 80%, 70%), hsl(320, 90%, 80%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.founder-button:hover .founder-button-text {
+  animation: button-intense-glow 1s ease-in-out infinite;
+}
+
+/* Input Awakening Effects */
+@keyframes input-awaken {
+  0% {
+    box-shadow: 0 0 5px hsla(280, 70%, 50%, 0.3);
+    border-color: hsl(280, 70%, 50%);
+  }
+  50% {
+    box-shadow: 0 0 15px hsla(280, 70%, 50%, 0.6), 0 0 30px hsla(300, 80%, 60%, 0.3);
+    border-color: hsl(300, 80%, 60%);
+  }
+  100% {
+    box-shadow: 0 0 10px hsla(280, 70%, 50%, 0.4), 0 0 20px hsla(300, 80%, 60%, 0.2);
+    border-color: hsl(290, 75%, 55%);
+  }
+}
+
+.input-awakening {
+  animation: input-awaken 1.5s ease-in-out infinite;
+  border: 2px solid hsl(280, 70%, 50%);
+  background: linear-gradient(135deg, hsla(280, 70%, 50%, 0.05), hsla(300, 80%, 60%, 0.03));
+  transition: all 0.3s ease;
+}
+
+.input-awakening:focus {
+  animation: input-awaken 0.8s ease-in-out infinite;
+  box-shadow: 0 0 20px hsla(280, 70%, 50%, 0.8), 0 0 40px hsla(300, 80%, 60%, 0.4);
+}
+
 .dark {
   --background: hsl(240, 10%, 3.9%);
   --foreground: hsl(0, 0%, 98%);

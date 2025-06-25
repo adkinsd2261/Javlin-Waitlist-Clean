@@ -780,67 +780,9 @@ export default function Waitlist() {
         </div>
       </section>
 
-      {/* User Journey */}
+      {/* Contact Form */}
       <section className="py-20 px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">Your Journey with Javlin</h2>
-            <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-              From first project to institutional knowledge—see how MemoryOS transforms 
-              from simple recall to your personal co-founder intelligence.
-            </p>
-          </div>
-
-          <div className="space-y-16">
-            {/* Step 1 */}
-            <div className="dev-mode-border ambient-glow dev rounded-3xl p-10">
-              <div className="flex flex-col lg:flex-row items-start gap-10">
-                <div className="flex-shrink-0">
-                  <div className="w-20 h-20 bg-white/5 border border-blue-400/30 rounded-2xl flex items-center justify-center relative">
-                    <span className="text-3xl font-bold text-blue-400">1</span>
-                    <div className="absolute -top-1 -right-1 w-4 h-4 bg-blue-400 rounded-full energy-icon dev"></div>
-                  </div>
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-3xl font-bold text-white mb-6">Create Your Workspace</h3>
-                  <p className="text-gray-300 text-lg leading-relaxed mb-8">
-                    Start a new project and Jav immediately begins learning. Every decision, every line of code, 
-                    every creative choice gets captured in your personal <span className="text-purple-400 font-semibold">Memory Engine</span>.
-                  </p>
-                  
-                  <div className="grid md:grid-cols-2 gap-6 mb-6">
-                    <div className="bg-white/5 rounded-xl p-6 border-l-4 border-blue-400">
-                      <div className="flex items-start gap-3 mb-3">
-                        <Code className="w-5 h-5 text-blue-400 mt-1 energy-icon dev" />
-                        <h4 className="font-semibold text-blue-400">Dev Mode Setup</h4>
-                      </div>
-                      <p className="text-sm text-gray-300">Configure JWT authentication with secure token handling and error boundaries</p>
-                    </div>
-                    <div className="bg-white/5 rounded-xl p-6 border-l-4 border-pink-400">
-                      <div className="flex items-start gap-3 mb-3">
-                        <Lightbulb className="w-5 h-5 text-pink-400 mt-1 energy-icon creative" />
-                        <h4 className="font-semibold text-pink-400">Creative Mode Setup</h4>
-                      </div>
-                      <p className="text-sm text-gray-300">Design a color palette that converts 23% better than industry average</p>
-                    </div>
-                  </div>
-
-                  <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-xl p-6 border border-blue-400/20">
-                    <h4 className="font-semibold text-white mb-3 flex items-center gap-2">
-                      <Brain className="w-5 h-5 text-purple-400 energy-icon memory" />
-                      Memory Engine Activation
-                    </h4>
-                    <p className="text-gray-300 text-sm">
-                      From your first interaction, Jav begins building your unique intelligence profile—learning your 
-                      coding patterns, design preferences, and decision-making style.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Step 2 */}
-            <div className="creative-mode-border ambient-glow creative rounded-3xl p-10">
+        <div className="max-w-2xl mx-auto">
               <div className="flex flex-col lg:flex-row items-start gap-10">
                 <div className="flex-shrink-0">
                   <div className="w-20 h-20 bg-white/5 border border-pink-400/30 rounded-2xl flex items-center justify-center relative">

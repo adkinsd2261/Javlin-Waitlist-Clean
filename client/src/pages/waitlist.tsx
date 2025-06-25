@@ -64,7 +64,7 @@ export default function Waitlist() {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-gradient-to-br from-[#181B2B] to-[#232342] text-white">
       {/* Header - Hero Section */}
       <section className="relative py-20 px-6 overflow-hidden">
         <div className="max-w-4xl mx-auto text-center">

@@ -91,11 +91,11 @@ export default function Landing() {
               </motion.div>
               
               <motion.h1 variants={fadeInUp} className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-                The AI <span className="text-gradient-javlin">Co-founder</span> That Never Forgets
+                The AI <span className="gradient-text-flow">Co-founder</span> That <span className="highlight-word memory">Never Forgets</span>
               </motion.h1>
               
               <motion.p variants={fadeInUp} className="text-xl text-gray-300 mb-8 max-w-2xl">
-                Meet Javlin.ai - the first AI that remembers your best solutions, warns you about past mistakes, and grows smarter with every project. Never repeat yourself again.
+                Meet Javlin.ai - the first AI that <span className="highlight-word memory">remembers</span> your best solutions, <span className="highlight-word dev">warns</span> you about past mistakes, and <span className="highlight-word creative">grows smarter</span> with every project. Never repeat yourself again.
               </motion.p>
               
               {/* Waitlist Form */}

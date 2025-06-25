@@ -79,15 +79,15 @@ export default function Waitlist() {
 
           {/* Hero Headlines */}
           <h1 className="text-5xl lg:text-7xl font-bold mb-8 leading-tight">
-            Javlin: The AI Co-founder for{" "}
-            <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+            Javlin: The AI <span className="highlight-word creative">Co-founder</span> for{" "}
+            <span className="gradient-text-flow">
               Next-Gen Founders
             </span>
           </h1>
           
           <p className="text-xl lg:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed">
-            The first AI platform that remembers your best solutions, warns you about past mistakes, 
-            and grows smarter with every project.
+            The first AI platform that <span className="highlight-word memory">remembers</span> your best solutions, <span className="highlight-word dev">warns</span> you about past mistakes, 
+            and <span className="highlight-word creative">grows smarter</span> with every project.
           </p>
 
           {/* CTA Button */}

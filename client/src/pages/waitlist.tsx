@@ -933,58 +933,110 @@ export default function Waitlist() {
         </div>
       </section>
 
-      {/* Magic Moment */}
+      {/* Memory Engine Deep Dive */}
       <section className="py-20 px-6">
-        <div className="max-w-5xl mx-auto">
-          <div className="memory-border rounded-3xl p-12">
-            <div className="text-center mb-12">
-              <Star className="w-12 h-12 text-yellow-400 mx-auto mb-4" />
-              <h3 className="text-3xl font-bold text-white mb-6">When Memory Becomes Wisdom</h3>
+        <div className="max-w-6xl mx-auto">
+          <div className="memory-border ambient-glow rounded-3xl p-12">
+            <div className="text-center mb-16">
+              <h3 className="text-4xl font-bold text-white mb-6">When Memory Becomes Wisdom</h3>
+              <p className="text-xl text-gray-300 max-w-4xl mx-auto">
+                Memory Engine doesn't just store information—it transforms your experiences into intelligence that grows stronger with every project.
+              </p>
             </div>
             
-            <div className="max-w-4xl mx-auto">
-              <div className="jav-border rounded-2xl p-8 mb-8">
-                <div className="space-y-6">
-                  <p className="text-xl text-gray-300 leading-relaxed italic">
-                    "Six months ago, I was burned out, switching between 12 browser tabs, losing my creative flow every time I had to code. I was building my third startup attempt, convinced this was my last shot."
-                  </p>
-                  
-                  <p className="text-xl text-gray-300 leading-relaxed italic">
-                    "Today, I opened Javlin and Memory Engine gently reminded me: 'Remember when you felt overwhelmed in Project Phoenix? You took that 2-day creative retreat and came back with the breakthrough insight. Your current stress pattern matches that moment—maybe it's time for another reset?'"
-                  </p>
-                  
-                  <p className="text-xl text-gray-300 leading-relaxed italic">
-                    "It wasn't just remembering code. Memory Engine remembered my journey, my emotions, the moments when I almost quit, and the breakthroughs that kept me going. It remembered me."
-                  </p>
+            <div className="max-w-5xl mx-auto">
+              {/* The Transformation Process */}
+              <div className="grid md:grid-cols-3 gap-8 mb-16">
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center mx-auto mb-6 border border-blue-400/30">
+                    <span className="text-2xl font-bold text-blue-400">Input</span>
+                  </div>
+                  <h4 className="text-xl font-bold text-white mb-4">Raw Experience</h4>
+                  <div className="space-y-3 text-gray-300 text-sm">
+                    <p>Every decision you make</p>
+                    <p>Every problem you solve</p>
+                    <p>Every mistake you overcome</p>
+                    <p>Every breakthrough moment</p>
+                  </div>
+                </div>
+                
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center mx-auto mb-6 border border-purple-400/30">
+                    <span className="text-2xl font-bold text-purple-400">Process</span>
+                  </div>
+                  <h4 className="text-xl font-bold text-white mb-4">Memory Engine</h4>
+                  <div className="space-y-3 text-gray-300 text-sm">
+                    <p>Identifies patterns across projects</p>
+                    <p>Connects emotional and technical insights</p>
+                    <p>Maps successful decision trees</p>
+                    <p>Builds predictive models of your workflow</p>
+                  </div>
+                </div>
+                
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center mx-auto mb-6 border border-pink-400/30">
+                    <span className="text-2xl font-bold text-pink-400">Output</span>
+                  </div>
+                  <h4 className="text-xl font-bold text-white mb-4">Proactive Wisdom</h4>
+                  <div className="space-y-3 text-gray-300 text-sm">
+                    <p>Prevents repeated mistakes</p>
+                    <p>Suggests optimal timing for decisions</p>
+                    <p>Recommends proven strategies</p>
+                    <p>Anticipates your needs before you ask</p>
+                  </div>
                 </div>
               </div>
-              
-              <div className="text-center mb-8">
-                <p className="text-lg text-gray-400">This is an AI co-founder that understands the human side of building</p>
+
+              {/* Real Memory Engine Examples */}
+              <div className="space-y-8">
+                <div className="dev-mode-border ambient-glow dev rounded-2xl p-8">
+                  <h4 className="text-xl font-bold text-white mb-4">Technical Memory in Action</h4>
+                  <div className="bg-white/5 rounded-xl p-6">
+                    <p className="text-gray-300 mb-4">
+                      After three projects, Memory Engine notices you always struggle with database migrations around Day 15 of development. 
+                      It now proactively suggests: <span className="text-blue-400 font-semibold">"Based on your past projects, consider setting up migration rollback strategies now—this typically becomes critical in 3 days."</span>
+                    </p>
+                    <div className="text-xs text-blue-300 bg-blue-500/10 rounded px-3 py-1 inline-block">
+                      Pattern Recognition: Database complexity timing across Project Alpha, Beta, and Gamma
+                    </div>
+                  </div>
+                </div>
+
+                <div className="creative-mode-border ambient-glow creative rounded-2xl p-8">
+                  <h4 className="text-xl font-bold text-white mb-4">Creative Memory in Action</h4>
+                  <div className="bg-white/5 rounded-xl p-6">
+                    <p className="text-gray-300 mb-4">
+                      Memory Engine remembers that your best design breakthroughs happen during afternoon walks after periods of frustration. 
+                      When it detects similar stress patterns, it suggests: <span className="text-pink-400 font-semibold">"Your creativity patterns suggest taking a break. Previous breakthroughs came after walking when you felt this stuck."</span>
+                    </p>
+                    <div className="text-xs text-pink-300 bg-pink-500/10 rounded px-3 py-1 inline-block">
+                      Behavioral Intelligence: Creativity timing and environmental factors
+                    </div>
+                  </div>
+                </div>
+
+                <div className="memory-border ambient-glow rounded-2xl p-8">
+                  <h4 className="text-xl font-bold text-white mb-4">Business Memory in Action</h4>
+                  <div className="bg-white/5 rounded-xl p-6">
+                    <p className="text-gray-300 mb-4">
+                      Across projects, Memory Engine learned that you make better strategic decisions in the morning and technical decisions in the evening. 
+                      It now schedules suggestions accordingly: <span className="text-purple-400 font-semibold">"This pricing decision mirrors the choice you made successfully in Project Beta. Your decision quality is highest between 9-11 AM."</span>
+                    </p>
+                    <div className="text-xs text-purple-300 bg-purple-500/10 rounded px-3 py-1 inline-block">
+                      Strategic Intelligence: Decision timing and cognitive patterns
+                    </div>
+                  </div>
+                </div>
               </div>
-              
-              {/* Memory Categories */}
-              <div className="grid md:grid-cols-3 gap-6">
-                <div className="bg-white/5 rounded-xl p-6 border border-white/10 text-center">
-                  <div className="w-12 h-12 bg-pink-500/20 rounded-xl flex items-center justify-center mx-auto mb-4">
-                    <Lightbulb className="w-6 h-6 text-pink-400 energy-icon creative" />
-                  </div>
-                  <h4 className="text-white font-semibold mb-2">Creative Patterns</h4>
-                  <p className="text-gray-400 text-sm">Remembers when your best ideas come, your preferred creative environments, and breakthrough moments</p>
-                </div>
-                <div className="bg-white/5 rounded-xl p-6 border border-white/10 text-center">
-                  <div className="w-12 h-12 bg-red-400/20 rounded-xl flex items-center justify-center mx-auto mb-4">
-                    <Shield className="w-6 h-6 text-purple-400 energy-icon memory" />
-                  </div>
-                  <h4 className="text-white font-semibold mb-2">Emotional Journey</h4>
-                  <p className="text-gray-400 text-sm">Tracks stress patterns, burnout signals, and the decisions that led to your biggest regrets or victories</p>
-                </div>
-                <div className="bg-white/5 rounded-xl p-6 border border-white/10 text-center">
-                  <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center mx-auto mb-4">
-                    <Brain className="w-6 h-6 text-purple-400 energy-icon memory" />
-                  </div>
-                  <h4 className="text-white font-semibold mb-2">Life Lessons</h4>
-                  <p className="text-gray-400 text-sm">Captures hard-won wisdom about team dynamics, product decisions, and personal growth through building</p>
+
+              {/* The Difference */}
+              <div className="mt-16 text-center">
+                <div className="bg-gradient-to-r from-purple-500/10 to-blue-500/10 rounded-2xl p-8 border border-purple-400/30">
+                  <h4 className="text-2xl font-bold text-white mb-6">This Is What Makes Javlin Different</h4>
+                  <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                    Other AI tools help you in the moment. Memory Engine builds institutional knowledge about <em>you</em>—your patterns, 
+                    your timing, your breakthrough conditions. It becomes the only AI that truly understands how you work best.
+                  </p>
                 </div>
               </div>
             </div>

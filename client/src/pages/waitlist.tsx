@@ -76,7 +76,7 @@ export default function Waitlist() {
               <img 
                 src={javlinLogo} 
                 alt="Javlin.ai" 
-                className="relative w-32 h-32 mx-auto filter drop-shadow-2xl"
+                className="relative w-48 h-48 mx-auto filter drop-shadow-2xl"
               />
             </div>
           </div>

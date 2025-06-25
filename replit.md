@@ -101,10 +101,10 @@ This is a full-stack web application for Javlin.ai's waitlist landing page. The 
 
 ## Recent Changes
 - June 25, 2025: Final polish and masterdoc alignment completed
-  - **Terminology Consistency**: Updated all "Memory Engine" references to "MemoryOS" to match masterdoc
+  - **Terminology Consistency**: Maintained "Memory Engine" terminology throughout for brand consistency
   - **Claims Accuracy**: Aligned all product capabilities with actual MVP features (markdown storage, proactive recall, user control)
   - **Visual Polish**: Enhanced input awakening effects, button styling, and ambient glow consistency
-  - **Content Refinement**: Updated examples to reflect realistic MemoryOS scenarios (OAuth debugging, design patterns)
+  - **Content Refinement**: Updated examples to reflect realistic Memory Engine scenarios (OAuth debugging, design patterns)
   - **CTA Optimization**: Emphasized "30% off for life" founder special throughout waitlist flow
   - **Competition Section**: Improved visual design with themed borders and removed non-conforming colors
   - **Journey Section**: Expanded with detailed step-by-step progression and realistic examples

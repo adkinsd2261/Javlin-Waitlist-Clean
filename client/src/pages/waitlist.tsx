@@ -111,7 +111,7 @@ export default function Waitlist() {
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">Meet Jav: Your AI Co-founder</h2>
             <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-              Unlike traditional AI that forgets everything, Jav Assistant powered by MemoryOS builds on your past solutions. 
+              Unlike traditional AI that forgets everything, Jav Assistant powered by Memory Engine builds on your past solutions. 
               From OAuth debugging to design breakthroughs—your knowledge becomes institutional memory.
             </p>
           </div>
@@ -374,7 +374,7 @@ export default function Waitlist() {
               <div className="text-center mb-12">
                 <h4 className="text-3xl font-bold text-white mb-4">Real Problems Solved</h4>
                 <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-                  See how <span className="text-purple-400 font-semibold">MemoryOS</span> eliminates the frustrations that slow down every builder
+                  See how <span className="text-purple-400 font-semibold">Memory Engine</span> eliminates the frustrations that slow down every builder
                 </p>
               </div>
 
@@ -460,7 +460,7 @@ export default function Waitlist() {
               <div className="group memory-border ambient-glow rounded-2xl p-8 text-center">
                 <h5 className="text-2xl font-bold text-white mb-4">Your Knowledge Compounds</h5>
                 <p className="text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
-                  Your personal institutional knowledge grows in <span className="text-purple-400 font-semibold">MemoryOS</span>, connecting patterns across projects 
+                  Your personal institutional knowledge grows in <span className="text-purple-400 font-semibold">Memory Engine</span>, connecting patterns across projects 
                   and becoming the ultimate competitive advantage. Every project makes you faster.
                 </p>
               </div>
@@ -559,9 +559,9 @@ export default function Waitlist() {
           {/* The Memory Engine Advantage */}
           <div className="memory-border ambient-glow rounded-3xl p-12">
             <div className="text-center mb-16">
-              <h3 className="text-4xl font-bold text-white mb-6">The MemoryOS Advantage</h3>
+              <h3 className="text-4xl font-bold text-white mb-6">The Memory Engine Advantage</h3>
               <p className="text-xl text-gray-300 max-w-4xl mx-auto">
-                While competitors offer "AI storage/search," only Javlin has MemoryOS—proactive recall with real user control. 
+                While competitors offer "AI storage/search," only Javlin has Memory Engine—proactive recall with real user control. 
                 The difference between starting fresh every time and building on everything you've learned.
               </p>
             </div>
@@ -634,7 +634,7 @@ export default function Waitlist() {
                   <div className="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mx-auto mb-3">
                     <Brain className="w-6 h-6 text-purple-400 energy-icon memory" />
                   </div>
-                  <h4 className="text-lg font-bold text-white mb-4">Javlin's MemoryOS</h4>
+                  <h4 className="text-lg font-bold text-white mb-4">Javlin's Memory Engine</h4>
                 </div>
                 <div className="space-y-3 text-gray-300 text-sm">
                   <div className="flex items-start space-x-3">
@@ -661,12 +661,12 @@ export default function Waitlist() {
               </div>
             </div>
 
-            {/* How MemoryOS Works */}
+            {/* How Memory Engine Works */}
             <div className="mb-16">
               <div className="text-center mb-12">
                 <h4 className="text-2xl font-bold text-white mb-4">When Memory Becomes Wisdom</h4>
                 <p className="text-lg text-gray-300 max-w-3xl mx-auto">
-                  MemoryOS actively surfaces past solutions and prevents repeated mistakes, 
+                  Memory Engine actively surfaces past solutions and prevents repeated mistakes, 
                   creating personal institutional knowledge that grows with every project.
                 </p>
               </div>
@@ -696,7 +696,7 @@ export default function Waitlist() {
                 </div>
                 
                 <div className="memory-border ambient-glow rounded-2xl p-8 text-center">
-                  <h5 className="text-2xl font-bold text-purple-400 mb-4">MemoryOS</h5>
+                  <h5 className="text-2xl font-bold text-purple-400 mb-4">Memory Engine</h5>
                   <h6 className="text-lg font-semibold text-white mb-6">Intelligence That Learns</h6>
                   <div className="space-y-3 text-gray-300 text-sm text-left">
                     <div className="flex items-center gap-2">
@@ -742,14 +742,14 @@ export default function Waitlist() {
                 </div>
               </div>
 
-              {/* Real MemoryOS Examples */}
+              {/* Real Memory Engine Examples */}
               <div className="space-y-8">
                 <div className="dev-mode-border ambient-glow dev rounded-2xl p-8">
                   <h5 className="text-xl font-bold text-white mb-4">Technical Memory in Action</h5>
                   <div className="bg-white/5 rounded-xl p-6">
                     <p className="text-gray-300 mb-4">
                       You solved an OAuth token expiry bug in Project Alpha. Two months later in Project Beta, you hit a similar issue. 
-                      MemoryOS surfaces: <span className="text-blue-400 font-semibold">"Remember how you solved token expiry in Project Alpha? Here's what worked last time."</span>
+                      Memory Engine surfaces: <span className="text-blue-400 font-semibold">"Remember how you solved token expiry in Project Alpha? Here's what worked last time."</span>
                     </p>
                     <div className="text-xs text-blue-300 bg-blue-500/10 rounded px-3 py-1 inline-block">
                       Context Match: OAuth debugging from Project Alpha memory
@@ -761,7 +761,7 @@ export default function Waitlist() {
                   <h5 className="text-xl font-bold text-white mb-4">Creative Memory in Action</h5>
                   <div className="bg-white/5 rounded-xl p-6">
                     <p className="text-gray-300 mb-4">
-                      MemoryOS remembers that a specific blue-purple gradient worked great for conversions in your last project. 
+                      Memory Engine remembers that a specific blue-purple gradient worked great for conversions in your last project. 
                       When you're designing again, it suggests: <span className="text-pink-400 font-semibold">"That gradient from Project Alpha converted 23% better than your baseline. Want to try a variation?"</span>
                     </p>
                     <div className="text-xs text-pink-300 bg-pink-500/10 rounded px-3 py-1 inline-block">
@@ -775,7 +775,7 @@ export default function Waitlist() {
                   <div className="bg-white/5 rounded-xl p-6">
                     <p className="text-gray-300 mb-4">
                       You documented a hard lesson about feature scope creep in your project journal. 
-                      When planning a new feature, MemoryOS reminds: <span className="text-purple-400 font-semibold">"You noted in Project Beta: 'Adding features without user feedback led to 2 weeks of wasted work.' Consider validation first."</span>
+                      When planning a new feature, Memory Engine reminds: <span className="text-purple-400 font-semibold">"You noted in Project Beta: 'Adding features without user feedback led to 2 weeks of wasted work.' Consider validation first."</span>
                     </p>
                     <div className="text-xs text-purple-300 bg-purple-500/10 rounded px-3 py-1 inline-block">
                       Lesson Memory: Project planning insights from your own notes
@@ -790,7 +790,7 @@ export default function Waitlist() {
               <div className="bg-gradient-to-r from-purple-500/10 to-blue-500/10 rounded-2xl p-8 border border-purple-400/30 ambient-glow">
                 <h4 className="text-2xl font-bold text-white mb-6">This Is What Makes Javlin Different</h4>
                 <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
-                  Other AI tools offer "AI storage/search." <span className="text-purple-400 font-semibold">MemoryOS</span> offers <span className="text-blue-400 font-semibold">proactive recall</span> with real user control. 
+                  Other AI tools offer "AI storage/search." <span className="text-purple-400 font-semibold">Memory Engine</span> offers <span className="text-blue-400 font-semibold">proactive recall</span> with real user control. 
                   Your memories are stored as <span className="text-purple-400 font-medium">editable markdown files</span>—you can review, edit, and delete anything. 
                   It's the first <span className="text-purple-400 font-semibold">AI co-founder</span> that remembers your best solutions and warns you about past mistakes.
                 </p>
@@ -825,7 +825,7 @@ export default function Waitlist() {
                   <h3 className="text-3xl font-bold text-white mb-6">Create Your Workspace</h3>
                   <p className="text-gray-300 text-lg leading-relaxed mb-8">
                     Start a new project and Jav immediately begins learning. Every decision, every line of code, 
-                    every creative choice gets captured in your personal <span className="text-purple-400 font-semibold">MemoryOS</span>.
+                    every creative choice gets captured in your personal <span className="text-purple-400 font-semibold">Memory Engine</span>.
                   </p>
                   
                   <div className="grid md:grid-cols-2 gap-6 mb-6">
@@ -871,7 +871,7 @@ export default function Waitlist() {
                 <div className="flex-1">
                   <h3 className="text-3xl font-bold text-white mb-6">Build Your Memory</h3>
                   <p className="text-gray-300 text-lg leading-relaxed mb-8">
-                    As you work, <span className="text-purple-400 font-semibold">MemoryOS</span> remembers everything—your coding patterns, design preferences, business decisions, 
+                    As you work, <span className="text-purple-400 font-semibold">Memory Engine</span> remembers everything—your coding patterns, design preferences, business decisions, 
                     and lessons learned. Every interaction adds to your growing <span className="text-purple-400 font-medium">institutional knowledge</span>.
                   </p>
                   
@@ -986,7 +986,7 @@ export default function Waitlist() {
                 <div className="flex-1">
                   <h3 className="text-3xl font-bold text-white mb-6">Scale Across Projects</h3>
                   <p className="text-gray-300 text-lg leading-relaxed mb-8">
-                    Your <span className="text-purple-400 font-semibold">MemoryOS</span> becomes even more powerful as you start new projects. Jav applies lessons 
+                    Your <span className="text-purple-400 font-semibold">Memory Engine</span> becomes even more powerful as you start new projects. Jav applies lessons 
                     from previous builds, suggests patterns that worked before, and helps you avoid repeating mistakes.
                   </p>
                   
@@ -1046,7 +1046,7 @@ export default function Waitlist() {
               <div className="space-y-4">
                 <h3 className="text-3xl font-bold text-white">You're on the list!</h3>
                 <p className="text-xl text-gray-300">
-                  You're secured for <span className="text-pink-400 font-semibold">30% off for life</span>. We'll notify you when <span className="text-purple-400 font-semibold">MemoryOS</span> is ready.
+                  You're secured for <span className="text-pink-400 font-semibold">30% off for life</span>. We'll notify you when <span className="text-purple-400 font-semibold">Memory Engine</span> is ready.
                 </p>
               </div>
             </div>
@@ -1110,7 +1110,7 @@ export default function Waitlist() {
                     render={({ field }) => (
                       <FormItem>
                         <FormLabel className="text-white text-lg font-medium">
-                          What solutions, mistakes, or project lessons would you want <span className="text-purple-400 font-medium">MemoryOS</span> to remember?
+                          What solutions, mistakes, or project lessons would you want <span className="text-purple-400 font-medium">Memory Engine</span> to remember?
                           <span className="text-gray-400 font-normal ml-2">(optional)</span>
                         </FormLabel>
                         <FormControl>

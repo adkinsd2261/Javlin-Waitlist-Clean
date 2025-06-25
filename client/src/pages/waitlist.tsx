@@ -89,8 +89,8 @@ export default function Waitlist() {
           </h1>
           
           <p className="text-xl lg:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed">
-            The first AI co-founder that <span className="text-purple-400 font-semibold">remembers</span> your best solutions, <span className="text-blue-400 font-semibold">warns</span> you about past mistakes, 
-            and <span className="text-pink-400 font-semibold">grows smarter</span> with every project—so you never repeat yourself again.
+            The first AI co-founder that <span className="text-white font-semibold">remembers</span> your best solutions, <span className="text-white font-semibold">warns</span> you about past mistakes, 
+            and <span className="text-white font-semibold">grows smarter</span> with every project—so you never repeat yourself again.
           </p>
 
           {/* CTA Button */}
@@ -130,21 +130,21 @@ export default function Waitlist() {
 
               <div className="space-y-6">
                 <div className="bg-white/5 rounded-xl p-6">
-                  <h4 className="text-xl font-semibold text-pink-400 mb-3">Design & UI/UX</h4>
+                  <h4 className="text-xl font-semibold text-white mb-3">Design & UI/UX</h4>
                   <p className="text-gray-300 text-sm leading-relaxed">
                     Create wireframes, design systems, and user interfaces. Jav helps refine your visual concepts 
                     and suggests improvements based on UX best practices.
                   </p>
                 </div>
                 <div className="bg-white/5 rounded-xl p-6">
-                  <h4 className="text-xl font-semibold text-pink-400 mb-3">Strategic Planning</h4>
+                  <h4 className="text-xl font-semibold text-white mb-3">Strategic Planning</h4>
                   <p className="text-gray-300 text-sm leading-relaxed">
                     Plan product roadmaps, feature prioritization, and business strategy. 
                     Jav helps you think through complex decisions and their implications.
                   </p>
                 </div>
                 <div className="bg-white/5 rounded-xl p-6">
-                  <h4 className="text-xl font-semibold text-pink-400 mb-3">Content & Copy</h4>
+                  <h4 className="text-xl font-semibold text-white mb-3">Content & Copy</h4>
                   <p className="text-gray-300 text-sm leading-relaxed">
                     Write compelling copy, documentation, and marketing materials. 
                     Jav adapts to your brand voice and messaging style.
@@ -165,21 +165,21 @@ export default function Waitlist() {
 
               <div className="space-y-6">
                 <div className="bg-white/5 rounded-xl p-6">
-                  <h4 className="text-xl font-semibold text-blue-400 mb-3">Full-Stack Development</h4>
+                  <h4 className="text-xl font-semibold text-white mb-3">Full-Stack Development</h4>
                   <p className="text-gray-300 text-sm leading-relaxed">
                     Build complete applications from frontend to backend. Jav writes clean, maintainable code 
                     in any language and follows your preferred patterns.
                   </p>
                 </div>
                 <div className="bg-white/5 rounded-xl p-6">
-                  <h4 className="text-xl font-semibold text-blue-400 mb-3">Debugging & Optimization</h4>
+                  <h4 className="text-xl font-semibold text-white mb-3">Debugging & Optimization</h4>
                   <p className="text-gray-300 text-sm leading-relaxed">
                     Identify and fix bugs, optimize performance, and improve code quality. 
                     Jav analyzes your codebase and suggests targeted improvements.
                   </p>
                 </div>
                 <div className="bg-white/5 rounded-xl p-6">
-                  <h4 className="text-xl font-semibold text-blue-400 mb-3">Architecture & Systems</h4>
+                  <h4 className="text-xl font-semibold text-white mb-3">Architecture & Systems</h4>
                   <p className="text-gray-300 text-sm leading-relaxed">
                     Design scalable architectures, database schemas, and system integrations. 
                     Jav helps you make informed technical decisions.
@@ -262,7 +262,7 @@ export default function Waitlist() {
                   </p>
                   
                   <div className="bg-white/5 rounded-xl p-8 mb-6">
-                    <h4 className="font-semibold text-blue-400 mb-6 flex items-center gap-2">
+                    <h4 className="font-semibold text-white mb-6 flex items-center gap-2">
                       <Code className="w-5 h-5 energy-icon dev" />
                       What You Can Do Immediately
                     </h4>
@@ -293,7 +293,7 @@ export default function Waitlist() {
                   <div className="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 rounded-xl p-6 border border-blue-400/20">
                     <h4 className="font-semibold text-white mb-3">First Session Example</h4>
                     <p className="text-gray-300 text-sm italic">
-                      <span className="text-blue-400">"Let's build a React component for user authentication. I'll help you set up the form validation 
+                      <span className="text-white">"Let's build a React component for user authentication. I'll help you set up the form validation 
                       and suggest best practices for secure token handling."</span>
                     </p>
                   </div>
@@ -313,43 +313,43 @@ export default function Waitlist() {
                 <div className="flex-1">
                   <h3 className="text-3xl font-bold text-white mb-6">Build Your Memory</h3>
                   <p className="text-gray-300 text-lg leading-relaxed mb-8">
-                    As you work, <span className="text-purple-400 font-semibold">Memory Engine</span> remembers everything—your coding patterns, design preferences, business decisions, 
-                    and lessons learned. Every interaction adds to your growing <span className="text-purple-400 font-medium">institutional knowledge</span>.
+                    As you work, <span className="text-white font-semibold">Memory Engine</span> remembers everything—your coding patterns, design preferences, business decisions, 
+                    and lessons learned. Every interaction adds to your growing <span className="text-white font-medium">institutional knowledge</span>.
                   </p>
                   
                   <div className="bg-white/5 rounded-xl p-8 mb-6">
-                    <h4 className="font-semibold text-pink-400 mb-6 flex items-center gap-2">
+                    <h4 className="font-semibold text-white mb-6 flex items-center gap-2">
                       <Zap className="w-5 h-5 energy-icon creative" />
                       What Jav Learns About You
                     </h4>
                     <div className="grid md:grid-cols-3 gap-6 text-sm text-gray-300">
                       <div className="space-y-3">
                         <div className="flex items-center gap-2">
-                          <div className="w-2 h-2 bg-pink-400 rounded-full"></div>
+                          <div className="w-2 h-2 bg-white rounded-full"></div>
                           <span>Preferred coding patterns</span>
                         </div>
                         <div className="flex items-center gap-2">
-                          <div className="w-2 h-2 bg-pink-400 rounded-full"></div>
+                          <div className="w-2 h-2 bg-white rounded-full"></div>
                           <span>Design style preferences</span>
                         </div>
                       </div>
                       <div className="space-y-3">
                         <div className="flex items-center gap-2">
-                          <div className="w-2 h-2 bg-pink-400 rounded-full"></div>
+                          <div className="w-2 h-2 bg-white rounded-full"></div>
                           <span>Business decision criteria</span>
                         </div>
                         <div className="flex items-center gap-2">
-                          <div className="w-2 h-2 bg-pink-400 rounded-full"></div>
+                          <div className="w-2 h-2 bg-white rounded-full"></div>
                           <span>Common mistakes to avoid</span>
                         </div>
                       </div>
                       <div className="space-y-3">
                         <div className="flex items-center gap-2">
-                          <div className="w-2 h-2 bg-pink-400 rounded-full"></div>
+                          <div className="w-2 h-2 bg-white rounded-full"></div>
                           <span>Successful strategies</span>
                         </div>
                         <div className="flex items-center gap-2">
-                          <div className="w-2 h-2 bg-pink-400 rounded-full"></div>
+                          <div className="w-2 h-2 bg-white rounded-full"></div>
                           <span>Project methodologies</span>
                         </div>
                       </div>
@@ -359,7 +359,7 @@ export default function Waitlist() {
                   <div className="bg-gradient-to-r from-pink-500/10 to-purple-500/10 rounded-xl p-6 border border-pink-400/20">
                     <h4 className="font-semibold text-white mb-3">Real Learning Example</h4>
                     <p className="text-gray-300 text-sm italic">
-                      <span className="text-pink-400">"I've noticed you prefer Tailwind over custom CSS, always use TypeScript for type safety, 
+                      <span className="text-white">"I've noticed you prefer Tailwind over custom CSS, always use TypeScript for type safety, 
                       and like to implement dark mode first. I'll suggest these patterns for new projects."</span>
                     </p>
                   </div>
@@ -380,12 +380,12 @@ export default function Waitlist() {
                   <h3 className="text-3xl font-bold text-white mb-6">Experience Proactive Intelligence</h3>
                   <p className="text-gray-300 text-lg leading-relaxed mb-8">
                     Now the magic happens. Jav starts anticipating your needs, offering relevant suggestions, 
-                    and preventing mistakes before they happen. It's like having a <span className="text-purple-400 font-semibold">co-founder who never forgets</span>.
+                    and preventing mistakes before they happen. It's like having a <span className="text-white font-semibold">co-founder who never forgets</span>.
                   </p>
                   
                   <div className="space-y-6">
                     <div className="bg-white/5 rounded-xl p-6 border-l-4 border-purple-400">
-                      <h4 className="font-semibold text-purple-400 mb-3 flex items-center gap-2">
+                      <h4 className="font-semibold text-white mb-3 flex items-center gap-2">
                         <Brain className="w-5 h-5 energy-icon memory" />
                         Proactive Development Example
                       </h4>
@@ -393,13 +393,13 @@ export default function Waitlist() {
                         "I noticed you're working on user authentication again. Last time you mentioned JWT tokens 
                         were expiring too quickly. Should I implement the 30-day refresh pattern you preferred?"
                       </p>
-                      <div className="text-xs text-purple-300 bg-purple-500/10 rounded px-3 py-1 inline-block">
+                      <div className="text-xs text-gray-300 bg-purple-500/10 rounded px-3 py-1 inline-block">
                         Memory Engine: Preventing repeated authentication issues
                       </div>
                     </div>
 
                     <div className="bg-white/5 rounded-xl p-6 border-l-4 border-purple-400">
-                      <h4 className="font-semibold text-purple-400 mb-3 flex items-center gap-2">
+                      <h4 className="font-semibold text-white mb-3 flex items-center gap-2">
                         <Sparkles className="w-5 h-5 energy-icon memory" />
                         Proactive Design Example
                       </h4>
@@ -407,7 +407,7 @@ export default function Waitlist() {
                         "Based on your previous projects, users respond 40% better to your gradient buttons. 
                         I've prepared three variations using your preferred purple-blue palette."
                       </p>
-                      <div className="text-xs text-purple-300 bg-purple-500/10 rounded px-3 py-1 inline-block">
+                      <div className="text-xs text-gray-300 bg-purple-500/10 rounded px-3 py-1 inline-block">
                         Memory Engine: Applying proven design patterns
                       </div>
                     </div>
@@ -428,7 +428,7 @@ export default function Waitlist() {
                 <div className="flex-1">
                   <h3 className="text-3xl font-bold text-white mb-6">Scale Across Projects</h3>
                   <p className="text-gray-300 text-lg leading-relaxed mb-8">
-                    Your <span className="text-purple-400 font-semibold">Memory Engine</span> becomes even more powerful as you start new projects. Jav applies lessons 
+                    Your <span className="text-white font-semibold">Memory Engine</span> becomes even more powerful as you start new projects. Jav applies lessons 
                     from previous builds, suggests patterns that worked before, and helps you avoid repeating mistakes.
                   </p>
                   
@@ -436,24 +436,24 @@ export default function Waitlist() {
                     <div className="bg-white/5 rounded-xl p-6 border-l-4 border-blue-400">
                       <div className="flex items-start gap-3 mb-3">
                         <Users className="w-5 h-5 text-blue-400 mt-1 energy-icon dev" />
-                        <h4 className="font-semibold text-blue-400">Cross-Project Intelligence</h4>
+                        <h4 className="font-semibold text-white">Cross-Project Intelligence</h4>
                       </div>
                       <p className="text-sm text-gray-300 mb-3">
                         Applies successful patterns from Project A to Project B automatically
                       </p>
-                      <div className="text-xs text-blue-300 bg-blue-500/10 rounded px-3 py-1 inline-block">
+                      <div className="text-xs text-gray-300 bg-blue-500/10 rounded px-3 py-1 inline-block">
                         "Using the database schema pattern that reduced queries by 60% in your last project"
                       </div>
                     </div>
                     <div className="bg-white/5 rounded-xl p-6 border-l-4 border-purple-400">
                       <div className="flex items-start gap-3 mb-3">
                         <Brain className="w-5 h-5 text-purple-400 mt-1 energy-icon memory" />
-                        <h4 className="font-semibold text-purple-400">Continuous Learning</h4>
+                        <h4 className="font-semibold text-white">Continuous Learning</h4>
                       </div>
                       <p className="text-sm text-gray-300 mb-3">
                         Memory Engine grows stronger with every project, every decision
                       </p>
-                      <div className="text-xs text-purple-300 bg-purple-500/10 rounded px-3 py-1 inline-block">
+                      <div className="text-xs text-gray-300 bg-purple-500/10 rounded px-3 py-1 inline-block">
                         "Learning from 847 interactions across 12 projects"
                       </div>
                     </div>
@@ -512,7 +512,7 @@ export default function Waitlist() {
                   <div className="memory-border ambient-glow rounded-2xl p-6">
                     <h4 className="text-xl font-bold text-white mb-3">Complete User Control</h4>
                     <p className="text-gray-300 leading-relaxed">
-                      Every memory is user-auditable. Review, edit, and delete memories stored as <span className="text-purple-400 font-medium">searchable markdown files</span>. 
+                      Every memory is user-auditable. Review, edit, and delete memories stored as <span className="text-white font-medium">searchable markdown files</span>. 
                       All additions and updates require your validation—Memory Engine learns with you, not from you.
                     </p>
                   </div>
@@ -525,7 +525,7 @@ export default function Waitlist() {
                   <div className="memory-border ambient-glow rounded-2xl p-6">
                     <h4 className="text-xl font-bold text-white mb-3">Complete Context Preservation</h4>
                     <p className="text-gray-300 leading-relaxed">
-                      Every creative decision, code solution, and breakthrough moment is captured in <span className="text-purple-400 font-medium">Memory Engine</span>. Switch between modes without losing your train of thought or valuable insights.
+                      Every creative decision, code solution, and breakthrough moment is captured in <span className="text-white font-medium">Memory Engine</span>. Switch between modes without losing your train of thought or valuable insights.
                     </p>
                   </div>
                   <div className="memory-border ambient-glow rounded-2xl p-6">
@@ -617,25 +617,25 @@ export default function Waitlist() {
                   </div>
                   <h4 className="text-lg font-bold text-white mb-4">Javlin Memory Engine</h4>
                 </div>
-                <div className="space-y-3 text-purple-300 text-sm">
+                <div className="space-y-3 text-gray-300 text-sm">
                   <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"></div>
                     <p>Proactive recall of past solutions</p>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"></div>
                     <p>Learns your patterns and preferences</p>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"></div>
                     <p>Prevents repeated mistakes</p>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"></div>
                     <p>Cross-project intelligence</p>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"></div>
                     <p>User-controlled memory system</p>
                   </div>
                 </div>
@@ -647,9 +647,9 @@ export default function Waitlist() {
               <div className="bg-gradient-to-r from-purple-500/10 to-blue-500/10 rounded-2xl p-8 border border-purple-400/30 ambient-glow">
                 <h4 className="text-2xl font-bold text-white mb-6">This Is What Makes Javlin Different</h4>
                 <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
-                  Other AI tools offer "AI storage/search." <span className="text-purple-400 font-semibold">Memory Engine</span> offers <span className="text-blue-400 font-semibold">proactive recall</span> with real user control. 
-                  Your memories are stored as <span className="text-purple-400 font-medium">editable markdown files</span>—you can review, edit, and delete anything. 
-                  It's the first <span className="text-purple-400 font-semibold">AI co-founder</span> that remembers your best solutions and warns you about past mistakes.
+                  Other AI tools offer "AI storage/search." <span className="text-white font-semibold">Memory Engine</span> offers <span className="text-white font-semibold">proactive recall</span> with real user control. 
+                  Your memories are stored as <span className="text-white font-medium">editable markdown files</span>—you can review, edit, and delete anything. 
+                  It's the first <span className="text-white font-semibold">AI co-founder</span> that remembers your best solutions and warns you about past mistakes.
                 </p>
               </div>
             </div>
@@ -671,7 +671,7 @@ export default function Waitlist() {
                   Welcome to the future of AI co-founding. We'll notify you when Javlin is ready.
                 </p>
                 <div className="bg-gradient-to-r from-purple-500/10 to-blue-500/10 rounded-xl p-6 border border-purple-400/20">
-                  <p className="text-lg text-purple-300 font-semibold mb-2">Founder Special: 30% off for life</p>
+                  <p className="text-lg text-white font-semibold mb-2">Founder Special: 30% off for life</p>
                   <p className="text-gray-300 text-sm">
                     As an early supporter, you'll get lifetime access to Javlin at 30% off our standard pricing.
                   </p>
@@ -686,7 +686,7 @@ export default function Waitlist() {
                   Be among the first to experience the AI co-founder that never forgets your best solutions.
                 </p>
                 <div className="bg-gradient-to-r from-purple-500/10 to-blue-500/10 rounded-xl p-6 border border-purple-400/20">
-                  <p className="text-lg text-purple-300 font-semibold mb-2">Founder Special: 30% off for life</p>
+                  <p className="text-lg text-white font-semibold mb-2">Founder Special: 30% off for life</p>
                   <p className="text-gray-300 text-sm">
                     Early supporters get lifetime access to Javlin at 30% off our standard pricing.
                   </p>

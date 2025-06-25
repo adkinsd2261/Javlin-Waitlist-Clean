@@ -60,9 +60,19 @@ export default function Waitlist() {
     },
   });
 
-  const onSubmit = (data: WaitlistFormData) => {
-    mutation.mutate(data);
-  };
+  const res = const response = await fetch('/api/subscribe', {
+      
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({ email: data.email }),
+});
+
+if (res.ok) {
+  // optional: show success message
+} else {
+  // optional: handle error
+}
+
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#181B2B] to-[#232342] text-white">
@@ -701,7 +711,10 @@ export default function Waitlist() {
               </div>
 
               <Form {...form}>
-                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+                {success ? (
+  <p className="text-green-500 mt-4">Thanks for joining! You're on the list.</p>
+) : (
+  <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-6">
                     <FormField
                       control={form.control}
@@ -772,6 +785,7 @@ export default function Waitlist() {
                     )}
                   </Button>
                 </form>
+)}
               </Form>
 
               {/* Twitter Follow Buttons */}
